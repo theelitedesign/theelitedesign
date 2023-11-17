@@ -1,0 +1,138 @@
+.slide-thumb img,
+.burger-single,
+.post-tags,
+.post-content-des p,
+.post-meta,
+.search-button,
+.single-blog-post,
+.wpcf7-submit,
+a,
+a:visited,
+button,
+input[type="submit"],
+.home-hero,
+header {
+	@include transition(all, 0.3s, ease-in-out);
+}
+
+.top-bar {
+	padding: 10px 0;
+	background-color: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--white);
+	transition: all 0.4s ease-in-out;
+
+	::selection {
+		background-color: var(--wp--preset--color--gray);
+		color: var(--gb_dbrown);
+	}
+}
+
+.top-bar-text {
+	font-size: var(--gb_font_size_3);
+	padding-right: 20px;
+
+	a,
+	a:visited {
+		font-size: var(--gb_font_size_3);
+		color: var(--wp--preset--color--white);
+		display: inline-block;
+	}
+}
+
+.top-bar-cross {
+	position: absolute;
+	top: 12px;
+	right: 20px;
+	line-height: 0.65;
+	cursor: pointer;
+
+	img {
+		width: 16px;
+		filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(220deg) brightness(102%) contrast(103%);
+	}
+}
+
+.hide-topbar {
+	header {
+		top: -44px;
+	}
+}
+
+.nav-container {
+	display: flex;
+	align-items: center;
+	margin-top: 8px;
+}
+
+.header-logo a {
+	display: inline-block;
+}
+
+.no-overflow {
+	overflow: hidden;
+}
+
+.logo {
+	position: relative;
+	z-index: 9;
+	line-height: 0.65;
+	width: 230px;
+	transition: all 0.2s ease-in-out;
+
+	a {
+		margin-top: 3px;
+		display: block;
+		transform: scale(1);
+		transform-origin: left top;
+	}
+}
+
+.header-inner {
+	padding: 20px 0;
+	box-sizing: border-box;
+
+	@include transition(all, 0.3s, ease-in-out);
+}
+
+header {
+	background-color: var(--gb_header_bgcolor);
+	z-index: 9;
+	width: 100%;
+	position: fixed;
+	top: 0;
+
+	&.shrink {
+		background-color: var(--gb_header_bgcolor_sticky);
+
+	}
+}
+
+.header-wrapper {
+	box-sizing: border-box;
+	width: 90%;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.header-btns {
+	margin-top: 0;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+}
+
+body.logged-in.admin-bar {
+	header {
+		top: 32px;
+	}
+
+	&.hide-topbar {
+		header {
+			top: -12px;
+		}
+	}
+}
+
+.desktop-hide {
+	display: none;
+}
