@@ -1,0 +1,82 @@
+.two-columns,
+.three-columns,
+.four-columns {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.two-columns {
+	display: grid;
+	@include fluidColumns(2, 350px, 2%);
+	row-gap: var(--gb_space_6);
+}
+
+.three-columns {
+	display: grid;
+	@include fluidColumns(3, 350px, 2%);
+	row-gap: var(--gb_space_7);
+}
+
+.four-columns {
+	display: grid;
+	@include fluidColumns(4, 250px, 2%);
+	row-gap: var(--gb_space_6);
+}
+
+.five-columns {
+	display: grid;
+	@include fluidColumns(5, 200px, 2%);
+	row-gap: var(--gb_space_6);
+}
+
+
+/****
+ *
+ * columns
+ *
+****/
+
+// .bln-three-columns {
+// 	display: grid;
+// 	@include columns(4, 350px, 2%);
+// 	row-gap: var(--gb_space_11);
+// }
+
+// .bln-three-menu-columns {
+// 	display: grid;
+// 	@include columns(4, 350px, 5%);
+// 	row-gap: var(--gb_space_11);
+// }
+
+// .bln-four-columns {
+// 	display: grid;
+// 	@include columns(4, 290px, 2%);
+// 	row-gap: var(--gb_space_9);
+// }
+
+// .bln-two-columns {
+// 	display: grid;
+// 	@include columns(2, 250px, 3%);
+// }
+
+// .bln-amenities-two-columns {
+// 	display: grid;
+// 	@include columns(2, 250px, 6%);
+// }
+
+// .bln-features-two-columns {
+// 	display: grid;
+// 	@include columns(2, 250px, 3%, 0%);
+// }
+
+// .bln-column-60 {
+// 	width: 60%;
+// }
+
+// .bln-column-50 {
+// 	width: 50%;
+// }
+
+// .bln-column-40 {
+// 	width: 40%;
+// }

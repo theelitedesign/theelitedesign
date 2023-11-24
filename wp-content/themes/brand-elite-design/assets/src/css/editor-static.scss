@@ -1,0 +1,130 @@
+// spacers
+
+.glide-spacer {
+	background-image: url(../images/spacer.jpg);
+}
+
+/* containers */
+
+.editor-navy-container {
+	background-color: var(--wp--preset--color--navy);
+	border: 3px dashed #4d6e68 !important;
+}
+
+.editor-ctn {
+	border: 3px dashed #575757;
+}
+
+.editor-no-design {
+	border: 3px dashed #7b7b7b;
+}
+
+.editor-container-1180,
+.editor-container-1000,
+.editor-container-980,
+.editor-container-760,
+.editor-full-width-container,
+.wp-block-acf-spacer,
+.wp-block-acf-spacer .acf-input select {
+	max-width: 100% !important;
+	width: 100% !important;
+}
+
+.wp-block-create-block-glide-section-container {
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.editor-full-width-container {
+	.wp-block {
+		max-width: 1800px !important;
+	}
+}
+
+.editor-container-1180 {
+	.wp-block {
+		max-width: 1180px !important;
+	}
+}
+
+.editor-container-1000 {
+	.wp-block {
+		max-width: 1000px !important;
+	}
+}
+
+.editor-container-980 {
+	.wp-block {
+		max-width: 980px !important;
+	}
+}
+
+.editor-container-760 {
+	.wp-block {
+		max-width: 760px !important;
+	}
+}
+
+.acf-field-block-title,
+.acf-field-spacers {
+	padding: 0px !important;
+
+	.acf-label {
+		display: none;
+	}
+
+	.acf-input {
+		.acf-label {
+			display: initial;
+		}
+	}
+}
+
+.acf-fields {
+	&.acf-clone-fields {
+		.description {
+			padding: initial !important;
+			border-top: initial;
+			margin-top: 6px !important;
+			margin-bottom: 5px !important;
+		}
+	}
+}
+
+.description {
+	padding: 6px 20px 16px !important;
+	margin-top: 0px !important;
+	border-top: 1px solid #eeeeee;
+}
+
+.acf-field-reusable {
+	padding: 0px !important;
+
+	// Labels
+	.acf-field-block-label {
+		.acf-label {
+			height: 40px;
+			padding-top: 10px;
+			label {
+				font-size: var(--gb_font_size_6);
+				margin: 8px 0;
+				text-align: center;
+				@include font(axi, bold);
+			}
+		}
+	}
+}
+
+// Labels
+.acf-field-block-label {
+	.acf-label {
+		height: 40px;
+		padding-top: 10px;
+		label {
+			font-size: var(--gb_font_size_6);
+			margin: 8px 0;
+			text-align: center;
+			@include font(axi, bold);
+		}
+	}
+}

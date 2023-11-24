@@ -15,7 +15,8 @@
 	"editor.formatOnSave": true,
 	"eslint.autoFixOnSave": true,
 	"[css]": {
-		"editor.formatOnSave": true
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[php]": {
 		"editor.detectIndentation": true,
