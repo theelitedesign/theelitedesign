@@ -1,0 +1,64 @@
+/****
+ *
+ * containers
+ *
+****/
+.inner-wrapper,
+.wrapper {
+	max-width: 1500px;
+	width: 88%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.at-right-section {
+
+	.inner-wrapper,
+	.wrapper {
+		padding-left: 200px;
+	}
+}
+
+.at-left-section {
+
+	.inner-wrapper,
+	.wrapper {
+		padding-right: 200px;
+	}
+}
+
+.ctn-1000 {
+
+	.wrapper {
+		max-width: 1000px;
+	}
+}
+
+.ctn-760 {
+
+	.wrapper {
+		max-width: 760px;
+	}
+}
+
+.ctn {
+
+	@include padding(86px 0);
+}
+
+.overflow-hidden {
+	overflow-x: hidden;
+}
+
+s
+.full-width-ctn {
+
+	.wrapper {
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+.blue-ctn {
+	background-color: map-get($map: $colors, $key: eblue);
+}

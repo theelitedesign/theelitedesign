@@ -1,0 +1,36 @@
+.hero-ctn {
+	padding: 19rem 0 10rem;
+
+	h1 {
+		margin-bottom: 3.2rem;
+	}
+
+	p {
+		font-size: 36px;
+	}
+}
+
+.hero__content {
+
+	a,
+	a:visited {
+		text-decoration: underline;
+
+		&:hover {
+			color: map-get($map: $colors, $key: yellow);
+		}
+	}
+}
+
+.hero-single {
+	padding: 17rem 0 10rem;
+}
+
+[myattribute] {
+	background-color: red;
+}
+
+
+.hero__buttons {
+	margin-top: 50px;
+}
