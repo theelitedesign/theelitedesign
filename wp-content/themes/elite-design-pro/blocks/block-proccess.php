@@ -43,10 +43,10 @@ if($block['name']){
 // Block variables
 
 // Proccess Title
-$elitedesign_blk_proccess_title = html_entity_decode($block_fields['elitedesign_blk_proccess_title']); 
+$elitedesign_blk_proccess_title = html_entity_decode($block_fields['elitedesign_blk_proccess_title']);
 
 // Proccess Items
-$elitedesign_blk_proccess = $block_fields['elitedesign_blk_proccess']; 
+$elitedesign_blk_proccess = $block_fields['elitedesign_blk_proccess'];
 
 ?>
 <div id="<?php echo $id; ?>" class="<?php echo $align_class . ' ' . $class_name. ' ' . $name; ?> glide-block-<?php echo $block_glide_name; ?>">
@@ -55,15 +55,16 @@ $elitedesign_blk_proccess = $block_fields['elitedesign_blk_proccess'];
 		<div class="design-proccess-ctn">
 
 		<?php if( $elitedesign_blk_proccess_title ) { ?>
-			
-			<div class="section-head mb-70">
-				
+
+			<div class="section-head">
+
 				<h2><?php echo $elitedesign_blk_proccess_title; ?></h2>
-				
+
 			</div>
-			
+			<div class="s-96"></div>
+
 		<?php } ?>
-			
+
 			<?php if($elitedesign_blk_proccess) { ?>
 
 				<div class="proccess-area flex">

@@ -57,7 +57,7 @@ $elitedesign_thrcoltxt_columns = $block_fields['elitedesign_thrcoltxt_columns'];
 					<?php if($elitedesign_thrcoltxt_title) { ?>
 						<h2 class="heading-3"><?php echo $elitedesign_thrcoltxt_title; ?></h2>
 						<?php } ?>
-						
+
 						<?php if($elitedesign_thrcoltxt_text) { ?>
 							<div class="big-body">
 								<?php echo $elitedesign_thrcoltxt_text; ?>

@@ -11,50 +11,66 @@
 // Include header
 get_header();
 
-// Global variables
-global $option_fields;
-global $pID;
-global $fields;
 
-// 404 Page - Advanced custom fields variables
-$elitedesign_error_headline		 	= html_entity_decode($option_fields['elitedesign_error_headline']);
-$elitedesign_error_sub_headline 		= html_entity_decode($option_fields['elitedesign_error_sub_headline']);
 
-$elitedesign_error_text 				= html_entity_decode($option_fields['elitedesign_error_text']);
-$elitedesign_error_menu 				= html_entity_decode($option_fields['elitedesign_error_menu']);
-$elitedesign_error_menu_bottom_text 	= html_entity_decode($option_fields['elitedesign_error_menu_bottom_text']);
-$elitedesign_error_search 				= html_entity_decode($option_fields['elitedesign_error_search']);
-
-?> <section id="hero-section" class="hero-section">
-	<!-- Hero Start -->
-	<section class="m-section">
-		<div class="hero-single center-align error-page-hero">
-			<div class="wrapper">
-				<h1><?php echo $elitedesign_error_headline; ?></h1>
-				<div class="banner-text">
-					<p><?php echo $elitedesign_error_sub_headline; ?></p>
-				</div>
+?>
+<section id="hero-section" class="hero-section">
+	<div class="hero hero-ctn hero--work">
+		<div class="s-96"></div>
+		<div class="wrapper">
+			<div class="hero__content">
+				<h1>
+					Something Wrong
+				</h1>
 			</div>
 		</div>
-	</section>
-	<!-- Hero End -->
-</section>
-<section id="page-section" class="page-section">
-	<!-- Page Content Start -->
-	<div class="m-section">
-		<div class="wrapper">
-			<section class="error-404 not-found">
-				<div class="inner-content"> <?php if ( $elitedesign_error_text ) { ?> <?php echo $elitedesign_error_text; ?>
-					<?php } ?> <?php if ( $elitedesign_error_menu ) { ?> <div class="error">
-						<?php echo $elitedesign_error_menu; ?> </div> <?php } ?> <div class="clear"></div>
-					<div class="form-404"> <?php if ( $elitedesign_error_menu_bottom_text ) { ?>
-						<?php echo $elitedesign_error_menu_bottom_text; ?> <?php } ?>
-						<?php if ( $elitedesign_error_search != 1 ) { ?> <?php get_search_form(); ?> <?php } ?> </div>
-					<!--404-form-->
-				</div><!-- .inner-content -->
-			</section><!-- .error-404 -->
-			<div class="ts-80"></div>
-		</div>
+		<div class="s-96"></div>
 	</div>
+</section>
+<section id="page-section" class="page-section white-ctn">
+
+		<div class="s-96"></div>
+		<div class="wrapper">
+			<div class="page-404-menu">
+			<p>It looks like you may have taken a wrong turn <br>
+				Don’t worry… it happens to the best of us.</p>
+
+				<p>Here’s a little map that might help you get back on track:</p>
+			<div class="s-48"></div>
+				<ul>
+					<li>
+						<a href="#">Projects</a>
+					</li>
+					<li>
+						<a href="#">Services</a>
+					</li>
+					<li>
+						<a href="#">Team</a>
+					</li>
+					<li>
+						<a href="#">Company</a>
+					</li>
+
+					<li>
+						<a href="#">Contact</a>
+					</li>
+					<li>
+						<a href="#">Contact</a>
+					</li>
+				</ul>
+				<div class="s-48"></div>
+				<div class="form-404">
+						<form role="search" method="get" class="search-form" action="https://www.theelitedesign.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search …" value="" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="Search">
+			</form>					</div>
+			</div>
+
+		</div>
+		<div class="s-96"></div>
+
 </section> <?php
 get_footer();

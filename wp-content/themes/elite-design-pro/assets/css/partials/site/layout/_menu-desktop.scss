@@ -12,7 +12,7 @@
 		visibility: hidden;
 		overflow: hidden;
 
-		@include transition(all, 0.3s, ease-in-out);
+		@include transition(all, 0.5s, ease-in-out);
 	}
 }
 
@@ -26,7 +26,7 @@
 		position: relative;
 
 		li {
-			margin: 0 20px;
+			margin: 0 40px 0 0;
 			padding: 0;
 			display: inline-block;
 			position: relative;
@@ -40,7 +40,7 @@
 				position: relative;
 
 				@include font-size(2.2);
-				@include font(mu, bold);
+				@include font(st, med);
 
 				color: map-get($map: $colors, $key: white);
 
@@ -53,7 +53,7 @@
 					left: 0;
 					bottom: 0;
 					display: block;
-					transition: all 0.3s ease-in-out;
+					transition: all 0.5s ease-in-out;
 				}
 
 				&:hover {
@@ -68,6 +68,9 @@
 			&.current-menu-parent > a,
 			a:hover {
 				border: 0;
+				&::before {
+					width: 100%;
+				}
 			}
 		}
 
@@ -111,8 +114,8 @@
 					position: relative;
 					color: map-get($map: $base_colors, $key: header-nav-second-link-color);
 
-					@include transition(all, 0.3s, ease-in-out);
-					@include font(mu, reg);
+					@include transition(all, 0.5s, ease-in-out);
+					@include font(st, reg);
 
 					&::after {
 						bottom: 0;

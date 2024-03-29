@@ -1,22 +1,3 @@
-.slide-thumb img,
-.burger-single,
-.post-tags,
-.post-content-des p,
-.post-meta,
-.search-button,
-.single-blog-post,
-.wpcf7-submit,
-a,
-a:visited,
-button,
-input[type="submit"],
-.home-hero,
-header {
-
-	@include transition(all, 0.3s, ease-in-out);
-
-	outline: 0;
-}
 
 .header-inner {
 	display: flex;
@@ -40,35 +21,15 @@ header {
 
 header {
 	padding: 22px 2.5%;
-
-	@include transition(all, 0.3s, ease-in-out);
-
+	transition: all 0.6s ease-in-out;
 	z-index: 9;
 	box-sizing: border-box;
 	width: 100%;
 	position: fixed;
 	top: 0;
-
-	&::after {
-		content: "";
-		width: 100%;
-		height: 100%;
-		background: linear-gradient(180deg, rgba(0, 0, 0, 1.44) 0, rgba(0, 0, 0, 0) 106%);
-		position: absolute;
-		top: 0;
-		left: 0;
-		opacity: 0;
-		z-index: -2;
-	}
-
-	&.shrink {
-		padding: 12px 2.5%;
-		box-shadow: 0 -4px 16px rgb(18 27 32 / 0.15);
-
-		&::after {
-			opacity: 1;
-		}
-	}
+	background-color: rgba(1, 2, 28, 0.4);
+	-webkit-backdrop-filter: blur(30px);
+	backdrop-filter: blur(30px);
 }
 
 .logo {
@@ -102,15 +63,76 @@ header {
 	padding-top: 15px;
 }
 
+.header-logo {
+	line-height: 0.65;
+}
+
 .header-btns {
-	margin-top: 7px;
 	text-align: right;
 	z-index: 1;
+	line-height: 0.65;
 }
 
 body.logged-in.admin-bar {
 
 	header {
 		top: 32px;
+	}
+}
+
+#cursor,
+#cursor__circle {
+	position: fixed;
+	z-index: 99;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	will-change: transform;
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+	.cursor__circle {
+		width: 100px;
+		height: 100px;
+		margin-top: -50%;
+		margin-left: -50%;
+		border-radius: 50%;
+		transition: all 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+		transform: scale(0);
+	}
+
+	#cursor.read-more .cursor__circle {
+		width: 100px;
+		height: 100px;
+		background-color: map-get($map: $colors, $key: yellow);
+
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	#cursor.read-more::after {
+		content: "Read More";
+		position: absolute;
+		left: -20px;
+		top: -24px;
+		width: 45px;
+		text-align: center;
+		height: 48px;
+		line-height: 1.35;
+		@include font(st, bold);
+		font-size: 18px;
+		animation: fadein 0.7s linear forwards;
+		color: map-get($map: $colors, $key: red2);
+	}
+
+	@keyframes fadein {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
 	}
 }

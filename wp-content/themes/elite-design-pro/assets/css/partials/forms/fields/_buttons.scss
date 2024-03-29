@@ -12,25 +12,38 @@ input[type="submit"],
 button,
 input[type="button"],
 input[type="reset"] {
-	padding: 0 30px;
-	display: inline-block;
-	line-height: 1;
 	box-sizing: border-box;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	padding: 16px 34px 18px;
+	text-decoration: none;
+	color: map-get($map: $colors, $key: white);
+	border: 2px solid map-get($map: $colors, $key: white30);
+	transition: all 0.5s ease-in-out;
+	line-height: 1;
 
-	@include transition(all, 0.4s, ease-in-out);
+	@include font-size(2);
 
-	background-color: map-get($map: $base_colors, $key: button_bgcolor);
-	color: map-get($map: $base_colors, $key: button_color);
-	outline: none;
-	border: none;
+	margin-right: 15px;
 
-	@include font(mu, reg);
+	@include border-radius(100px);
+	@include font(st, bold);
 
-	font-size: 16px;
-	height: 50px;
-	outline: none;
 	cursor: pointer;
-	margin: 0 10px 10px 0;
+
+	background-color: transparent;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&:hover {
+		background-color: map-get($map: $colors, $key: white);
+		border-color: map-get($map: $colors, $key: white);
+		color: map-get($map: $colors, $key: black);
+	}
+
 }
 
 input[type="submit"]:hover,
@@ -47,5 +60,14 @@ input[type="reset"] {
 	&:hover {
 		color: map-get($map: $base_colors, $key: theme_btn_color);
 		background-color: map-get($map: $base_colors, $key: theme_btn_bgcolor_hover);
+	}
+}
+
+.white-ctn {
+	input[type="submit"],
+	button,
+	input[type="button"],
+	input[type="reset"] {
+		color: map-get($map: $colors, $key: black);
 	}
 }

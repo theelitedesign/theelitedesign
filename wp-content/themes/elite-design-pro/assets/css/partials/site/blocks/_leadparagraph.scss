@@ -1,6 +1,7 @@
 .leadparagraph_ctn {
 	max-width: 1100px;
 	margin: 0 auto;
+	font-size: clamp(1.25rem, 2.309vw + 0.652rem, 2.5rem);
 
 	p:last-child {
 		margin-bottom: 0;
@@ -9,11 +10,22 @@
 
 .lead-text {
 
+	@include font(st,med);
+
 	span {
 		color: map-get($map: $colors, $key: white50);
 
 		&.active {
 			color: map-get($map: $colors, $key: white);
 		}
+	}
+}
+
+.lead-paragraph {
+	max-width: 860px;
+	@include font(st,med);
+
+	p:last-child {
+		margin-bottom: 0;
 	}
 }

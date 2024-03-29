@@ -19,7 +19,7 @@
 	cursor: pointer;
 	line-height: 20px;
 	display: inline-block;
-	color: map-get( $map: $base_colors, $key: radio_color );
+	color: map-get( $map: $colors, $key: white );
 	box-sizing: border-box;
 	margin: 0 20px 10px 0;
 }
@@ -34,7 +34,7 @@
 	top: 0;
 	width: 18px;
 	height: 18px;
-	border: 1px solid map-get( $map: $base_colors, $key: radio_border_color );
+	border: 1px solid var(--mf_ugray);
 	border-radius: 100%;
 	background-color: map-get( $map: $base_colors, $key: radio_bgcolor );
 }
@@ -44,12 +44,13 @@
 [type="radio"]:checked + span::after,
 [type="radio"]:not(:checked) + span::after {
 	content: "";
-	width: 10px;
-	height: 10px;
-	background-color: map-get( $map: $base_colors, $key: radio_after_bgcolor );
+	width: 18px;
+	height: 18px;
+	top: 0;
+	left: 0;
+	background-color: map-get( $map: $colors, $key: red );
 	position: absolute;
-	top: 4px;
-	left: 4px;
+
 	border-radius: 100%;
 	transition: all 0.2s ease;
 }

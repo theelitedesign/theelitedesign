@@ -1,47 +1,128 @@
-.s-270 {
-	height: 270px;
+:root {
+
+	--space_base_unit: 0.125rem; // 2px
+
+	/* Mobile Spacer Value */
+
+	--mf_space_1_min: var(--space_base_unit) * 3;
+	/* 6px */
+	--mf_space_2_min: var(--space_base_unit) * 5;
+	/* 10px */
+	--mf_space_3_min: var(--space_base_unit) * 10;
+	/* 20px */
+	--mf_space_4_min: var(--space_base_unit) * 12;
+	/* 24px */
+	--mf_space_5_min: var(--space_base_unit) * 18;
+	/* 36px */
+	--mf_space_6_min: var(--space_base_unit) * 24;
+	/* 48px */
+	--mf_space_7_min: var(--space_base_unit) * 48;
+	/* 96px */
+	--mf_space_8_min: var(--space_base_unit) * 32;
+	/* 64px */
+	--mf_space_9_min: var(--space_base_unit) * 36;
+	/* 72px */
+	--mf_space_10_min: var(--space_base_unit) * 40;
+	/* 80px */
+
+	/* Desktop Spacer Value */
+
+	--mf_space_1_max: var(--space_base_unit) * 3;
+	/* 6px */
+	--mf_space_2_max: var(--space_base_unit) * 6;
+	/* 12px */
+	--mf_space_3_max: var(--space_base_unit) * 12;
+	/* 24px */
+	--mf_space_4_max: var(--space_base_unit) * 16;
+	/* 32px */
+	--mf_space_5_max: var(--space_base_unit) * 24;
+	/* 48px */
+	--mf_space_6_max: var(--space_base_unit) * 48;
+	/* 96px */
+	--mf_space_7_max: var(--space_base_unit) * 96;
+	/* 192px */
+	--mf_space_8_max: var(--space_base_unit) * 64;
+	/* 128px */
+	--mf_space_9_max: var(--space_base_unit) * 72;
+	/* 144px */
+	--mf_space_10_max: var(--space_base_unit) * 80;
+	/* 160px */
+
+	// Fluid Spacers
+
+	--mf_space_1: clamp(
+		var(--mf_space_1_min),
+		0vw + 0.375rem,
+		var(--mf_space_1_max)
+	);
+	--mf_space_2: clamp(
+		var(--mf_space_2_min),
+		0.231vw + 0.565rem,
+		var(--mf_space_2_max)
+	);
+	--mf_space_3: clamp(
+		var(--mf_space_3_min),
+		0.462vw + 1.13rem,
+		var(--mf_space_3_max)
+	);
+	--mf_space_4: clamp(
+		var(--mf_space_4_min),
+		0.924vw + 1.261rem,
+		var(--mf_space_4_max)
+	);
+	--mf_space_5: clamp(
+		var(--mf_space_5_min),
+		1.386vw + 1.891rem,
+		var(--mf_space_5_max)
+	);
+	--mf_space_6: clamp(
+		var(--mf_space_6_min),
+		5.543vw + 1.566rem,
+		var(--mf_space_6_max)
+	);
+	--mf_space_7: clamp(
+		var(--mf_space_7_min),
+		11.085vw + 3.132rem,
+		var(--mf_space_7_max)
+	);
+	--mf_space_8: clamp(
+		var(--mf_space_8_min),
+		7.072vw + 2.343rem,
+		var(--mf_space_8_max)
+	);
+	--mf_space_9: clamp(
+		var(--mf_space_9_min),
+		7.956vw + 2.635rem,
+		var(--mf_space_9_max)
+	);
+	--mf_space_10: clamp(
+		var(--mf_space_10_min),
+		8.84vw + 2.928rem,
+		var(--mf_space_10_max)
+	);
+
 }
 
-.s-200 {
-	height: 200px;
+.s-192 {
+	height: var(--mf_space_7);
 }
 
-.s-160 {
-	height: 160px;
+.s-96 {
+	height: var(--mf_space_6);
 }
 
-.s-140 {
-	height: 140px;
+.s-48 {
+	height: var(--mf_space_5);
 }
 
-.s-120 {
-	height: 120px;
+.s-32 {
+	height: var(--mf_space_4);
 }
 
-.s-100 {
-	height: 100px;
+.s-24 {
+	height: var(--mf_space_3);
 }
 
-.s-80 {
-	height: 80px;
-}
-
-.s-60 {
-	height: 60px;
-}
-
-.s-50 {
-	height: 50px;
-}
-
-.s-40 {
-	height: 40px;
-}
-
-.s-30 {
-	height: 30px;
-}
-
-.s-20 {
-	height: 20px;
+.s-12 {
+	height: var(--mf_space_2);
 }

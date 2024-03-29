@@ -1,7 +1,7 @@
 .list-column {
 	@include padding(55px);
 	@include border-radius(10px);
-	background-color: rgba(255,255,255,0.03);
+	background-color: map-get($map: $colors, $key: white);
 
 	ul {
 		margin: 40px 0 0;

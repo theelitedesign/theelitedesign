@@ -96,7 +96,7 @@
 						padding: initial;
 						text-transform: inherit;
 
-						@include font(mu, reg);
+						@include font(st, reg);
 					}
 
 					&.current-menu-item > a,
@@ -127,7 +127,7 @@
 		box-sizing: border-box;
 		z-index: 8;
 
-		@include transition(all, 0.3s, ease-in-out);
+		@include transition(all, 0.5s, ease-in-out);
 	}
 
 	.nav-overlay.open {
@@ -231,7 +231,7 @@
 		flex-direction: column;
 		position: relative;
 
-		@include transition(all, 0.3s, ease-in-out);
+		@include transition(all, 0.5s, ease-in-out);
 	}
 
 	// header.shrink .menu-btn {
@@ -243,7 +243,7 @@
 		transform: translateY(11px) translateX(0) rotate(-45deg);
 		background-color: map-get($map: $base_colors, $key: mobile-nav-icon-bgcolor);
 
-		@include transition(all, 0.3s, ease-in-out);
+		@include transition(all, 0.5s, ease-in-out);
 
 		top: 5px;
 	}
@@ -253,7 +253,7 @@
 		transform: translateY(-11px) translateX(0) rotate(45deg);
 		background-color: map-get($map: $base_colors, $key: mobile-nav-icon-bgcolor);
 
-		@include transition(all, 0.3s, ease-in-out);
+		@include transition(all, 0.5s, ease-in-out);
 
 		top: 26px;
 	}
@@ -270,7 +270,7 @@
 		right: 0;
 		left: 0;
 
-		@include transition(all, 0.3s, ease-in-out);
+		@include transition(all, 0.5s, ease-in-out);
 	}
 
 	// .menu-btn.active span {

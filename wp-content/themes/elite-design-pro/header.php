@@ -34,7 +34,7 @@ $ccss 			= (isset($option_fields['custom_css'])) ? $option_fields['custom_css'] 
 $hscripts 			= (isset($option_fields['head_scripts'])) ? $option_fields['head_scripts'] : null;
 $bscripts 			= (isset($option_fields['body_scripts'])) ? $option_fields['body_scripts'] : null;
 
-$elitedesign_tohdr_btn = $option_fields["elitedesign_tohdr_btn"];
+// $elitedesign_tohdr_btn = $option_fields["elitedesign_tohdr_btn"];
 
 // Page variables - Advanced custom fields variables
 ?>
@@ -82,7 +82,9 @@ $elitedesign_tohdr_btn = $option_fields["elitedesign_tohdr_btn"];
 			echo html_entity_decode($ccss ,ENT_QUOTES);
 			echo '</style>';
 		}
-	?> <?php wp_head(); ?> <script>
+	?> <?php wp_head(); ?>
+
+	<script>
 	"serviceWorker" in navigator && window.addEventListener("load", function() {
 		navigator.serviceWorker.register("/sw.js").then(function(e) {
 			console.log("ServiceWorker registration successful with scope: ", e.scope)
@@ -90,48 +92,63 @@ $elitedesign_tohdr_btn = $option_fields["elitedesign_tohdr_btn"];
 			console.log("ServiceWorker registration failed: ", e)
 		})
 	});
+
 	</script>
 </head>
 
-<body <?php body_class(); ?>> <?php wp_body_open(); ?> <?php if ( $bscripts != '' ) { ?> <div style="display: none;">
-		<?php echo html_entity_decode($bscripts,ENT_QUOTES); ?> </div> <?php } ?> <a class="skip-link screen-reader-text"
+<body <?php body_class(); ?>>
+
+	<?php wp_body_open(); ?> <?php if ( $bscripts != '' ) { ?> <div style="display: none;">
+		<?php echo html_entity_decode($bscripts,ENT_QUOTES); ?> </div> <?php } ?>
+
+
+		<a class="skip-link screen-reader-text"
 		href="#page-section"><?php esc_html_e( 'Skip to content', 'elitedesign_td' ); ?></a>
-	<header id="header-section" class="header-section">
-		<!-- Header Start -->
-		<div class="header-wrapper header-inner">
-			<div class="header-logo">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/site-logo.svg"
-						alt="Site Logo" /></a>
-			</div>
-			<div class="right-header header-navigation">
-				<div class="nav-overlay">
-					<div class="nav-container">
-						<div class="header-nav animated-hover"> <?php wp_nav_menu(
-								array(
-									'theme_location' => 'header-nav',
-									'fallback_cb' => 'nav_fallback',
-								)
-							); ?> </div>
-
+		<header class="header-section">
+			<div class="header-wrapper header-inner">
+				<div class="header-logo">
+					<a href="http://theelitedesign.local"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/site-logo.svg" alt="Site Logo" /></a>
+				</div>
+				<div class="right-header header-navigation">
+					<div class="nav-overlay">
+						<div class="nav-container">
+							<div class="header-nav animated-hover">
+								<ul>
+									<li>
+										<a href="http://theelitedesign.local/projects">Work</a>
+									</li>
+									<li><a href="http://theelitedesign.local/services">Services</a></li>
+									<li><a href="http://theelitedesign.local/about">About</a></li>
+									<li><a href="http://theelitedesign.local/team">Company</a></li>
+									<li><a href="http://theelitedesign.local/blog">Resources</a></li>
+								</ul>
+							</div>
+							<div class="header-btns">
+								<a href="http://theelitedesign.local/contact" class="button">Let’s Talk</a>
+							</div>
+						</div>
+					</div>
+					<div class="menu-btn">
+						<span class="top"></span>
+						<span class="bottom"></span>
 					</div>
 				</div>
-				<div class="menu-btn">
-					<span class="top"></span>
-					<span class="middle"></span>
-					<span class="bottom"></span>
-				</div>
 			</div>
 
-			<?php if( $elitedesign_tohdr_btn ) { ?>
-				 <div class="header-btns">
-						<?php echo glide_acf_button( $elitedesign_tohdr_btn, 'button' ); ?>
+			<div id="cursor" class="">
+				<div class="cursor__circle"></div>
+			</div>
+			<div class="cursor no-click">
+				<div class="cursor-move">
+					<div class="cursor-dot">
+						<div class="text-wrapper">
+						</div>
 					</div>
-				<?php } ?>
-
-			<!-- header buttons -->
-		</div>
-		<!-- Header End -->
+				</div>
+			</div>
 	</header>
 	<!-- Main Area Start -->
+
+		<div id="smooth-wrapper">
+  <div id="smooth-content">
 	<main id="main-section" class="main-section">

@@ -21,7 +21,7 @@ footer {
 
 // Description List
 dl {
-	margin: 0 0 3rem;
+	margin: 0 0 1.5rem;
 
 	dt {
 		font-weight: bold;
@@ -47,10 +47,7 @@ ol {
 ul li,
 ol li {
 
-	&::marker {
-	}
-
-	margin: 0 0 2rem;
+	margin: 0 0 1.5rem;
 	box-sizing: border-box;
 }
 
@@ -124,7 +121,7 @@ ol ul {
 			&::before {
 				color: map-get($map: $colors, $key: red);
 
-				@include font(mu, reg);
+				@include font(st, reg);
 
 				content: counters(list, ".") ".";
 				counter-increment: list;

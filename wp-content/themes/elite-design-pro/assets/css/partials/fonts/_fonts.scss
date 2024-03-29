@@ -1,18 +1,18 @@
 $base-url: "../";
 $used-fonts: ();
 $base-font-stack: (
-	mu: (
+	st: (
 		light: (
 			family: (
-				"Mulish",
+				"Satoshi",
 				arial,
 				sans-serif,
 			),
 			weight: 300,
 			style: normal,
 			font-face: (
-				family: "Mulish",
-				path: "Mulish-Light",
+				family: "Satoshi",
+				path: "Satoshi-light",
 				formats: (
 					woff2,
 				),
@@ -20,31 +20,31 @@ $base-font-stack: (
 		),
 		reg: (
 			family: (
-				"Mulish",
+				"Satoshi",
 				arial,
 				sans-serif,
 			),
 			weight: normal,
 			style: normal,
 			font-face: (
-				family: "Mulish",
-				path: "Mulish-Regular",
+				family: "Satoshi",
+				path: "Satoshi-Regular",
 				formats: (
 					woff2,
 				),
 			),
 		),
-		sbold: (
+		med: (
 			family: (
-				"Mulish",
+				"Satoshi",
 				arial,
 				sans-serif,
 			),
-			weight: 600,
+			weight: 500,
 			style: normal,
 			font-face: (
-				family: "Mulish",
-				path: "Mulish-SemiBold",
+				family: "Satoshi",
+				path: "Satoshi-Medium",
 				formats: (
 					woff2,
 				),
@@ -52,15 +52,31 @@ $base-font-stack: (
 		),
 		bold: (
 			family: (
-				"Mulish",
+				"Satoshi",
 				arial,
 				sans-serif,
 			),
 			weight: bold,
 			style: normal,
 			font-face: (
-				family: "Mulish",
-				path: "Mulish-Bold",
+				family: "Satoshi",
+				path: "Satoshi-Bold",
+				formats: (
+					woff2,
+				),
+			),
+		),
+		black: (
+			family: (
+				"Satoshi",
+				arial,
+				sans-serif,
+			),
+			weight: bold,
+			style: normal,
+			font-face: (
+				family: "Satoshi",
+				path: "Satoshi-Black",
 				formats: (
 					woff2,
 				),

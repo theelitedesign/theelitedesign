@@ -27,6 +27,7 @@
 .gfield {
 	box-sizing: border-box;
 	position: relative;
+	margin-bottom: 48px;
 }
 
 .gfield_time_hour,
@@ -52,7 +53,7 @@
 
 .gfield.half-input-field {
 	width: 48%;
-	margin-right: calc( 4% - 5px );
+	margin-right: calc( 4% - 7px );
 	display: inline-block;
 	vertical-align: top;
 
@@ -90,12 +91,8 @@ button {
 }
 
 .gform_fileupload_rules {
-	font-size: 90%;
-	color: map-get( $map: $base_colors, $key: fileupload_rule_color );
 	margin-bottom: 10px;
 	display: inline-block;
-	position: relative;
-	top: -14px;
 }
 
 /* =============================================

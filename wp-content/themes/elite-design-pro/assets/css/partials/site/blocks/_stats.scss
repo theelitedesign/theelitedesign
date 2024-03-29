@@ -1,13 +1,22 @@
-.fig-number {
-	font-size: 73px;
 
-	@include font(mu, bold);
-	line-height: 1;
-}
 
 .single-stat {
 
 	h3 {
 		margin: 35px 0 0 0;
 	}
+}
+
+
+.stat-numbers {
+	font-size: var(--mf_font_size_h2);
+
+	@include font(st, bold);
+	line-height: 1;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: var(--mf_space_2);
 }

@@ -52,12 +52,12 @@ $elitedesign_collage_images = $block_fields['elitedesign_collage_images'];
 			<?php if($elitedesign_imgcollg_title) { ?>
 				<h2><?php echo $elitedesign_imgcollg_title; ?></h2>
 				<?php } ?>
-				
+
 			</div>
-			
+
 			<?php if($elitedesign_collage_images) { ?>
 				<div class="image-collage-ctn three-cols flexarea">
-					<?php 
+					<?php
 					foreach ($elitedesign_collage_images as $image_collage) {
 
 						$image = $image_collage['image'];
@@ -66,11 +66,11 @@ $elitedesign_collage_images = $block_fields['elitedesign_collage_images'];
 						<div class="collage-image img-cover col">
 
 							<img src="<?php echo $image; ?>" alt="">
-							
+
 						</div>
 
 					<?php } ?>
-					
+
 				</div>
 			<?php } ?>
 	</div>

@@ -25,16 +25,12 @@ jQuery( document ).on( 'scroll', function() {
 // 	// jQuery(this).addClass('loaded');
 // });
 
-
-
 // jQuery(".wp-image-10").on('load', function () {
 //         console.log("loaded");
 //     }
 // );
 jQuery( function() {
-
 	// Perfect Wp-images
-
 
 	const extLink = jQuery( 'body a' ).filter( function() {
 		return this.hostname && this.hostname !== location.hostname;
@@ -120,7 +116,7 @@ jQuery( function() {
 	} );
 
 	// Style Variations
-	 const modeOptions = jQuery( 'input[name="mode"]' );
+	const modeOptions = jQuery( 'input[name="mode"]' );
 	const body = jQuery( 'body' );
 
 	// Function to update the mode based on the selected radio button

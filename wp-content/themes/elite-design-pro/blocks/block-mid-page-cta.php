@@ -65,7 +65,7 @@ $elitedesign_mdcta_button = $block_fields['elitedesign_mdcta_button']; // for ke
 		}
 
 		if( $elitedesign_mdcta_button ) {
-			echo glide_acf_button( $elitedesign_mdcta_button, 'button' );
+			echo glide_acf_button( $elitedesign_mdcta_button, 'button black' );
 		} ?>
 	</div>
 	</div>

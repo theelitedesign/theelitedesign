@@ -12,18 +12,27 @@ q {
 blockquote {
 	position: relative;
 	padding: 0;
-	margin: 0 0 6rem;
+	margin: 0;
+
+	@include font(st, med);
 
 	p {
-		font-size: 40px;
+		font-size: var(--mf_font_size_t2);
 		margin-bottom: 0;
 
 		&::before {
 			content: " “ ";
 			margin-left: -26px;
 			position: relative;
-			left: 8px;
-			top: -5px;
+			left: 5px;
+			top: 0;
+		}
+
+		&::after {
+
+			content: " “ ";
+			position: relative;
+			left: -8px;
 		}
 	}
 }
@@ -88,18 +97,15 @@ q {
 
 cite {
 	display: block;
-	margin-top: 1.5rem;
-	font-size: 80%;
-	text-transform: uppercase;
-	font-weight: 500;
-	color: map-get( $map: $base_colors, $key: blockqoute-cite-color );
-	font-family: "IBM Plex Mono" , monospace;
-	font-style: italic;
-	position: relative;
+	margin-top: var(--mf_space_5);
+	color: map-get( $map: $colors, $key: white60 );
+	@include font(st,reg);
+	font-size: clamp(1rem, 0.231vw + 0.94rem, 1.125rem);
 
-	&::before {
-		content: "- ";
-		display: inline-block;
-		top: -11px;
+	strong {
+		display: block;
+		margin-right: var(--mf_space_1);
+		color: map-get( $map: $colors, $key: white );
+		font-size: clamp(1.25rem, 0.462vw + 1.13rem, 1.5rem);
 	}
 }
