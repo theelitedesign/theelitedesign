@@ -217,6 +217,10 @@ textarea {
 	&.active label {
 		top: -6px;
 		font-size: 16px;
+
+
+			color: map-get($map: $colors, $key: red2);
+
 	}
 }
 
@@ -260,7 +264,7 @@ textarea {
 		color: map-get($map: $colors, $key: black);
 
 		&:focus {
-			border-color: map-get($map: $colors, $key: black);
+			border-color: map-get($map: $colors, $key: red2);
 		}
 	}
 

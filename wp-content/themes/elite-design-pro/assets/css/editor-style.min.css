@@ -188,6 +188,11 @@ Mixin for transition
   /*  Vendor CSS Magnific popup */
   @import "vendor/magnific-popup.css";
 }
+.editor-styles-wrapper h1 {
+  opacity: 1 !important;
+  font-size: 80px !important;
+  letter-spacing: inherit;
+}
 .editor-styles-wrapper .glide-spacer {
   background-image: url(../img/spacer.jpg);
 }
@@ -4594,6 +4599,7 @@ Mixin for transition
 .acf-block-preview .label-down.active label {
   top: -6px;
   font-size: 16px;
+  color: #52247f;
 }
 .acf-block-preview .white-ctn input[type=submit],
 .acf-block-preview .white-ctn button,
@@ -4650,7 +4656,7 @@ Mixin for transition
 .acf-block-preview .white-ctn select:focus,
 .acf-block-preview .white-ctn textarea:focus,
 .acf-block-preview .white-ctn .gform-text-input-reset:focus {
-  border-color: #0e0e0e;
+  border-color: #52247f;
 }
 .acf-block-preview input[type=image] {
   margin: 0 10px 0 0;

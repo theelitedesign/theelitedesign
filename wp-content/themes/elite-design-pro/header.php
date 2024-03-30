@@ -107,7 +107,7 @@ $bscripts 			= (isset($option_fields['body_scripts'])) ? $option_fields['body_sc
 		<header class="header-section">
 			<div class="header-wrapper header-inner">
 				<div class="header-logo">
-					<a href="http://theelitedesign.local"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/site-logo.svg" alt="Site Logo" /></a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/site-logo.svg" alt="Site Logo" /></a>
 				</div>
 				<div class="right-header header-navigation">
 					<div class="nav-overlay">
@@ -115,16 +115,16 @@ $bscripts 			= (isset($option_fields['body_scripts'])) ? $option_fields['body_sc
 							<div class="header-nav animated-hover">
 								<ul>
 									<li>
-										<a href="http://theelitedesign.local/projects">Work</a>
+										<a href="<?php echo esc_url( home_url( '/' ) ); ?>projects">Work</a>
 									</li>
-									<li><a href="http://theelitedesign.local/services">Services</a></li>
-									<li><a href="http://theelitedesign.local/about">About</a></li>
-									<li><a href="http://theelitedesign.local/team">Company</a></li>
-									<li><a href="http://theelitedesign.local/blog">Resources</a></li>
+									<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>services">Services</a></li>
+									<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about">About</a></li>
+									<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>team">Company</a></li>
+									<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>blog">Resources</a></li>
 								</ul>
 							</div>
 							<div class="header-btns">
-								<a href="http://theelitedesign.local/contact" class="button">Let’s Talk</a>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>contact" class="button">Let’s Talk</a>
 							</div>
 						</div>
 					</div>

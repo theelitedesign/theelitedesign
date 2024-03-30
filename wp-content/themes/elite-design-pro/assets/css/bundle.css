@@ -1462,6 +1462,7 @@ textarea {
 .label-down.active label {
   top: -6px;
   font-size: 16px;
+  color: #52247f;
 }
 
 .white-ctn input[type=submit],
@@ -1519,7 +1520,7 @@ textarea {
 .white-ctn select:focus,
 .white-ctn textarea:focus,
 .white-ctn .gform-text-input-reset:focus {
-  border-color: #0e0e0e;
+  border-color: #52247f;
 }
 /* -------------------------------------------------
 >> Styles for buttons

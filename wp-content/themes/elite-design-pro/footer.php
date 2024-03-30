@@ -92,18 +92,19 @@ if (function_exists('get_fields') && function_exists('get_fields_escaped')) {
 				<div class="footer-menu-widgets flexarea">
 					<div class="footer-widget footer-nav animated-hover">
 						<ul>
-							<li><a href="#">Web Design</a></li>
-							<li><a href="#">Web Development</a></li>
-							<li><a href="#">Digital Marketing</a></li>
-							<li><a href="#">SEO</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>web-design">Web Design</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>web-development">Web Development</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>digital-marketing">Digital Marketing</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>seo">SEO</a></li>
 						</ul>
 					</div>
 					<div class="footer-widget footer-nav animated-hover">
 						<ul>
-							<li><a href="#">Service</a></li>
-							<li><a href="#">Work</a></li>
-							<li><a href="#">Company</a></li>
-							<li><a href="#">Careers</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>services">Service</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>projects">Work</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>team">Company</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>company">Careers</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about">About</a></li>
 						</ul>
 					</div>
 				</div>
@@ -161,7 +162,7 @@ if (function_exists('get_fields') && function_exists('get_fields_escaped')) {
 			<div class="footer-right">
 				<div class="elitedesign-contact animated-hover">
 					<div class="big-body"><a href="tel:+923474849527">Call923474849527</a></div>
-					<div class="big-body"><a href="mailto:">hello@theelitedesign.com</a></div>
+					<div class="big-body"><a href="mailto:hello@theelitedesign.com">hello@theelitedesign.com</a></div>
 				</div>
 			</div>
 		</div>
@@ -175,13 +176,13 @@ if (function_exists('get_fields') && function_exists('get_fields_escaped')) {
 			<div class="legal-nav animated-hover">
 				<ul>
 					<li>
-						<a href="#">Contact us</a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>contact">Contact us</a>
 					</li>
 					<li>
-						<a href="#">Terms & policey</a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>terms-and-conditions">Terms & policey</a>
 					</li>
 					<li>
-						<a href="#">Sitemap</a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>sitemap">Sitemap</a>
 					</li>
 				</ul>
 			</div>

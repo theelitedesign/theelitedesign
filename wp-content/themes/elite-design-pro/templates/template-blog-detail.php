@@ -64,7 +64,6 @@ get_header();
 	</div>
 </section>
 <div id="page-section" class="page-section">
-	<div class="s-192"></div>
 		<section class="white-ctn">
 			<div class="wrapper">
 				<div class="s-96"></div>

@@ -29,7 +29,7 @@ get_header();
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">Perspiciatis</a> perferendis nemo, dolor exercitationem?</p>
 				</div>
 				<div class="hero-bottom-image img-cover">
-					<img src="http://theelitedesign.local/wp-content/themes/elite-design-pro/assets/img/uploads/product-img-01.webp" alt="Image">
+					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
 				</div>
 			</div>
 		</div>

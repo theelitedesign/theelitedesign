@@ -13,6 +13,13 @@
 	color: map-get( $map: $base_colors, $key: body_color );
 	line-height: 1.5;
 
+	h1 {
+		opacity: 1 !important;
+		font-size: 80px !important;
+		letter-spacing: inherit;
+
+	}
+
 	/* Editor style */
 
 	@import "editor-static";

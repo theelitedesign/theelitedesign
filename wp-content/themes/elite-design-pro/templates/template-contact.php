@@ -23,7 +23,7 @@ get_header();
 		<div class="s-96"></div>
 		<div class="wrapper">
 			<div class="hero__content">
-				<h1>Take the Next Step:  <br>
+				<h1>Take the Next Step  <br>
 					<span> Connect with Us</span>
 				</h1>
 			</div>
@@ -52,7 +52,7 @@ get_header();
 						<div class="p3 label font-med"> Support help?</div>
 						<div class="s-12"></div>
 						<div class="p1">
-							<a href="mailto:hello@theelitedesign.com">Support@theelitedesign.com</a> <br>
+							<a href="mailto:support@theelitedesign.com">Support@theelitedesign.com</a> <br>
 						</div>
 					</div>
 				</div>
