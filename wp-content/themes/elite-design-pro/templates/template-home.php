@@ -58,7 +58,7 @@ global $fields;
 					<div class="s-96"></div>
 					<div class="services-lists">
 						<div class="service-list-item">
-							<a href="http://theelitedesign.local/web-design" class="no-link-style">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>web-design" class="no-link-style">
 								<div class="service-item-content">
 									<div class="service-count">01</div>
 									<div class="service-title">Web Design</div>
@@ -69,7 +69,7 @@ global $fields;
 							</a>
 						</div>
 						<div class="service-list-item">
-							<a href="#" class="no-link-style">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>web-development" class="no-link-style">
 								<div class="service-item-content">
 									<div class="service-count">02</div>
 									<div class="service-title">Web Development</div>
@@ -80,7 +80,7 @@ global $fields;
 							</a>
 						</div>
 						<div class="service-list-item">
-							<a href="#" class="no-link-style">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>seo" class="no-link-style">
 								<div class="service-item-content">
 									<div class="service-count">03</div>
 									<div class="service-title">Search Engine Optimization</div>
@@ -91,18 +91,7 @@ global $fields;
 							</a>
 						</div>
 						<div class="service-list-item">
-							<a href="#" class="no-link-style">
-								<div class="service-item-content">
-									<div class="service-count">04</div>
-									<div class="service-title">Paid Search Advertising</div>
-								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
-								</div>
-							</a>
-						</div>
-						<div class="service-list-item">
-							<a href="#" class="no-link-style">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>continuous-improvement" class="no-link-style">
 								<div class="service-item-content">
 									<div class="service-count">05</div>
 									<div class="service-title">Continuous Improvement</div>
@@ -113,7 +102,7 @@ global $fields;
 							</a>
 						</div>
 						<div class="service-list-item">
-							<a href="#" class="no-link-style">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>/support" class="no-link-style">
 								<div class="service-item-content">
 									<div class="service-count">06</div>
 									<div class="service-title">Website Maintenance & Support</div>

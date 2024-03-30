@@ -5810,7 +5810,6 @@ a.project-image:visited:hover::before {
 .work-item-image a.no-link-style,
 .work-item-image a.no-link-style:visited {
   height: 100%;
-  cursor: none;
 }
 
 a.work-title,
