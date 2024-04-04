@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Web Design
+ * Template Name: Support
  * Template Post Type: page
  *
  * This template is for displaying resource page.
@@ -21,7 +21,7 @@ get_header();
 		<div class="s-96"></div>
 		<div class="wrapper">
 			<div class="hero__content">
-				<h1>Make your story  <br> with <span> design	</span></h1>
+				<h1> Smooth functioning <span> continuously</span></h1>
 			</div>
 			<div class="s-96"></div>
 			<div class="hero__bottom-row flex-between-start">
@@ -42,7 +42,7 @@ get_header();
 			<div class="wrapper">
 				<div class="lead-paragraph t1">
 					<p>
-						We try to connect with users emotionally at every step of our creative process. By guiding them through a journey that's tailored to their needs, we inspire them to take important actions.
+						We make sure your website works well, stays safe, and gives users a great experience, so it stays fast and keeps users happy.
 					</p>
 				</div>
 			</div>
@@ -51,16 +51,16 @@ get_header();
 				<div class="wrapper">
 					<div class="design-proccess-ctn">
 						<div class="section-head">
-							<h2>Design process</h2>
+							<h2>Support steps</h2>
 						</div>
 						<div class="s-96"></div>
 						<div class="proccess-area flex">
-							<div class="single-proccess col-538"><span class="number">01</span> Kick of meeting</div>
-							<div class="single-proccess col-538"><span class="number">02</span>Discovery and research</div>
-							<div class="single-proccess col-538"><span class="number">03</span>Architecture and content</div>
-							<div class="single-proccess col-538"><span class="number">04</span>Website storyframes</div>
-							<div class="single-proccess col-538"><span class="number">05</span>Web design</div>
-							<div class="single-proccess col-538"><span class="number">06</span>Website prototype</div>
+							<div class="single-proccess col-538"><span class="number">01</span>Regular Security Updates</div>
+							<div class="single-proccess col-538"><span class="number">02</span>Quick Quality Assurance</div>
+							<div class="single-proccess col-538"><span class="number">03</span>Optimized Performance</div>
+							<div class="single-proccess col-538"><span class="number">05</span>Data Backup and Recovery</div>
+							<div class="single-proccess col-538"><span class="number">05</span>Monitoring</div>
+							<div class="single-proccess col-538"><span class="number">05</span>Routine Maintenance</div>
 						</div>
 					</div>
 				</div>
@@ -101,60 +101,37 @@ get_header();
 					</div>
 				</div>
 				<div class="s-192"></div>
-				<div class="wrapper">
-					<div class="design-proccess-ctn">
-						<div class="section-head">
-							<h2>Design approach</h2>
-						</div>
-						<div class="s-96"></div>
-						<div class="proccess-area flex">
-							<div class="single-proccess col-538"><span class="number">01</span>Mobile First</div>
-							<div class="single-proccess col-538"><span class="number">02</span>Responsive</div>
-							<div class="single-proccess col-538"><span class="number">03</span>Usable</div>
-							<div class="single-proccess col-538"><span class="number">04</span>Accessible</div>
-						</div>
-					</div>
-				</div>
-				<div class="s-192"></div>
 				<section class="ctn-gray ">
 					<div class="s-192"></div>
 					<div class="wrapper">
 						<div class="design-tool">
 							<div class="section-head">
-								<h2 class="heading-2">Design tools</h2>
+								<h2 class="heading-2">What's covered in our <br> <span>support packages</span> </h2>
 							</div>
 							<div class="s-48"></div>
 							<div class="design-tool-item flex-between-start">
 								<div class="design-tool-title t2 font-med">
-									<div class="design-tool-icon"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/tool-logo-01.svg" alt=""></div>
-									<div class="design-tool-inner-title">Octopus.do</div>
+									<!-- <div class="design-tool-icon"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/cms-icon-01.svg" alt=""></div> -->
+									<div class="design-tool-inner-title">Create Issue ticket</div>
 								</div>
-								<div class="design-tool-text">Our preferred tool for structuring information and strategizing content. An essential part of our planning process.</div>
+								<div class="design-tool-text">Available whenever you need it, wherever you are,  making <br> it easy for you.</div>
 							</div>
 							<div class="design-tool-item flex-between-start">
 								<div class="design-tool-title t2 font-med">
-									<div class="design-tool-icon"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/tool-logo-02.svg" alt=""></div>
-									<div class="design-tool-inner-title">Figma</div>
+									<!-- <div class="design-tool-icon"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/cms-icon-02.svg" alt=""></div> -->
+									<div class="design-tool-inner-title">Expert developers</div>
 								</div>
-								<div class="design-tool-text">Our teamwork platform streamlines our process. Design, present, and track feedback all in one place. It's online; no software installation needed for design.</div>
-							</div>
-							<!-- <div class="design-tool-item flex-between-start">
-								<div class="design-tool-title t2 font-med">
-									<div class="design-tool-icon"><img src="<?php // echo esc_url( get_template_directory_uri() ); ?>/assets/img/tool-logo-04.svg" alt=""></div>
-									<div class="design-tool-inner-title">Blender</div>
-								</div>
-								<div class="design-tool-text">For projects that warrant it, our go-to 3D graphic creation tool.</div>
-							</div> -->
-							<div class="design-tool-item flex-between-start">
-								<div class="design-tool-title t2 font-med">
-									<div class="design-tool-icon"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/tool-logo-05.svg" alt=""></div>
-									<div class="design-tool-inner-title">Index Page</div>
-								</div>
-								<div class="design-tool-text">To improve Figma for presentations, we made our own tool. The Index Page plugin organizes screens with thumbnails.
-									<a href="https://www.figma.com/community/plugin/976837040692846864/index-page">Give it a go!</a>
+								<div class="design-tool-text">Get the same great development help you had for your project. Even if your project wasn't done with us, don't worry, We have expert developers those are ready for your help.</div>
 
 							</div>
+							<div class="design-tool-item flex-between-start">
+								<div class="design-tool-title t2 font-med">
+									<!-- <div class="design-tool-icon"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/cms-icon-04.svg" alt=""></div> -->
+									<div class="design-tool-inner-title">Expert designers</div>
+								</div>
+								<div class="design-tool-text">You’ll have access to the elite designer team.</div>
 							</div>
+							
 						</div>
 					</div>
 					<div class="s-96"></div>
@@ -169,55 +146,59 @@ get_header();
 							<div class="hat-text">
 								<div class="faqs__area">
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">What happens during the Kick Off Meeting?<div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36">Why is website maintenance important?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
-											<p>The Kick Off Meeting starts our project journey, aligning everyone's goals, timelines, and expectations.</p>
+											<p>Regular maintenance ensures your website stays secure, performs well, and remains up-to-date with the latest technologies. It helps prevent downtime and ensures a positive user experience.</p>
 										</div>
 									</div>
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">What's involved in Discovery & Research? <div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36">How many times should I update my website?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
-											<p>Discovery & Research dives deep into your business and audience to shape our design strategy.</p>
+											<p>You should update your website regularly whenever there are new software releases, security patches, or content changes. How often you update depends on how complex your website is and how quickly technology is changing.</p>
 										</div>
 									</div>
-
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">What happens during Architecture & Content? <div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36">What security measures are included in website maintenance?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
-											<p>Architecture & Content phase organizes website structure and content for user engagement.</p>
+											<p>Security measures may include regular security scans, malware detection and removal, SSL certificate installation, firewall setup, and implementing best practices to safeguard against cyber threats.</p>
 										</div>
 									</div>
-
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">You don’t do wireframes? <div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36">Do you provide backup services for websites?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
-											<p>No. Instead of drawing arbitrary boxes in a frame, we put the messaging first and create storyframes instead. This allows our designers to be as creative as possible while keeping the story of the brand at the forefront.</p>
+											<p>Yes, we offer regular backups to protect your website data. This ensures that in case of any data loss or website issues, we can restore your site to a previous, stable state.</p>
 										</div>
 									</div>
-
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">How are Website Prototypes created? <div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36">Can you help with website performance optimization?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
-											<p>Website Prototypes test interactions to ensure a seamless user experience before development.</p>
+											<p>Absolutely. We optimize your website's speed and performance by implementing techniques such as caching, image optimization, code minification, and server optimization.</p>
 										</div>
 									</div>
-
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">When is design done?<div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36">Do you offer support for e-commerce websites?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
-											<p>Design is done when you are happy! After you are satisfied with the designs.</p>
+											<p>Yes, we provide comprehensive support for e-commerce websites, including product updates, inventory management, payment gateway integration, and security enhancements.</p>
 										</div>
 									</div>
-
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">Do you offer web development services? <div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36">How do you handle website downtime or technical issues?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
-											<p>Yes, we're experts in web development and have created numerous top-notch websites.</p>
+											<p>We have a dedicated support team available to address any technical issues promptly. Our goal is to minimize downtime and restore your website's functionality as quickly as possible.</p>
 										</div>
 									</div>
-
-
-
+									<div class="faqs__item">
+										<div class="faqs__item--title body-text-36">Can you assist with content updates and website redesigns?<div class="faq-icon"></div></div>
+										<div class="faqs__item--desc">
+											<p>Yes, we offer content management services to keep your website's content fresh and relevant. Additionally, we can help with website redesigns to improve aesthetics, usability, and functionality.</p>
+										</div>
+									</div>
+									<div class="faqs__item">
+										<div class="faqs__item--title body-text-36">What are the costs associated with website support and maintenance?<div class="faq-icon"></div></div>
+										<div class="faqs__item--desc">
+											<p>The cost varies depending on factors such as the size and complexity of your website, the level of support required, and any additional services requested. We offer customized plans tailored to meet your specific needs and budget.</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -269,7 +250,7 @@ get_header();
 								<a href="#" class="no-link-style">
 									<div class="service-item-content">
 										<div class="service-count">01</div>
-										<div class="service-title">Web Development</div>
+										<div class="service-title">Web Design</div>
 									</div>
 									<div class="service-item-image h-img-cover">
 										<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
@@ -280,14 +261,13 @@ get_header();
 								<a href="#" class="no-link-style">
 									<div class="service-item-content">
 										<div class="service-count">02</div>
-										<div class="service-title">Search Engine Optimization</div>
+										<div class="service-title">Web Development</div>
 									</div>
 									<div class="service-item-image h-img-cover">
 										<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
 									</div>
 								</a>
 							</div>
-						
 							<div class="service-list-item">
 								<a href="#" class="no-link-style">
 									<div class="service-item-content">

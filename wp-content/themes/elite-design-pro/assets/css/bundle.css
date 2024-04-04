@@ -338,36 +338,24 @@ template,
   /* 32px */
   --mf_font_size_h5_max: var(--font_base_unit) * 12;
   /* 24px */
-  --mf_font_size_h1: clamp(
-  	var(--mf_font_size_h1_min),
-  	7.159vw + 1.148rem,
-  	var(--mf_font_size_h1_max)
-  );
-  --mf_font_size_h2: clamp(
-  	var(--mf_font_size_h2_min),
-  	4.619vw + 1.305rem,
-  	var(--mf_font_size_h2_max)
-  );
-  --mf_font_size_h3: clamp(
-  	var(--mf_font_size_h3_min),
-  	1.848vw + 1.522rem,
-  	var(--mf_font_size_h3_max)
-  );
-  --mf_font_size_h4: clamp(
-  	var(--mf_font_size_h4_min),
-  	0.924vw + 1.261rem,
-  	var(--mf_font_size_h4_max)
-  );
-  --mf_font_size_h5: clamp(
-  	var(--mf_font_size_h5_min),
-  	0.693vw + 0.946rem,
-  	var(--mf_font_size_h5_max)
-  );
-  --mf_font_size_h6: clamp(
-  	var(--mf_font_size_h5_min),
-  	0.693vw + 0.946rem,
-  	var(--mf_font_size_h5_max)
-  );
+  --mf_font_size_h1: clamp(var(--mf_font_size_h1_min),
+  		7.159vw + 1.148rem,
+  		var(--mf_font_size_h1_max));
+  --mf_font_size_h2: clamp(var(--mf_font_size_h2_min),
+  		4.619vw + 1.305rem,
+  		var(--mf_font_size_h2_max));
+  --mf_font_size_h3: clamp(var(--mf_font_size_h3_min),
+  		1.848vw + 1.522rem,
+  		var(--mf_font_size_h3_max));
+  --mf_font_size_h4: clamp(var(--mf_font_size_h4_min),
+  		0.924vw + 1.261rem,
+  		var(--mf_font_size_h4_max));
+  --mf_font_size_h5: clamp(var(--mf_font_size_h5_min),
+  		0.693vw + 0.946rem,
+  		var(--mf_font_size_h5_max));
+  --mf_font_size_h6: clamp(var(--mf_font_size_h5_min),
+  		0.693vw + 0.946rem,
+  		var(--mf_font_size_h5_max));
   --font_base_unit: 0.125rem;
   --mf_font_size_d1_min: var(--font_base_unit) * 24;
   /* 48px */
@@ -377,16 +365,12 @@ template,
   /* 150px */
   --mf_font_size_d2_max: var(--font_base_unit) * 100;
   /* 200px */
-  --mf_font_size_d1: clamp(
-  	var(--mf_font_size_d1_min),
-  	11.778vw + -0.048rem,
-  	var(--mf_font_size_d1_max)
-  );
-  --mf_font_size_d2: clamp(
-  	var(--mf_font_size_d2_min),
-  	16.166vw + -0.433rem,
-  	var(--mf_font_size_d2_max)
-  );
+  --mf_font_size_d1: clamp(var(--mf_font_size_d1_min),
+  		11.778vw + -0.048rem,
+  		var(--mf_font_size_d1_max));
+  --mf_font_size_d2: clamp(var(--mf_font_size_d2_min),
+  		16.166vw + -0.433rem,
+  		var(--mf_font_size_d2_max));
   --mf_font_size_t1_min: var(--font_base_unit) * 13;
   /* 26px */
   --mf_font_size_t2_min: var(--font_base_unit) * 10;
@@ -399,21 +383,15 @@ template,
   /* 40px */
   --mf_font_size_t3_max: var(--font_base_unit) * 16;
   /* 32px */
-  --mf_font_size_t1: clamp(
-  	var(--mf_font_size_t1_min),
-  	2.309vw + 1.027rem,
-  	var(--mf_font_size_t1_max)
-  );
-  --mf_font_size_t2: clamp(
-  	var(--mf_font_size_t2_min),
-  	2.309vw + 0.652rem,
-  	var(--mf_font_size_t2_max)
-  );
-  --mf_font_size_t3: clamp(
-  	var(--mf_font_size_t3_min),
-  	1.617vw + 0.707rem,
-  	var(--mf_font_size_t3_max)
-  );
+  --mf_font_size_t1: clamp(var(--mf_font_size_t1_min),
+  		2.309vw + 1.027rem,
+  		var(--mf_font_size_t1_max));
+  --mf_font_size_t2: clamp(var(--mf_font_size_t2_min),
+  		2.309vw + 0.652rem,
+  		var(--mf_font_size_t2_max));
+  --mf_font_size_t3: clamp(var(--mf_font_size_t3_min),
+  		1.617vw + 0.707rem,
+  		var(--mf_font_size_t3_max));
 }
 
 /* -------------------------------------------------
@@ -452,6 +430,20 @@ h6,
   font-style: normal;
   margin: 0 0 3rem;
   line-height: 1.15;
+}
+h1 span,
+.heading-1 span,
+h2 span,
+.heading-2 span,
+h3 span,
+.heading-3 span,
+h4 span,
+.heading-4 span,
+h5 span,
+.heading-5 span,
+h6 span,
+.heading-6 span {
+  color: #52247f;
 }
 
 h1,
@@ -4899,7 +4891,7 @@ a.video-btn:hover {
 >> Basic styles for Proccess
 ------------------------------------------------- */
 .single-proccess {
-  padding: 30px 43px;
+  padding: 30px 43px 30px 83px;
   line-height: 1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -4932,6 +4924,9 @@ a.video-btn:hover {
   font-family: "Satoshi", arial, sans-serif;
   font-weight: bold;
   font-style: normal;
+  position: absolute;
+  bottom: 30px;
+  left: 43px;
 }
 
 /* -------------------------------------------------
@@ -5694,10 +5689,7 @@ a.video-btn:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: var(--mf_space_2);
+  gap: var(--mf_space_1);
 }
 
 /* -------------------------------------------------

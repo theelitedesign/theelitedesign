@@ -1,5 +1,5 @@
 .single-proccess {
-	padding: 30px 43px;
+	padding: 30px 43px 30px 83px;
 	line-height: 1;
 	box-sizing: border-box;
 	color: map-get($map: $colors, $key: black);
@@ -22,5 +22,9 @@
 		font-size: 18px;
 		width: 40px;
 		@include font(st,bold);
+
+		position: absolute;
+		bottom: 30px;
+		left: 43px;
 	}
 }

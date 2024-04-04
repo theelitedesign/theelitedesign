@@ -53,9 +53,9 @@ get_header();
 					<div class="single-stat col">
 						<div class="stat-numbers">
 							<span class="fig-number font-bold" data-number="10">8</span>
-							<span class="font-bold">Years</span>
+							<span class="font-bold">years</span>
 						</div>
-						<h3 class="heading-6">Development Experience</h3>
+						<h3 class="heading-6">Development experience</h3>
 					</div>
 					<div class="single-stat col">
 						<div class="stat-numbers">
@@ -63,14 +63,14 @@ get_header();
 							<span class="font-bold">+</span>
 
 						</div>
-						<h3 class="heading-6">Happy Clients</h3>
+						<h3 class="heading-6">Happy clients</h3>
 					</div>
 					<div class="single-stat col">
 						<div class="stat-numbers">
 							<span class="fig-number font-bold" data-number="90">85</span>
 							<span class="font-bold">+</span>
 						</div>
-						<h3 class="heading-6">Projects Delivered</h3>
+						<h3 class="heading-6">Projects delivered</h3>
 					</div>
 				</div>
 			</div>

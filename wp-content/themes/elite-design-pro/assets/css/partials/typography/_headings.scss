@@ -1,9 +1,8 @@
-
 :root {
 
-	--mf_gray : #cdcdcd;
+	--mf_gray: #cdcdcd;
 	--mf_ugray: #767684;
-	--el_gray : #e6e6e6;
+	--el_gray: #e6e6e6;
 	--3l_lgray: #f1f4f4;
 	--red: #b388dd;
 	--red2: #52247f;
@@ -34,36 +33,24 @@
 	--mf_font_size_h5_max: var(--font_base_unit) * 12;
 	/* 24px */
 
-	--mf_font_size_h1: clamp(
-		var(--mf_font_size_h1_min),
-		7.159vw + 1.148rem,
-		var(--mf_font_size_h1_max)
-	);
-	--mf_font_size_h2: clamp(
-		var(--mf_font_size_h2_min),
-		4.619vw + 1.305rem,
-		var(--mf_font_size_h2_max)
-	);
-	--mf_font_size_h3: clamp(
-		var(--mf_font_size_h3_min),
-		1.848vw + 1.522rem,
-		var(--mf_font_size_h3_max)
-	);
-	--mf_font_size_h4: clamp(
-		var(--mf_font_size_h4_min),
-		0.924vw + 1.261rem,
-		var(--mf_font_size_h4_max)
-	);
-	--mf_font_size_h5: clamp(
-		var(--mf_font_size_h5_min),
-		0.693vw + 0.946rem,
-		var(--mf_font_size_h5_max)
-	);
-	--mf_font_size_h6: clamp(
-		var(--mf_font_size_h5_min),
-		0.693vw + 0.946rem,
-		var(--mf_font_size_h5_max)
-	);
+	--mf_font_size_h1: clamp(var(--mf_font_size_h1_min),
+			7.159vw + 1.148rem,
+			var(--mf_font_size_h1_max));
+	--mf_font_size_h2: clamp(var(--mf_font_size_h2_min),
+			4.619vw + 1.305rem,
+			var(--mf_font_size_h2_max));
+	--mf_font_size_h3: clamp(var(--mf_font_size_h3_min),
+			1.848vw + 1.522rem,
+			var(--mf_font_size_h3_max));
+	--mf_font_size_h4: clamp(var(--mf_font_size_h4_min),
+			0.924vw + 1.261rem,
+			var(--mf_font_size_h4_max));
+	--mf_font_size_h5: clamp(var(--mf_font_size_h5_min),
+			0.693vw + 0.946rem,
+			var(--mf_font_size_h5_max));
+	--mf_font_size_h6: clamp(var(--mf_font_size_h5_min),
+			0.693vw + 0.946rem,
+			var(--mf_font_size_h5_max));
 
 	--font_base_unit: 0.125rem; //2px
 
@@ -87,16 +74,12 @@
 
 	// Fluid Font Size
 
-	--mf_font_size_d1: clamp(
-		var(--mf_font_size_d1_min),
-		11.778vw + -0.048rem,
-		var(--mf_font_size_d1_max)
-	);
-	--mf_font_size_d2: clamp(
-		var(--mf_font_size_d2_min),
-		16.166vw + -0.433rem,
-		var(--mf_font_size_d2_max)
-	);
+	--mf_font_size_d1: clamp(var(--mf_font_size_d1_min),
+			11.778vw + -0.048rem,
+			var(--mf_font_size_d1_max));
+	--mf_font_size_d2: clamp(var(--mf_font_size_d2_min),
+			16.166vw + -0.433rem,
+			var(--mf_font_size_d2_max));
 
 
 
@@ -116,21 +99,15 @@
 
 	// Fluid Font Size
 
-	--mf_font_size_t1: clamp(
-		var(--mf_font_size_t1_min),
-		2.309vw + 1.027rem,
-		var(--mf_font_size_t1_max)
-	);
-	--mf_font_size_t2: clamp(
-		var(--mf_font_size_t2_min),
-		2.309vw + 0.652rem,
-		var(--mf_font_size_t2_max)
-	);
-	--mf_font_size_t3: clamp(
-		var(--mf_font_size_t3_min),
-		1.617vw + 0.707rem,
-		var(--mf_font_size_t3_max)
-	);
+	--mf_font_size_t1: clamp(var(--mf_font_size_t1_min),
+			2.309vw + 1.027rem,
+			var(--mf_font_size_t1_max));
+	--mf_font_size_t2: clamp(var(--mf_font_size_t2_min),
+			2.309vw + 0.652rem,
+			var(--mf_font_size_t2_max));
+	--mf_font_size_t3: clamp(var(--mf_font_size_t3_min),
+			1.617vw + 0.707rem,
+			var(--mf_font_size_t3_max));
 }
 
 /* -------------------------------------------------
@@ -171,6 +148,11 @@ h6,
 
 	margin: 0 0 3rem;
 	line-height: 1.15;
+
+
+	span {
+		color: map-get($map: $colors, $key: red2);
+	}
 }
 
 h1,
@@ -308,11 +290,11 @@ h1.d2 {
 
 
 .font-med {
-	@include font(st,med);
+	@include font(st, med);
 }
 
 .font-bold {
-	@include font(st,bold);
+	@include font(st, bold);
 }
 
 

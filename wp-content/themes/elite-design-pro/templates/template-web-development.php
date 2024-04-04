@@ -29,7 +29,7 @@ get_header();
 
 				</div>
 				<div class="hero-bottom-image img-cover">
-					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
+					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
 				</div>
 			</div>
 		</div>
@@ -211,7 +211,7 @@ get_header();
 									<div class="faqs__item">
 										<div class="faqs__item--title body-text-36">How do you handle website security and protect against cyber threats?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
-											<p>Yes, we're experts in web development and have created numerous top-notch websites.</p>
+											<p>We secure our website with encryption, firewalls, updates, strong passwords, employee training, and third-party assessments for protection against cyber threats.</p>
 										</div>
 									</div>
 								</div>
@@ -283,21 +283,11 @@ get_header();
 									</div>
 								</a>
 							</div>
+							
 							<div class="service-list-item">
 								<a href="#" class="no-link-style">
 									<div class="service-item-content">
 										<div class="service-count">03</div>
-										<div class="service-title">Paid Search Advertising</div>
-									</div>
-									<div class="service-item-image h-img-cover">
-										<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-									</div>
-								</a>
-							</div>
-							<div class="service-list-item">
-								<a href="#" class="no-link-style">
-									<div class="service-item-content">
-										<div class="service-count">04</div>
 										<div class="service-title">Continuous Improvement</div>
 									</div>
 									<div class="service-item-image h-img-cover">
@@ -308,7 +298,7 @@ get_header();
 							<div class="service-list-item">
 								<a href="#" class="no-link-style">
 									<div class="service-item-content">
-										<div class="service-count">05</div>
+										<div class="service-count">04</div>
 										<div class="service-title">Website Maintenance & Support</div>
 									</div>
 									<div class="service-item-image h-img-cover">
