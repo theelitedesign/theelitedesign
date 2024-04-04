@@ -84,7 +84,7 @@ if (function_exists('get_fields') && function_exists('get_fields_escaped')) {
 			<div class="footer-left">
 				<div class="footer-logo">
 					<a href="#">
-						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/site-logo.svg" alt="Footer Logo" />
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/site-logo-white.svg" alt="Footer Logo" />
 					</a>
 				</div>
 			</div>
@@ -160,8 +160,8 @@ if (function_exists('get_fields') && function_exists('get_fields_escaped')) {
 					</div>
 			</div>
 			<div class="footer-right">
-				<div class="elitedesign-contact animated-hover">
-					<div class="big-body"><a href="tel:+923474849527">Call923474849527</a></div>
+				<div class="elitedesign-contact animated-hover font-med">
+					<div class="big-body"><a href="tel:+923474849527">Call 923474849527</a></div>
 					<div class="big-body"><a href="mailto:hello@theelitedesign.com">hello@theelitedesign.com</a></div>
 				</div>
 			</div>

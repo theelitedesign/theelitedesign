@@ -24,7 +24,6 @@ get_header();
 					<h1 class="d2">Web Design</h1>
 				</div>
 			</div>
-			<div class="s-96"></div>
 		</div>
 	</section>
 

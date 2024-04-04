@@ -124,7 +124,7 @@ $bscripts 			= (isset($option_fields['body_scripts'])) ? $option_fields['body_sc
 								</ul>
 							</div>
 							<div class="header-btns">
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>contact" class="button">Let’s Talk</a>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>contact" class="button black">Let’s Talk</a>
 							</div>
 						</div>
 					</div>

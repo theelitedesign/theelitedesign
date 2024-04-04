@@ -22,12 +22,12 @@ get_header();
 			<div class="wrapper">
 				<div class="hero__content">
 					<h1>
-						Good work <br>
-						<span>for good people</span>
+						Nice job <br>
+						<span>for good folks</span>
+
 					</h1>
 				</div>
 			</div>
-			<div class="s-96"></div>
 		</div>
 	</section>
 

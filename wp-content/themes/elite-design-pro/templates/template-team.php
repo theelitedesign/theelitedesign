@@ -29,7 +29,6 @@ get_header();
 <span>journey together</span></h1>
 			</div>
 		</div>
-		<div class="s-96"></div>
 	</div>
 </section>
 <div id="page-section" class="page-section">

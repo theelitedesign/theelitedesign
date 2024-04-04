@@ -759,10 +759,10 @@ body {
   font-family: "Satoshi", arial, sans-serif;
   font-weight: normal;
   font-style: normal;
-  background-color: #01021c;
-  color: #f9f9f9;
   line-height: 1.6;
   font-size: clamp(1.25rem, 0.462vw + 1.13rem, 1.5rem);
+  background-color: #f9f9f9;
+  color: #01021c;
 }
 
 p {
@@ -800,8 +800,8 @@ a {
 .hero-section:visited,
 .footer-section a,
 .footer-section:visited {
-  color: #f9f9f9;
-  border-bottom: 1px solid transparent;
+  color: #0e0e0e;
+  border: 0;
 }
 .page-section a:hover, .page-section a:active, .page-section:visited:hover, .page-section:visited:active,
 .hero-section a:hover,
@@ -1113,7 +1113,7 @@ q {
 cite {
   display: block;
   margin-top: var(--mf_space_5);
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(14, 14, 0, 0.6);
   font-family: "Satoshi", arial, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -1122,7 +1122,7 @@ cite {
 cite strong {
   display: block;
   margin-right: var(--mf_space_1);
-  color: #f9f9f9;
+  color: #0e0e0e;
   font-size: clamp(1.25rem, 0.462vw + 1.13rem, 1.5rem);
 }
 
@@ -2935,9 +2935,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: rgba(1, 2, 28, 0.4);
-  -webkit-backdrop-filter: blur(30px);
-  backdrop-filter: blur(30px);
+  background-color: #f9f9f9;
 }
 
 .logo {
@@ -3102,14 +3100,14 @@ body.logged-in.admin-bar header {
   font-family: "Satoshi", arial, sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #f9f9f9;
+  color: #0e0e0e;
 }
 .header-nav ul li a::before,
 .header-nav ul li a:visited::before {
   content: "";
   width: 0;
   height: 2px;
-  background-color: #f9f9f9;
+  background-color: #0e0e0e;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -3529,7 +3527,7 @@ body.logged-in.admin-bar header {
 .hero-ctn a,
 .hero-ctn a:visited,
 .hero-ctn span {
-  color: #b388dd;
+  color: #52247f;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -3805,6 +3803,8 @@ body.logged-in.admin-bar header {
   -webkit-transition: background-color 0.5s ease-in-out;
   -o-transition: background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
+  background-color: #01021c;
+  color: #f9f9f9;
 }
 .footer-section.purple-bg {
   background-color: #52247f;
@@ -5905,7 +5905,7 @@ a.no-link-style:visited:hover {
 }
 
 .service-list-item:hover .service-title {
-  color: #b388dd;
+  color: #52247f;
 }
 .service-list-item:hover .service-item-image {
   -webkit-clip-path: inset(0px 0px 0px 0px round 16px);

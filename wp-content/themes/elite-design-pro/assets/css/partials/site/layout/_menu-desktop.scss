@@ -42,13 +42,13 @@
 				@include font-size(2.2);
 				@include font(st, med);
 
-				color: map-get($map: $colors, $key: white);
+				color: map-get($map: $colors, $key: black);
 
 				&::before {
 					content: "";
 					width: 0;
 					height: 2px;
-					background-color: map-get($map: $colors, $key: white);
+					background-color: map-get($map: $colors, $key: black);
 					position: absolute;
 					left: 0;
 					bottom: 0;

@@ -23,7 +23,6 @@ global $fields;
 ?>
 
 	<section id="hero-section" class="hero-section">
-
 		<div class="hero hero-ctn hero--home">
 			<div class="wrapper">
 				<div class="s-48"></div>
@@ -40,7 +39,7 @@ global $fields;
 	</section>
 	<div id="page-section" class="page-section">
 		<section class="white-ctn">
-			<div class="s-192"></div>
+			<div class="s-96"></div>
 			<div class="wrapper">
 				<div class="lead-paragraph t1">
 					<p>
@@ -118,7 +117,6 @@ global $fields;
 			<div class="s-192"></div>
 		</section>
 		<section class="ctn-1000">
-			<div class="s-192"></div>
 			<div class="wrapper">
 				<div class="quotes-ctn center-align">
 					<div class="quote-content">
@@ -131,11 +129,9 @@ global $fields;
 					</div>
 				</div>
 			</div>
-			<div class="s-192"></div>
 		</section>
 		<section class="white-ctn">
 			<div class="s-192"></div>
-
 			<div class="wrapper">
 				<div class="d1-title">
 					<h2 class="heading-1">
@@ -146,7 +142,7 @@ global $fields;
 				<div class="work-ctn">
 					<div class="work-items flex-ctn">
 						<div class="work-item">
-							<div class="work-item-image h-img-cover" cursor-class="read-more">
+							<div class="work-item-image h-img-cover">
 								<a href="#" class="no-link-style">
 									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
 								</a>
@@ -158,7 +154,7 @@ global $fields;
 							</div>
 						</div>
 						<div class="work-item">
-							<div class="work-item-image h-img-cover" cursor-class="read-more">
+							<div class="work-item-image h-img-cover">
 								<a href="#" class="no-link-style">
 									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
 								</a>
@@ -173,11 +169,9 @@ global $fields;
 				</div>
 			</div>
 			<div class="s-192"></div>
-
 		</section>
-		<section class="white-ctn">
-			<div class="ctn-gray">
-				<div class="s-192"></div>
+		<section class="ctn-gray">
+			<div class="s-192"></div>
 			<div class="wrapper">
 				<div class="d1-title">
 					<h2 class="heading-1">
@@ -234,7 +228,6 @@ global $fields;
 				</div>
 			</div>
 			<div class="s-192"></div>
-			</div>
 		</section>
 	</div>
 

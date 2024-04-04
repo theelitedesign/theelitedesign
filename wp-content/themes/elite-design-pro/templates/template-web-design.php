@@ -21,7 +21,7 @@ get_header();
 		<div class="s-96"></div>
 		<div class="wrapper">
 			<div class="hero__content">
-				<h1>Make your story  <br> with <span> design	</span></h1>
+				<h1>Make your story  <br> with <span> design</span></h1>
 			</div>
 			<div class="s-96"></div>
 			<div class="hero__bottom-row flex-between-start">
@@ -57,49 +57,14 @@ get_header();
 						<div class="proccess-area flex">
 							<div class="single-proccess col-538"><span class="number">01</span> Kick of meeting</div>
 							<div class="single-proccess col-538"><span class="number">02</span>Discovery and research</div>
-							<div class="single-proccess col-538"><span class="number">03</span>Architecture and content</div>
-							<div class="single-proccess col-538"><span class="number">04</span>Website storyframes</div>
+							<div class="single-proccess col-538"><span class="number">03</span>Website storyframes</div>
+							<div class="single-proccess col-538"><span class="number">04</span>Architecture and content</div>
 							<div class="single-proccess col-538"><span class="number">05</span>Web design</div>
 							<div class="single-proccess col-538"><span class="number">06</span>Website prototype</div>
 						</div>
 					</div>
 				</div>
-				<div class="s-192"></div>
-				<div class="wrapper">
-					<div class="image-slider">
-						<div class="image-swiper swiper-container">
-							<div class="image-swiper--slider swiper-wrapper" cursor-class="read-more">
-									<div class="swiper-slide image__slide swiper-slide swiper-lazy">
-										<div class="image__slide--img img-cover">
-											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
-										</div>
-									</div>
-									<div class="swiper-slide image__slide swiper-slide swiper-lazy">
-										<div class="image__slide--img img-cover">
-											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
-										</div>
-									</div>
-									<div class="swiper-slide image__slide swiper-slide swiper-lazy">
-										<div class="image__slide--img img-cover">
-											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
-										</div>
-									</div>
-									<div class="swiper-slide image__slide swiper-slide swiper-lazy">
-										<div class="image__slide--img img-cover">
-											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
-										</div>
-									</div>
-									<div class="swiper-slide image__slide swiper-slide swiper-lazy">
-										<div class="image__slide--img img-cover">
-											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
-										</div>
-									</div>
 
-
-							</div>
-						</div>
-					</div>
-				</div>
 				<div class="s-192"></div>
 				<div class="wrapper">
 					<div class="design-proccess-ctn">
@@ -108,10 +73,46 @@ get_header();
 						</div>
 						<div class="s-96"></div>
 						<div class="proccess-area flex">
-							<div class="single-proccess col-538"><span class="number">01</span>Mobile First</div>
-							<div class="single-proccess col-538"><span class="number">02</span>Responsive</div>
-							<div class="single-proccess col-538"><span class="number">03</span>Usable</div>
+							<div class="single-proccess col-538"><span class="number">01</span>Mobile first</div>
+							<div class="single-proccess col-538"><span class="number">02</span>Adaptive design</div>
+							<div class="single-proccess col-538"><span class="number">03</span>User friendly</div>
 							<div class="single-proccess col-538"><span class="number">04</span>Accessible</div>
+						</div>
+					</div>
+				</div>
+				<div class="s-192"></div>
+				<div class="wrapper">
+					<div class="image-slider">
+						<div class="image-swiper swiper-container">
+							<div class="image-swiper--slider swiper-wrapper">
+									<div class="swiper-slide image__slide swiper-slide">
+										<div class="image__slide--img img-cover">
+											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
+										</div>
+									</div>
+									<div class="swiper-slide image__slide swiper-slide">
+										<div class="image__slide--img img-cover">
+											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
+										</div>
+									</div>
+									<div class="swiper-slide image__slide swiper-slide">
+										<div class="image__slide--img img-cover">
+											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
+										</div>
+									</div>
+									<div class="swiper-slide image__slide swiper-slide">
+										<div class="image__slide--img img-cover">
+											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
+										</div>
+									</div>
+									<div class="swiper-slide image__slide swiper-slide">
+										<div class="image__slide--img img-cover">
+											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
+										</div>
+									</div>
+
+
+							</div>
 						</div>
 					</div>
 				</div>

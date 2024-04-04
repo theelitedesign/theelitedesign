@@ -28,7 +28,6 @@ get_header();
 				<h1>Company</h1>
 			</div>
 		</div>
-		<div class="s-96"></div>
 	</div>
 </section>
 <div id="page-section" class="page-section">

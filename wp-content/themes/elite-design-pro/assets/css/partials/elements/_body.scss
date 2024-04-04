@@ -16,10 +16,10 @@ body {
 
 body {
 	@include font(st, reg);
-	background-color: map-get($map: $colors, $key: black01);
-	color: map-get($map: $colors, $key: white);
 	line-height: 1.6;
 	font-size: clamp(1.25rem, 0.462vw + 1.13rem, 1.5rem);
+	background-color: map-get($map: $colors, $key: white);
+	color: map-get($map: $colors, $key: black01);
 }
 
 p {

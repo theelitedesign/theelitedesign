@@ -61,7 +61,7 @@ a.no-link-style:visited {
 .service-list-item:hover {
 
 	.service-title {
-		color: map-get($map: $colors, $key: red);
+		color: map-get($map: $colors, $key: red2);
 	}
 
 	.service-item-image {
