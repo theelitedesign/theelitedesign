@@ -16,7 +16,7 @@ label,
 	line-height: 1.2;
 	font-size: clamp(0.875rem, 0.231vw + 0.815rem, 1rem);
 	color: var(--mf_ugray);
-	@include font(st,med);
+	@include font(st, med);
 }
 
 fieldset {
@@ -61,6 +61,7 @@ textarea,
 	outline: none;
 	max-width: 100%;
 	box-sizing: border-box;
+	font-size: 20px;
 
 	@include transition(all, 0.4s, ease-in-out);
 
@@ -219,7 +220,7 @@ textarea {
 		font-size: 16px;
 
 
-			color: map-get($map: $colors, $key: red2);
+		color: map-get($map: $colors, $key: red2);
 
 	}
 }
@@ -268,7 +269,8 @@ textarea {
 		}
 	}
 
-	input[type=submit], button, input[type=button], input[type=reset] {
-
-	}
+	input[type=submit],
+	button,
+	input[type=button],
+	input[type=reset] {}
 }

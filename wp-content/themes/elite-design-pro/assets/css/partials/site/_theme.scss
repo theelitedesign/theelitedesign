@@ -287,7 +287,6 @@ a.wp-block-button__link:visited,
 .error,
 .page-404-menu {
 	text-align: center;
-
 	width: 100%;
 
 	.menu {
@@ -314,7 +313,7 @@ a.wp-block-button__link:visited,
 		a,
 		a:visited {
 			border-bottom: 0;
-			@include font(st,med);
+			@include font(st, med);
 
 			&:hover {
 				color: map-get($map: $colors, $key: red2);
@@ -328,7 +327,7 @@ a.wp-block-button__link:visited,
 }
 
 .form-404 {
-	max-width: 420px;
+	max-width: 620px;
 	margin: auto;
 
 	form {
@@ -337,13 +336,12 @@ a.wp-block-button__link:visited,
 
 
 
-		input[type=search] {
-			height: 40px;
-		}
+		// input[type=search] {
+		// 	height: 40px;
+		// }
 
-		input[type=submit]{
+		input[type=submit] {
 			margin: 0;
-			height: 40px;
 			padding-block: 0;
 		}
 	}
@@ -509,9 +507,9 @@ a.wp-block-button__link:visited,
 }
 
 .image__slide {
-    display: inline-block;
-    margin-right: var(--mf_space_3);
-    width: auto !important;
+	display: inline-block;
+	margin-right: var(--mf_space_3);
+	width: auto !important;
 }
 
 .swiper-wrapper {
@@ -538,7 +536,7 @@ a.wp-block-button__link:visited,
 .design-tool-title {
 	width: 38.3%;
 	display: flex;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 	gap: var(--mf_space_3);
 }
 
@@ -547,12 +545,12 @@ a.wp-block-button__link:visited,
 }
 
 .design-tool-icon {
-    width: 40px;
+	width: 40px;
 	display: flex;
-    align-items: center;
-    justify-content: center;
+	align-items: center;
+	justify-content: center;
 }
 
 .design-tool-inner-title {
-    width: calc(100% - 94px);
+	width: calc(100% - 94px);
 }

@@ -43,7 +43,7 @@ jQuery( window ).on( 'load', function() {
 			textAnim = gsap.fromTo( '.lineChild', { yPercent: 100 }, {
 				yPercent: 0,
 				duration: 0.8,
-				stagger: 0.3,
+				stagger: 0.2,
 			} );
 		};
 		doText();
@@ -58,14 +58,14 @@ jQuery( window ).on( 'load', function() {
 		gsap.from( textAnimation.chars, { y: '100%', stagger: 0.05 } );
 	}
 
-	gsap.registerPlugin( ScrollTrigger, ScrollSmoother );
+	// gsap.registerPlugin( ScrollTrigger, ScrollSmoother );
 
-	const smoother = ScrollSmoother.create( {
-		smooth: 2,
-		effects: true,
-		normalizeScroll: true,
-		dataScroll: 'true',
-	} );
+	// const smoother = ScrollSmoother.create( {
+	// 	smooth: 2,
+	// 	effects: true,
+	// 	normalizeScroll: true,
+	// 	dataScroll: 'true',
+	// } );
 } );
 jQuery.noConflict();
 
@@ -520,6 +520,80 @@ jQuery( function() {
 	}
 
 	jQuery.noConflict();
+	// if (jQuery('.single-page-content').length > 0) {
+	//     const headings = jQuery('.blog-detail__content h2, .blog-detail__content h3, .blog-detail__content h4');
+	//     const headingList = jQuery('.heading-lists');
+
+	//     let count = 1;
+	//     let lastH2Item; // Track the last h2 item for nesting h3 and h4
+
+	//     headings.each(function() {
+	//         const id = jQuery(this).text().trim().toLowerCase().replace(/[^a-zA-Z0-9 ]/g, '').replace(/\s/g, '-');
+	//         jQuery(this).attr('id', id);
+
+	//         if (jQuery(this).is('h2')) {
+	//             lastH2Item = jQuery('<li></li>');
+	//             const anchor = jQuery('<a></a>');
+	//             anchor.attr('href', '#' + id).html(jQuery(this).text());
+	//             lastH2Item.append(anchor);
+	//             headingList.append(lastH2Item);
+	//         } else if (jQuery(this).is('h3')) {
+	//             if (!lastH2Item) return; // Skip h3 if there's no parent h2
+	//             const h3Item = jQuery('<li></li>');
+	//             const anchor = jQuery('<a></a>');
+	//             anchor.attr('href', '#' + id).html(jQuery(this).text());
+	//             h3Item.append(anchor);
+	//             lastH2Item.append('<ul></ul>');
+	//             lastH2Item.children('ul').append(h3Item);
+	//         } else if (jQuery(this).is('h4')) {
+	//             if (!lastH2Item) return; // Skip h4 if there's no parent h2
+	//             const h4Item = jQuery('<li></li>');
+	//             const anchor = jQuery('<a></a>');
+	//             anchor.attr('href', '#' + id).html(jQuery(this).text());
+	//             h4Item.append(anchor);
+	//             lastH2Item.children('ul').append(h4Item);
+	//         }
+
+	//         count++;
+	//     });
+
+	//     // Hide table of content if it's empty
+	//     if (headingList.html().trim() === '') {
+	//         jQuery('.table-of-content-list').hide();
+	//         jQuery('.sidebar-headings').hide(); // Hide sidebar headings if no h2 elements are found
+	//     }
+
+	//     // Function to check if element is in viewport
+	//     function isInViewport(elem) {
+	//         const bounding = elem[0].getBoundingClientRect();
+	//         return (
+	//             bounding.top >= 0 &&
+	//             bounding.left >= 0 &&
+	//             bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+	//             bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+	//         );
+	//     }
+
+	//     // Highlight active section in sidebar based on viewport
+	//     jQuery(window).on('scroll', function() {
+	//         let prevActiveIndex = -1;
+	//         headings.each(function(index) {
+	//             if (isInViewport(jQuery(this))) {
+	//                 prevActiveIndex = index;
+	//             }
+	//         });
+
+	//         if (prevActiveIndex !== -1) {
+	//             jQuery('.heading-lists li a').removeClass('active');
+	//             jQuery('.heading-lists li:eq(' + prevActiveIndex + ') a').addClass('active');
+	//         }
+	//     });
+	// }
+
+jQuery.noConflict();
+
+
+	// gsap.registerPlugin(ScrollTrigger)
 
 	// const heightContentContent = jQuery( '.single-page-content-area.blog-detail__content' ).outerHeight();
 
@@ -529,12 +603,12 @@ jQuery( function() {
 	// 	x: '0',
 	// 	scrollTrigger: {
 	// 		trigger: '.single-page-sidebar-area',
-	// 		start: 'top 0 top 0',
-	// 		end: `+=${ heightContentContent + 192 }`,
+	// 		start: `top 150px top 0`,
+	// 		end: `+=${ heightContentContent  }`,
 	// 		scrub: 1,
 	// 		pin: true,
 	// 		pinSpacing: true,
-	// 		markers: true,
+	// 		// markers: true,
 	// 	},
 
 	// } );

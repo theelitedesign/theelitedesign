@@ -257,6 +257,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  scroll-padding-top: 180px;
 }
 
 article,
@@ -1293,6 +1294,7 @@ textarea,
   max-width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 20px;
   -webkit-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -1543,13 +1545,14 @@ input[type=reset] {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   line-height: 1;
-  font-size: 20px;
-  font-size: 20px;
   margin-right: 15px;
+  line-height: 1;
+  height: 56px;
   border-radius: 100px;
   font-family: "Satoshi", arial, sans-serif;
   font-weight: bold;
   font-style: normal;
+  font-size: 20px;
   cursor: pointer;
   background-color: transparent;
 }
@@ -4368,7 +4371,7 @@ a.wp-block-button__link.has-text-color.has-background:hover {
 }
 
 .form-404 {
-  max-width: 420px;
+  max-width: 620px;
   margin: auto;
 }
 .form-404 form {
@@ -4377,12 +4380,8 @@ a.wp-block-button__link.has-text-color.has-background:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.form-404 form input[type=search] {
-  height: 40px;
-}
 .form-404 form input[type=submit] {
   margin: 0;
-  height: 40px;
   padding-block: 0;
 }
 .form-404 p {
@@ -4625,10 +4624,50 @@ a.wp-block-button__link.has-text-color.has-background:hover {
 
 .single-page-sidebar-area {
   width: 30%;
+  position: sticky;
+  top: 180px;
 }
 
 .single-page-content-area {
   width: 65%;
+}
+.single-page-content-area h2 {
+  font-size: var(--mf_font_size_h3);
+  letter-spacing: -0.48px;
+}
+.single-page-content-area h3 {
+  font-size: var(--mf_font_size_h4);
+  letter-spacing: -0.32px;
+  margin-bottom: var(--mf_space_3);
+}
+.single-page-content-area h4 {
+  font-size: var(--mf_font_size_h5);
+  letter-spacing: -0.24px;
+  margin-bottom: var(--mf_space_3);
+}
+.single-page-content-area p + h2,
+.single-page-content-area ul + h2,
+.single-page-content-area ol + h2,
+.single-page-content-area figure + h2 {
+  margin-top: var(--mf_space_6);
+}
+.single-page-content-area p + h3,
+.single-page-content-area p + h4,
+.single-page-content-area p + h5,
+.single-page-content-area p + h6,
+.single-page-content-area ul + h3,
+.single-page-content-area ul + h4,
+.single-page-content-area ul + h5,
+.single-page-content-area ul + h6,
+.single-page-content-area ol + h3,
+.single-page-content-area ol + h4,
+.single-page-content-area ol + h5,
+.single-page-content-area ol + h6,
+.single-page-content-area figure + h3,
+.single-page-content-area figure + h4,
+.single-page-content-area figure + h5,
+.single-page-content-area figure + h6 {
+  margin-top: var(--mf_space_5);
 }
 
 .heading-lists {
@@ -4647,7 +4686,7 @@ a.wp-block-button__link.has-text-color.has-background:hover {
 }
 .heading-lists li {
   padding-left: 0 !important;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 .heading-lists li a,
 .heading-lists li a:visited {
@@ -4656,6 +4695,9 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   font-family: "Satoshi", arial, sans-serif;
   font-weight: 500;
   font-style: normal;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: inline-block;
 }
 .heading-lists li a::before,
 .heading-lists li a:visited::before {
@@ -4663,7 +4705,7 @@ a.wp-block-button__link.has-text-color.has-background:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 2px;
+  width: 4px;
   height: 0;
   background-color: #52247f;
   -webkit-transition: all 0.5s ease-in-out;

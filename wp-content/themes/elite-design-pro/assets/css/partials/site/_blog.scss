@@ -17,10 +17,46 @@
 
 .single-page-sidebar-area {
 	width: 30%;
+	position: sticky;
+	top: 180px;
 }
 
 .single-page-content-area {
 	width: 65%;
+
+	h2 {
+		font-size: var(--mf_font_size_h3);
+		letter-spacing: -0.48px;
+	}
+
+	h3 {
+		font-size: var(--mf_font_size_h4);
+		letter-spacing: -0.32px;
+		margin-bottom: var(--mf_space_3);
+	}
+
+	h4 {
+		font-size: var(--mf_font_size_h5);
+		letter-spacing: -0.24px;
+		margin-bottom: var(--mf_space_3);
+	}
+
+	p,
+	ul,
+	ol,
+	figure {
+
+		+h2 {
+			margin-top: var(--mf_space_6);
+		}
+
+		+h3,
+		+h4,
+		+h5,
+		+h6 {
+			margin-top: var(--mf_space_5);
+		}
+	}
 }
 
 .heading-lists {
@@ -42,21 +78,24 @@
 	li {
 
 		padding-left: 0 !important;
-		margin-bottom: 24px;
+		margin-bottom: 12px;
 
 		a,
 		a:visited {
 
 			padding-left: 24px;
 			font-size: clamp(1rem, 0.231vw + 0.94rem, 1.125rem);
-			@include font(st,med);
+			@include font(st, med);
+			padding-top: 12px;
+			padding-bottom: 12px;
+			display: inline-block;
 
 			&::before {
 				content: '';
 				position: absolute;
 				top: 0;
 				left: 0;
-				width: 2px;
+				width: 4px;
 				height: 0;
 				background-color: map-get($map: $colors, $key: red2);
 				transition: all 0.5s ease-in-out;
