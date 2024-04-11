@@ -61,7 +61,7 @@ global $fields;
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>web-design" class="no-link-style">
 								<div class="service-item-content">
 									<div class="service-count">01</div>
-									<div class="service-title">Web Design</div>
+									<div class="service-title">Web design</div>
 								</div>
 								<div class="service-item-image h-img-cover">
 									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
@@ -72,7 +72,7 @@ global $fields;
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>web-development" class="no-link-style">
 								<div class="service-item-content">
 									<div class="service-count">02</div>
-									<div class="service-title">Web Development</div>
+									<div class="service-title">Web development</div>
 								</div>
 								<div class="service-item-image h-img-cover">
 									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
@@ -83,7 +83,7 @@ global $fields;
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>seo" class="no-link-style">
 								<div class="service-item-content">
 									<div class="service-count">03</div>
-									<div class="service-title">Search Engine Optimization</div>
+									<div class="service-title">Search engine optimization</div>
 								</div>
 								<div class="service-item-image h-img-cover">
 									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
@@ -94,7 +94,7 @@ global $fields;
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>continuous-improvement" class="no-link-style">
 								<div class="service-item-content">
 									<div class="service-count">05</div>
-									<div class="service-title">Continuous Improvement</div>
+									<div class="service-title">Continuous improvement</div>
 								</div>
 								<div class="service-item-image h-img-cover">
 									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
@@ -102,10 +102,10 @@ global $fields;
 							</a>
 						</div>
 						<div class="service-list-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>/support" class="no-link-style">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>support" class="no-link-style">
 								<div class="service-item-content">
 									<div class="service-count">06</div>
-									<div class="service-title">Website Maintenance & Support</div>
+									<div class="service-title">Website maintenance & support</div>
 								</div>
 								<div class="service-item-image h-img-cover">
 									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
@@ -147,25 +147,25 @@ global $fields;
 					<div class="work-items flex-ctn">
 						<div class="work-item">
 							<div class="work-item-image h-img-cover" cursor-class="read-more">
-								<a href="#" class="no-link-style">
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="no-link-style">
 									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
 								</a>
 							</div>
 							<div class="work-item-content">
 								<div class="work-kicker p2 font-med">Kicker</div>
-								<a href="#" class="work-title t2 font-med">Project Title</a>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="work-title t2 font-med">Project Title</a>
 								<div class="work-exerpt p2 font-med">Work description</div>
 							</div>
 						</div>
 						<div class="work-item">
 							<div class="work-item-image h-img-cover" cursor-class="read-more">
-								<a href="#" class="no-link-style">
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="no-link-style">
 									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
 								</a>
 							</div>
 							<div class="work-item-content">
 								<div class="work-kicker  p2 font-med">Kicker</div>
-								<a href="#" class="work-title t2 font-med">Project Title</a>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="work-title t2 font-med">Project Title</a>
 								<div class="work-exerpt p2 font-med">Work description</div>
 							</div>
 						</div>
@@ -188,12 +188,10 @@ global $fields;
 				<div class="services-ctn resources-ctn">
 					<div class="services-lists">
 						<div class="service-list-item">
-							<a href="#" class="no-link-style">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>blog-detail-one" class="no-link-style">
 								<div class="service-item-content">
-									<div class="service-label">Industry Insights
-										PPC</div>
-									<div class="service-title">How to Generate Leads with Google Ads for your New
-										Website</div>
+									<div class="service-label">Industry</div>
+									<div class="service-title">Elite design's 10 rules for amazing websites</div>
 								</div>
 								<div class="service-item-image h-img-cover">
 									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
@@ -201,11 +199,12 @@ global $fields;
 							</a>
 						</div>
 						<div class="service-list-item">
-							<a href="#" class="no-link-style">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>blog-detail-two" class="no-link-style">
 								<div class="service-item-content">
-									<div class="service-label">SEO
+									<div class="service-label">Gutenberg
 										Web Design & Development</div>
-									<div class="service-title">Web Design and SEO: How We Build Websites that Rank
+									<div class="service-title">Exploring the benefits and
+											boundaries of gutenberg custom blocks
 									</div>
 								</div>
 								<div class="service-item-image h-img-cover">
@@ -213,7 +212,7 @@ global $fields;
 								</div>
 							</a>
 						</div>
-						<div class="service-list-item">
+						<!-- <div class="service-list-item">
 							<a href="#" class="no-link-style">
 								<div class="service-item-content">
 									<div class="service-label">SEO</div>
@@ -222,10 +221,10 @@ global $fields;
 									</div>
 								</div>
 								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
+									<img src="<?php // echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
 								</div>
 							</a>
-						</div>
+						</div> -->
 					</div>
 					<div class="center-align blog-posts-button">
 						<div class="s-48"></div>

@@ -16,7 +16,7 @@
 get_header();
 
 ?>
-<section id="hero-section" class="hero-section">
+	<section id="hero-section" class="hero-section">
 		<div class="hero hero-ctn hero--work">
 			<div class="s-48"></div>
 			<div class="wrapper">

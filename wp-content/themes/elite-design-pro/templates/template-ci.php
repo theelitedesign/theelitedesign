@@ -28,8 +28,8 @@ get_header();
 				<div class="hero-bottom-content p1">
 
 				</div>
-				<div class="hero-bottom-image img-cover">
-					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
+				<div class="hero-bottom-image">
+					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/hero-image-default.webp" alt="Image">
 				</div>
 			</div>
 		</div>
@@ -49,47 +49,44 @@ get_header();
 			<div class="s-192"></div>
 			<div class=" overflow-hidden">
 				<div class="wrapper">
-					
-
 					<div class="design-tool">
-							
-							<div class="design-tool-item flex-between-start">
-								<div class="design-tool-title t2 font-med">
-									<!-- <div class="design-tool-icon"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/cms-icon-01.svg" alt=""></div> -->
-									<div class="design-tool-inner-title">Analysis & Goal Setting</div>
-								</div>
-								<div class="design-tool-text">Analyze current performance and set clear improvement goals aligned with business objectives.</div>
+						<div class="design-tool-item flex-between-start">
+							<div class="design-tool-title t2 font-med">
+								<!-- <div class="design-tool-icon"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/cms-icon-01.svg" alt=""></div> -->
+								<div class="design-tool-inner-title">Analysis & Goal Setting</div>
 							</div>
-							<div class="design-tool-item flex-between-start">
-								<div class="design-tool-title t2 font-med">
-									<!-- <div class="design-tool-icon"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/cms-icon-02.svg" alt=""></div> -->
-									<div class="design-tool-inner-title">Idea Generation & Prioritization</div>
-								</div>
-								<div class="design-tool-text">Generate improvement ideas, prioritize them based on impact and feasibility.</div>
-
-							</div>
-							<div class="design-tool-item flex-between-start">
-								<div class="design-tool-title t2 font-med">
-									<!-- <div class="design-tool-icon"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/cms-icon-04.svg" alt=""></div> -->
-									<div class="design-tool-inner-title">Implementation & Monitoring</div>
-								</div>
-								<div class="design-tool-text">Develop and execute improvement plans, monitor progress, and measure key performance indicators.</div>
-							</div>
-							<div class="design-tool-item flex-between-start">
-								<div class="design-tool-title t2 font-med">
-									<!-- <div class="design-tool-icon"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/cms-icon-04.svg" alt=""></div> -->
-									<div class="design-tool-inner-title">Feedback Collection & Iteration</div>
-								</div>
-								<div class="design-tool-text">Gather feedback, make adjustments based on insights, and iterate to optimize results continually.</div>
-							</div>
-							
+							<div class="design-tool-text">Analyze current performance and set clear improvement goals aligned with business objectives.</div>
 						</div>
+						<div class="design-tool-item flex-between-start">
+							<div class="design-tool-title t2 font-med">
+								<!-- <div class="design-tool-icon"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/cms-icon-02.svg" alt=""></div> -->
+								<div class="design-tool-inner-title">Idea Generation & Prioritization</div>
+							</div>
+							<div class="design-tool-text">Generate improvement ideas, prioritize them based on impact and feasibility.</div>
+
+						</div>
+						<div class="design-tool-item flex-between-start">
+							<div class="design-tool-title t2 font-med">
+								<!-- <div class="design-tool-icon"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/cms-icon-04.svg" alt=""></div> -->
+								<div class="design-tool-inner-title">Implementation & Monitoring</div>
+							</div>
+							<div class="design-tool-text">Develop and execute improvement plans, monitor progress, and measure key performance indicators.</div>
+						</div>
+						<div class="design-tool-item flex-between-start">
+							<div class="design-tool-title t2 font-med">
+								<!-- <div class="design-tool-icon"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/cms-icon-04.svg" alt=""></div> -->
+								<div class="design-tool-inner-title">Feedback Collection & Iteration</div>
+							</div>
+							<div class="design-tool-text">Gather feedback, make adjustments based on insights, and iterate to optimize results continually.</div>
+						</div>
+
+					</div>
 				</div>
 				<div class="s-192"></div>
 				<div class="wrapper">
 					<div class="image-slider">
 						<div class="image-swiper swiper-container">
-							<div class="image-swiper--slider swiper-wrapper" cursor-class="read-more">
+							<div class="image-swiper--slider swiper-wrapper owl-carousel owl-theme" cursor-class="read-more">
 									<div class="swiper-slide image__slide swiper-slide swiper-lazy">
 										<div class="image__slide--img img-cover">
 											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
@@ -121,42 +118,6 @@ get_header();
 						</div>
 					</div>
 				</div>
-				<div class="s-192"></div>
-				<!-- <section class="ctn-gray ">
-					<div class="s-192"></div>
-					<div class="wrapper">
-						<div class="design-tool">
-							<div class="section-head">
-								<h2 class="heading-2">What's covered in our <br> <span>support packages</span> </h2>
-							</div>
-							<div class="s-48"></div>
-							<div class="design-tool-item flex-between-start">
-								<div class="design-tool-title t2 font-med">
-									
-									<div class="design-tool-inner-title">Create Issue ticket</div>
-								</div>
-								<div class="design-tool-text">Available whenever you need it, wherever you are,  making <br> it easy for you.</div>
-							</div>
-							<div class="design-tool-item flex-between-start">
-								<div class="design-tool-title t2 font-med">
-									
-									<div class="design-tool-inner-title">Expert developers</div>
-								</div>
-								<div class="design-tool-text">Get the same great development help you had for your project. Even if your project wasn't done with us, don't worry, We have expert developers those are ready for your help.</div>
-
-							</div>
-							<div class="design-tool-item flex-between-start">
-								<div class="design-tool-title t2 font-med">
-									
-									<div class="design-tool-inner-title">Expert designers</div>
-								</div>
-								<div class="design-tool-text">You’ll have access to the elite designer team.</div>
-							</div>
-							
-						</div>
-					</div>
-					<div class="s-96"></div>
-				</section> -->
 				<section class="white-ctn">
 					<!-- <div class="s-192"></div> -->
 					<div class="wrapper">
@@ -261,60 +222,63 @@ get_header();
 				<section>
 					<div class="s-192"></div>
 					<div class="wrapper">
-					<div class="services-ctn sm-services">
-						<div class="section-head">
-							<h2 class="heading-3">Need something else?</h2>
-						</div>
-						<div class="s-48"></div>
-						<div class="services-lists">
-							<div class="service-list-item">
-								<a href="#" class="no-link-style">
-									<div class="service-item-content">
-										<div class="service-count">01</div>
-										<div class="service-title">Web Design</div>
-									</div>
-									<div class="service-item-image h-img-cover">
-										<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-									</div>
-								</a>
+						<div class="services-ctn sm-services">
+							<div class="section-head">
+								<h2 class="heading-3">Need something else?</h2>
 							</div>
-							<div class="service-list-item">
-								<a href="#" class="no-link-style">
-									<div class="service-item-content">
-										<div class="service-count">02</div>
-										<div class="service-title">Web Development</div>
-									</div>
-									<div class="service-item-image h-img-cover">
-										<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-									</div>
-								</a>
-							</div>
-							<div class="service-list-item">
-								<a href="#" class="no-link-style">
-									<div class="service-item-content">
-										<div class="service-count">03</div>
-										<div class="service-title">Continuous Improvement</div>
-									</div>
-									<div class="service-item-image h-img-cover">
-										<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-									</div>
-								</a>
-							</div>
-							<div class="service-list-item">
-								<a href="#" class="no-link-style">
-									<div class="service-item-content">
-										<div class="service-count">04</div>
-										<div class="service-title">Website Maintenance & Support</div>
-									</div>
-									<div class="service-item-image h-img-cover">
-										<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-									</div>
-								</a>
+							<div class="s-96"></div>
+							<div class="services-lists">
+
+								<div class="service-list-item">
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>web-design" class="no-link-style">
+										<div class="service-item-content">
+											<div class="service-count">02</div>
+											<div class="service-title">Web design</div>
+										</div>
+										<div class="service-item-image h-img-cover">
+											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
+										</div>
+									</a>
+								</div>
+
+								<div class="service-list-item">
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>web-development" class="no-link-style">
+										<div class="service-item-content">
+											<div class="service-count">01</div>
+											<div class="service-title">Web development</div>
+										</div>
+										<div class="service-item-image h-img-cover">
+											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
+										</div>
+									</a>
+								</div>
+
+								<div class="service-list-item">
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>seo" class="no-link-style">
+										<div class="service-item-content">
+											<div class="service-count">03</div>
+											<div class="service-title">Search engine optimization</div>
+										</div>
+										<div class="service-item-image h-img-cover">
+											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
+										</div>
+									</a>
+								</div>
+								<div class="service-list-item">
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>support" class="no-link-style">
+										<div class="service-item-content">
+											<div class="service-count">04</div>
+											<div class="service-title">Website maintenance & support</div>
+										</div>
+										<div class="service-item-image h-img-cover">
+											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
+										</div>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="s-192"></div>
+					<div class="s-192"></div>
 				</section>
 			</div>
 		</section>

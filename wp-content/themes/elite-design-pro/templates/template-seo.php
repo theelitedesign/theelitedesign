@@ -28,8 +28,8 @@ get_header();
 				<div class="hero-bottom-content p1">
 
 				</div>
-				<div class="hero-bottom-image img-cover">
-					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
+				<div class="hero-bottom-image">
+					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/hero-image-default.webp" alt="Image">
 				</div>
 			</div>
 		</div>
@@ -68,7 +68,7 @@ get_header();
 				<div class="wrapper">
 					<div class="image-slider">
 						<div class="image-swiper swiper-container">
-							<div class="image-swiper--slider swiper-wrapper" cursor-class="read-more">
+							<div class="image-swiper--slider swiper-wrapper owl-carousel owl-theme" cursor-class="read-more">
 									<div class="swiper-slide image__slide swiper-slide swiper-lazy">
 										<div class="image__slide--img img-cover">
 											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
@@ -168,7 +168,7 @@ get_header();
 								<div class="faqs__area">
 									<div class="faqs__item">
 										<div class="faqs__item--title body-text-36">How do search engines rank websites?
-<div class="faq-icon"></div></div>
+										<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
 											<p>Search engines use algorithms that consider factors like relevance, authority, and user experience to rank websites.</p>
 										</div>
@@ -187,25 +187,21 @@ get_header();
 									</div>
 									<div class="faqs__item">
 										<div class="faqs__item--title body-text-36">How to improve website loading speed?
-
- <div class="faq-icon"></div></div>
+ 											<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
 											<p>Optimize images, minimize HTTP requests, and leverage browser caching.</p>
 										</div>
 									</div>
 									<div class="faqs__item">
 										<div class="faqs__item--title body-text-36">Why is mobile optimization important?
-
-<div class="faq-icon"></div></div>
+											<div class="faq-icon"></div>
+										</div>
 										<div class="faqs__item--desc">
-											<p>Mobile-friendliness is crucial as more users access the internet via mobile devices.
-</p>
+											<p>Mobile-friendliness is crucial as more users access the internet via mobile devices.</p>
 										</div>
 									</div>
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">How to choose keywords?
-
-<div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36">How to choose keywords?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
 											<p>Research relevant terms using tools like Google Keyword Planner and consider search volume and competition.</p>
 										</div>
@@ -269,62 +265,63 @@ get_header();
 				<section>
 					<div class="s-192"></div>
 					<div class="wrapper">
-					<div class="services-ctn sm-services">
-						<div class="section-head">
-							<h2 class="heading-3">Need something else?</h2>
-						</div>
-						<div class="s-48"></div>
-						<div class="services-lists">
-							<div class="service-list-item">
-								<a href="#" class="no-link-style">
-									<div class="service-item-content">
-										<div class="service-count">01</div>
-										<div class="service-title">Web Design</div>
-									</div>
-									<div class="service-item-image h-img-cover">
-										<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-									</div>
-								</a>
+						<div class="services-ctn sm-services">
+							<div class="section-head">
+								<h2 class="heading-3">Need something else?</h2>
 							</div>
-							<div class="service-list-item">
-								<a href="#" class="no-link-style">
-									<div class="service-item-content">
-										<div class="service-count">02</div>
-										<div class="service-title">Web Development</div>
-									</div>
-									<div class="service-item-image h-img-cover">
-										<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-									</div>
-								</a>
-							</div>
-							
-							</div>
-							<div class="service-list-item">
-								<a href="#" class="no-link-style">
-									<div class="service-item-content">
-										<div class="service-count">03</div>
-										<div class="service-title">Continuous Improvement</div>
-									</div>
-									<div class="service-item-image h-img-cover">
-										<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-									</div>
-								</a>
-							</div>
-							<div class="service-list-item">
-								<a href="#" class="no-link-style">
-									<div class="service-item-content">
-										<div class="service-count">04</div>
-										<div class="service-title">Website Maintenance & Support</div>
-									</div>
-									<div class="service-item-image h-img-cover">
-										<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-									</div>
-								</a>
+							<div class="s-96"></div>
+							<div class="services-lists">
+
+								<div class="service-list-item">
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>web-design" class="no-link-style">
+										<div class="service-item-content">
+											<div class="service-count">02</div>
+											<div class="service-title">Web design</div>
+										</div>
+										<div class="service-item-image h-img-cover">
+											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
+										</div>
+									</a>
+								</div>
+
+								<div class="service-list-item">
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>web-development" class="no-link-style">
+										<div class="service-item-content">
+											<div class="service-count">01</div>
+											<div class="service-title">Web development</div>
+										</div>
+										<div class="service-item-image h-img-cover">
+											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
+										</div>
+									</a>
+								</div>
+
+								<div class="service-list-item">
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>continuous-improvements" class="no-link-style">
+										<div class="service-item-content">
+											<div class="service-count">03</div>
+											<div class="service-title">Continuous improvement</div>
+										</div>
+										<div class="service-item-image h-img-cover">
+											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
+										</div>
+									</a>
+								</div>
+								<div class="service-list-item">
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>support" class="no-link-style">
+										<div class="service-item-content">
+											<div class="service-count">04</div>
+											<div class="service-title">Website maintenance & support</div>
+										</div>
+										<div class="service-item-image h-img-cover">
+											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
+										</div>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="s-192"></div>
+					<div class="s-192"></div>
 				</section>
 			</div>
 		</section>

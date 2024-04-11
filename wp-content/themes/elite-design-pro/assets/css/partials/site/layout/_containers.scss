@@ -50,8 +50,7 @@
 	overflow: hidden;
 }
 
-s
-.full-width-ctn {
+s .full-width-ctn {
 
 	.wrapper {
 		max-width: 100%;
@@ -85,8 +84,10 @@ s
 
 
 .white-ctn {
+
 	a,
 	a:visited {
+
 		&:hover,
 		&:active {
 			color: map-get($map: $colors, $key: red2);

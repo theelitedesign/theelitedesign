@@ -7,6 +7,7 @@
 }
 
 .hero-ctn {
+
 	a,
 	a:visited,
 	span {
@@ -14,9 +15,16 @@
 		transition: all 0.5s ease-in-out;
 	}
 
-}
-.hero-single {
-	padding: 17rem 0 10rem;
+	.post-tags .post-tag,
+	.post-tags a.post-tag,
+	.post-tags a.post-tag:visited {
+		color: map-get($map: $colors, $key: white);
+
+		&:hover {
+			border-color: map-get($map: $colors, $key: white);
+		}
+	}
+
 }
 
 .hero__buttons {
@@ -36,9 +44,14 @@
 		border-radius: 100px;
 		padding: 8px 24px;
 		box-sizing: border-box;
-		@include font(st,med);
+		@include font(st, med);
 		text-decoration: none;
-		color: map-get($map: $colors, $key: white);
+		color: map-get($map: $colors, $key: black);
+		transition: all 0.5s ease-in-out;
+
+		&:hover {
+			border-color: map-get($map: $colors, $key: black);
+		}
 	}
 
 	a.post-tag,

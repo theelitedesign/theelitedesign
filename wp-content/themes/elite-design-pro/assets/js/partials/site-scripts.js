@@ -171,6 +171,56 @@ jQuery( function() {
 	 *
 	 */
 
+	jQuery( '.image-swiper--slider' ).owlCarousel( {
+		loop: false,
+		nav: false,
+		dots: false,
+		margin: 0,
+		autoWidth: true,
+		responsive: {
+			0: {
+				items: 1,
+			},
+		},
+	} );
+	
+   
+    
+    jQuery('.image-swiper--slider').owlCarousel({
+        // loop: false,
+        // nav: false,
+        // dots: false,
+        // margin: 0,
+        // autoWidth: true,
+		// autoplayTimeout: 10000,
+		// smartSpeed: 1000,
+		// // mouseDrag: true,
+	    // // touchDrag: true,
+	    // // freeDrag: true,
+		
+		margin: 0,
+		items: 1,
+		loop: false,
+		nav: false,
+		dots: false,
+		autoHeight: true,
+		rewind: true,
+		// autoplay: true,
+		autoplayTimeout: 10000,
+		smartSpeed: 1000,
+        responsive: {
+            0: {
+                items: 1,
+            },
+        },
+    });
+
+	jQuery.noConflict();
+
+	if (jQuery('.services-ctn').length > 0) {
+    jQuery('.services-ctn').closest('.wrapper').parents().find('section').addClass('overflow-hidden');
+  }
+
 	jQuery( '.testi-ctn' ).owlCarousel( {
 		loop: false,
 		nav: true,
@@ -218,70 +268,70 @@ jQuery( function() {
 	 *
 	 */
 
-	if ( jQuery( '#cursor' ).length > 0 ) {
-		function curSorDesign() {
-			const cursor = document.querySelector( '#cursor' );
-			const cursorCircle = cursor.querySelector( '.cursor__circle' );
-			const mouse = {
-				x: -100,
-				y: -100,
-			};
-			const pos = {
-				x: 0,
-				y: 0,
-			};
-			const speed = 0.1;
-			const updateCoordinates = ( e ) => {
-				mouse.x = e.clientX;
-				mouse.y = e.clientY;
-			};
-			window.addEventListener( 'mousemove', updateCoordinates );
-			function getAngle( diffX, diffY ) {
-				return ( Math.atan2( diffY, diffX ) * 180 ) / Math.PI;
-			}
-			function getSqueeze( diffX, diffY ) {
-				const distance = Math.sqrt(
-					Math.pow( diffX, 2 ) + Math.pow( diffY, 2 )
-				);
-				const maxSqueeze = 0.15;
-				const accelerator = 1500;
-				return Math.min( distance / accelerator, maxSqueeze );
-			}
-			const updateCursor = () => {
-				const diffX = Math.round( mouse.x - pos.x );
-				const diffY = Math.round( mouse.y - pos.y );
-				pos.x += diffX * speed;
-				pos.y += diffY * speed;
-				const angle = getAngle( diffX, diffY );
-				const squeeze = getSqueeze( diffX, diffY );
-				const scale =
-					'scale(' + ( 1 + squeeze ) + ', ' + ( 1 - squeeze ) + ')';
-				const rotate = 'rotate(' + angle + 'deg)';
-				const translate =
-					'translate3d(' + pos.x + 'px ,' + pos.y + 'px, 0)';
-				cursor.style.transform = translate;
-			};
-			function loop() {
-				updateCursor();
-				requestAnimationFrame( loop );
-			}
-			requestAnimationFrame( loop );
-			const cursorModifiers = document.querySelectorAll( '[cursor-class]' );
-			cursorModifiers.forEach( ( curosrModifier ) => {
-				curosrModifier.addEventListener( 'mouseenter', function() {
-					const className = this.getAttribute( 'cursor-class' );
-					cursor.classList.add( className );
-				} );
-				curosrModifier.addEventListener( 'mouseleave', function() {
-					const className = this.getAttribute( 'cursor-class' );
-					cursor.classList.remove( className );
-				} );
-			} );
-		}
-		curSorDesign();
-	}
+	// if ( jQuery( '#cursor' ).length > 0 ) {
+	// 	function curSorDesign() {
+	// 		const cursor = document.querySelector( '#cursor' );
+	// 		const cursorCircle = cursor.querySelector( '.cursor__circle' );
+	// 		const mouse = {
+	// 			x: -100,
+	// 			y: -100,
+	// 		};
+	// 		const pos = {
+	// 			x: 0,
+	// 			y: 0,
+	// 		};
+	// 		const speed = 0.1;
+	// 		const updateCoordinates = ( e ) => {
+	// 			mouse.x = e.clientX;
+	// 			mouse.y = e.clientY;
+	// 		};
+	// 		window.addEventListener( 'mousemove', updateCoordinates );
+	// 		function getAngle( diffX, diffY ) {
+	// 			return ( Math.atan2( diffY, diffX ) * 180 ) / Math.PI;
+	// 		}
+	// 		function getSqueeze( diffX, diffY ) {
+	// 			const distance = Math.sqrt(
+	// 				Math.pow( diffX, 2 ) + Math.pow( diffY, 2 )
+	// 			);
+	// 			const maxSqueeze = 0.15;
+	// 			const accelerator = 1500;
+	// 			return Math.min( distance / accelerator, maxSqueeze );
+	// 		}
+	// 		const updateCursor = () => {
+	// 			const diffX = Math.round( mouse.x - pos.x );
+	// 			const diffY = Math.round( mouse.y - pos.y );
+	// 			pos.x += diffX * speed;
+	// 			pos.y += diffY * speed;
+	// 			const angle = getAngle( diffX, diffY );
+	// 			const squeeze = getSqueeze( diffX, diffY );
+	// 			const scale =
+	// 				'scale(' + ( 1 + squeeze ) + ', ' + ( 1 - squeeze ) + ')';
+	// 			const rotate = 'rotate(' + angle + 'deg)';
+	// 			const translate =
+	// 				'translate3d(' + pos.x + 'px ,' + pos.y + 'px, 0)';
+	// 			cursor.style.transform = translate;
+	// 		};
+	// 		function loop() {
+	// 			updateCursor();
+	// 			requestAnimationFrame( loop );
+	// 		}
+	// 		requestAnimationFrame( loop );
+	// 		const cursorModifiers = document.querySelectorAll( '[cursor-class]' );
+	// 		cursorModifiers.forEach( ( curosrModifier ) => {
+	// 			curosrModifier.addEventListener( 'mouseenter', function() {
+	// 				const className = this.getAttribute( 'cursor-class' );
+	// 				cursor.classList.add( className );
+	// 			} );
+	// 			curosrModifier.addEventListener( 'mouseleave', function() {
+	// 				const className = this.getAttribute( 'cursor-class' );
+	// 				cursor.classList.remove( className );
+	// 			} );
+	// 		} );
+	// 	}
+	// 	curSorDesign();
+	// }
 
-	jQuery.noConflict();
+	// jQuery.noConflict();
 
 	/**
 	 *
@@ -325,65 +375,6 @@ jQuery( function() {
 
 		// Trigger scroll event on initial page load to check if elements are in viewport.
 		jQuery( window ).trigger( 'scroll' );
-	}
-
-	jQuery.noConflict();
-
-	/**
-	 *
-	 *
-	 *	Work Page
-	 *
-	 *
-	 */
-
-	if ( jQuery( 'body' ).hasClass( 'page-template-template-projects' ) ) {
-		function adjustTextElements( containerSelector ) {
-			const container = jQuery( containerSelector );
-
-			const windowWidth = jQuery( window ).width(); // Get the window width
-
-			if ( windowWidth < 748 ) {
-				container.find( '.fit' ).each( function() {
-					const marksText = jQuery( this ).find( 'mark' ).text();
-					const marks = marksText.split( ' ' );
-					let html = '';
-					const text = jQuery( this ).text().replace( marksText, '' );
-
-					if ( marks.length > 1 ) {
-						html +=
-							'<div class="fit"><mark>' +
-							marksText +
-							'</mark></div>';
-						html += '<div class="fit">' + text + '</div>';
-						jQuery( this ).parent().html( html );
-					}
-				} );
-			}
-
-			container.prepend(
-				'<div class="fit-em-calculation" style="width: 1em; position: absolute;"></div>'
-			);
-			const em = parseInt( jQuery( '.fit-em-calculation' ).css( 'width' ) );
-
-			container.find( '.fit' ).each( function() {
-				jQuery( this ).wrapInner( '<span class="fit-inner"></span>' );
-				const el = jQuery( this );
-				const inner = el.find( '.fit-inner' );
-				const fitWidth = parseInt( el.css( 'width' ) );
-				const innerWidth = parseInt( inner.css( 'width' ) );
-				const increment = fitWidth / em;
-				const chars = el.text().length;
-
-				const factor = fitWidth / innerWidth;
-				const calc = em * factor;
-
-				inner.css( 'white-space', 'nowrap' );
-				el.css( 'font-size', calc + 'px' );
-				el.css( 'display', 'block' );
-			} );
-		}
-		adjustTextElements( '.hero-section' );
 	}
 
 	jQuery.noConflict();
@@ -520,6 +511,7 @@ jQuery( function() {
 	}
 
 	jQuery.noConflict();
+
 	// if (jQuery('.single-page-content').length > 0) {
 	//     const headings = jQuery('.blog-detail__content h2, .blog-detail__content h3, .blog-detail__content h4');
 	//     const headingList = jQuery('.heading-lists');
@@ -590,7 +582,6 @@ jQuery( function() {
 	//     });
 	// }
 
-jQuery.noConflict();
 
 
 	// gsap.registerPlugin(ScrollTrigger)

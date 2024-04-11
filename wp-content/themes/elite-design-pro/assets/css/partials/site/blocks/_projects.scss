@@ -92,7 +92,34 @@ a.project-image:visited {
 	a.no-link-style,
 	a.no-link-style:visited {
 		height: 100%;
-		// cursor: none;
+
+		img {
+			transition: all 0.5s ease-in-out;
+		}
+
+		&:before {
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: map-get($map: $colors, $key: red2);
+			transition: all 0.5s ease-in-out;
+			opacity: 0;
+			z-index: 2;
+		}
+
+		&:hover {
+
+			&::before {
+				opacity: 0.5;
+			}
+
+			img {
+				transform: scale(1.15);
+			}
+		}
 	}
 }
 

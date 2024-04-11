@@ -28,7 +28,7 @@ get_header();
 					<div class="post-tag">Web development</div>
 				</div>
 				<div class="s-32"></div>
-				<h1 class="heading-2 mb-0">Elite design's 10 rules for amazing websites</h1>
+				<h1 class="heading-2 mb-0">Elite design's 10 rules for <br> <span>amazing websites</span></h1>
 			</div>
 			<div class="s-96"></div>
 			<div class="hero__bottom-row flex-between-start">

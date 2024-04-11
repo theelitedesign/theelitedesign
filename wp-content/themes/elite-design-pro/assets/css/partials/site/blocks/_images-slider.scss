@@ -1,5 +1,5 @@
 .single-slide {
-	height: calc( 100vh - 100px );
+	height: calc(100vh - 100px);
 
 	img {
 		width: 100%;
@@ -22,11 +22,11 @@
 			height: 8px;
 			margin: 0;
 			width: 60px;
-			background-color: map-get( $map: $colors, $key: cat );
+			background-color: map-get($map: $colors, $key: cat);
 
 			&:hover,
 			&.active {
-				background-color: map-get( $map: $colors, $key: black ) !important;
+				background-color: map-get($map: $colors, $key: black) !important;
 			}
 
 			&:nth-child(1) {
@@ -45,4 +45,9 @@
 			}
 		}
 	}
+}
+
+
+.image-slider .owl-carousel .owl-stage-outer {
+	overflow: visible !important;
 }

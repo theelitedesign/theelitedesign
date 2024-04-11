@@ -46,7 +46,7 @@ get_header();
 		<div class="wrapper">
 			<div class="stats-ctn">
 				<div class="section-head ma-900">
-					<h2 class="heading-3">Powered by creativity, <br> innovation and excellence</h2>
+					<h2 class="heading-4">Powered by creativity, <br> innovation and excellence</h2>
 				</div>
 				<div class="s-96"></div>
 				<div class="stats-inner-area three-cols flexarea center">
@@ -89,42 +89,17 @@ get_header();
 			<div class="text-columns-ctn">
 				<div class="text-columns flex align-start">
 					<div class="text-column col-645">
-						<h3 class="heading-4">High Quality Work</h3>
+						<h3 class="heading-4">High quality work</h3>
 						<p>Life’s one long series of personal connections—the more genuine, the more meaningful they
 							are, the
 							stronger we become. This is it, so let’s face it TOGETHER!</p>
 					</div>
 					<div class="text-column col-645">
-						<h3 class="heading-4">Designed For Excellence</h3>
+						<h3 class="heading-4">Designed for excellence</h3>
 						<p>Life’s one long series of personal connections—the more genuine, the more meaningful they
 							are, the
 							stronger we become. This is it, so let’s face it TOGETHER!</p>
 					</div>
-					<div class="text-column col-645">
-						<h3 class="heading-4">High Quality Work</h3>
-						<p>Life’s one long series of personal connections—the more genuine, the more meaningful they
-							are, the
-							stronger we become. This is it, so let’s face it TOGETHER!</p>
-					</div>
-					<div class="text-column col-645">
-						<h3 class="heading-4">Designed For Excellence</h3>
-						<p>Life’s one long series of personal connections—the more genuine, the more meaningful they
-							are, the
-							stronger we become. This is it, so let’s face it TOGETHER!</p>
-					</div>
-					<div class="text-column col-645">
-						<h3 class="heading-4">High Quality Work</h3>
-						<p>Life’s one long series of personal connections—the more genuine, the more meaningful they
-							are, the
-							stronger we become. This is it, so let’s face it TOGETHER!</p>
-					</div>
-					<div class="text-column col-645">
-						<h3 class="heading-4">Designed For Excellence</h3>
-						<p>Life’s one long series of personal connections—the more genuine, the more meaningful they
-							are, the
-							stronger we become. This is it, so let’s face it TOGETHER!</p>
-					</div>
-
 				</div>
 			</div>
 			<div class="s-192"></div>
@@ -156,10 +131,8 @@ get_header();
 	<section class="white-ctn">
 		<div class="wrapper">
 			<div class="s-192"></div>
-			<div class="s-192"></div>
 		</div>
 	</section>
-	<div class="s-192"></div>
 </div>
 
 <?php get_footer(); ?>

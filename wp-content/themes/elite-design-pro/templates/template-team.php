@@ -26,7 +26,7 @@ get_header();
 		<div class="wrapper">
 			<div class="hero__content">
 				<h1>We're all on this <br>
-<span>journey together</span></h1>
+					<span>journey together</span></h1>
 			</div>
 		</div>
 		<div class="s-96"></div>
@@ -39,11 +39,10 @@ get_header();
 			<div class="image-collage-ctn team-block-collage flexarea">
 				<div class="collage-image img-cover col">
 					<a href="#bahar" class="collage-image-link no-link-style">
-
 						<div class="collage-image-detail">
-							<div class="p1 font-med">Team Member Name</div>
+							<div class="p1 font-med">Bahar Hussain</div>
 							<div class="s-12"></div>
-							<div class="p2 font-reg">Team Member Designation</div>
+							<div class="p2 font-reg">Founder & CEO</div>
 						</div>
 					</a>
 				</div>
@@ -77,46 +76,7 @@ get_header();
 						</div>
 					</a>
 				</div>
-				<div class="collage-image img-cover col">
-					<a href="#" class="collage-image-link no-link-style">
 
-						<div class="collage-image-detail">
-							<div class="p1 font-med">Team Member Name</div>
-							<div class="s-12"></div>
-							<div class="p2 font-reg">Team Member Designation</div>
-						</div>
-					</a>
-				</div>
-				<div class="collage-image img-cover col">
-					<a href="#" class="collage-image-link no-link-style">
-
-						<div class="collage-image-detail">
-							<div class="p1 font-med">Team Member Name</div>
-							<div class="s-12"></div>
-							<div class="p2 font-reg">Team Member Designation</div>
-						</div>
-					</a>
-				</div>
-				<div class="collage-image img-cover col">
-					<a href="#" class="collage-image-link no-link-style">
-
-						<div class="collage-image-detail">
-							<div class="p1 font-med">Team Member Name</div>
-							<div class="s-12"></div>
-							<div class="p2 font-reg">Team Member Designation</div>
-						</div>
-					</a>
-				</div>
-				<div class="collage-image img-cover col">
-					<a href="#" class="collage-image-link no-link-style">
-
-						<div class="collage-image-detail">
-							<div class="p1 font-med">Team Member Name</div>
-							<div class="s-12"></div>
-							<div class="p2 font-reg">Team Member Designation</div>
-						</div>
-					</a>
-				</div>
 				<div id="bahar" class="team-detail white-ctn p2">
 					<div class="team-detail-content">
 					<div class="team-detail-head">

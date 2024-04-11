@@ -23,7 +23,7 @@ get_header();
 		<div class="s-96"></div>
 		<div class="wrapper">
 			<div class="hero__content">
-				<h1>Take the Next Step  <br>
+				<h1>Next step  <br>
 					<span> Connect with Us</span>
 				</h1>
 			</div>

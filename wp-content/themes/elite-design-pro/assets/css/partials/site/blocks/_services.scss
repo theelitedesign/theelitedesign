@@ -3,7 +3,7 @@ a.no-link-style:visited {
 	display: block;
 	padding: 0;
 	border: 0;
-	line-height: 1;
+	line-height: 0.65;
 
 	&:hover {
 		color: inherit;
@@ -12,16 +12,39 @@ a.no-link-style:visited {
 
 .service-list-item {
 	position: relative;
-	border-bottom: 1px solid var(--mf_ugray);
+
 
 	a.no-link-style,
 	a.no-link-style:visited {
 		padding: var(--mf_space_5) 0;
+		line-height: 1;
 	}
 
 	&:last-of-type {
 		border: 0;
+		&::after {
+			content: '';
+			width: 200vw;
+			height: 1px;
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: -50vw;
+			background-color: var(--mf_gray);
+		}
 	}
+
+	&::before {
+		content: '';
+		width: 200vw;
+		height: 1px;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: -50vw;
+		background-color: var(--mf_gray);
+	}
+
 }
 
 .service-item-content {
@@ -53,9 +76,10 @@ a.no-link-style:visited {
 	margin: auto !important;
 	right: 60px;
 	transition: all 0.7s ease-in-out;
-	transform-origin: center;
-	clip-path: inset(40% round 16px);
+	border-radius: 16px;
+	overflow: hidden;
 	opacity: 0;
+	z-index: 4;
 }
 
 .service-list-item:hover {
@@ -64,10 +88,9 @@ a.no-link-style:visited {
 		color: map-get($map: $colors, $key: red);
 	}
 
-	.service-item-image {
-		clip-path: inset(0px 0px 0px 0px round 16px);
-		opacity: 1;
-	}
+	// .service-item-image {
+	// 	opacity: 1;
+	// }
 }
 
 .white-ctn {
@@ -99,6 +122,9 @@ a.no-link-style:visited {
 	@include font(st, med);
 	margin-bottom: var(--mf_space_3);
 	opacity: .8;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--mf_space_4);
 }
 
 .resources-ctn {

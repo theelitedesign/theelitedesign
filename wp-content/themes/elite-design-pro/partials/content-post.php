@@ -23,48 +23,9 @@ $elitedesign_posttitle=glide_page_title('elitedesign_posttitle');
 
 ?>
 
-<div class="container-980">
+<div class="container-980 hi">
 	<div class="wrapper">
-		<div class="post-image">
-			<?php if ( has_post_thumbnail() ) { ?> <div class="thumb"> <?php the_post_thumbnail(
-							'thumb_1200',
-							array(
-								'alt'   => get_the_title(),
-								'title' => get_the_title(),
-							)
-						); ?> </div> <?php } else { ?> <img
-					src="<?php esc_url(); ?>/assets/img/default-project-image.jpg" class=""
-					alt="<?php get_the_title(); ?>" title="<?php get_the_title(); ?>"> <?php } ?>
-		</div><!-- .post-image -->
-		<div class="post-meta d-flex align-items-center justify-content-between">
-			<!-- /.post-tags -->
-			<?php if($elitedesign_post_categories){ ?>
-				<div class="post-cat">
-					<?php foreach ($elitedesign_post_categories as $category ) { ?>
-						<a href="<?php echo get_category_link($category); ?>"><?php echo $category->name; ?></a>
-					<?php } ?>
-				</div>
-				<!-- /.post-cat -->
-			<?php } ?>
-			<div class="post-shares">
-				<a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title();?>" target="_blank"
-					rel="noopener" rel="noreferrer"
-					onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img
-						src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/facebook-icon.svg" alt="Facebook"
-						class="post-fb-share"></a>
-				<a href="http://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title();?>&amp;url=<?php the_permalink();?>"
-					target="_blank" rel="noopener" rel="noreferrer"
-					onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img
-						src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/linkedin-icon.svg" alt="Linked In"
-						class="post-li-share"></a>
-						<a href="http://twitter.com/intent/tweet?text=Currently reading <?php the_title();?>&amp;url=<?php the_permalink();?>"
-					target="_blank" rel="noopener" rel="noreferrer"
-					onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img
-						src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/twitter-icon.svg" alt="Twitter"
-						class="post-tw-share"></a>
-			</div>
-			<!-- /.post-shares -->
-		</div>
+		
 
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class('post-ctn'); ?>>
@@ -133,5 +94,11 @@ $elitedesign_posttitle=glide_page_title('elitedesign_posttitle');
 				}
 				?>
 		</article>
+
+
+
 	</div>
+
+	
 </div>
+

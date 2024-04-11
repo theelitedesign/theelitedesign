@@ -76,7 +76,7 @@ if (function_exists('get_fields') && function_exists('get_fields_escaped')) {
 		<div class="cta-ctn">
 			<div class="flex">
 				<h4>Ready for a journey with elite?</h4>
-				<a href="#" class="button footer-hover-button">Let’s Talk</a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>contact" class="button footer-hover-button">Let’s Talk</a>
 			</div>
 		</div>
 		<div class="s-96"></div>
@@ -92,10 +92,11 @@ if (function_exists('get_fields') && function_exists('get_fields_escaped')) {
 				<div class="footer-menu-widgets flexarea">
 					<div class="footer-widget footer-nav animated-hover">
 						<ul>
-							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>web-design">Web Design</a></li>
-							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>web-development">Web Development</a></li>
-							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>digital-marketing">Digital Marketing</a></li>
-							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>seo">SEO</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>web-design">Web design</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>web-development">Web development</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>seo">Search engine optimization</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>continuous-improvements">Continuous improvement</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>support">Maintenance + support</a></li>
 						</ul>
 					</div>
 					<div class="footer-widget footer-nav animated-hover">

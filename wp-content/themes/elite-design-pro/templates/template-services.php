@@ -29,7 +29,7 @@ get_header();
 		</div>
 	</section>
 
-	<div id="page-section" class="page-section">
+	<div id="page-section" class="page-section overflow-hidden">
 		<section class="white-ctn">
 			<div class="s-192"></div>
 			<div class="wrapper">
@@ -52,7 +52,7 @@ get_header();
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>web-design" class="no-link-style">
 								<div class="service-item-content">
 									<div class="service-count">01</div>
-									<div class="service-title">Web Design</div>
+									<div class="service-title">Web design</div>
 								</div>
 								<div class="service-item-image h-img-cover">
 									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
@@ -63,7 +63,7 @@ get_header();
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>web-development" class="no-link-style">
 								<div class="service-item-content">
 									<div class="service-count">02</div>
-									<div class="service-title">Web Development</div>
+									<div class="service-title">Web development</div>
 								</div>
 								<div class="service-item-image h-img-cover">
 									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
@@ -120,7 +120,7 @@ get_header();
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>continuous-improvements" class="no-link-style">
 								<div class="service-item-content">
 									<div class="service-count">05</div>
-									<div class="service-title">Continuous Improvement</div>
+									<div class="service-title">Continuous improvement</div>
 								</div>
 								<div class="service-item-image h-img-cover">
 									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
@@ -131,7 +131,7 @@ get_header();
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>support" class="no-link-style">
 								<div class="service-item-content">
 									<div class="service-count">06</div>
-									<div class="service-title">Website Maintenance & Support</div>
+									<div class="service-title">Website maintenance & support</div>
 								</div>
 								<div class="service-item-image h-img-cover">
 									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">

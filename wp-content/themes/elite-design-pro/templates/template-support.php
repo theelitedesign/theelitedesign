@@ -28,8 +28,8 @@ get_header();
 				<div class="hero-bottom-content p1">
 
 				</div>
-				<div class="hero-bottom-image img-cover">
-					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
+				<div class="hero-bottom-image">
+					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/hero-image-default.webp" alt="Image">
 				</div>
 			</div>
 		</div>
@@ -68,7 +68,7 @@ get_header();
 				<div class="wrapper">
 					<div class="image-slider">
 						<div class="image-swiper swiper-container">
-							<div class="image-swiper--slider swiper-wrapper" cursor-class="read-more">
+							<div class="image-swiper--slider swiper-wrapper owl-carousel owl-theme" cursor-class="read-more">
 									<div class="swiper-slide image__slide swiper-slide swiper-lazy">
 										<div class="image__slide--img img-cover">
 											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
@@ -131,7 +131,7 @@ get_header();
 								</div>
 								<div class="design-tool-text">You’ll have access to the elite designer team.</div>
 							</div>
-							
+
 						</div>
 					</div>
 					<div class="s-96"></div>
@@ -237,63 +237,66 @@ get_header();
 					</div>
 					<div class="s-192"></div>
 				</section>
-				<section>
+					<section>
 					<div class="s-192"></div>
 					<div class="wrapper">
-					<div class="services-ctn sm-services">
-						<div class="section-head">
-							<h2 class="heading-3">Need something else?</h2>
-						</div>
-						<div class="s-48"></div>
-						<div class="services-lists">
-							<div class="service-list-item">
-								<a href="#" class="no-link-style">
-									<div class="service-item-content">
-										<div class="service-count">01</div>
-										<div class="service-title">Web Design</div>
-									</div>
-									<div class="service-item-image h-img-cover">
-										<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-									</div>
-								</a>
+						<div class="services-ctn sm-services">
+							<div class="section-head">
+								<h2 class="heading-3">Need something else?</h2>
 							</div>
-							<div class="service-list-item">
-								<a href="#" class="no-link-style">
-									<div class="service-item-content">
-										<div class="service-count">02</div>
-										<div class="service-title">Web Development</div>
-									</div>
-									<div class="service-item-image h-img-cover">
-										<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-									</div>
-								</a>
-							</div>
-							<div class="service-list-item">
-								<a href="#" class="no-link-style">
-									<div class="service-item-content">
-										<div class="service-count">03</div>
-										<div class="service-title">Continuous Improvement</div>
-									</div>
-									<div class="service-item-image h-img-cover">
-										<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-									</div>
-								</a>
-							</div>
-							<div class="service-list-item">
-								<a href="#" class="no-link-style">
-									<div class="service-item-content">
-										<div class="service-count">04</div>
-										<div class="service-title">Website Maintenance & Support</div>
-									</div>
-									<div class="service-item-image h-img-cover">
-										<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-									</div>
-								</a>
+							<div class="s-96"></div>
+							<div class="services-lists">
+
+								<div class="service-list-item">
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>web-design" class="no-link-style">
+										<div class="service-item-content">
+											<div class="service-count">02</div>
+											<div class="service-title">Web design</div>
+										</div>
+										<div class="service-item-image h-img-cover">
+											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
+										</div>
+									</a>
+								</div>
+
+								<div class="service-list-item">
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>web-development" class="no-link-style">
+										<div class="service-item-content">
+											<div class="service-count">01</div>
+											<div class="service-title">Web development</div>
+										</div>
+										<div class="service-item-image h-img-cover">
+											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
+										</div>
+									</a>
+								</div>
+
+								<div class="service-list-item">
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>seo" class="no-link-style">
+										<div class="service-item-content">
+											<div class="service-count">03</div>
+											<div class="service-title">Search engine optimization</div>
+										</div>
+										<div class="service-item-image h-img-cover">
+											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
+										</div>
+									</a>
+								</div>
+								<div class="service-list-item">
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>continuous-improvements" class="no-link-style">
+										<div class="service-item-content">
+											<div class="service-count">04</div>
+											<div class="service-title">Continuous improvement </div>
+										</div>
+										<div class="service-item-image h-img-cover">
+											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
+										</div>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="s-192"></div>
+					<div class="s-192"></div>
 				</section>
 			</div>
 		</section>
