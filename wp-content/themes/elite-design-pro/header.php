@@ -45,7 +45,12 @@ $bscripts 			= (isset($option_fields['body_scripts'])) ? $option_fields['body_sc
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> <?php
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="p:domain_verify" content="3151c7da4cff8c9676c68880caa798e0"/>
+	<meta name="yandex-verification" content="867118057e6efe2a" />
+	<meta name="msvalidate.01" content="738520458226193B09BDB8581DB4679F" />
+	<meta name="google-site-verification" content="o9YNPby9a_hApsxdXSvX2NYCW4wdaVpWo-HxBOis-Nc" />
+	<?php
 		// Add Head Scripts
 		if ( $hscripts != '' ) {
 			echo html_entity_decode($hscripts,ENT_QUOTES);

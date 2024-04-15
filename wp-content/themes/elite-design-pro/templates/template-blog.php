@@ -36,80 +36,27 @@ get_header();
 					<div class="s-96"></div>
 					<div class="services-lists">
 						<div class="service-list-item">
-							<a href="#" class="no-link-style">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>elite-designs-10-rules-for-amazing-websites" class="no-link-style">
 								<div class="service-item-content">
-									<div class="service-label">Industry Insights
-										PPC</div>
-									<div class="service-title">How to Generate Leads with Google Ads for your New
-										Website</div>
+									<div class="service-label">Industry</div>
+									<div class="service-title">Elite design's 10 rules for amazing websites</div>
 								</div>
 								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
+									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
 								</div>
 							</a>
 						</div>
 						<div class="service-list-item">
-							<a href="#" class="no-link-style">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>exploring-the-benefits-and-boundaries-of-gutenberg-custom-blocks" class="no-link-style">
 								<div class="service-item-content">
-									<div class="service-label">SEO
+									<div class="service-label">Gutenberg
 										Web Design & Development</div>
-									<div class="service-title">Web Design and SEO: How We Build Websites that Rank
+									<div class="service-title">Exploring the benefits and
+											boundaries of gutenberg custom blocks
 									</div>
 								</div>
 								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-								</div>
-							</a>
-						</div>
-						<div class="service-list-item">
-							<a href="#" class="no-link-style">
-								<div class="service-item-content">
-									<div class="service-label">SEO</div>
-									<div class="service-title">How to Avoid (and Fix) Organic Traffic Drop After a
-										Website Redesign
-									</div>
-								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-								</div>
-							</a>
-						</div>
-						<div class="service-list-item">
-							<a href="#" class="no-link-style">
-								<div class="service-item-content">
-									<div class="service-label">Industry Insights
-										PPC</div>
-									<div class="service-title">How to Generate Leads with Google Ads for your New
-										Website</div>
-								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-								</div>
-							</a>
-						</div>
-						<div class="service-list-item">
-							<a href="#" class="no-link-style">
-								<div class="service-item-content">
-									<div class="service-label">SEO
-										Web Design & Development</div>
-									<div class="service-title">Web Design and SEO: How We Build Websites that Rank
-									</div>
-								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-								</div>
-							</a>
-						</div>
-						<div class="service-list-item">
-							<a href="#" class="no-link-style">
-								<div class="service-item-content">
-									<div class="service-label">SEO</div>
-									<div class="service-title">How to Avoid (and Fix) Organic Traffic Drop After a
-										Website Redesign
-									</div>
-								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
+									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
 								</div>
 							</a>
 						</div>
@@ -122,8 +69,8 @@ get_header();
 			<div class="s-96"></div>
 			<div class="wrapper">
 				<div class="mid-page-cta changeable-bg">
-					<h2 class="heading-3">Get a free consultation call with our team.</h2>
-					<a href="#" class="button change-bg-on-hover">Book a demo for a website</a>
+					<h2 class="heading-3">Ready for a journey with elite?</h2>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>contact" class="button change-bg-on-hover">Let’s Talk</a>
 				</div>
 			</div>
 			<div class="s-96"></div>
@@ -134,80 +81,27 @@ get_header();
 					<div class="s-96"></div>
 					<div class="services-lists">
 						<div class="service-list-item">
-							<a href="#" class="no-link-style">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>elite-designs-10-rules-for-amazing-websites" class="no-link-style">
 								<div class="service-item-content">
-									<div class="service-label">Industry Insights
-										PPC</div>
-									<div class="service-title">How to Generate Leads with Google Ads for your New
-										Website</div>
+									<div class="service-label">Industry</div>
+									<div class="service-title">Elite design's 10 rules for amazing websites</div>
 								</div>
 								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
+									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
 								</div>
 							</a>
 						</div>
 						<div class="service-list-item">
-							<a href="#" class="no-link-style">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>exploring-the-benefits-and-boundaries-of-gutenberg-custom-blocks" class="no-link-style">
 								<div class="service-item-content">
-									<div class="service-label">SEO
+									<div class="service-label">Gutenberg
 										Web Design & Development</div>
-									<div class="service-title">Web Design and SEO: How We Build Websites that Rank
+									<div class="service-title">Exploring the benefits and
+											boundaries of gutenberg custom blocks
 									</div>
 								</div>
 								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-								</div>
-							</a>
-						</div>
-						<div class="service-list-item">
-							<a href="#" class="no-link-style">
-								<div class="service-item-content">
-									<div class="service-label">SEO</div>
-									<div class="service-title">How to Avoid (and Fix) Organic Traffic Drop After a
-										Website Redesign
-									</div>
-								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-								</div>
-							</a>
-						</div>
-						<div class="service-list-item">
-							<a href="#" class="no-link-style">
-								<div class="service-item-content">
-									<div class="service-label">Industry Insights
-										PPC</div>
-									<div class="service-title">How to Generate Leads with Google Ads for your New
-										Website</div>
-								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-								</div>
-							</a>
-						</div>
-						<div class="service-list-item">
-							<a href="#" class="no-link-style">
-								<div class="service-item-content">
-									<div class="service-label">SEO
-										Web Design & Development</div>
-									<div class="service-title">Web Design and SEO: How We Build Websites that Rank
-									</div>
-								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-								</div>
-							</a>
-						</div>
-						<div class="service-list-item">
-							<a href="#" class="no-link-style">
-								<div class="service-item-content">
-									<div class="service-label">SEO</div>
-									<div class="service-title">How to Avoid (and Fix) Organic Traffic Drop After a
-										Website Redesign
-									</div>
-								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
+									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
 								</div>
 							</a>
 						</div>

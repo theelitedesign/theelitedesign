@@ -1,7 +1,7 @@
 {
-	"short_name": "Aperiam Bio",
-	"name": "Aperiam Bio",
-	"description": "We design proteins for the health of humans and the planet..",
+	"short_name": "elite design",
+	"name": "elite design",
+	"description": "We build beautiful designs and websites that create impact.",
 	"icons": [
 		{
 			"src": "icon-48x48.png",
@@ -53,8 +53,8 @@
 		}
 	],
 	"start_url": "/",
-	"background_color": "#F7F5EF",
+	"background_color": "#01021c",
 	"display": "standalone",
 	"scope": "/",
-	"theme_color": "#CBDAD0"
+	"theme_color": "#f9f9f9"
 }

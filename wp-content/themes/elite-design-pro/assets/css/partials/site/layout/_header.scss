@@ -79,58 +79,58 @@ body.logged-in.admin-bar {
 	}
 }
 
-#cursor,
-#cursor__circle {
-	position: fixed;
-	z-index: 99;
-	left: 0;
-	top: 0;
-	pointer-events: none;
-	will-change: transform;
-}
+// #cursor,
+// #cursor__circle {
+// 	position: fixed;
+// 	z-index: 99;
+// 	left: 0;
+// 	top: 0;
+// 	pointer-events: none;
+// 	will-change: transform;
+// }
 
-@media (hover: hover) and (pointer: fine) {
+// @media (hover: hover) and (pointer: fine) {
 
-	.cursor__circle {
-		width: 100px;
-		height: 100px;
-		margin-top: -50%;
-		margin-left: -50%;
-		border-radius: 50%;
-		transition: all 0.7s cubic-bezier(0.25, 1, 0.5, 1);
-		transform: scale(0);
-	}
+// 	.cursor__circle {
+// 		width: 100px;
+// 		height: 100px;
+// 		margin-top: -50%;
+// 		margin-left: -50%;
+// 		border-radius: 50%;
+// 		transition: all 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+// 		transform: scale(0);
+// 	}
 
-	#cursor.read-more .cursor__circle {
-		width: 100px;
-		height: 100px;
-		background-color: map-get($map: $colors, $key: yellow);
-		opacity: 1;
-		transform: scale(1);
-	}
+// 	#cursor.read-more .cursor__circle {
+// 		width: 100px;
+// 		height: 100px;
+// 		background-color: map-get($map: $colors, $key: yellow);
+// 		opacity: 1;
+// 		transform: scale(1);
+// 	}
 
-	#cursor.read-more::after {
-		content: "Read More";
-		position: absolute;
-		left: -20px;
-		top: -24px;
-		width: 45px;
-		text-align: center;
-		height: 48px;
-		line-height: 1.35;
-		@include font(st, bold);
-		font-size: 18px;
-		animation: fadein 0.7s linear forwards;
-		color: map-get($map: $colors, $key: red2);
-	}
+// 	#cursor.read-more::after {
+// 		content: "Read More";
+// 		position: absolute;
+// 		left: -20px;
+// 		top: -24px;
+// 		width: 45px;
+// 		text-align: center;
+// 		height: 48px;
+// 		line-height: 1.35;
+// 		@include font(st, bold);
+// 		font-size: 18px;
+// 		animation: fadein 0.7s linear forwards;
+// 		color: map-get($map: $colors, $key: red2);
+// 	}
 
-	@keyframes fadein {
-		0% {
-			opacity: 0;
-		}
+// 	@keyframes fadein {
+// 		0% {
+// 			opacity: 0;
+// 		}
 
-		100% {
-			opacity: 1;
-		}
-	}
-}
+// 		100% {
+// 			opacity: 1;
+// 		}
+// 	}
+// }

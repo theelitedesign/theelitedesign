@@ -277,7 +277,7 @@ get_header();
 									</a>
 								</div>
 								<div class="service-list-item">
-									<a href="<?php echo esc_url( home_url( '/' ) ); ?>seo" class="no-link-style">
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>search-engine-optimization" class="no-link-style">
 										<div class="service-item-content">
 											<div class="service-count">02</div>
 											<div class="service-title">Search engine optimization</div>
@@ -300,7 +300,7 @@ get_header();
 									</a>
 								</div>
 								<div class="service-list-item">
-									<a href="<?php echo esc_url( home_url( '/' ) ); ?>support" class="no-link-style">
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>maintenance-support" class="no-link-style">
 										<div class="service-item-content">
 											<div class="service-count">04</div>
 											<div class="service-title">Website maintenance & support</div>

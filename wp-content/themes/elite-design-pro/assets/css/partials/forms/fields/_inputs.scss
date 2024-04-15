@@ -236,8 +236,8 @@ textarea {
 		border-color: map-get($map: $colors, $key: black);
 
 		&:hover {
-			background-color: map-get($map: $colors, $key: black);
-			border-color: map-get($map: $colors, $key: black);
+			background-color: map-get($map: $colors, $key: black01);
+			border-color: map-get($map: $colors, $key: black01);
 			color: map-get($map: $colors, $key: white);
 		}
 

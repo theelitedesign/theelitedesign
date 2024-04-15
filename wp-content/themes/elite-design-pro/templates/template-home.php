@@ -80,7 +80,7 @@ global $fields;
 							</a>
 						</div>
 						<div class="service-list-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>seo" class="no-link-style">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>search-engine-optimization" class="no-link-style">
 								<div class="service-item-content">
 									<div class="service-count">03</div>
 									<div class="service-title">Search engine optimization</div>
@@ -91,7 +91,7 @@ global $fields;
 							</a>
 						</div>
 						<div class="service-list-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>continuous-improvement" class="no-link-style">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>continuous-improvements" class="no-link-style">
 								<div class="service-item-content">
 									<div class="service-count">05</div>
 									<div class="service-title">Continuous improvement</div>
@@ -102,7 +102,7 @@ global $fields;
 							</a>
 						</div>
 						<div class="service-list-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>support" class="no-link-style">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>maintenance-support" class="no-link-style">
 								<div class="service-item-content">
 									<div class="service-count">06</div>
 									<div class="service-title">Website maintenance & support</div>
@@ -188,7 +188,7 @@ global $fields;
 				<div class="services-ctn resources-ctn">
 					<div class="services-lists">
 						<div class="service-list-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>blog-detail-one" class="no-link-style">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>elite-designs-10-rules-for-amazing-websites" class="no-link-style">
 								<div class="service-item-content">
 									<div class="service-label">Industry</div>
 									<div class="service-title">Elite design's 10 rules for amazing websites</div>
@@ -199,7 +199,7 @@ global $fields;
 							</a>
 						</div>
 						<div class="service-list-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>blog-detail-two" class="no-link-style">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>exploring-the-benefits-and-boundaries-of-gutenberg-custom-blocks" class="no-link-style">
 								<div class="service-item-content">
 									<div class="service-label">Gutenberg
 										Web Design & Development</div>
@@ -227,7 +227,7 @@ global $fields;
 						</div> -->
 					</div>
 					<div class="center-align blog-posts-button">
-						<div class="s-48"></div>
+						<div class="s-96"></div>
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>blog" class="see-all-button button black">See All</a>
 					</div>
 				</div>

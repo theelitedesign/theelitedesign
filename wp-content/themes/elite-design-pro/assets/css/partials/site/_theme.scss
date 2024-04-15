@@ -139,7 +139,7 @@ span.button {
 	transition: all 0.5s ease-in-out;
 	line-height: 1;
 
-	@include font-size(2);
+	font-size: 20px;
 
 	margin-right: 15px;
 
@@ -164,11 +164,11 @@ span.button {
 	}
 
 	&.black {
-		color: map-get($map: $colors, $key: black);
-		border: 2px solid map-get($map: $colors, $key: black);
+		color: map-get($map: $colors, $key: black01);
+		border: 2px solid map-get($map: $colors, $key: black01);
 
 		&:hover {
-			background-color: map-get($map: $colors, $key: black);
+			background-color: map-get($map: $colors, $key: black01);
 			color: map-get($map: $colors, $key: white);
 		}
 	}

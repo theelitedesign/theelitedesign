@@ -1686,72 +1686,6 @@ Mixin for transition
 .acf-block-preview body.logged-in.admin-bar header {
   top: 32px;
 }
-.acf-block-preview #cursor,
-.acf-block-preview #cursor__circle {
-  position: fixed;
-  z-index: 99;
-  left: 0;
-  top: 0;
-  pointer-events: none;
-  will-change: transform;
-}
-@media (hover: hover) and (pointer: fine) {
-  .acf-block-preview .cursor__circle {
-    width: 100px;
-    height: 100px;
-    margin-top: -50%;
-    margin-left: -50%;
-    border-radius: 50%;
-    -webkit-transition: all 0.7s cubic-bezier(0.25, 1, 0.5, 1);
-    -o-transition: all 0.7s cubic-bezier(0.25, 1, 0.5, 1);
-    transition: all 0.7s cubic-bezier(0.25, 1, 0.5, 1);
-    -webkit-transform: scale(0);
-        -ms-transform: scale(0);
-            transform: scale(0);
-  }
-  .acf-block-preview #cursor.read-more .cursor__circle {
-    width: 100px;
-    height: 100px;
-    background-color: #ebfe00;
-    opacity: 1;
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
-  }
-  .acf-block-preview #cursor.read-more::after {
-    content: "Read More";
-    position: absolute;
-    left: -20px;
-    top: -24px;
-    width: 45px;
-    text-align: center;
-    height: 48px;
-    line-height: 1.35;
-    font-family: "Satoshi", arial, sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 18px;
-    -webkit-animation: fadein 0.7s linear forwards;
-            animation: fadein 0.7s linear forwards;
-    color: #52247f;
-  }
-  @-webkit-keyframes fadein {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes fadein {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-}
 @media (min-width: 1024px) {
   .acf-block-preview .header-nav ul li:hover > ul {
     opacity: 1;
@@ -2761,7 +2695,6 @@ Mixin for transition
   transition: all 0.5s ease-in-out;
   line-height: 1;
   font-size: 20px;
-  font-size: 20px;
   margin-right: 15px;
   border-radius: 100px;
   font-family: "Satoshi", arial, sans-serif;
@@ -2790,13 +2723,13 @@ Mixin for transition
 .acf-block-preview a.button.black,
 .acf-block-preview a.button:visited.black,
 .acf-block-preview span.button.black {
-  color: #0e0e0e;
-  border: 2px solid #0e0e0e;
+  color: #01021c;
+  border: 2px solid #01021c;
 }
 .acf-block-preview a.button.black:hover,
 .acf-block-preview a.button:visited.black:hover,
 .acf-block-preview span.button.black:hover {
-  background-color: #0e0e0e;
+  background-color: #01021c;
   color: #f9f9f9;
 }
 .acf-block-preview a.button.small,
@@ -3148,7 +3081,7 @@ Mixin for transition
 .acf-block-preview .single-page-sidebar-area {
   width: 30%;
   position: sticky;
-  top: 180px;
+  top: 110px;
 }
 .acf-block-preview .single-page-content-area {
   width: 65%;
@@ -4692,8 +4625,8 @@ Mixin for transition
 .acf-block-preview .white-ctn button:hover,
 .acf-block-preview .white-ctn input[type=button]:hover,
 .acf-block-preview .white-ctn input[type=reset]:hover {
-  background-color: #0e0e0e;
-  border-color: #0e0e0e;
+  background-color: #01021c;
+  border-color: #01021c;
   color: #f9f9f9;
 }
 .acf-block-preview .white-ctn input[type=text],
