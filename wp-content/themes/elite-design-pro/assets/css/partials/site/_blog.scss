@@ -25,20 +25,20 @@
 	width: 65%;
 
 	h2 {
-		font-size: var(--mf_font_size_h3);
+		font-size: var(--ed_font_size_h3);
 		letter-spacing: -0.48px;
 	}
 
 	h3 {
-		font-size: var(--mf_font_size_h4);
+		font-size: var(--ed_font_size_h4);
 		letter-spacing: -0.32px;
-		margin-bottom: var(--mf_space_3);
+		margin-bottom: var(--ed_space_3);
 	}
 
 	h4 {
-		font-size: var(--mf_font_size_h5);
+		font-size: var(--ed_font_size_h5);
 		letter-spacing: -0.24px;
-		margin-bottom: var(--mf_space_3);
+		margin-bottom: var(--ed_space_3);
 	}
 
 	p,
@@ -47,14 +47,14 @@
 	figure {
 
 		+h2 {
-			margin-top: var(--mf_space_6);
+			margin-top: var(--ed_space_6);
 		}
 
 		+h3,
 		+h4,
 		+h5,
 		+h6 {
-			margin-top: var(--mf_space_5);
+			margin-top: var(--ed_space_5);
 		}
 	}
 }
@@ -72,7 +72,7 @@
 		left: 0;
 		width: 1px;
 		height: 100%;
-		background-color: var(--mf_ugray);
+		background-color: var(--ed_ugray);
 	}
 
 	li {

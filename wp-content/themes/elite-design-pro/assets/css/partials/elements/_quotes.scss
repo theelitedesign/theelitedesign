@@ -17,7 +17,7 @@ blockquote {
 	@include font(st, med);
 
 	p {
-		font-size: var(--mf_font_size_t2);
+		font-size: var(--ed_font_size_t2);
 		margin-bottom: 0;
 
 		&::before {
@@ -97,14 +97,14 @@ q {
 
 cite {
 	display: block;
-	margin-top: var(--mf_space_5);
+	margin-top: var(--ed_space_5);
 	color: map-get( $map: $colors, $key: white60 );
 	@include font(st,reg);
 	font-size: clamp(1rem, 0.231vw + 0.94rem, 1.125rem);
 
 	strong {
 		display: block;
-		margin-right: var(--mf_space_1);
+		margin-right: var(--ed_space_1);
 		color: map-get( $map: $colors, $key: white );
 		font-size: clamp(1.25rem, 0.462vw + 1.13rem, 1.5rem);
 	}

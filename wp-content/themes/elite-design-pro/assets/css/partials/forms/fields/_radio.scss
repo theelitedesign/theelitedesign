@@ -34,7 +34,7 @@
 	top: 0;
 	width: 18px;
 	height: 18px;
-	border: 1px solid var(--mf_ugray);
+	border: 1px solid var(--ed_ugray);
 	border-radius: 100%;
 	background-color: map-get( $map: $base_colors, $key: radio_bgcolor );
 }

@@ -40,7 +40,7 @@
 	.post-tag,
 	a.post-tag,
 	a.post-tag:visited {
-		border: 1px solid var(--mf_ugray);
+		border: 1px solid var(--ed_ugray);
 		border-radius: 100px;
 		padding: 8px 24px;
 		box-sizing: border-box;
@@ -90,7 +90,7 @@
 		flex-wrap: wrap;
 		justify-content: right;
 		align-items: baseline;
-		gap: var(--mf_space_5);
+		gap: var(--ed_space_5);
 		margin-top: -3.5%;
 	}
 }

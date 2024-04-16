@@ -7,7 +7,7 @@
 
 
 .stat-numbers {
-	font-size: var(--mf_font_size_h2);
+	font-size: var(--ed_font_size_h2);
 
 	@include font(st, bold);
 	line-height: 1;
@@ -15,5 +15,5 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: var(--mf_space_1);
+	gap: var(--ed_space_1);
 }

@@ -175,7 +175,7 @@
 	z-index: 999;
 
 	.heading-3 {
-		margin-bottom: var(--mf_space_3);
+		margin-bottom: var(--ed_space_3);
 	}
 
 	ul li {
@@ -190,7 +190,7 @@
 
 	&-content {
 		width: 55%;
-		padding: var(--mf_space_6);
+		padding: var(--ed_space_6);
 
 		box-sizing: border-box;
 	}
@@ -236,7 +236,7 @@
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
-	gap: var(--mf_space_2);
+	gap: var(--ed_space_2);
 	margin: 0;
 	list-style: none;
 

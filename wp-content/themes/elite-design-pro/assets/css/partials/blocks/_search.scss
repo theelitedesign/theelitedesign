@@ -9,8 +9,12 @@ input[type="search"].wp-block-search__input {
 	margin-right: 0;
 	padding: 0 20px;
 
-	&:hover {
-		border: none;
-		background-color: map-get( $map: $colors, $key: white );
+
+	@media (hover: hover) {
+
+		&:hover {
+			border: none;
+			background-color: map-get( $map: $colors, $key: white );
+		}
 	}
 }

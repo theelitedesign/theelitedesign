@@ -41,16 +41,11 @@
 	}
 }
 
-.ctn {
-
-	@include padding(86px 0);
-}
-
 .overflow-hidden {
 	overflow: hidden;
 }
 
-s .full-width-ctn {
+.full-width-ctn {
 
 	.wrapper {
 		max-width: 100%;
@@ -82,15 +77,16 @@ s .full-width-ctn {
 	background-color: var(--el_gray);
 }
 
+@media (hover: hover) {
+	.white-ctn {
 
-.white-ctn {
+		a,
+		a:visited {
 
-	a,
-	a:visited {
-
-		&:hover,
-		&:active {
-			color: map-get($map: $colors, $key: red2);
+			&:hover,
+			&:active {
+				color: map-get($map: $colors, $key: red2);
+			}
 		}
 	}
 }

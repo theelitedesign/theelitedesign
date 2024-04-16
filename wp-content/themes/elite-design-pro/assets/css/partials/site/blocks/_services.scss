@@ -18,7 +18,7 @@ a.no-link-style:visited {
 
 	a.no-link-style,
 	a.no-link-style:visited {
-		padding: var(--mf_space_5) 0;
+		padding: var(--ed_space_5) 0;
 		line-height: 1;
 	}
 
@@ -32,7 +32,7 @@ a.no-link-style:visited {
 			position: absolute;
 			bottom: 0;
 			left: -50vw;
-			background-color: var(--mf_gray);
+			background-color: var(--ed_gray);
 		}
 	}
 
@@ -44,7 +44,7 @@ a.no-link-style:visited {
 		position: absolute;
 		top: 0;
 		left: -50vw;
-		background-color: var(--mf_gray);
+		background-color: var(--ed_gray);
 	}
 
 }
@@ -64,7 +64,7 @@ a.no-link-style:visited {
 
 .service-title {
 	width: 80%;
-	font-size: var(--mf_font_size_h3);
+	font-size: var(--ed_font_size_h3);
 	@include font(st, med);
 	transition: all 0.5s ease-in-out;
 }
@@ -120,11 +120,11 @@ a.no-link-style:visited {
 .service-label {
 	font-size: clamp(1rem, 0.231vw + 0.94rem, 1.125rem);
 	@include font(st, med);
-	margin-bottom: var(--mf_space_3);
+	margin-bottom: var(--ed_space_3);
 	opacity: .8;
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--mf_space_4);
+	gap: var(--ed_space_4);
 }
 
 .resources-ctn {
@@ -140,7 +140,7 @@ a.no-link-style:visited {
 
 	.service-title {
 
-		font-size: var(--mf_font_size_h4);
+		font-size: var(--ed_font_size_h4);
 
 	}
 
@@ -153,6 +153,6 @@ a.no-link-style:visited {
 
 .sm-services {
 	.service-title {
-		font-size: var(--mf_font_size_h4);
+		font-size: var(--ed_font_size_h4);
 	}
 }

@@ -32,7 +32,7 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
-	border: 1px solid  var(--mf_ugray);
+	border: 1px solid  var(--ed_ugray);
 	border-radius: 100px;
 }
 
@@ -72,5 +72,5 @@
 .gfield_checkbox {
 	display: flex;
 	flex-wrap: wrap;
-	gap: --var(--mf_space_3);
+	gap: --var(--ed_space_3);
 }

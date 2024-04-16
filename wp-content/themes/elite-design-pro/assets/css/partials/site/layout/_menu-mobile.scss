@@ -1,8 +1,33 @@
 @media (max-width: 1003px) {
 
+	header {
+		padding: 22px 6%;
+	}
 
-	.header-logo a {
+	.right-header {
+		line-height: 0.65;
+		display: flex;
+		align-items: center;
+	}
+
+	.header-logo {
 		max-width: 160px;
+	}
+
+	.header-btns {
+
+		a.button,
+		a.button:visited {
+			color: map-get($map: $colors, $key: black01);
+			border: 2px solid map-get($map: $colors, $key: black01);
+			display: block;
+			text-align: center;
+
+			&:hover {
+				background-color: map-get($map: $colors, $key: black01);
+				color: map-get($map: $colors, $key: white);
+			}
+		}
 	}
 
 	.nav-overlay .header-nav {
@@ -15,7 +40,7 @@
 
 			li {
 				padding: 0;
-				margin: 0 0 3rem;
+				margin: 0 0 var(--ed_space_4);
 				position: relative;
 				display: block;
 				opacity: 1;
@@ -23,13 +48,12 @@
 
 				a,
 				a:visited {
-					color: map-get($map: $base_colors, $key: mobile-nav-color);
-					line-height: 1;
-					text-transform: uppercase;
-					font-weight: 700;
+					color: map-get($map: $colors, $key: black);
 					display: inline-block;
-					border-bottom: none;
 					position: relative;
+					font-size: var(--ed_font_size_t1);
+
+					@include font(st, med);
 				}
 
 				&.current-menu-item > a,
@@ -75,14 +99,9 @@
 		}
 	}
 
-	.header-nav ul li.menu-item-has-children > a {
-		background-image: none;
-		padding-right: 0;
-	}
-
 	.nav-overlay {
 		position: fixed;
-		background-color: map-get($map: $base_colors, $key: nav-overlay-bgcolor);
+		background-color: map-get($map: $colors, $key: white);
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -93,8 +112,8 @@
 		overflow: visible;
 		box-sizing: border-box;
 		z-index: 8;
-
-		@include transition(all, 0.5s, ease-in-out);
+		transition: all 0.4s ease-in-out;
+		padding: var(--ed_space_6) 0;
 	}
 
 	.nav-overlay.open {
@@ -104,33 +123,19 @@
 	}
 
 	header .nav-container {
-		padding: 95px 3% 1rem;
-		opacity: 0;
+		padding: var(--ed_space_7) 6%;
 		height: 100%;
-
-		@include transition(all, 0.4s, ease-in-out);
-
+		transition: all 0.4s ease-in-out;
 		transition-delay: 0.25s;
 		box-sizing: border-box;
-	}
-
-	header .nav-overlay.open .nav-container {
-		opacity: 1;
-		padding: 93px 20px 1rem;
-		display: block;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		justify-content: space-between;
 
 		.header-nav {
 			text-align: left;
 		}
-	}
-
-	header.shrink .nav-container {
-		padding: 93px 20px 1rem;
-	}
-
-	header.shrink .nav-overlay.open .nav-container {
-		opacity: 1;
-		padding: 93px 20px 1rem;
 	}
 
 	.nav-content {
@@ -139,28 +144,6 @@
 		overflow-y: scroll;
 		overflow-x: hidden;
 		box-sizing: border-box;
-	}
-
-	.nav-content::-webkit-scrollbar-track {
-		box-shadow: none;
-		background-color: transparent;
-	}
-
-	.nav-content::-webkit-scrollbar {
-		width: 3px;
-		background-color: transparent;
-		position: relative;
-		left: 5px;
-		box-shadow: none;
-	}
-
-	.nav-content::-webkit-scrollbar-thumb {
-		box-shadow: none;
-		border-radius: 2px;
-	}
-
-	.header-btns {
-		display: none;
 	}
 
 	.menu-btn {
@@ -176,25 +159,28 @@
 		transition: all 0.5s ease-in-out;
 	}
 
-
 	.menu-btn.active .top {
-		transform: translateY(11px) translateX(0) rotate(-45deg);
-		transition: all 0.5s ease-in-out;
+		transform: translateY(0px) translateX(0) rotate(-46deg);
 
 	}
 
 	.menu-btn.active .bottom {
 		transform: translateY(-11px) translateX(0) rotate(45deg);
-		transition: all 0.5s ease-in-out;
 	}
 
 	.menu-btn span {
 		background-color: map-get($map: $colors, $key: white);
 		height: 2px;
-		width: 28px;
+		width: 32px;
 		transition: all 0.5s ease-in-out;
 	}
 
+	.no-overflow {
+
+		.menu-btn span {
+			background-color: map-get($map: $colors, $key: black01);
+		}
+	}
 
 
 }

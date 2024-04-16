@@ -3,8 +3,8 @@
 	> .faqs__item--title {
 
 		transition: all 0.5s ease-in-out;
-		border-top: 1px solid var(--mf_gray);
-		padding: var(--mf_space_5) var(--mf_space_6);
+		border-top: 1px solid var(--ed_gray);
+		padding: var(--ed_space_5) var(--ed_space_7);
 		padding-left: 0;
 		font-size: clamp(1.25rem, 0.462vw + 1.13rem, 1.5rem);
 		cursor: pointer;
@@ -28,7 +28,7 @@
 		}
 
 		&.active {
-			// padding-bottom: var(--mf_space_3);
+			// padding-bottom: var(--ed_space_3);
 
 			.faq-icon {
 
@@ -42,7 +42,7 @@
 
 .faqs__item--desc {
 	display: none;
-	padding-bottom: var(--mf_space_5);
+	padding-bottom: var(--ed_space_5);
 font-size: clamp(1.25rem, 0.462vw + 1.13rem, 1.5rem);
 
 	p:last-of-type {
@@ -66,7 +66,7 @@ font-size: clamp(1.25rem, 0.462vw + 1.13rem, 1.5rem);
 	&:after {
 		position: absolute;
 		content: "";
-		background-color: var(--mf_ugray);
+		background-color: var(--ed_ugray);
 		transition: all 0.5s ease-in-out;
 	}
 

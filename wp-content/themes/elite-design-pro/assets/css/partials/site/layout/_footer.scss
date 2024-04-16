@@ -28,7 +28,7 @@
 
 		li {
 			padding: 0;
-			margin: 0 0 var(--mf_space_4);
+			margin: 0 0 var(--ed_space_4);
 			list-style-type: none;
 
 			a,
@@ -83,7 +83,7 @@
 
 		li {
 			margin-bottom: 0;
-			margin-left: var(--mf_space_5);
+			margin-left: var(--ed_space_5);
 
 			a,
 			a:visited {
@@ -144,13 +144,13 @@
 		margin: 36px 0 0;
 
 		li {
-			margin: 0 var(--mf_space_4) 0 0;
+			margin: 0 var(--ed_space_4) 0 0;
 			line-height: 1;
 
 			a,
 			a:visited {
-				width: var(--mf_space_5);
-				height: var(--mf_space_5);
+				width: var(--ed_space_5);
+				height: var(--ed_space_5);
 				box-sizing: border-box;
 				background-color: rgba(255, 255, 255, 0.2);
 				border-radius: 50%;
@@ -190,7 +190,7 @@
 	}
 
 	.big-body {
-		margin-bottom: var(--mf_space_2);
+		margin-bottom: var(--ed_space_2);
 
 		b {
 			display: inline-block;

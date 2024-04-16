@@ -302,7 +302,7 @@ a.wp-block-button__link:visited,
 
 	ul li {
 
-		margin: 0 var(--mf_space_3);
+		margin: 0 var(--ed_space_3);
 		font-weight: 700;
 		padding: 0;
 
@@ -508,7 +508,7 @@ a.wp-block-button__link:visited,
 
 .image__slide {
 	display: inline-block;
-	margin-right: var(--mf_space_3);
+	margin-right: var(--ed_space_3);
 	width: auto !important;
 }
 
@@ -525,8 +525,8 @@ a.wp-block-button__link:visited,
 
 
 .design-tool-item {
-	padding: var(--mf_space_5) 0;
-	border-bottom: 1px solid var(--mf_ugray);
+	padding: var(--ed_space_5) 0;
+	border-bottom: 1px solid var(--ed_ugray);
 
 	&:last-of-type {
 		border: 0;
@@ -537,7 +537,7 @@ a.wp-block-button__link:visited,
 	width: 38.3%;
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--mf_space_3);
+	gap: var(--ed_space_3);
 }
 
 .design-tool-text {

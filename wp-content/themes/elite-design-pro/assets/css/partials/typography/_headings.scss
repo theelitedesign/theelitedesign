@@ -1,7 +1,7 @@
 :root {
 
-	--mf_gray: #cdcdcd;
-	--mf_ugray: #767684;
+	--ed_gray: #cdcdcd;
+	--ed_ugray: #767684;
 	--el_gray: #e6e6e6;
 	--3l_lgray: #f1f4f4;
 	--red: #b388dd;
@@ -9,48 +9,48 @@
 
 	// Heading  Sizes
 
-	--mf_font_size_h1_min: var(--font_base_unit) * 24;
+	--ed_font_size_h1_min: var(--font_base_unit) * 24;
 	/* 48px */
-	--mf_font_size_h2_min: var(--font_base_unit) * 20;
+	--ed_font_size_h2_min: var(--font_base_unit) * 20;
 	/* 40 px */
-	--mf_font_size_h3_min: var(--font_base_unit) * 16;
+	--ed_font_size_h3_min: var(--font_base_unit) * 16;
 	/* 32px */
-	--mf_font_size_h4_min: var(--font_base_unit) * 12;
+	--ed_font_size_h4_min: var(--font_base_unit) * 12;
 	/* 24px */
-	--mf_font_size_h5_min: var(--font_base_unit) * 9;
+	--ed_font_size_h5_min: var(--font_base_unit) * 9;
 	/* 18px */
 
 	// Desktop Font Size
 
-	--mf_font_size_h1_max: var(--font_base_unit) * 55;
+	--ed_font_size_h1_max: var(--font_base_unit) * 55;
 	/* 110px */
-	--mf_font_size_h2_max: var(--font_base_unit) * 40;
+	--ed_font_size_h2_max: var(--font_base_unit) * 40;
 	/* 80px */
-	--mf_font_size_h3_max: var(--font_base_unit) * 24;
+	--ed_font_size_h3_max: var(--font_base_unit) * 24;
 	/* 48px */
-	--mf_font_size_h4_max: var(--font_base_unit) * 16;
+	--ed_font_size_h4_max: var(--font_base_unit) * 16;
 	/* 32px */
-	--mf_font_size_h5_max: var(--font_base_unit) * 12;
+	--ed_font_size_h5_max: var(--font_base_unit) * 12;
 	/* 24px */
 
-	--mf_font_size_h1: clamp(var(--mf_font_size_h1_min),
+	--ed_font_size_h1: clamp(var(--ed_font_size_h1_min),
 			7.159vw + 1.148rem,
-			var(--mf_font_size_h1_max));
-	--mf_font_size_h2: clamp(var(--mf_font_size_h2_min),
+			var(--ed_font_size_h1_max));
+	--ed_font_size_h2: clamp(var(--ed_font_size_h2_min),
 			4.619vw + 1.305rem,
-			var(--mf_font_size_h2_max));
-	--mf_font_size_h3: clamp(var(--mf_font_size_h3_min),
+			var(--ed_font_size_h2_max));
+	--ed_font_size_h3: clamp(var(--ed_font_size_h3_min),
 			1.848vw + 1.522rem,
-			var(--mf_font_size_h3_max));
-	--mf_font_size_h4: clamp(var(--mf_font_size_h4_min),
+			var(--ed_font_size_h3_max));
+	--ed_font_size_h4: clamp(var(--ed_font_size_h4_min),
 			0.924vw + 1.261rem,
-			var(--mf_font_size_h4_max));
-	--mf_font_size_h5: clamp(var(--mf_font_size_h5_min),
+			var(--ed_font_size_h4_max));
+	--ed_font_size_h5: clamp(var(--ed_font_size_h5_min),
 			0.693vw + 0.946rem,
-			var(--mf_font_size_h5_max));
-	--mf_font_size_h6: clamp(var(--mf_font_size_h5_min),
+			var(--ed_font_size_h5_max));
+	--ed_font_size_h6: clamp(var(--ed_font_size_h5_min),
 			0.693vw + 0.946rem,
-			var(--mf_font_size_h5_max));
+			var(--ed_font_size_h5_max));
 
 	--font_base_unit: 0.125rem; //2px
 
@@ -58,56 +58,56 @@
 
 	// Mobile Font Size
 
-	--mf_font_size_d1_min: var(--font_base_unit) * 24;
+	--ed_font_size_d1_min: var(--font_base_unit) * 24;
 	/* 48px */
 
-	--mf_font_size_d2_min: var(--font_base_unit) * 30;
+	--ed_font_size_d2_min: var(--font_base_unit) * 30;
 	/* 60px */
 
 	// Desktop Font Size
 
-	--mf_font_size_d1_max: var(--font_base_unit) * 75;
+	--ed_font_size_d1_max: var(--font_base_unit) * 75;
 	/* 150px */
 
-	--mf_font_size_d2_max: var(--font_base_unit) * 100;
+	--ed_font_size_d2_max: var(--font_base_unit) * 100;
 	/* 200px */
 
 	// Fluid Font Size
 
-	--mf_font_size_d1: clamp(var(--mf_font_size_d1_min),
+	--ed_font_size_d1: clamp(var(--ed_font_size_d1_min),
 			11.778vw + -0.048rem,
-			var(--mf_font_size_d1_max));
-	--mf_font_size_d2: clamp(var(--mf_font_size_d2_min),
+			var(--ed_font_size_d1_max));
+	--ed_font_size_d2: clamp(var(--ed_font_size_d2_min),
 			16.166vw + -0.433rem,
-			var(--mf_font_size_d2_max));
+			var(--ed_font_size_d2_max));
 
 
 
-	--mf_font_size_t1_min: var(--font_base_unit) * 13;
+	--ed_font_size_t1_min: var(--font_base_unit) * 13;
 	/* 26px */
-	--mf_font_size_t2_min: var(--font_base_unit) * 10;
+	--ed_font_size_t2_min: var(--font_base_unit) * 10;
 	/* 20px */
-	--mf_font_size_t3_min: var(--font_base_unit) * 9;
+	--ed_font_size_t3_min: var(--font_base_unit) * 9;
 	/* 18px */
 
-	--mf_font_size_t1_max: var(--font_base_unit) * 23;
+	--ed_font_size_t1_max: var(--font_base_unit) * 23;
 	/* 46px */
-	--mf_font_size_t2_max: var(--font_base_unit) * 20;
+	--ed_font_size_t2_max: var(--font_base_unit) * 20;
 	/* 40px */
-	--mf_font_size_t3_max: var(--font_base_unit) * 16;
+	--ed_font_size_t3_max: var(--font_base_unit) * 16;
 	/* 32px */
 
 	// Fluid Font Size
 
-	--mf_font_size_t1: clamp(var(--mf_font_size_t1_min),
+	--ed_font_size_t1: clamp(var(--ed_font_size_t1_min),
 			2.309vw + 1.027rem,
-			var(--mf_font_size_t1_max));
-	--mf_font_size_t2: clamp(var(--mf_font_size_t2_min),
+			var(--ed_font_size_t1_max));
+	--ed_font_size_t2: clamp(var(--ed_font_size_t2_min),
 			2.309vw + 0.652rem,
-			var(--mf_font_size_t2_max));
-	--mf_font_size_t3: clamp(var(--mf_font_size_t3_min),
+			var(--ed_font_size_t2_max));
+	--ed_font_size_t3: clamp(var(--ed_font_size_t3_min),
 			1.617vw + 0.707rem,
-			var(--mf_font_size_t3_max));
+			var(--ed_font_size_t3_max));
 }
 
 /* -------------------------------------------------
@@ -146,7 +146,7 @@ h6,
 
 	@include font(st, bold);
 
-	margin: 0 0 3rem;
+	margin: 0 0 32px;
 	line-height: 1.15;
 
 
@@ -157,38 +157,38 @@ h6,
 
 h1,
 .heading-1 {
-	font-size: var(--mf_font_size_h1);
+	font-size: var(--ed_font_size_h1);
 	letter-spacing: -2.2px;
 }
 
 h2,
 .heading-2 {
-	font-size: var(--mf_font_size_h2);
+	font-size: var(--ed_font_size_h2);
 	letter-spacing: -1.6px;
 	line-height: 1;
 }
 
 h3,
 .heading-3 {
-	font-size: var(--mf_font_size_h3);
+	font-size: var(--ed_font_size_h3);
 	letter-spacing: -0.48px;
 }
 
 h4,
 .heading-4 {
-	font-size: var(--mf_font_size_h4);
+	font-size: var(--ed_font_size_h4);
 	letter-spacing: -0.32px;
 }
 
 h5,
 .heading-5 {
-	font-size: var(--mf_font_size_h5);
+	font-size: var(--ed_font_size_h5);
 	letter-spacing: -0.24px;
 }
 
 h6,
 .heading-6 {
-	font-size: var(--mf_font_size_h6);
+	font-size: var(--ed_font_size_h6);
 	letter-spacing: -0.24px;
 }
 
@@ -234,11 +234,11 @@ h1.d2 {
 }
 
 .d1 {
-	font-size: var(--mf_font_size_d1);
+	font-size: var(--ed_font_size_d1);
 }
 
 .d2 {
-	font-size: var(--mf_font_size_d2);
+	font-size: var(--ed_font_size_d2);
 }
 
 .d1-title {
@@ -253,16 +253,16 @@ h1.d2 {
 }
 
 .t1 {
-	font-size: var(--mf_font_size_t1);
+	font-size: var(--ed_font_size_t1);
 	line-height: 1.35;
 }
 
 .t2 {
-	font-size: var(--mf_font_size_t2);
+	font-size: var(--ed_font_size_t2);
 }
 
 .t3 {
-	font-size: var(--mf_font_size_t3);
+	font-size: var(--ed_font_size_t3);
 }
 
 .p1 {
