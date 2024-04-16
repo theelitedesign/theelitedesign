@@ -5,8 +5,10 @@ a.no-link-style:visited {
 	border: 0;
 	line-height: 0.65;
 
-	&:hover {
-		color: inherit;
+	@media (hover: hover) {
+		&:hover {
+			color: inherit;
+		}
 	}
 }
 
@@ -82,26 +84,24 @@ a.no-link-style:visited {
 	z-index: 4;
 }
 
-.service-list-item:hover {
-
-	.service-title {
-		color: map-get($map: $colors, $key: red);
-	}
-
-	// .service-item-image {
-	// 	opacity: 1;
-	// }
-}
-
-.white-ctn {
+@media (hover: hover) {
 
 	.service-list-item:hover {
 
 		.service-title {
-			color: map-get($map: $colors, $key: red2);
+			color: map-get($map: $colors, $key: red);
 		}
 	}
 
+	.white-ctn {
+
+		.service-list-item:hover {
+
+			.service-title {
+				color: map-get($map: $colors, $key: red2);
+			}
+		}
+	}
 }
 
 .h-img-cover {

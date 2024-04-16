@@ -208,9 +208,11 @@
 			a:visited {
 				color: map-get($map: $colors, $key: black);
 
-				&:hover {
-					color: map-get($map: $colors, $key: red2);
-					border-color: map-get($map: $colors, $key: red2);
+				  @media (hover: hover) {
+					&:hover {
+						color: map-get($map: $colors, $key: red2);
+						border-color: map-get($map: $colors, $key: red2);
+					}
 				}
 			}
 		}

@@ -26,7 +26,7 @@ global $fields;
 
 		<div class="hero hero-ctn hero--home">
 			<div class="wrapper">
-				<div class="s-48"></div>
+				<div class="s-96"></div>
 				<div class="hero__content">
 					<h1 style="display:none"></h1>
 					<div class="mb-0  font-bold d2 textAnimation">

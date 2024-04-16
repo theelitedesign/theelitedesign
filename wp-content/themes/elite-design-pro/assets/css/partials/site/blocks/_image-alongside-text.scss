@@ -5,10 +5,13 @@
 	}
 }
 
-.iat-ctn:hover {
+@media (hover: hover) {
 
-	.iat-img-area img {
-		transform: scale(1.115);
+	.iat-ctn:hover {
+
+		.iat-img-area img {
+			transform: scale(1.115);
+		}
 	}
 }
 
