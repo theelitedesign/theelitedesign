@@ -943,7 +943,7 @@ ol ul {
   position: absolute;
   background-color: #b388dd;
   left: 0;
-  top: 9px;
+  top: 15px;
   border-radius: 50%;
 }
 .page-section ul ol,
@@ -985,7 +985,7 @@ ol ul {
   content: counters(list, ".") ".";
   counter-increment: list;
   left: 0;
-  top: 0;
+  top: 9px;
   position: absolute;
   background-color: transparent;
 }
@@ -3719,6 +3719,12 @@ body.logged-in.admin-bar header {
   background-color: #52247f;
   color: #f9f9f9;
 }
+.white-ctn ul li:before {
+  background-color: #52247f;
+}
+.white-ctn ol li:before {
+  color: #52247f;
+}
 
 .ctn-gray {
   background-color: var(--el_gray);
@@ -3832,6 +3838,10 @@ body.logged-in.admin-bar header {
 
 .s-12 {
   height: var(--ed_space_2);
+}
+
+.kwayy-html-sitemap-post-title {
+  margin-bottom: var(--ed_space_6);
 }
 
 /*-------------------------------------------------

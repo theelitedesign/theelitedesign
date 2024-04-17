@@ -68,8 +68,19 @@
 	}
 
 	&.purple-mode {
+
 		background-color: map-get($map: $colors, $key: red2);
 		color: map-get($map: $colors, $key: white);
+	}
+
+	ul li:before {
+
+		background-color: map-get($map: $colors, $key: red2);
+	}
+
+	ol li:before {
+
+		color: map-get($map: $colors, $key: red2);
 	}
 }
 

@@ -42,9 +42,9 @@ get_header();
 				</p>
 			</div>
 		</div>
-		<div class="s-192"></div>
+		<div class="s-96"></div>
 		<div class="wrapper">
-			<div class="stats-ctn">
+			<!-- <div class="stats-ctn">
 				<div class="section-head ma-900">
 					<h2 class="heading-4">Powered by creativity, <br> innovation and excellence</h2>
 				</div>
@@ -73,14 +73,14 @@ get_header();
 						<h3 class="heading-6">Projects delivered</h3>
 					</div>
 				</div>
-			</div>
-			<div class="s-192"></div>
+			</div> -->
+			<!-- <div class="s-192"></div> -->
 			<div class="hat-ctn flexarea sb">
 				<div class="hat-title">
 					<h2 class="heading-3">What you will get from us</h2>
 				</div>
 				<div class="hat-text">
-					<div class="t1">
+					<div class="p1">
 						We value strong relationships and passion in our work, always improving and taking responsibility for our promises, even if it means saying no.
 					</div>
 				</div>
@@ -105,7 +105,7 @@ get_header();
 			<div class="s-192"></div>
 			<div class="iat-ctn flex">
 				<div class="iat-img-area img-cover col-645 rd-10">
-					<img src="http://theelitedesign.local/wp-content/themes/elite-design-pro/assets/img/uploads/iat-img-01.webp" alt="Image alongside text image">
+					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/iat-img-01.webp" alt="Image alongside text image">
 				</div>
 				<div class="iat-content-area col-595">
 					<h2>Built for enterprise-scale growth</h2>

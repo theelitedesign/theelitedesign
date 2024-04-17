@@ -102,7 +102,7 @@ if (function_exists('get_fields') && function_exists('get_fields_escaped')) {
 					<div class="footer-widget footer-nav animated-hover">
 						<ul>
 							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>services">Service</a></li>
-							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>projects">Work</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>work">Work</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>team">Company</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>company">Careers</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about">About</a></li>

@@ -652,7 +652,7 @@ Mixin for transition
   position: absolute;
   background-color: #b388dd;
   left: 0;
-  top: 9px;
+  top: 15px;
   border-radius: 50%;
 }
 .editor-styles-wrapper .page-section ul ol,
@@ -694,7 +694,7 @@ Mixin for transition
   content: counters(list, ".") ".";
   counter-increment: list;
   left: 0;
-  top: 0;
+  top: 9px;
   position: absolute;
   background-color: transparent;
 }
@@ -2377,6 +2377,12 @@ Mixin for transition
   background-color: #52247f;
   color: #f9f9f9;
 }
+.acf-block-preview .white-ctn ul li:before {
+  background-color: #52247f;
+}
+.acf-block-preview .white-ctn ol li:before {
+  color: #52247f;
+}
 .acf-block-preview .ctn-gray {
   background-color: var(--el_gray);
 }
@@ -2479,6 +2485,9 @@ Mixin for transition
 }
 .acf-block-preview .s-12 {
   height: var(--ed_space_2);
+}
+.acf-block-preview .kwayy-html-sitemap-post-title {
+  margin-bottom: var(--ed_space_6);
 }
 .acf-block-preview .ts-160 {
   height: 160px;

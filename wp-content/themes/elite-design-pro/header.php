@@ -120,7 +120,7 @@ $bscripts 			= (isset($option_fields['body_scripts'])) ? $option_fields['body_sc
 							<div class="header-nav animated-hover">
 								<ul>
 									<li>
-										<a href="<?php echo esc_url( home_url( '/' ) ); ?>projects">Work</a>
+										<a href="<?php echo esc_url( home_url( '/' ) ); ?>work">Work</a>
 									</li>
 									<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>services">Services</a></li>
 									<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about">About</a></li>
