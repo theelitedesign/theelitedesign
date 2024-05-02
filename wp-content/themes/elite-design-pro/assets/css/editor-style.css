@@ -5069,7 +5069,7 @@ Mixin for transition
   text-align: center;
 }
 .acf-block-preview .validation_message {
-  font-size: 14px;
+  font-size: 20px;
   text-align: center;
   display: inline-block;
   position: absolute;
@@ -5082,9 +5082,7 @@ Mixin for transition
 }
 .acf-block-preview .gform_validation_errors {
   margin: 10px 0 30px;
-  padding: 7px 14px;
   font-weight: bold;
-  font-size: 105%;
 }
 .acf-block-preview .gform_validation_errors h2 {
   margin-bottom: 0;
@@ -5102,6 +5100,9 @@ Mixin for transition
   position: absolute;
   bottom: 0;
   left: 0;
+}
+.acf-block-preview .gform_heading {
+  display: none;
 }
 .acf-block-preview .hs-form {
   text-align: left;

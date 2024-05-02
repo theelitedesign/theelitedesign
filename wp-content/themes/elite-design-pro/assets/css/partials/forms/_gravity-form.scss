@@ -192,7 +192,7 @@ table.ui-datepicker_calendar {
 }
 
 .validation_message {
-	font-size: 14px;
+	font-size: 20px;
 	text-align: center;
 	display: inline-block;
 	color: map-get( $map: $base_colors, $key: valiation_message_color );
@@ -218,9 +218,7 @@ table.ui-datepicker_calendar {
 .gform_validation_errors {
 	background-color: map-get( $map: $base_colors, $key: valiation_error_bg_color );
 	margin: 10px 0 30px;
-	padding: 7px 14px;
 	font-weight: bold;
-	font-size: 105%;
 
 	h2 {
 		color: map-get( $map: $colors, $key: white_text );
@@ -255,4 +253,8 @@ img.gform_ajax_spinner {
 	position: absolute;
 	bottom: 0;
 	left: 0;
+}
+
+.gform_heading {
+	display: none;
 }

@@ -52,7 +52,7 @@ get_header();
 						<div class="p3 label font-med"> Support help?</div>
 						<div class="s-12"></div>
 						<div class="p1">
-							<a href="mailto:support@theelitedesign.com">Support@theelitedesign.com</a> <br>
+							<a href="mailto:support@theelitedesign.com">support@theelitedesign.com</a> <br>
 						</div>
 					</div>
 				</div>
