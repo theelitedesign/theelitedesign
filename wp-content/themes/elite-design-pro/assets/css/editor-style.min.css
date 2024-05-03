@@ -2731,7 +2731,7 @@ Mixin for transition
 }
 .acf-block-preview .not-found {
   text-align: center;
-  padding: 50px 0;
+  padding: var(--ed_space_6) 0;
 }
 .acf-block-preview .error,
 .acf-block-preview .page-404-menu {
@@ -4931,6 +4931,12 @@ Mixin for transition
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  max-width: 540px;
+  width: 100%;
+  margin: auto;
+}
+.acf-block-preview .search-form label {
+  width: calc(100% - 150px);
 }
 .acf-block-preview .search-form input[type=submit],
 .acf-block-preview .search-form button,

@@ -23,26 +23,31 @@ global $fields;
  * Search Masthead
  *
  */
-?> <section id="hero-section" class="hero-section">
-	<!-- Hero Start -->
-	<div class="hero-single search-hero">
-		<div class="wrapper">
-			<h1><?php _e( 'Search Results', 'elitedesign_td' ); ?></h1>
-			<p> <?php
+?>
+
+<section id="hero-section" class="hero-section">
+		<div class="hero hero-ctn center-align">
+			<div class="s-96"></div>
+			<div class="wrapper">
+				<div class="hero__content">
+					<h1><?php _e( 'Search Results', 'elitedesign_td' ); ?></h1>
+					<div class="s-48"></div>
+					<?php
 					printf(
 						/* translators: %s: search term. */
 						esc_html__( 'Results for "%s"', 'elitedesign_td' ),
 						'<span class="search-term">' . esc_html( get_search_query() ) . '</span>'
 					);
-				?> </p>
+				?>
+				</div>
+			</div>
+			<div class="s-96"></div>
 		</div>
-	</div>
-	<!-- Hero End -->
-</section>
-<section id="page-section" class="page-section">
+	</section>
+<section id="page-section" class="page-section white-ctn">
 	<!-- Content Start -->
 	<div class="wrapper">
-			<div class="post-archive three-columns">
+
 				<?php if ( have_posts() ) {
 					while ( have_posts() ) {
 						the_post();
@@ -53,12 +58,6 @@ global $fields;
 					// If no content, include the "No posts found" template.
 					get_template_part( 'partials/content', 'none' );
 				} ?>
-			</div>
-			<div class="ts-40"></div>
-			<?php if ( function_exists( 'glide_pagination' ) ) {
-				glide_pagination( $wp_query->max_num_pages );
-			} ?>
-			<div class="ts-80"></div>
 
 	</div>
 	<!-- Content End -->

@@ -31,7 +31,8 @@
 				);
 			?>
 		<?php elseif ( is_search() ) : ?>
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'elitedesign_td' ); ?></p>
+			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try <br/> again with some different keywords.', 'elitedesign_td' ); ?></p>
+			<div class="s-48"></div>
 			<?php get_search_form(); ?>
 		<?php else : ?>
 			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'elitedesign_td' ); ?></p>

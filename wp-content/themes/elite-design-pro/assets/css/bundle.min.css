@@ -1961,6 +1961,12 @@ button:-moz-focusring,
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  max-width: 540px;
+  width: 100%;
+  margin: auto;
+}
+.search-form label {
+  width: calc(100% - 150px);
 }
 .search-form input[type=submit],
 .search-form button,
@@ -4151,7 +4157,7 @@ a.wp-block-button__link.has-text-color.has-background:hover {
 ****/
 .not-found {
   text-align: center;
-  padding: 50px 0;
+  padding: var(--ed_space_6) 0;
 }
 
 .error,
