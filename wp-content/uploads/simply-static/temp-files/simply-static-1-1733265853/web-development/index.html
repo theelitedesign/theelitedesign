@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="p:domain_verify" content="3151c7da4cff8c9676c68880caa798e0">
+	<meta name="yandex-verification" content="867118057e6efe2a">
+	<meta name="msvalidate.01" content="738520458226193B09BDB8581DB4679F">
+	<meta name="google-site-verification" content="o9YNPby9a_hApsxdXSvX2NYCW4wdaVpWo-HxBOis-Nc">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/pwa/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/pwa/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/pwa/favicon-16x16.png">
+	<link rel="icon" sizes="any" href="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/pwa/favicon.ico">
+	<link rel="icon" type="image/svg+xml" href="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/pwa/icon.svg">
+	<link rel="manifest" href="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/pwa/site.webmanifest">
+	<meta name="theme-color" content="#0047FE">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="ELITE Design">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton_color" content="#0047FE">
+	<meta name="msapplication-TileColor" content="#0047FE">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="msapplication-TileImage" content="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/pwa/pwa-icon-144.png">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#0047FE">  <title>Web Development &#8211; theelitedesign</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="alternate" type="application/rss+xml" title="theelitedesign &raquo; Feed" href="https://theelitedesign.github.io/theelitedesign/feed/">
+<link rel="alternate" type="application/rss+xml" title="theelitedesign &raquo; Comments Feed" href="https://theelitedesign.github.io/theelitedesign/comments/feed/">
+<style id="wp-emoji-styles-inline-css">img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}</style>
+<link rel="stylesheet" id="wp-block-library-css" href="https://theelitedesign.github.io/theelitedesign/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3" media="all">
+<style id="classic-theme-styles-inline-css">/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}</style>
+<style id="global-styles-inline-css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}</style>
+<link rel="stylesheet" id="glide-theme-stylesheet-css" href="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/css/bundle.min.css?v=1733262503" media="all">
+<script src="https://theelitedesign.github.io/theelitedesign/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://theelitedesign.github.io/theelitedesign/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script id="glide-theme-scripts-js-extra">var localVars = {"ajax_url":"https:\/\/theelitedesign.github.io\/theelitedesign\/wp-admin\/admin-ajax.php"};</script>
+<script src="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/js/bundle.min.js?v=1733263845" id="glide-theme-scripts-js"></script>
+<link rel="https://api.w.org/" href="https://theelitedesign.github.io/theelitedesign/wp-json/">
+<link rel="alternate" type="application/json" href="https://theelitedesign.github.io/theelitedesign/wp-json/wp/v2/pages/12">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://theelitedesign.github.io/theelitedesign/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.4.3">
+<link rel="canonical" href="https://theelitedesign.github.io/theelitedesign/web-development/">
+<link rel="shortlink" href="https://theelitedesign.github.io/theelitedesign/?p=12">
+<link rel="alternate" type="application/json+oembed" href="https://theelitedesign.github.io/theelitedesign/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps%3A%2F%2Ftheelitedesign.github.io%2Ftheelitedesign%2Fweb-development%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://theelitedesign.github.io/theelitedesign/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps%3A%2F%2Ftheelitedesign.github.io%2Ftheelitedesign%2Fweb-development%2F#038;format=xml">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script>"serviceWorker" in navigator && window.addEventListener("load", function() {
+		navigator.serviceWorker.register("/sw.js").then(function(e) {
+			console.log("ServiceWorker registration successful with scope: ", e.scope)
+		}, function(e) {
+			console.log("ServiceWorker registration failed: ", e)
+		})
+	});</script>
+</head>
+
+<body class="page-template page-template-templates page-template-template-web-development page-template-templatestemplate-web-development-php page page-id-12">
+
+	 
+
+		<a class="skip-link screen-reader-text" href="#page-section">Skip to content</a>
+		<header class="header-section">
+			<div class="header-wrapper header-inner">
+				<div class="header-logo">
+					<a href="https://theelitedesign.github.io/theelitedesign/"><img src="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/site-logo.svg" alt="Site Logo"></a>
+				</div>
+				<div class="right-header header-navigation">
+					<div class="nav-overlay">
+						<div class="nav-container">
+							<div class="header-nav animated-hover">
+								<ul>
+									<li>
+										<a href="https://theelitedesign.github.io/theelitedesign/work">Work</a>
+									</li>
+									<li><a href="https://theelitedesign.github.io/theelitedesign/services">Services</a></li>
+									<li><a href="https://theelitedesign.github.io/theelitedesign/about">About</a></li>
+									<li><a href="https://theelitedesign.github.io/theelitedesign/team">Company</a></li>
+									<li><a href="https://theelitedesign.github.io/theelitedesign/blog">Resources</a></li>
+								</ul>
+							</div>
+							<div class="header-btns">
+								<a href="https://theelitedesign.github.io/theelitedesign/contact" class="button">Let’s Talk</a>
+							</div>
+						</div>
+					</div>
+					<div class="menu-btn">
+						<span class="top"></span>
+						<span class="bottom"></span>
+					</div>
+				</div>
+			</div>
+
+			<div id="cursor" class="">
+				<div class="cursor__circle"></div>
+			</div>
+			<div class="cursor no-click">
+				<div class="cursor-move">
+					<div class="cursor-dot">
+						<div class="text-wrapper">
+						</div>
+					</div>
+				</div>
+			</div>
+	</header>
+	<!-- Main Area Start -->
+
+		<div id="smooth-wrapper">
+  <div id="smooth-content">
+	<main id="main-section" class="main-section">
+<section id="hero-section" class="hero-section">
+	<div class="hero hero-ctn hero--work">
+		<div class="s-96"></div>
+		<div class="wrapper">
+			<div class="hero__content">
+				<h1>Easy to customize <br> <span>high performing sites</span>
+</h1>
+			</div>
+			<div class="s-96"></div>
+			<div class="hero__bottom-row flex-between-start">
+				<div class="hero-bottom-content p1">
+
+				</div>
+				<div class="hero-bottom-image">
+					<img src="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/uploads/hero-image-default.webp" alt="Image">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<div id="page-section" class="page-section">
+		<section class="white-ctn">
+			<div class="s-192"></div>
+			<div class="wrapper">
+				<div class="lead-paragraph t1">
+					<p>
+						We build websites using the Gutenberg editor in WordPress, making them user-friendly and visually appealing.
+					</p>
+				</div>
+			</div>
+			<div class="s-192"></div>
+			<div class=" overflow-hidden">
+				<div class="wrapper">
+					<div class="design-proccess-ctn">
+						<div class="section-head">
+							<h2>Development process</h2>
+						</div>
+						<div class="s-96"></div>
+						<div class="proccess-area flex">
+							<div class="single-proccess col-538">
+<span class="number">01</span>Planning & Kickoff</div>
+							<div class="single-proccess col-538">
+<span class="number">02</span>Development</div>
+							<div class="single-proccess col-538">
+<span class="number">03</span>QA / Review</div>
+							<div class="single-proccess col-538">
+<span class="number">05</span>Content Integration</div>
+							<div class="single-proccess col-538">
+<span class="number">05</span>Feedbacks</div>
+							<div class="single-proccess col-538">
+<span class="number">04</span>Launch / SEO</div>
+							<div class="single-proccess col-538">
+<span class="number">06</span>Continuous improvements</div>
+							<div class="single-proccess col-538">
+<span class="number">06</span>Support</div>
+						</div>
+					</div>
+				</div>
+				<div class="s-192"></div>
+				<div class="wrapper">
+					<div class="image-slider">
+						<div class="image-swiper swiper-container">
+							<div class="image-swiper--slider swiper-wrapper owl-carousel owl-theme" cursor-class="read-more">
+									<div class="swiper-slide image__slide swiper-slide swiper-lazy">
+										<div class="image__slide--img img-cover">
+											<img src="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/uploads/project-img-01.webp" alt="">
+										</div>
+									</div>
+									<div class="swiper-slide image__slide swiper-slide swiper-lazy">
+										<div class="image__slide--img img-cover">
+											<img src="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/uploads/project-img-01.webp" alt="">
+										</div>
+									</div>
+									<div class="swiper-slide image__slide swiper-slide swiper-lazy">
+										<div class="image__slide--img img-cover">
+											<img src="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/uploads/project-img-01.webp" alt="">
+										</div>
+									</div>
+									<div class="swiper-slide image__slide swiper-slide swiper-lazy">
+										<div class="image__slide--img img-cover">
+											<img src="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/uploads/project-img-01.webp" alt="">
+										</div>
+									</div>
+									<div class="swiper-slide image__slide swiper-slide swiper-lazy">
+										<div class="image__slide--img img-cover">
+											<img src="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/uploads/project-img-01.webp" alt="">
+										</div>
+									</div>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="s-192"></div>
+				<section class="ctn-gray ">
+					<div class="s-192"></div>
+					<div class="wrapper">
+						<div class="design-tool">
+							<div class="section-head">
+								<h2 class="heading-2">CMS we are <br> specialize in </h2>
+							</div>
+							<div class="s-48"></div>
+							<div class="design-tool-item flex-between-start">
+								<div class="design-tool-title t2 font-med">
+									<div class="design-tool-icon"><img src="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/cms-icon-01.svg" alt=""></div>
+									<div class="design-tool-inner-title">WordPress</div>
+								</div>
+								<div class="design-tool-text">For over 5 years, WordPress has been our primary platform for building websites due to its simplicity, easy of use, and strong support system.</div>
+							</div>
+							<div class="design-tool-item flex-between-start">
+								<div class="design-tool-title t2 font-med">
+									<div class="design-tool-icon"><img src="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/cms-icon-02.svg" alt=""></div>
+									<div class="design-tool-inner-title">Webflow</div>
+								</div>
+								<div class="design-tool-text">We like using Webflow because it generates code, which makes development simpler and more streamlined.</div>
+							</div>
+							<div class="design-tool-item flex-between-start">
+								<div class="design-tool-title t2 font-med">
+									<div class="design-tool-icon"><img src="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/cms-icon-04.svg" alt=""></div>
+									<div class="design-tool-inner-title">Headless</div>
+								</div>
+								<div class="design-tool-text">Headless CMS separates content and design, which offers more flexibility but can be harder to update content.</div>
+							</div>
+							<div class="design-tool-item flex-between-start">
+								<div class="design-tool-title t2 font-med">
+									<div class="design-tool-icon"><img src="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/cms-icon-03.svg" alt=""></div>
+									<div class="design-tool-inner-title">Shopify</div>
+								</div>
+								<div class="design-tool-text">For clients focused on shopping, we recommend a platform with a straightforward interface, lots of customization options, and built-in payment solutions.
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="s-96"></div>
+				</section>
+				<section class="white-ctn">
+					<div class="s-192"></div>
+					<div class="wrapper">
+						<div class="hat-ctn flexarea sb">
+							<div class="hat-title">
+								<h2 class="heading-3">Your questions?</h2>
+							</div>
+							<div class="hat-text">
+								<div class="faqs__area">
+									<div class="faqs__item">
+										<div class="faqs__item--title body-text-36">What web development services do you offer?<div class="faq-icon"></div>
+</div>
+										<div class="faqs__item--desc">
+											<p>We offer full-stack web development, including design, coding, and testing.</p>
+										</div>
+									</div>
+									<div class="faqs__item">
+										<div class="faqs__item--title body-text-36">How long does it take to build a website? <div class="faq-icon"></div>
+</div>
+										<div class="faqs__item--desc">
+											<p>Typically, website development takes 4-12 weeks, varying with complexity.</p>
+										</div>
+									</div>
+									<div class="faqs__item">
+										<div class="faqs__item--title body-text-36">What is your pricing structure for web development? <div class="faq-icon"></div>
+</div>
+										<div class="faqs__item--desc">
+											<p>Costs depend on features, design intricacy, and additional functionalities.</p>
+										</div>
+									</div>
+									<div class="faqs__item">
+										<div class="faqs__item--title body-text-36">Do you offer website maintenance and support after launch? <div class="faq-icon"></div>
+</div>
+										<div class="faqs__item--desc">
+											<p>Yes, we provide ongoing maintenance and support post-launch.</p>
+										</div>
+									</div>
+									<div class="faqs__item">
+										<div class="faqs__item--title body-text-36">How do you ensure the security of websites you develop?<div class="faq-icon"></div>
+</div>
+										<div class="faqs__item--desc">
+											<p>We implement robust security protocols to protect against cyber threats.</p>
+										</div>
+									</div>
+									<div class="faqs__item">
+										<div class="faqs__item--title body-text-36">Can you customize websites based on our specific needs and branding?<div class="faq-icon"></div>
+</div>
+										<div class="faqs__item--desc">
+											<p>Yes, we tailor websites to match your specific needs and branding requirements.</p>
+										</div>
+									</div>
+									<div class="faqs__item">
+										<div class="faqs__item--title body-text-36">Do you provide responsive design to ensure compatibility across devices?<div class="faq-icon"></div>
+</div>
+										<div class="faqs__item--desc">
+											<p>Absolutely, we ensure responsive design for compatibility across all devices.</p>
+										</div>
+									</div>
+									<div class="faqs__item">
+										<div class="faqs__item--title body-text-36">Will the website be optimized for search engines (SEO)?<div class="faq-icon"></div>
+</div>
+										<div class="faqs__item--desc">
+											<p>Yes, we optimize websites for search engines to improve visibility and attract more traffic.</p>
+										</div>
+									</div>
+									<div class="faqs__item">
+										<div class="faqs__item--title body-text-36">Can you integrate third-party services or APIs into the website?<div class="faq-icon"></div>
+</div>
+										<div class="faqs__item--desc">
+											<p>We can seamlessly integrate third-party services and APIs as needed.</p>
+										</div>
+									</div>
+									<div class="faqs__item">
+										<div class="faqs__item--title body-text-36">How do you handle website security and protect against cyber threats?<div class="faq-icon"></div>
+</div>
+										<div class="faqs__item--desc">
+											<p>We secure our website with encryption, firewalls, updates, strong passwords, employee training, and third-party assessments for protection against cyber threats.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="s-192"></div>
+				</section>
+				<section class="ctn-gray ">
+					<div class="s-192"></div>
+					<div class="wrapper">
+						<div class="list-colums flex">
+							<div class="list-column lyellow-bg col-49">
+								<h2 class="heading-3">Product 1</h2>
+								<div class="med-body list-text"> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+									consectetur, adipisci velit. </div>
+								<ul>
+									<li>We're on a quest to build a different kind of agency.</li>
+									<li> One where the crazy ideas make the cut and the old ways of doing things get the
+										side-eye </li>
+									<li>There are many variations of passages of Lorem Ipsum available</li>
+									<li>There are many variations of passages of Lorem Ipsum available</li>
+								</ul>
+							</div>
+							<div class="list-column pink-bg col-49">
+								<h2 class="heading-3">Product 2</h2>
+								<div class="med-body list-text"> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+									consectetur, adipisci velit. </div>
+								<ul>
+									<li>We're on a quest to build a different kind of agency.</li>
+									<li> One where the crazy ideas make the cut and the old ways of doing things get the
+										side-eye </li>
+									<li>There are many variations of passages of Lorem Ipsum available</li>
+									<li>There are many variations of passages of Lorem Ipsum available</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="s-192"></div>
+				</section>
+
+				<section>
+					<div class="s-192"></div>
+					<div class="wrapper">
+						<div class="services-ctn sm-services">
+							<div class="section-head">
+								<h2 class="heading-3">Need something else?</h2>
+							</div>
+							<div class="s-96"></div>
+							<div class="services-lists">
+								<div class="service-list-item">
+									<a href="https://theelitedesign.github.io/theelitedesign/web-design" class="no-link-style">
+										<div class="service-item-content">
+											<div class="service-count">01</div>
+											<div class="service-title">Web design</div>
+										</div>
+
+									</a>
+								</div>
+								<div class="service-list-item">
+									<a href="https://theelitedesign.github.io/theelitedesign/search-engine-optimization" class="no-link-style">
+										<div class="service-item-content">
+											<div class="service-count">02</div>
+											<div class="service-title">Search engine optimization</div>
+										</div>
+
+									</a>
+								</div>
+
+								<div class="service-list-item">
+									<a href="https://theelitedesign.github.io/theelitedesign/continuous-improvements" class="no-link-style">
+										<div class="service-item-content">
+											<div class="service-count">03</div>
+											<div class="service-title">Continuous improvement</div>
+										</div>
+
+									</a>
+								</div>
+								<div class="service-list-item">
+									<a href="https://theelitedesign.github.io/theelitedesign/maintenance-support" class="no-link-style">
+										<div class="service-item-content">
+											<div class="service-count">04</div>
+											<div class="service-title">Website maintenance & support</div>
+										</div>
+
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="s-192"></div>
+				</section>
+			</div>
+		</section>
+	</div>
+
+  </main>
+<footer class="footer-section">
+	<div class="s-96"></div>
+	<div class="wrapper">
+		<div class="cta-ctn">
+			<div class="flex">
+				<h4>Ready for a journey with elite?</h4>
+				<a href="https://theelitedesign.github.io/theelitedesign/contact" class="button footer-hover-button">Let’s Talk</a>
+			</div>
+		</div>
+		<div class="s-96"></div>
+		<div class="footer-ctn flex-ctn">
+			<div class="footer-left">
+				<div class="footer-logo">
+					<a href="#">
+						<img src="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/site-logo.svg" alt="Footer Logo">
+					</a>
+				</div>
+			</div>
+			<div class="footer-right">
+				<div class="footer-menu-widgets flexarea">
+					<div class="footer-widget footer-nav animated-hover">
+						<ul>
+							<li><a href="https://theelitedesign.github.io/theelitedesign/web-design">Web design</a></li>
+							<li><a href="https://theelitedesign.github.io/theelitedesign/web-development">Web development</a></li>
+							<li><a href="https://theelitedesign.github.io/theelitedesign/search-engine-optimization">Search engine optimization</a></li>
+							<li><a href="https://theelitedesign.github.io/theelitedesign/continuous-improvements">Continuous improvement</a></li>
+							<li><a href="https://theelitedesign.github.io/theelitedesign/maintenance-support">Maintenance + support</a></li>
+						</ul>
+					</div>
+					<div class="footer-widget footer-nav animated-hover">
+						<ul>
+							<li><a href="https://theelitedesign.github.io/theelitedesign/services">Services</a></li>
+							<li><a href="https://theelitedesign.github.io/theelitedesign/work">Work</a></li>
+							<li><a href="https://theelitedesign.github.io/theelitedesign/team">Company</a></li>
+							<li><a href="https://theelitedesign.github.io/theelitedesign/company">Careers</a></li>
+							<li><a href="https://theelitedesign.github.io/theelitedesign/about">About</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="s-96"></div>
+		<div class="flex-ctn">
+			<div class="footer-left">
+
+				<!-- <div class="site-socials">
+					<div class="big-body">Follow us</div>
+					<ul class="flexarea">
+						<li>
+							<a href="#" class="no-link-style">
+								<img src="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/facebook-icon.svg" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="#" class="no-link-style">
+								<img src="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/twitter-icon.svg" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="#" class="no-link-style">
+								<img src="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/instagram-icon.svg" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="#" class="no-link-style">
+								<img src="https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/pinterest-icon.svg" alt="" />
+							</a>
+						</li>
+					</ul>
+				</div> -->
+
+				<div class="blog-detail__social-ctn">
+						<div class="p3 font-med"> Follow us</div>
+						<div class="s-24"></div>
+						<div class="blog-detail__social-shares">
+							<ul>
+								<li>
+									<a href="#" target="_blank">Fb</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">Li</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">Tw</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+			</div>
+			<div class="footer-right">
+				<div class="elitedesign-contact animated-hover">
+					<div class="big-body"><a href="tel:+923474849527">Call923474849527</a></div>
+					<div class="big-body"><a href="mailto:hello@theelitedesign.com">hello@theelitedesign.com</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="s-192"></div>
+		<div class="footer-bottom flex p2">
+			<div class="copyright-area animated-hover">
+				<p>147 B Rana Town Lahore 54500 <br>
+				© 2024 <a href="https://www.theelitedesign.com/">elitedesign</a> ®
+			</p>
+			</div>
+			<div class="legal-nav animated-hover">
+				<ul>
+					<li>
+						<a href="https://theelitedesign.github.io/theelitedesign/contact">Contact us</a>
+					</li>
+					<li>
+						<a href="https://theelitedesign.github.io/theelitedesign/terms-and-conditions">Terms & policey</a>
+					</li>
+					<li>
+						<a href="https://theelitedesign.github.io/theelitedesign/sitemap">Sitemap</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="s-96"></div>
+	</div>
+</footer>
+
+	</div>
+</div>
+
+
+		<div style="display: none;">
+	 </div>
+	
+
+</body>
+
+</html>
