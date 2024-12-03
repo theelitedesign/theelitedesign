@@ -1,18 +1,15 @@
 .hero__content {
-
-
 	h1 {
 		margin-bottom: 0;
 	}
 }
 
 .hero-ctn {
-
 	a,
 	a:visited,
 	span {
 		color: #b388dd;
-		transition: all 0.5s ease-in-out;
+		transition: all 0.3s ease-in-out;
 	}
 
 	.post-tags .post-tag,
@@ -24,7 +21,6 @@
 			border-color: map-get($map: $colors, $key: white);
 		}
 	}
-
 }
 
 .hero__buttons {
@@ -47,7 +43,7 @@
 		@include font(st, med);
 		text-decoration: none;
 		color: map-get($map: $colors, $key: black);
-		transition: all 0.5s ease-in-out;
+		transition: all 0.3s ease-in-out;
 
 		&:hover {
 			border-color: map-get($map: $colors, $key: black);
@@ -62,7 +58,6 @@
 	}
 }
 
-
 .hero-bottom-content {
 	width: 33%;
 }
@@ -73,14 +68,12 @@
 	width: 57.5%;
 }
 
-
 .hero-section {
 	padding-top: 102px;
 	box-sizing: border-box;
 }
 
 .headingLine {
-
 	overflow: hidden;
 	line-height: 1.25;
 	opacity: 0;

@@ -1,5 +1,4 @@
 @media (max-width: 1003px) {
-
 	header {
 		padding: 22px 6%;
 	}
@@ -15,7 +14,6 @@
 	}
 
 	.header-btns {
-
 		a.button,
 		a.button:visited {
 			color: map-get($map: $colors, $key: black01);
@@ -31,7 +29,6 @@
 	}
 
 	.nav-overlay .header-nav {
-
 		ul {
 			margin: 0;
 			padding: 0;
@@ -92,7 +89,10 @@
 
 					&.current-menu-item > a,
 					&.current-menu-parent > a {
-						color: map-get($map: $base_colors, $key: mobile-nav-sub-link-color);
+						color: map-get(
+							$map: $base_colors,
+							$key: mobile-nav-sub-link-color
+						);
 					}
 				}
 			}
@@ -123,7 +123,7 @@
 	}
 
 	header .nav-container {
-		padding: var(--ed_space_7) 6%;
+		padding: var(--ed_space_7) 6% var(--ed_space_5);
 		height: 100%;
 		transition: all 0.4s ease-in-out;
 		transition-delay: 0.25s;
@@ -156,44 +156,37 @@
 		justify-content: space-between;
 		position: relative;
 
-		transition: all 0.5s ease-in-out;
+		transition: all 0.3s ease-in-out;
 	}
 
 	.menu-btn.active .top {
 		transform: translateY(0px) translateX(0) rotate(-46deg);
-
 	}
 
 	.menu-btn.active .bottom {
-		transform: translateY(-11px) translateX(0) rotate(45deg);
+		transform: translateY(-10px) translateX(0) rotate(46deg);
 	}
 
 	.menu-btn span {
 		background-color: map-get($map: $colors, $key: white);
 		height: 2px;
 		width: 32px;
-		transition: all 0.5s ease-in-out;
+		transition: all 0.3s ease-in-out;
 	}
 
 	.no-overflow {
-
 		.menu-btn span {
 			background-color: map-get($map: $colors, $key: black01);
 		}
 	}
-
-
 }
 
-
 @media (max-width: 782px) {
-
 	#wpadminbar {
 		position: fixed !important;
 	}
 
 	body.logged-in.admin-bar {
-
 		header {
 			top: 46px;
 		}

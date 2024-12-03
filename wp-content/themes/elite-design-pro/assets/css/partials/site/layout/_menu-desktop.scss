@@ -1,5 +1,4 @@
 @media (min-width: 1024px) {
-
 	.header-nav ul li:hover > ul {
 		opacity: 1;
 		visibility: visible;
@@ -53,11 +52,10 @@
 					left: 0;
 					bottom: 0;
 					display: block;
-					transition: all 0.5s ease-in-out;
+					transition: all 0.3s ease-in-out;
 				}
 
 				&:hover {
-
 					&::before {
 						width: 100%;
 					}
@@ -80,7 +78,10 @@
 			width: 230px;
 			opacity: 0;
 			box-shadow: 0 30px 60px rgb(18 27 32 / 0.15);
-			background-color: map-get($map: $base_colors, $key: header-nav-second-ul-bgcolor);
+			background-color: map-get(
+				$map: $base_colors,
+				$key: header-nav-second-ul-bgcolor
+			);
 			visibility: hidden;
 			padding: 26px 0;
 
@@ -106,14 +107,16 @@
 
 				a,
 				a:visited {
-
 					@include font-size(1.4);
 					display: inline-block;
 					padding-bottom: 2px;
 					line-height: 1;
 					box-sizing: border-box;
 					position: relative;
-					color: map-get($map: $base_colors, $key: header-nav-second-link-color);
+					color: map-get(
+						$map: $base_colors,
+						$key: header-nav-second-link-color
+					);
 
 					@include transition(all, 0.5s, ease-in-out);
 					@include font(st, reg);
@@ -124,7 +127,10 @@
 				}
 
 				a:hover {
-					color: map-get($map: $base_colors, $key: header-nav-second-link-color-hover);
+					color: map-get(
+						$map: $base_colors,
+						$key: header-nav-second-link-color-hover
+					);
 				}
 
 				&.current-menu-item > a,

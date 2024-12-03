@@ -63,9 +63,6 @@ global $fields;
 									<div class="service-count">01</div>
 									<div class="service-title">Web design</div>
 								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
-								</div>
 							</a>
 						</div>
 						<div class="service-list-item">
@@ -73,9 +70,6 @@ global $fields;
 								<div class="service-item-content">
 									<div class="service-count">02</div>
 									<div class="service-title">Web development</div>
-								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
 								</div>
 							</a>
 						</div>
@@ -85,9 +79,6 @@ global $fields;
 									<div class="service-count">03</div>
 									<div class="service-title">Search engine optimization</div>
 								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
-								</div>
 							</a>
 						</div>
 						<div class="service-list-item">
@@ -96,9 +87,6 @@ global $fields;
 									<div class="service-count">05</div>
 									<div class="service-title">Continuous improvement</div>
 								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
-								</div>
 							</a>
 						</div>
 						<div class="service-list-item">
@@ -106,9 +94,6 @@ global $fields;
 								<div class="service-item-content">
 									<div class="service-count">06</div>
 									<div class="service-title">Website maintenance & support</div>
-								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
 								</div>
 							</a>
 						</div>
@@ -126,7 +111,7 @@ global $fields;
 							<p>
 								ELITE is your best choice for web development. We create exceptional designs and top-notch websites. Our service always WOWs. Let us exceed your expectations today.
 							</p>
-							<cite class="font-med"><strong>Bahar Hussain</strong> Founder - ELITE Design</cite>
+							<cite class="font-med"><strong>Bahar Hussain</strong> Founder - elite design</cite>
 						</blockquote>
 					</div>
 				</div>
@@ -146,7 +131,7 @@ global $fields;
 				<div class="work-ctn">
 					<div class="work-items flex-ctn">
 						<div class="work-item">
-							<div class="work-item-image h-img-cover" cursor-class="read-more">
+							<div class="work-item-image h-img-cover">
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="no-link-style">
 									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
 								</a>
@@ -158,7 +143,7 @@ global $fields;
 							</div>
 						</div>
 						<div class="work-item">
-							<div class="work-item-image h-img-cover" cursor-class="read-more">
+							<div class="work-item-image h-img-cover">
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="no-link-style">
 									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
 								</a>
@@ -193,9 +178,6 @@ global $fields;
 									<div class="service-label">Industry</div>
 									<div class="service-title">Elite design's 10 rules for amazing websites</div>
 								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
-								</div>
 							</a>
 						</div>
 						<div class="service-list-item">
@@ -207,24 +189,8 @@ global $fields;
 											boundaries of gutenberg custom blocks
 									</div>
 								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
-								</div>
 							</a>
 						</div>
-						<!-- <div class="service-list-item">
-							<a href="#" class="no-link-style">
-								<div class="service-item-content">
-									<div class="service-label">SEO</div>
-									<div class="service-title">How to Avoid (and Fix) Organic Traffic Drop After a
-										Website Redesign
-									</div>
-								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php // echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
-								</div>
-							</a>
-						</div> -->
 					</div>
 					<div class="center-align blog-posts-button">
 						<div class="s-96"></div>

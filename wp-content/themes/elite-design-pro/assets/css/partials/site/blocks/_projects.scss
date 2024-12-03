@@ -16,12 +16,11 @@ a.project-image:visited {
 		width: 100%;
 		height: 100%;
 		background-color: map-get($map: $colors, $key: red15);
-		transition: all 0.5s ease-in-out;
+		transition: all 0.3s ease-in-out;
 		opacity: 0;
 	}
 
 	&:hover {
-
 		&::before {
 			opacity: 1;
 		}
@@ -40,13 +39,11 @@ a.project-image:visited {
 }
 
 .project-desc {
-
 	h3 {
 		margin-bottom: 20px;
 
 		a,
 		a:visited {
-
 			color: map-get($map: $colors, $key: white);
 			border-bottom: 0;
 
@@ -58,7 +55,6 @@ a.project-image:visited {
 }
 
 .project-cat {
-
 	a.button.small,
 	a.button.small:visited {
 		padding: 7px 15px 9px;
@@ -94,24 +90,23 @@ a.project-image:visited {
 		height: 100%;
 
 		img {
-			transition: all 0.5s ease-in-out;
+			transition: all 0.3s ease-in-out;
 		}
 
 		&:before {
-			content: '';
+			content: "";
 			width: 100%;
 			height: 100%;
 			position: absolute;
 			top: 0;
 			left: 0;
 			background-color: map-get($map: $colors, $key: red2);
-			transition: all 0.5s ease-in-out;
+			transition: all 0.3s ease-in-out;
 			opacity: 0;
 			z-index: 2;
 		}
 
 		&:hover {
-
 			&::before {
 				opacity: 0.5;
 			}
@@ -133,10 +128,8 @@ a.work-title:visited {
 }
 
 .white-ctn {
-
 	a.work-title,
 	a.work-title:visited {
-
 		&:hover {
 			color: map-get($map: $colors, $key: red2);
 		}

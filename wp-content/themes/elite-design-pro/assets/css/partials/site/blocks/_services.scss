@@ -15,7 +15,6 @@ a.no-link-style:visited {
 .service-list-item {
 	position: relative;
 
-
 	a.no-link-style,
 	a.no-link-style:visited {
 		padding: var(--ed_space_5) 0;
@@ -25,7 +24,7 @@ a.no-link-style:visited {
 	&:last-of-type {
 		border: 0;
 		&::after {
-			content: '';
+			content: "";
 			width: 200vw;
 			height: 1px;
 			display: block;
@@ -37,7 +36,7 @@ a.no-link-style:visited {
 	}
 
 	&::before {
-		content: '';
+		content: "";
 		width: 200vw;
 		height: 1px;
 		display: block;
@@ -46,14 +45,13 @@ a.no-link-style:visited {
 		left: -50vw;
 		background-color: var(--ed_gray);
 	}
-
 }
 
 .service-item-content {
-	width: 70%;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
+	align-items: center;
 }
 
 .service-count {
@@ -66,7 +64,7 @@ a.no-link-style:visited {
 	width: 80%;
 	font-size: var(--ed_font_size_h3);
 	@include font(st, med);
-	transition: all 0.5s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .service-item-image {
@@ -85,18 +83,14 @@ a.no-link-style:visited {
 }
 
 @media (hover: hover) {
-
 	.service-list-item:hover {
-
 		.service-title {
 			color: map-get($map: $colors, $key: red);
 		}
 	}
 
 	.white-ctn {
-
 		.service-list-item:hover {
-
 			.service-title {
 				color: map-get($map: $colors, $key: red2);
 			}
@@ -121,16 +115,16 @@ a.no-link-style:visited {
 	font-size: clamp(1rem, 0.231vw + 0.94rem, 1.125rem);
 	@include font(st, med);
 	margin-bottom: var(--ed_space_3);
-	opacity: .8;
+	opacity: 0.8;
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--ed_space_4);
 }
 
 .resources-ctn {
-
 	.service-item-content {
 		flex-direction: column;
+		align-items: flex-start;
 	}
 
 	.service-title {
@@ -139,17 +133,13 @@ a.no-link-style:visited {
 	}
 
 	.service-title {
-
 		font-size: var(--ed_font_size_h4);
-
 	}
-
 }
 
 .blog-posts-button {
 	line-height: 0.65;
 }
-
 
 .sm-services {
 	.service-title {

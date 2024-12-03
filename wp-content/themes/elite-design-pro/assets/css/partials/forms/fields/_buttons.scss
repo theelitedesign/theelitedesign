@@ -20,7 +20,7 @@ input[type="reset"] {
 	text-decoration: none;
 	color: map-get($map: $colors, $key: white);
 	border: 2px solid map-get($map: $colors, $key: white30);
-	transition: all 0.5s ease-in-out;
+	transition: all 0.3s ease-in-out;
 	line-height: 1;
 	margin-right: 15px;
 	line-height: 1;
@@ -43,7 +43,6 @@ input[type="reset"] {
 		border-color: map-get($map: $colors, $key: white);
 		color: map-get($map: $colors, $key: black);
 	}
-
 }
 
 input[type="submit"]:hover,
@@ -59,12 +58,14 @@ input[type="reset"] {
 
 	&:hover {
 		color: map-get($map: $base_colors, $key: theme_btn_color);
-		background-color: map-get($map: $base_colors, $key: theme_btn_bgcolor_hover);
+		background-color: map-get(
+			$map: $base_colors,
+			$key: theme_btn_bgcolor_hover
+		);
 	}
 }
 
 .white-ctn {
-
 	input[type="submit"],
 	button,
 	input[type="button"],

@@ -238,21 +238,19 @@ jQuery( function() {
 			},
 		},
 	} );
-	
-   
-    
-    jQuery('.image-swiper--slider').owlCarousel({
-        // loop: false,
-        // nav: false,
-        // dots: false,
-        // margin: 0,
-        // autoWidth: true,
+
+	jQuery( '.image-swiper--slider' ).owlCarousel( {
+		// loop: false,
+		// nav: false,
+		// dots: false,
+		// margin: 0,
+		// autoWidth: true,
 		// autoplayTimeout: 10000,
 		// smartSpeed: 1000,
 		// // mouseDrag: true,
 	    // // touchDrag: true,
 	    // // freeDrag: true,
-		
+
 		margin: 0,
 		items: 1,
 		loop: false,
@@ -263,18 +261,18 @@ jQuery( function() {
 		// autoplay: true,
 		autoplayTimeout: 10000,
 		smartSpeed: 1000,
-        responsive: {
-            0: {
-                items: 1,
-            },
-        },
-    });
+		responsive: {
+			0: {
+				items: 1,
+			},
+		},
+	} );
 
 	jQuery.noConflict();
 
-	if (jQuery('.services-ctn').length > 0) {
-    jQuery('.services-ctn').closest('.wrapper').parents().find('section').addClass('overflow-hidden');
-  }
+	if ( jQuery( '.services-ctn' ).length > 0 ) {
+		jQuery( '.services-ctn' ).closest( '.wrapper' ).parents().find( 'section' ).addClass( 'overflow-hidden' );
+	}
 
 	jQuery( '.testi-ctn' ).owlCarousel( {
 		loop: false,
@@ -636,8 +634,6 @@ jQuery( function() {
 	//         }
 	//     });
 	// }
-
-
 
 	// gsap.registerPlugin(ScrollTrigger)
 

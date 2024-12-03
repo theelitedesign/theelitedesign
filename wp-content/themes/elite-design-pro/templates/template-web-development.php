@@ -268,9 +268,7 @@ get_header();
 											<div class="service-count">01</div>
 											<div class="service-title">Web design</div>
 										</div>
-										<div class="service-item-image h-img-cover">
-											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-										</div>
+
 									</a>
 								</div>
 								<div class="service-list-item">
@@ -279,9 +277,7 @@ get_header();
 											<div class="service-count">02</div>
 											<div class="service-title">Search engine optimization</div>
 										</div>
-										<div class="service-item-image h-img-cover">
-											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-										</div>
+
 									</a>
 								</div>
 
@@ -291,9 +287,7 @@ get_header();
 											<div class="service-count">03</div>
 											<div class="service-title">Continuous improvement</div>
 										</div>
-										<div class="service-item-image h-img-cover">
-											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-										</div>
+
 									</a>
 								</div>
 								<div class="service-list-item">
@@ -302,9 +296,7 @@ get_header();
 											<div class="service-count">04</div>
 											<div class="service-title">Website maintenance & support</div>
 										</div>
-										<div class="service-item-image h-img-cover">
-											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/product-img-01.webp" alt="Image">
-										</div>
+
 									</a>
 								</div>
 							</div>

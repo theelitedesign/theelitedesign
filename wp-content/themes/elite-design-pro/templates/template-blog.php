@@ -41,9 +41,7 @@ get_header();
 									<div class="service-label">Industry</div>
 									<div class="service-title">Elite design's 10 rules for amazing websites</div>
 								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
-								</div>
+
 							</a>
 						</div>
 						<div class="service-list-item">
@@ -55,9 +53,7 @@ get_header();
 											boundaries of gutenberg custom blocks
 									</div>
 								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
-								</div>
+
 							</a>
 						</div>
 					</div>
@@ -86,9 +82,6 @@ get_header();
 									<div class="service-label">Industry</div>
 									<div class="service-title">Elite design's 10 rules for amazing websites</div>
 								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
-								</div>
 							</a>
 						</div>
 						<div class="service-list-item">
@@ -100,9 +93,7 @@ get_header();
 											boundaries of gutenberg custom blocks
 									</div>
 								</div>
-								<div class="service-item-image h-img-cover">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="Image">
-								</div>
+
 							</a>
 						</div>
 					</div>

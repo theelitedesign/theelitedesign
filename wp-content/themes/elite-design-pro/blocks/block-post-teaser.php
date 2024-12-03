@@ -56,11 +56,11 @@ $see_all_posts_link = $block_fields['see_all_posts_link']; // for keeping html f
 					<?php if ( $elite_blog_title ) { ?>
 						<h2 class="heading-1">
 							<?php
-								echo esc_html( $elite_blog_title ); 
+								echo esc_html( $elite_blog_title );
 								?>
 						</h2>
 					<?php } ?>
-				</div>	
+				</div>
 				<div class="s-96"></div>
 				<div class="services-ctn resources-ctn">
 					<div class="services-lists">
@@ -69,12 +69,12 @@ $see_all_posts_link = $block_fields['see_all_posts_link']; // for keeping html f
 							$post_title = get_the_title($postID);
 							$post_image = get_the_post_thumbnail($postID);
 							$post_excerpt = get_the_excerpt($postID);
-							
+
 							$thepost_terms = get_the_terms($postID, 'post_tag');
 
 							?>
 
-					
+
 							<div class="service-list-item">
 								<a href="<?php the_permalink($postID); ?>" class="no-link-style">
 									<div class="service-item-content">
@@ -99,7 +99,7 @@ $see_all_posts_link = $block_fields['see_all_posts_link']; // for keeping html f
 					<?php if ($see_all_posts_link) { ?>
 						<div class="center-align blog-posts-button">
 							<div class="s-48"></div>
-							
+
 							<a href="<?php echo $see_all_posts_link['url']; ?>" class="see-all-button button black" target="<?php echo $see_all_posts_link['target']; ?>">
 								<?php echo $see_all_posts_link['title']; ?>
 							</a>

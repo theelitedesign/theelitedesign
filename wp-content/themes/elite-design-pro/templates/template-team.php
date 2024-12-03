@@ -116,14 +116,10 @@ get_header();
 
 				</div>
 			<div class="s-192"></div>
-			<div class="hat-ctn flexarea sb">
-				<div class="hat-title">
-					<h2 class="heading-3">What we believe in</h2>
-				</div>
-				<div class="hat-text">
-					<div class="t1">
-						We value strong relationships and passion in our work, always improving and taking responsibility for our promises, even if it means saying no.
-					</div>
+			<div class="hat-ctn hat-horizontal">
+				<h2 class="heading-6">What we believe in</h2>
+				<div class="t1">
+					We value strong relationships and passion in our work, always improving and taking responsibility for our promises, even if it means saying no.
 				</div>
 			</div>
 			<div class="s-192"></div>

@@ -1,8 +1,6 @@
-
 .faqs__item {
 	> .faqs__item--title {
-
-		transition: all 0.5s ease-in-out;
+		transition: all 0.3s ease-in-out;
 		border-top: 1px solid var(--ed_gray);
 		padding: var(--ed_space_5) var(--ed_space_7);
 		padding-left: 0;
@@ -10,7 +8,6 @@
 		cursor: pointer;
 		position: relative;
 		box-sizing: border-box;
-		line-height: 1.1;
 
 		@include font(st, med);
 
@@ -21,7 +18,7 @@
 			.faq-icon {
 				border-color: var(--red2);
 				&:before,
-				&:after  {
+				&:after {
 					background-color: var(--red2);
 				}
 			}
@@ -31,7 +28,6 @@
 			// padding-bottom: var(--ed_space_3);
 
 			.faq-icon {
-
 				&:after {
 					opacity: 0;
 				}
@@ -43,7 +39,8 @@
 .faqs__item--desc {
 	display: none;
 	padding-bottom: var(--ed_space_5);
-font-size: clamp(1.25rem, 0.462vw + 1.13rem, 1.5rem);
+	font-size: clamp(1.25rem, 0.462vw + 1.13rem, 1.5rem);
+	padding-right: var(--ed_space_5);
 
 	p:last-of-type {
 		margin: 0;
@@ -56,18 +53,19 @@ font-size: clamp(1.25rem, 0.462vw + 1.13rem, 1.5rem);
 	height: 52px;
 	border-radius: 50%;
 	border: 1px solid transparent;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.3s ease-in-out;
 	position: absolute;
-	top: 32px;
+	top: 0;
 	right: 0;
-	margin: 0;
+	margin: auto;
+	bottom: 0;
 
 	&:before,
 	&:after {
 		position: absolute;
 		content: "";
 		background-color: var(--ed_ugray);
-		transition: all 0.5s ease-in-out;
+		transition: all 0.3s ease-in-out;
 	}
 
 	&:before {

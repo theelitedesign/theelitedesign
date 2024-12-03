@@ -35,52 +35,20 @@ get_header();
 	<section class="white-ctn">
 		<div class="s-192"></div>
 		<div class="wrapper">
-			<div class="lead-paragraph t1">
-				<p>
+
+				<div class="t1">
 					WordPress agency in Pakistan offering full service digital marketing. Elite Design has a reputation for top-class digital solutions that get results.
+				</div>
 
-				</p>
-			</div>
 		</div>
-		<div class="s-96"></div>
+		<div class="s-192"></div>
 		<div class="wrapper">
-			<!-- <div class="stats-ctn">
-				<div class="section-head ma-900">
-					<h2 class="heading-4">Powered by creativity, <br> innovation and excellence</h2>
-				</div>
-				<div class="s-96"></div>
-				<div class="stats-inner-area three-cols flexarea center">
-					<div class="single-stat col">
-						<div class="stat-numbers">
-							<span class="fig-number font-bold" data-number="10">8</span>
-							<span class="font-bold">years</span>
-						</div>
-						<h3 class="heading-6">Development experience</h3>
-					</div>
-					<div class="single-stat col">
-						<div class="stat-numbers">
-							<span class="fig-number font-bold" data-number="60">50</span>
-							<span class="font-bold">+</span>
-
-						</div>
-						<h3 class="heading-6">Happy clients</h3>
-					</div>
-					<div class="single-stat col">
-						<div class="stat-numbers">
-							<span class="fig-number font-bold" data-number="90">85</span>
-							<span class="font-bold">+</span>
-						</div>
-						<h3 class="heading-6">Projects delivered</h3>
-					</div>
-				</div>
-			</div> -->
-			<!-- <div class="s-192"></div> -->
 			<div class="hat-ctn flexarea sb">
 				<div class="hat-title">
-					<h2 class="heading-3">What you will get from us</h2>
+					<h2 class="heading-4">What you will get from us</h2>
 				</div>
 				<div class="hat-text">
-					<div class="p1">
+					<div class="t3">
 						We value strong relationships and passion in our work, always improving and taking responsibility for our promises, even if it means saying no.
 					</div>
 				</div>
