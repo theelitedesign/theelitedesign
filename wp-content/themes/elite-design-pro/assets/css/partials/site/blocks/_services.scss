@@ -63,7 +63,7 @@ a.no-link-style:visited {
 .service-title {
 	width: 80%;
 	font-size: var(--ed_font_size_h3);
-	@include font(st, med);
+	// @include font(st, med);
 	transition: all 0.3s ease-in-out;
 }
 

@@ -10,7 +10,6 @@ img {
 }
 
 a {
-
 	img {
 		border: none;
 		outline: none;
@@ -28,7 +27,7 @@ figure {
 	margin: 0 0 30px;
 
 	figcaption {
-		color: map-get( $map: $base_colors, $key: caption_color );
+		color: map-get($map: $base_colors, $key: caption_color);
 		font-size: 90%;
 		margin: 0 0 30px;
 	}
@@ -40,8 +39,7 @@ picture {
 }
 
 svg {
-	width: 0;
-	height: 0;
+	margin: 0;
 }
 
 .gallery .gallery-item a {
@@ -49,10 +47,9 @@ svg {
 }
 
 figure.wp-block-image {
-
 	&.alignfull.size-thumbnail {
-		margin-left: calc( -100vw / 2 + 100% / 2 );
-		margin-right: calc( -100vw / 2 + 100% / 2 );
+		margin-left: calc(-100vw / 2 + 100% / 2);
+		margin-right: calc(-100vw / 2 + 100% / 2);
 		max-width: 100vw;
 	}
 
@@ -60,4 +57,16 @@ figure.wp-block-image {
 		margin: 0 -200px;
 		max-width: 140%;
 	}
+}
+
+.visually-hidden {
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+	font-size: 12px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
 }

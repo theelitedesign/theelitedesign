@@ -63,64 +63,64 @@ animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&a.sup
 jQuery.noConflict();
 
 jQuery( window ).on( 'load', function() {
-	if ( jQuery( document ).scrollTop() > 0 ) {
-		const $header_height = jQuery( 'header' ).outerHeight();
-		jQuery( '.hero-section' ).css( 'padding-top', $header_height + 'px' );
-		if ( jQuery( 'body' ).hasClass( 'logged-in admin-bar' ) ) {
-			const $header_height = jQuery( 'header' ).outerHeight() + 32;
-			jQuery( '.hero-section' ).css( 'padding-top', $header_height + 'px' );
-		}
-	} else {
-		const $header_height = jQuery( 'header' ).outerHeight();
-		jQuery( '.hero-section' ).css( 'padding-top', $header_height + 'px' );
-		if ( jQuery( 'body' ).hasClass( 'logged-in admin-bar' ) ) {
-			const $header_height = jQuery( 'header' ).outerHeight() + 32;
-			jQuery( '.hero-section' ).css( 'padding-top', $header_height + 'px' );
-		}
-	}
+	// if ( jQuery( document ).scrollTop() > 0 ) {
+	// 	const $header_height = jQuery( 'header' ).outerHeight();
+	// 	jQuery( '.hero-section' ).css( 'padding-top', $header_height + 'px' );
+	// 	if ( jQuery( 'body' ).hasClass( 'logged-in admin-bar' ) ) {
+	// 		const $header_height = jQuery( 'header' ).outerHeight() + 32;
+	// 		jQuery( '.hero-section' ).css( 'padding-top', $header_height + 'px' );
+	// 	}
+	// } else {
+	// 	const $header_height = jQuery( 'header' ).outerHeight();
+	// 	jQuery( '.hero-section' ).css( 'padding-top', $header_height + 'px' );
+	// 	if ( jQuery( 'body' ).hasClass( 'logged-in admin-bar' ) ) {
+	// 		const $header_height = jQuery( 'header' ).outerHeight() + 32;
+	// 		jQuery( '.hero-section' ).css( 'padding-top', $header_height + 'px' );
+	// 	}
+	// }
 
-	if ( jQuery( 'h1' ).length > 0 ) {
-		jQuery( 'h1' ).css( {
-			opacity: 1,
-			visibility: 'visible',
-		} );
+	// if ( jQuery( 'h1' ).length > 0 ) {
+	// 	jQuery( 'h1' ).css( {
+	// 		opacity: 1,
+	// 		visibility: 'visible',
+	// 	} );
 
-		const heroTitle = document.querySelectorAll( 'h1' );
-		gsap.registerPlugin( SplitText );
+	// 	const heroTitle = document.querySelectorAll( 'h1' );
+	// 	gsap.registerPlugin( SplitText );
 
-		let textAnim;
+	// 	let textAnim;
 
-		const doText = () => {
-			textAnim && textAnim.progress( 1 );
-			const text = new SplitText( 'h1', { types: 'lines,char', linesClass: 'lineChild' } );
-			const mask = new SplitText( 'h1', { types: 'lines,char', linesClass: 'lineParent' } );
+	// 	const doText = () => {
+	// 		textAnim && textAnim.progress( 1 );
+	// 		const text = new SplitText( 'h1', { types: 'lines,char', linesClass: 'lineChild' } );
+	// 		const mask = new SplitText( 'h1', { types: 'lines,char', linesClass: 'lineParent' } );
 
-			textAnim = gsap.fromTo( '.lineChild', { yPercent: 100 }, {
-				yPercent: 0,
-				duration: 0.8,
-				stagger: 0.2,
-			} );
-		};
-		doText();
-	}
+	// 		textAnim = gsap.fromTo( '.lineChild', { yPercent: 100 }, {
+	// 			yPercent: 0,
+	// 			duration: 0.8,
+	// 			stagger: 0.2,
+	// 		} );
+	// 	};
+	// 	doText();
+	// }
 
-	if ( jQuery( '.textAnimation' ).length > 0 ) {
-		jQuery( '.textAnimation .headingLine' ).css( 'opacity', '1' );
+	// if ( jQuery( '.textAnimation' ).length > 0 ) {
+	// 	jQuery( '.textAnimation .headingLine' ).css( 'opacity', '1' );
 
-		const textAnimation = new SplitText( '.textAnimation', { type: 'words,chars' } );
+	// 	const textAnimation = new SplitText( '.textAnimation', { type: 'words,chars' } );
 
-		gsap.from( textAnimation.words, { y: '100%', stagger: 0.05 } );
-		gsap.from( textAnimation.chars, { y: '100%', stagger: 0.05 } );
-	}
+	// 	gsap.from( textAnimation.words, { y: '100%', stagger: 0.05 } );
+	// 	gsap.from( textAnimation.chars, { y: '100%', stagger: 0.05 } );
+	// }
 
-	// gsap.registerPlugin( ScrollTrigger, ScrollSmoother );
+	gsap.registerPlugin( ScrollTrigger, ScrollSmoother );
 
-	// const smoother = ScrollSmoother.create( {
-	// 	smooth: 2,
-	// 	effects: true,
-	// 	normalizeScroll: true,
-	// 	dataScroll: 'true',
-	// } );
+	const smoother = ScrollSmoother.create( {
+		smooth: 2,
+		effects: true,
+		normalizeScroll: true,
+		dataScroll: 'true',
+	} );
 } );
 jQuery.noConflict();
 
@@ -240,17 +240,6 @@ jQuery( function() {
 	} );
 
 	jQuery( '.image-swiper--slider' ).owlCarousel( {
-		// loop: false,
-		// nav: false,
-		// dots: false,
-		// margin: 0,
-		// autoWidth: true,
-		// autoplayTimeout: 10000,
-		// smartSpeed: 1000,
-		// // mouseDrag: true,
-	    // // touchDrag: true,
-	    // // freeDrag: true,
-
 		margin: 0,
 		items: 1,
 		loop: false,
@@ -431,19 +420,6 @@ jQuery( function() {
 	}
 
 	jQuery.noConflict();
-
-	// if ( jQuery( '.swiper-container' ).length > 0 ) {
-	// 	const mySwiper = new Swiper( '.swiper-container', {
-	// 		slidesPerView: 'auto',
-	// 		spaceBetween: 0,
-	// 		freeMode: true,
-	// 		parallax: false,
-	// 		watchSlidesVisibility: true,
-	// 		loop: false,
-	// 		lazy: true,
-	// 	} );
-	// }
-	// jQuery.noConflict();
 
 	jQuery( '.faqs__item--title' ).on( 'click', function() {
 		if ( jQuery( this ).hasClass( 'active' ) ) {

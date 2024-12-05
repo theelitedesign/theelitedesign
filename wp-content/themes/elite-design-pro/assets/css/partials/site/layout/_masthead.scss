@@ -76,7 +76,7 @@
 .headingLine {
 	overflow: hidden;
 	line-height: 1.25;
-	opacity: 0;
+	// opacity: 0;
 
 	&:nth-child(2) {
 		display: flex;
@@ -85,5 +85,86 @@
 		align-items: baseline;
 		gap: var(--ed_space_5);
 		margin-top: -3.5%;
+	}
+}
+
+@keyframes wave-arrow1 {
+	0% {
+		opacity: 0.52;
+	}
+
+	33% {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0.52;
+	}
+}
+
+@keyframes wave-arrow2 {
+	0% {
+		opacity: 0.52;
+	}
+
+	33% {
+		opacity: 0.52;
+	}
+
+	66% {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0.52;
+	}
+}
+
+@keyframes wave-arrow3 {
+	0% {
+		opacity: 1;
+	}
+
+	33% {
+		opacity: 0.52;
+	}
+
+	66% {
+		opacity: 0.52;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.dropdown-item1 {
+	animation-name: wave-arrow1;
+}
+
+.dropdown-item3 {
+	animation: wave-arrow2;
+}
+
+.dropdown-item2 {
+	animation: wave-arrow3;
+}
+
+.dropdown-item1,
+.dropdown-item2,
+.dropdown-item3 {
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.scroll-down {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+
+	a,
+	a:visited {
+		line-height: 0;
 	}
 }

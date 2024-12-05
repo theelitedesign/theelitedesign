@@ -126,7 +126,7 @@ get_header();
 							<div class="s-48"></div>
 							<div class="design-tool-item flex-between-start">
 								<div class="design-tool-title t2 font-med">
-									<div class="design-tool-icon"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/tool-logo-01.svg" alt=""></div>
+									<!-- <div class="design-tool-icon"><img src="<?php // echo esc_url( get_template_directory_uri() ); ?>/assets/img/tool-logo-01.svg" alt=""></div> -->
 									<div class="design-tool-inner-title">Octopus.do</div>
 								</div>
 								<div class="design-tool-text">Our preferred tool for structuring information and strategizing content. An essential part of our planning process.</div>
@@ -147,7 +147,7 @@ get_header();
 							</div> -->
 							<div class="design-tool-item flex-between-start">
 								<div class="design-tool-title t2 font-med">
-									<div class="design-tool-icon"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/tool-logo-05.svg" alt=""></div>
+									<!-- <div class="design-tool-icon"><img src="<?php // echo esc_url( get_template_directory_uri() ); ?>/assets/img/tool-logo-05.svg" alt=""></div> -->
 									<div class="design-tool-inner-title">Index Page</div>
 								</div>
 								<div class="design-tool-text">To improve Figma for presentations, we made our own tool. The Index Page plugin organizes screens with thumbnails.
@@ -268,13 +268,12 @@ get_header();
 								<div class="service-list-item">
 									<a href="<?php echo esc_url( home_url( '/' ) ); ?>web-development" class="no-link-style">
 										<div class="service-item-content">
-											<div class="service-count">01</div>
 											<div class="service-title">Web development</div>
 										</div>
 
 									</a>
 								</div>
-								<div class="service-list-item">
+								<!-- <div class="service-list-item">
 									<a href="<?php echo esc_url( home_url( '/' ) ); ?>search-engine-optimization" class="no-link-style">
 										<div class="service-item-content">
 											<div class="service-count">02</div>
@@ -301,7 +300,7 @@ get_header();
 										</div>
 
 									</a>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>

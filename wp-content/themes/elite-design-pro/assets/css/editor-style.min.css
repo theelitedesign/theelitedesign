@@ -283,24 +283,36 @@ Mixin for transition
   /* 32px */
   --ed_font_size_h5_max: var(--font_base_unit) * 12;
   /* 24px */
-  --ed_font_size_h1: clamp(var(--ed_font_size_h1_min),
-  		7.159vw + 1.148rem,
-  		var(--ed_font_size_h1_max));
-  --ed_font_size_h2: clamp(var(--ed_font_size_h2_min),
-  		4.619vw + 1.305rem,
-  		var(--ed_font_size_h2_max));
-  --ed_font_size_h3: clamp(var(--ed_font_size_h3_min),
-  		1.848vw + 1.522rem,
-  		var(--ed_font_size_h3_max));
-  --ed_font_size_h4: clamp(var(--ed_font_size_h4_min),
-  		0.924vw + 1.261rem,
-  		var(--ed_font_size_h4_max));
-  --ed_font_size_h5: clamp(var(--ed_font_size_h5_min),
-  		0.693vw + 0.946rem,
-  		var(--ed_font_size_h5_max));
-  --ed_font_size_h6: clamp(var(--ed_font_size_h5_min),
-  		0.693vw + 0.946rem,
-  		var(--ed_font_size_h5_max));
+  --ed_font_size_h1: clamp(
+  	var(--ed_font_size_h1_min),
+  	7.159vw + 1.148rem,
+  	var(--ed_font_size_h1_max)
+  );
+  --ed_font_size_h2: clamp(
+  	var(--ed_font_size_h2_min),
+  	4.619vw + 1.305rem,
+  	var(--ed_font_size_h2_max)
+  );
+  --ed_font_size_h3: clamp(
+  	var(--ed_font_size_h3_min),
+  	1.848vw + 1.522rem,
+  	var(--ed_font_size_h3_max)
+  );
+  --ed_font_size_h4: clamp(
+  	var(--ed_font_size_h4_min),
+  	0.924vw + 1.261rem,
+  	var(--ed_font_size_h4_max)
+  );
+  --ed_font_size_h5: clamp(
+  	var(--ed_font_size_h5_min),
+  	0.693vw + 0.946rem,
+  	var(--ed_font_size_h5_max)
+  );
+  --ed_font_size_h6: clamp(
+  	var(--ed_font_size_h5_min),
+  	0.693vw + 0.946rem,
+  	var(--ed_font_size_h5_max)
+  );
   --font_base_unit: 0.125rem;
   --ed_font_size_d1_min: var(--font_base_unit) * 24;
   /* 48px */
@@ -310,12 +322,16 @@ Mixin for transition
   /* 150px */
   --ed_font_size_d2_max: var(--font_base_unit) * 100;
   /* 200px */
-  --ed_font_size_d1: clamp(var(--ed_font_size_d1_min),
-  		11.778vw + -0.048rem,
-  		var(--ed_font_size_d1_max));
-  --ed_font_size_d2: clamp(var(--ed_font_size_d2_min),
-  		16.166vw + -0.433rem,
-  		var(--ed_font_size_d2_max));
+  --ed_font_size_d1: clamp(
+  	var(--ed_font_size_d1_min),
+  	11.778vw + -0.048rem,
+  	var(--ed_font_size_d1_max)
+  );
+  --ed_font_size_d2: clamp(
+  	var(--ed_font_size_d2_min),
+  	16.166vw + -0.433rem,
+  	var(--ed_font_size_d2_max)
+  );
   --ed_font_size_t1_min: var(--font_base_unit) * 13;
   /* 26px */
   --ed_font_size_t2_min: var(--font_base_unit) * 10;
@@ -328,15 +344,21 @@ Mixin for transition
   /* 40px */
   --ed_font_size_t3_max: var(--font_base_unit) * 16;
   /* 32px */
-  --ed_font_size_t1: clamp(var(--ed_font_size_t1_min),
-  		2.309vw + 1.027rem,
-  		var(--ed_font_size_t1_max));
-  --ed_font_size_t2: clamp(var(--ed_font_size_t2_min),
-  		2.309vw + 0.652rem,
-  		var(--ed_font_size_t2_max));
-  --ed_font_size_t3: clamp(var(--ed_font_size_t3_min),
-  		1.617vw + 0.707rem,
-  		var(--ed_font_size_t3_max));
+  --ed_font_size_t1: clamp(
+  	var(--ed_font_size_t1_min),
+  	2.309vw + 1.027rem,
+  	var(--ed_font_size_t1_max)
+  );
+  --ed_font_size_t2: clamp(
+  	var(--ed_font_size_t2_min),
+  	2.309vw + 0.652rem,
+  	var(--ed_font_size_t2_max)
+  );
+  --ed_font_size_t3: clamp(
+  	var(--ed_font_size_t3_min),
+  	1.617vw + 0.707rem,
+  	var(--ed_font_size_t3_max)
+  );
 }
 .editor-styles-wrapper h1,
 .editor-styles-wrapper h2,
@@ -487,21 +509,11 @@ Mixin for transition
   font-weight: bold;
   font-style: normal;
 }
-.editor-styles-wrapper .split-line,
-.editor-styles-wrapper .lineParent {
-  overflow: hidden;
-}
-.editor-styles-wrapper .split-line:nth-child(n+2),
-.editor-styles-wrapper .lineParent:nth-child(n+2) {
-  margin-top: -0.5%;
-}
 .editor-styles-wrapper h1,
 .editor-styles-wrapper h1.heading-1,
 .editor-styles-wrapper h1.heading-2,
 .editor-styles-wrapper h1.d1,
 .editor-styles-wrapper h1.d2 {
-  line-height: 1.25;
-  opacity: 0;
   visibility: visible;
 }
 .editor-styles-wrapper i,
@@ -2124,7 +2136,6 @@ Mixin for transition
 .acf-block-preview .headingLine {
   overflow: hidden;
   line-height: 1.25;
-  opacity: 0;
 }
 .acf-block-preview .headingLine:nth-child(2) {
   display: -webkit-box;
@@ -2140,6 +2151,120 @@ Mixin for transition
           align-items: baseline;
   gap: var(--ed_space_5);
   margin-top: -3.5%;
+}
+@-webkit-keyframes wave-arrow1 {
+  0% {
+    opacity: 0.52;
+  }
+  33% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.52;
+  }
+}
+@keyframes wave-arrow1 {
+  0% {
+    opacity: 0.52;
+  }
+  33% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.52;
+  }
+}
+@-webkit-keyframes wave-arrow2 {
+  0% {
+    opacity: 0.52;
+  }
+  33% {
+    opacity: 0.52;
+  }
+  66% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.52;
+  }
+}
+@keyframes wave-arrow2 {
+  0% {
+    opacity: 0.52;
+  }
+  33% {
+    opacity: 0.52;
+  }
+  66% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.52;
+  }
+}
+@-webkit-keyframes wave-arrow3 {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0.52;
+  }
+  66% {
+    opacity: 0.52;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes wave-arrow3 {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0.52;
+  }
+  66% {
+    opacity: 0.52;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.acf-block-preview .dropdown-item1 {
+  -webkit-animation-name: wave-arrow1;
+          animation-name: wave-arrow1;
+}
+.acf-block-preview .dropdown-item3 {
+  -webkit-animation: wave-arrow2;
+          animation: wave-arrow2;
+}
+.acf-block-preview .dropdown-item2 {
+  -webkit-animation: wave-arrow3;
+          animation: wave-arrow3;
+}
+.acf-block-preview .dropdown-item1,
+.acf-block-preview .dropdown-item2,
+.acf-block-preview .dropdown-item3 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.acf-block-preview .scroll-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+.acf-block-preview .scroll-down a,
+.acf-block-preview .scroll-down a:visited {
+  line-height: 0;
 }
 .acf-block-preview .footer-logo {
   line-height: 0.65;
@@ -2947,10 +3072,20 @@ Mixin for transition
 }
 .acf-block-preview .design-tool-item {
   padding: var(--ed_space_5) 0;
-  border-bottom: 1px solid var(--ed_ugray);
+  position: relative;
 }
-.acf-block-preview .design-tool-item:last-of-type {
-  border: 0;
+.acf-block-preview .design-tool-item::after {
+  content: "";
+  width: 200vw;
+  height: 1px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -50vw;
+  background-color: var(--ed_gray);
+}
+.acf-block-preview .design-tool-item:last-of-type::after {
+  display: none;
 }
 .acf-block-preview .design-tool-title {
   width: 38.3%;
@@ -4051,15 +4186,24 @@ Mixin for transition
   gap: var(--ed_space_7);
 }
 .acf-block-preview .work-item {
-  width: calc(50% - var(--ed_space_6));
-}
-.acf-block-preview .work-item:nth-child(2n+2) {
-  padding-top: var(--ed_space_6);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .acf-block-preview .work-item-image {
   margin-bottom: var(--ed_space_4);
   border-radius: 24px;
   overflow: hidden;
+  width: 50%;
 }
 .acf-block-preview .work-item-image a.no-link-style,
 .acf-block-preview .work-item-image a.no-link-style:visited {
@@ -4096,6 +4240,9 @@ Mixin for transition
       -ms-transform: scale(1.15);
           transform: scale(1.15);
 }
+.acf-block-preview .work-item-content {
+  width: 45%;
+}
 .acf-block-preview a.work-title,
 .acf-block-preview a.work-title:visited {
   padding-bottom: 0;
@@ -4107,6 +4254,9 @@ Mixin for transition
 .acf-block-preview .white-ctn a.work-title:hover,
 .acf-block-preview .white-ctn a.work-title:visited:hover {
   color: #52247f;
+}
+.acf-block-preview .work-exerpt {
+  margin-top: 16px;
 }
 .acf-block-preview a.no-link-style,
 .acf-block-preview a.no-link-style:visited {
@@ -4174,9 +4324,6 @@ Mixin for transition
 .acf-block-preview .service-title {
   width: 80%;
   font-size: var(--ed_font_size_h3);
-  font-family: "Satoshi", arial, sans-serif;
-  font-weight: 500;
-  font-style: normal;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;

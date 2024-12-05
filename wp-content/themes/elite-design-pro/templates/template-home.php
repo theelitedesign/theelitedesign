@@ -33,6 +33,27 @@ global $fields;
 						<div class="headingLine">Beauty  </div>
 						<div class="headingLine"><span>for</span> Results</div>
 					</div>
+					<div class="s-48"></div>
+					<div class="t3">Custom WordPress Websites Designed to Fit <br> Your Needs and Grow Your Business</div>
+				</div>
+				<div class="s-48"></div>
+				<div class="scroll-down">
+					<div class="scroll-down__button">
+						<a href="#content" aria-label="Down to First section">
+							<svg width="16" height="37" viewBox="0 0 16 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path class="dropdown-item1" id="arrow" d="M3.33398 16L8.00065 20.6667L12.6673 16" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+
+								<g class="dropdown-item2" opacity="0.15">
+									<path d="M3.33398 6L8.00065 10.6667L12.6673 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</g>
+
+								<g class="dropdown-item3" opacity="0.15">
+									<path d="M3.33398 27L8.00065 31.6667L12.6673 27" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</g>
+							</svg>
+							<span class="visually-hidden">Down to First section</span>
+						</a>
+					</div>
 				</div>
 				<div class="s-96"></div>
 			</div>
@@ -42,10 +63,9 @@ global $fields;
 		<section class="white-ctn">
 			<div class="s-192"></div>
 			<div class="wrapper">
-				<div class="lead-paragraph t1">
+				<div class="t1">
 					<p>
-						We support organizations driven by a clear purpose to make a positive impact. With 5 years of experience in Lahore,
-						we are serving services to our clients and have happy clients globally.
+						Hi, I'm Bahar, a passionate web designer and developer specializing in custom WordPress websites. With over 5 years of experience, I create clean, responsive, and user-friendly websites that help businesses stand out online. Whether you need a new site or a redesign, I’m here to bring your ideas to life and make sure your website works perfectly for you.
 					</p>
 				</div>
 			</div>
@@ -60,7 +80,7 @@ global $fields;
 						<div class="service-list-item">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>web-design" class="no-link-style">
 								<div class="service-item-content">
-									<div class="service-count">01</div>
+
 									<div class="service-title">Web design</div>
 								</div>
 							</a>
@@ -68,15 +88,15 @@ global $fields;
 						<div class="service-list-item">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>web-development" class="no-link-style">
 								<div class="service-item-content">
-									<div class="service-count">02</div>
+
 									<div class="service-title">Web development</div>
 								</div>
 							</a>
 						</div>
-						<div class="service-list-item">
+						<!-- <div class="service-list-item">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>search-engine-optimization" class="no-link-style">
 								<div class="service-item-content">
-									<div class="service-count">03</div>
+
 									<div class="service-title">Search engine optimization</div>
 								</div>
 							</a>
@@ -84,7 +104,7 @@ global $fields;
 						<div class="service-list-item">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>continuous-improvements" class="no-link-style">
 								<div class="service-item-content">
-									<div class="service-count">05</div>
+
 									<div class="service-title">Continuous improvement</div>
 								</div>
 							</a>
@@ -92,11 +112,11 @@ global $fields;
 						<div class="service-list-item">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>maintenance-support" class="no-link-style">
 								<div class="service-item-content">
-									<div class="service-count">06</div>
+
 									<div class="service-title">Website maintenance & support</div>
 								</div>
 							</a>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -138,11 +158,11 @@ global $fields;
 							</div>
 							<div class="work-item-content">
 								<div class="work-kicker p2 font-med">Kicker</div>
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="work-title t2 font-med">Project Title</a>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="work-title t1 font-med">Project Title</a>
 								<div class="work-exerpt p2 font-med">Work description</div>
 							</div>
 						</div>
-						<div class="work-item">
+						<!-- <div class="work-item">
 							<div class="work-item-image h-img-cover">
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="no-link-style">
 									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
@@ -153,7 +173,7 @@ global $fields;
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="work-title t2 font-med">Project Title</a>
 								<div class="work-exerpt p2 font-med">Work description</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>

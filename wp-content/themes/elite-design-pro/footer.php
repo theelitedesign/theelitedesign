@@ -94,17 +94,17 @@ if (function_exists('get_fields') && function_exists('get_fields_escaped')) {
 						<ul>
 							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>web-design">Web design</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>web-development">Web development</a></li>
-							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>search-engine-optimization">Search engine optimization</a></li>
-							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>continuous-improvements">Continuous improvement</a></li>
-							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>maintenance-support">Maintenance + support</a></li>
+							<!-- <li><a href="<?php // echo esc_url( home_url( '/' ) ); ?>search-engine-optimization">Search engine optimization</a></li>
+							<li><a href="<?php // echo esc_url( home_url( '/' ) ); ?>continuous-improvements">Continuous improvement</a></li>
+							<li><a href="<?php // echo esc_url( home_url( '/' ) ); ?>maintenance-support">Maintenance + support</a></li> -->
 						</ul>
 					</div>
 					<div class="footer-widget footer-nav animated-hover">
 						<ul>
 							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>services">Services</a></li>
-							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>work">Work</a></li>
-							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>team">Company</a></li>
-							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>company">Careers</a></li>
+							<!-- <li><a href="<?php// echo esc_url( home_url( '/' ) ); ?>work">Work</a></li>
+							<li><a href="<?php// echo esc_url( home_url( '/' ) ); ?>team">Company</a></li>
+							<li><a href="<?php// echo esc_url( home_url( '/' ) ); ?>company">Careers</a></li> -->
 							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about">About</a></li>
 						</ul>
 					</div>
