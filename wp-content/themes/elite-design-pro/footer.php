@@ -192,9 +192,6 @@ if (function_exists('get_fields') && function_exists('get_fields_escaped')) {
 	</div>
 </footer>
 
-	</div>
-</div>
-
 <?php wp_footer(); ?>
 
 	<?php // if ( $footer_scripts != '' ) { ?>

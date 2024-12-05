@@ -283,24 +283,36 @@ Mixin for transition
   /* 32px */
   --ed_font_size_h5_max: var(--font_base_unit) * 12;
   /* 24px */
-  --ed_font_size_h1: clamp(var(--ed_font_size_h1_min),
-  		7.159vw + 1.148rem,
-  		var(--ed_font_size_h1_max));
-  --ed_font_size_h2: clamp(var(--ed_font_size_h2_min),
-  		4.619vw + 1.305rem,
-  		var(--ed_font_size_h2_max));
-  --ed_font_size_h3: clamp(var(--ed_font_size_h3_min),
-  		1.848vw + 1.522rem,
-  		var(--ed_font_size_h3_max));
-  --ed_font_size_h4: clamp(var(--ed_font_size_h4_min),
-  		0.924vw + 1.261rem,
-  		var(--ed_font_size_h4_max));
-  --ed_font_size_h5: clamp(var(--ed_font_size_h5_min),
-  		0.693vw + 0.946rem,
-  		var(--ed_font_size_h5_max));
-  --ed_font_size_h6: clamp(var(--ed_font_size_h5_min),
-  		0.693vw + 0.946rem,
-  		var(--ed_font_size_h5_max));
+  --ed_font_size_h1: clamp(
+  	var(--ed_font_size_h1_min),
+  	7.159vw + 1.148rem,
+  	var(--ed_font_size_h1_max)
+  );
+  --ed_font_size_h2: clamp(
+  	var(--ed_font_size_h2_min),
+  	4.619vw + 1.305rem,
+  	var(--ed_font_size_h2_max)
+  );
+  --ed_font_size_h3: clamp(
+  	var(--ed_font_size_h3_min),
+  	1.848vw + 1.522rem,
+  	var(--ed_font_size_h3_max)
+  );
+  --ed_font_size_h4: clamp(
+  	var(--ed_font_size_h4_min),
+  	0.924vw + 1.261rem,
+  	var(--ed_font_size_h4_max)
+  );
+  --ed_font_size_h5: clamp(
+  	var(--ed_font_size_h5_min),
+  	0.693vw + 0.946rem,
+  	var(--ed_font_size_h5_max)
+  );
+  --ed_font_size_h6: clamp(
+  	var(--ed_font_size_h5_min),
+  	0.693vw + 0.946rem,
+  	var(--ed_font_size_h5_max)
+  );
   --font_base_unit: 0.125rem;
   --ed_font_size_d1_min: var(--font_base_unit) * 24;
   /* 48px */
@@ -310,12 +322,16 @@ Mixin for transition
   /* 150px */
   --ed_font_size_d2_max: var(--font_base_unit) * 100;
   /* 200px */
-  --ed_font_size_d1: clamp(var(--ed_font_size_d1_min),
-  		11.778vw + -0.048rem,
-  		var(--ed_font_size_d1_max));
-  --ed_font_size_d2: clamp(var(--ed_font_size_d2_min),
-  		16.166vw + -0.433rem,
-  		var(--ed_font_size_d2_max));
+  --ed_font_size_d1: clamp(
+  	var(--ed_font_size_d1_min),
+  	11.778vw + -0.048rem,
+  	var(--ed_font_size_d1_max)
+  );
+  --ed_font_size_d2: clamp(
+  	var(--ed_font_size_d2_min),
+  	16.166vw + -0.433rem,
+  	var(--ed_font_size_d2_max)
+  );
   --ed_font_size_t1_min: var(--font_base_unit) * 13;
   /* 26px */
   --ed_font_size_t2_min: var(--font_base_unit) * 10;
@@ -328,15 +344,21 @@ Mixin for transition
   /* 40px */
   --ed_font_size_t3_max: var(--font_base_unit) * 16;
   /* 32px */
-  --ed_font_size_t1: clamp(var(--ed_font_size_t1_min),
-  		2.309vw + 1.027rem,
-  		var(--ed_font_size_t1_max));
-  --ed_font_size_t2: clamp(var(--ed_font_size_t2_min),
-  		2.309vw + 0.652rem,
-  		var(--ed_font_size_t2_max));
-  --ed_font_size_t3: clamp(var(--ed_font_size_t3_min),
-  		1.617vw + 0.707rem,
-  		var(--ed_font_size_t3_max));
+  --ed_font_size_t1: clamp(
+  	var(--ed_font_size_t1_min),
+  	2.309vw + 1.027rem,
+  	var(--ed_font_size_t1_max)
+  );
+  --ed_font_size_t2: clamp(
+  	var(--ed_font_size_t2_min),
+  	2.309vw + 0.652rem,
+  	var(--ed_font_size_t2_max)
+  );
+  --ed_font_size_t3: clamp(
+  	var(--ed_font_size_t3_min),
+  	1.617vw + 0.707rem,
+  	var(--ed_font_size_t3_max)
+  );
 }
 .editor-styles-wrapper h1,
 .editor-styles-wrapper h2,
@@ -382,6 +404,7 @@ Mixin for transition
 .editor-styles-wrapper .heading-1 {
   font-size: var(--ed_font_size_h1);
   letter-spacing: -2.2px;
+  line-height: 1.15;
 }
 .editor-styles-wrapper h2,
 .editor-styles-wrapper .heading-2 {
@@ -494,15 +517,6 @@ Mixin for transition
 .editor-styles-wrapper .split-line:nth-child(n+2),
 .editor-styles-wrapper .lineParent:nth-child(n+2) {
   margin-top: -0.5%;
-}
-.editor-styles-wrapper h1,
-.editor-styles-wrapper h1.heading-1,
-.editor-styles-wrapper h1.heading-2,
-.editor-styles-wrapper h1.d1,
-.editor-styles-wrapper h1.d2 {
-  line-height: 1.25;
-  opacity: 0;
-  visibility: visible;
 }
 .editor-styles-wrapper i,
 .editor-styles-wrapper em,
@@ -1688,6 +1702,9 @@ Mixin for transition
 .acf-block-preview body.logged-in.admin-bar header {
   top: 32px;
 }
+.acf-block-preview body.logged-in.admin-bar .hero--home {
+  height: calc(100vh - 134px);
+}
 @media (min-width: 1024px) {
   .acf-block-preview .header-nav ul li:hover > ul {
     opacity: 1;
@@ -2121,25 +2138,10 @@ Mixin for transition
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.acf-block-preview .headingLine {
-  overflow: hidden;
-  line-height: 1.25;
-  opacity: 0;
-}
-.acf-block-preview .headingLine:nth-child(2) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  gap: var(--ed_space_5);
-  margin-top: -3.5%;
+.acf-block-preview .hero--home .hero__content {
+  padding: var(--ed_space_6) 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .acf-block-preview .footer-logo {
   line-height: 0.65;
@@ -2947,7 +2949,16 @@ Mixin for transition
 }
 .acf-block-preview .design-tool-item {
   padding: var(--ed_space_5) 0;
-  border-bottom: 1px solid var(--ed_ugray);
+}
+.acf-block-preview .design-tool-item::before {
+  content: "";
+  width: 200vw;
+  height: 1px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -50vw;
+  background-color: var(--ed_gray);
 }
 .acf-block-preview .design-tool-item:last-of-type {
   border: 0;

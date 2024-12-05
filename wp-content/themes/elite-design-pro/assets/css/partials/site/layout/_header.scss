@@ -73,9 +73,11 @@ header {
 }
 
 body.logged-in.admin-bar {
-
 	header {
 		top: 32px;
+	}
+	.hero--home {
+		height: calc(100vh - 134px);
 	}
 }
 

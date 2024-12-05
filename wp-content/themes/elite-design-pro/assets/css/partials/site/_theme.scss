@@ -521,7 +521,18 @@ a.wp-block-button__link:visited,
 
 .design-tool-item {
 	padding: var(--ed_space_5) 0;
-	border-bottom: 1px solid var(--ed_ugray);
+	// border-bottom: 1px solid var(--ed_ugray);
+
+	&::before {
+		content: "";
+		width: 200vw;
+		height: 1px;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: -50vw;
+		background-color: var(--ed_gray);
+	}
 
 	&:last-of-type {
 		border: 0;

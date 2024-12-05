@@ -26,15 +26,15 @@ global $fields;
 
 		<div class="hero hero-ctn hero--home">
 			<div class="wrapper">
-				<div class="s-96"></div>
 				<div class="hero__content">
-					<h1 style="display:none"></h1>
-					<div class="mb-0  font-bold d2 textAnimation">
-						<div class="headingLine">Beauty  </div>
-						<div class="headingLine"><span>for</span> Results</div>
+					<h1>Beauty <br><span>for</span> Results</h1>
+					<div class="s-48"></div>
+					<div class="p1 home-hero-subtitle">
+						<p>
+							Custom WordPress Websites Designed to Fit <br> Your Needs and Grow Your Business
+						</p>
 					</div>
 				</div>
-				<div class="s-96"></div>
 			</div>
 		</div>
 	</section>

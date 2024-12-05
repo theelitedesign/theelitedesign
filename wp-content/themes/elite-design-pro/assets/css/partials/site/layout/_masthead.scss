@@ -73,17 +73,9 @@
 	box-sizing: border-box;
 }
 
-.headingLine {
-	overflow: hidden;
-	line-height: 1.25;
-	opacity: 0;
-
-	&:nth-child(2) {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: right;
-		align-items: baseline;
-		gap: var(--ed_space_5);
-		margin-top: -3.5%;
+.hero--home {
+	.hero__content {
+		padding: var(--ed_space_6) 0;
+		box-sizing: border-box;
 	}
 }

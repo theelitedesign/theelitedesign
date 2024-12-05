@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Blog Detail Two
+ * Template Name: Exploring the benefits and boundaries of gutenberg custom blocks
  * Template Post Type: page
  *
  * This template is for displaying home page.
@@ -68,7 +68,6 @@ get_header();
 				<div class="s-96"></div>
 				<div class="single-page-content flex-between-start">
 					<div class="single-page-sidebar-area">
-						<!-- <div class="s-48"></div> -->
 						<div class="sidebar-headings">
 							<div class="p3 single-sidebar-title font-med">Table of contents</div>
 							<div class="s-24"></div>

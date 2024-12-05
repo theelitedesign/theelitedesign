@@ -7,68 +7,6 @@ jQuery( document ).on( 'scroll', function() {
 } );
 jQuery.noConflict();
 
-jQuery( window ).on( 'load', function() {
-	if ( jQuery( document ).scrollTop() > 0 ) {
-		const $header_height = jQuery( 'header' ).outerHeight();
-		jQuery( '.hero-section' ).css( 'padding-top', $header_height + 'px' );
-		if ( jQuery( 'body' ).hasClass( 'logged-in admin-bar' ) ) {
-			const $header_height = jQuery( 'header' ).outerHeight() + 32;
-			jQuery( '.hero-section' ).css( 'padding-top', $header_height + 'px' );
-		}
-	} else {
-		const $header_height = jQuery( 'header' ).outerHeight();
-		jQuery( '.hero-section' ).css( 'padding-top', $header_height + 'px' );
-		if ( jQuery( 'body' ).hasClass( 'logged-in admin-bar' ) ) {
-			const $header_height = jQuery( 'header' ).outerHeight() + 32;
-			jQuery( '.hero-section' ).css( 'padding-top', $header_height + 'px' );
-		}
-	}
-
-	if ( jQuery( 'h1' ).length > 0 ) {
-		jQuery( 'h1' ).css( {
-			opacity: 1,
-			visibility: 'visible',
-		} );
-
-		const heroTitle = document.querySelectorAll( 'h1' );
-		gsap.registerPlugin( SplitText );
-
-		let textAnim;
-
-		const doText = () => {
-			textAnim && textAnim.progress( 1 );
-			const text = new SplitText( 'h1', { types: 'lines,char', linesClass: 'lineChild' } );
-			const mask = new SplitText( 'h1', { types: 'lines,char', linesClass: 'lineParent' } );
-
-			textAnim = gsap.fromTo( '.lineChild', { yPercent: 100 }, {
-				yPercent: 0,
-				duration: 0.8,
-				stagger: 0.2,
-			} );
-		};
-		doText();
-	}
-
-	if ( jQuery( '.textAnimation' ).length > 0 ) {
-		jQuery( '.textAnimation .headingLine' ).css( 'opacity', '1' );
-
-		const textAnimation = new SplitText( '.textAnimation', { type: 'words,chars' } );
-
-		gsap.from( textAnimation.words, { y: '100%', stagger: 0.05 } );
-		gsap.from( textAnimation.chars, { y: '100%', stagger: 0.05 } );
-	}
-
-	// gsap.registerPlugin( ScrollTrigger, ScrollSmoother );
-
-	// const smoother = ScrollSmoother.create( {
-	// 	smooth: 2,
-	// 	effects: true,
-	// 	normalizeScroll: true,
-	// 	dataScroll: 'true',
-	// } );
-} );
-jQuery.noConflict();
-
 jQuery( function() {
 	jQuery( '.menu-btn' ).click( function() {
 		jQuery( this ).toggleClass( 'active' );

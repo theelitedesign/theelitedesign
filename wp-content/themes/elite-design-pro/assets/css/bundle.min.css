@@ -75,9 +75,9 @@ Version: 1.0
 /* ------------------------------------------------------------------
 > Columns
 ------------------------------------------------------------------ */
-@import "https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/css/vendor/magnific-popup.css";
-@import "https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/css/vendor/owl.carousel.css";
-@import "https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/css/vendor/owl.theme.default.css";
+@import "vendor/magnific-popup.css";
+@import "vendor/owl.carousel.css";
+@import "vendor/owl.theme.default.css";
 .two-columns,
 .three-columns,
 .four-columns {
@@ -339,24 +339,36 @@ template,
   /* 32px */
   --ed_font_size_h5_max: var(--font_base_unit) * 12;
   /* 24px */
-  --ed_font_size_h1: clamp(var(--ed_font_size_h1_min),
-  		7.159vw + 1.148rem,
-  		var(--ed_font_size_h1_max));
-  --ed_font_size_h2: clamp(var(--ed_font_size_h2_min),
-  		4.619vw + 1.305rem,
-  		var(--ed_font_size_h2_max));
-  --ed_font_size_h3: clamp(var(--ed_font_size_h3_min),
-  		1.848vw + 1.522rem,
-  		var(--ed_font_size_h3_max));
-  --ed_font_size_h4: clamp(var(--ed_font_size_h4_min),
-  		0.924vw + 1.261rem,
-  		var(--ed_font_size_h4_max));
-  --ed_font_size_h5: clamp(var(--ed_font_size_h5_min),
-  		0.693vw + 0.946rem,
-  		var(--ed_font_size_h5_max));
-  --ed_font_size_h6: clamp(var(--ed_font_size_h5_min),
-  		0.693vw + 0.946rem,
-  		var(--ed_font_size_h5_max));
+  --ed_font_size_h1: clamp(
+  	var(--ed_font_size_h1_min),
+  	7.159vw + 1.148rem,
+  	var(--ed_font_size_h1_max)
+  );
+  --ed_font_size_h2: clamp(
+  	var(--ed_font_size_h2_min),
+  	4.619vw + 1.305rem,
+  	var(--ed_font_size_h2_max)
+  );
+  --ed_font_size_h3: clamp(
+  	var(--ed_font_size_h3_min),
+  	1.848vw + 1.522rem,
+  	var(--ed_font_size_h3_max)
+  );
+  --ed_font_size_h4: clamp(
+  	var(--ed_font_size_h4_min),
+  	0.924vw + 1.261rem,
+  	var(--ed_font_size_h4_max)
+  );
+  --ed_font_size_h5: clamp(
+  	var(--ed_font_size_h5_min),
+  	0.693vw + 0.946rem,
+  	var(--ed_font_size_h5_max)
+  );
+  --ed_font_size_h6: clamp(
+  	var(--ed_font_size_h5_min),
+  	0.693vw + 0.946rem,
+  	var(--ed_font_size_h5_max)
+  );
   --font_base_unit: 0.125rem;
   --ed_font_size_d1_min: var(--font_base_unit) * 24;
   /* 48px */
@@ -366,12 +378,16 @@ template,
   /* 150px */
   --ed_font_size_d2_max: var(--font_base_unit) * 100;
   /* 200px */
-  --ed_font_size_d1: clamp(var(--ed_font_size_d1_min),
-  		11.778vw + -0.048rem,
-  		var(--ed_font_size_d1_max));
-  --ed_font_size_d2: clamp(var(--ed_font_size_d2_min),
-  		16.166vw + -0.433rem,
-  		var(--ed_font_size_d2_max));
+  --ed_font_size_d1: clamp(
+  	var(--ed_font_size_d1_min),
+  	11.778vw + -0.048rem,
+  	var(--ed_font_size_d1_max)
+  );
+  --ed_font_size_d2: clamp(
+  	var(--ed_font_size_d2_min),
+  	16.166vw + -0.433rem,
+  	var(--ed_font_size_d2_max)
+  );
   --ed_font_size_t1_min: var(--font_base_unit) * 13;
   /* 26px */
   --ed_font_size_t2_min: var(--font_base_unit) * 10;
@@ -384,15 +400,21 @@ template,
   /* 40px */
   --ed_font_size_t3_max: var(--font_base_unit) * 16;
   /* 32px */
-  --ed_font_size_t1: clamp(var(--ed_font_size_t1_min),
-  		2.309vw + 1.027rem,
-  		var(--ed_font_size_t1_max));
-  --ed_font_size_t2: clamp(var(--ed_font_size_t2_min),
-  		2.309vw + 0.652rem,
-  		var(--ed_font_size_t2_max));
-  --ed_font_size_t3: clamp(var(--ed_font_size_t3_min),
-  		1.617vw + 0.707rem,
-  		var(--ed_font_size_t3_max));
+  --ed_font_size_t1: clamp(
+  	var(--ed_font_size_t1_min),
+  	2.309vw + 1.027rem,
+  	var(--ed_font_size_t1_max)
+  );
+  --ed_font_size_t2: clamp(
+  	var(--ed_font_size_t2_min),
+  	2.309vw + 0.652rem,
+  	var(--ed_font_size_t2_max)
+  );
+  --ed_font_size_t3: clamp(
+  	var(--ed_font_size_t3_min),
+  	1.617vw + 0.707rem,
+  	var(--ed_font_size_t3_max)
+  );
 }
 
 /* -------------------------------------------------
@@ -451,6 +473,7 @@ h1,
 .heading-1 {
   font-size: var(--ed_font_size_h1);
   letter-spacing: -2.2px;
+  line-height: 1.15;
 }
 
 h2,
@@ -595,16 +618,6 @@ h1.d2 {
 .split-line:nth-child(n+2),
 .lineParent:nth-child(n+2) {
   margin-top: -0.5%;
-}
-
-h1,
-h1.heading-1,
-h1.heading-2,
-h1.d1,
-h1.d2 {
-  line-height: 1.25;
-  opacity: 0;
-  visibility: visible;
 }
 
 /*-------------------------------------------------
@@ -1405,7 +1418,7 @@ select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-image: url(https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/select-icon.svg);
+  background-image: url(../img/select-icon.svg);
   background-repeat: no-repeat;
   background-position: center right 10px;
 }
@@ -2489,7 +2502,7 @@ a img.aligncenter {
 }
 .sticky .post-title::before {
   content: "";
-  background-image: url(https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/sticky-icon.svg);
+  background-image: url(../img/sticky-icon.svg);
   background-repeat: no-repeat;
   position: absolute;
   top: 5px;
@@ -3004,6 +3017,9 @@ header {
 body.logged-in.admin-bar header {
   top: 32px;
 }
+body.logged-in.admin-bar .hero--home {
+  height: calc(100vh - 134px);
+}
 
 /*-------------------------------------------------
 >> Styles for desktop menu
@@ -3455,25 +3471,10 @@ body.logged-in.admin-bar header {
           box-sizing: border-box;
 }
 
-.headingLine {
-  overflow: hidden;
-  line-height: 1.25;
-  opacity: 0;
-}
-.headingLine:nth-child(2) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  gap: var(--ed_space_5);
-  margin-top: -3.5%;
+.hero--home .hero__content {
+  padding: var(--ed_space_6) 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*-------------------------------------------------
@@ -4428,7 +4429,16 @@ a.wp-block-button__link.has-text-color.has-background:hover {
 
 .design-tool-item {
   padding: var(--ed_space_5) 0;
-  border-bottom: 1px solid var(--ed_ugray);
+}
+.design-tool-item::before {
+  content: "";
+  width: 200vw;
+  height: 1px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -50vw;
+  background-color: var(--ed_gray);
 }
 .design-tool-item:last-of-type {
   border: 0;
@@ -4753,7 +4763,7 @@ a.video-btn {
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: left 40px center;
-  background-image: url(https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/play-icon-white.svg);
+  background-image: url(../img/play-icon-white.svg);
   background-size: 36px;
   display: block;
   position: absolute;
@@ -4783,7 +4793,7 @@ a.video-btn:hover {
   padding: 0;
   background-color: transparent;
   right: -11px;
-  background-image: url(https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/cross-icon.png);
+  background-image: url(../img/cross-icon.png);
   background-repeat: no-repeat;
   background-size: contain;
   border: 0;
@@ -4876,7 +4886,7 @@ a.video-btn:hover {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  background-image: url(https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/white-long-arrow.svg);
+  background-image: url(../img/white-long-arrow.svg);
   background-size: 25px;
   opacity: 1 !important;
 }
@@ -5333,7 +5343,7 @@ a.video-btn:hover {
   position: relative;
 }
 .single-member .member-image {
-  background-image: url("https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/img/default-image.webp");
+  background-image: url("../img/default-image.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -6376,19 +6386,19 @@ h2 br,
   font-family: "Satoshi";
   font-style: normal;
   font-weight: bold;
-  src: url("https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/fonts/Satoshi-Bold.woff2") format("woff2");
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Satoshi";
   font-style: normal;
   font-weight: 500;
-  src: url("https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/fonts/Satoshi-Medium.woff2") format("woff2");
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2");
 }
 @font-face {
   font-family: "Satoshi";
   font-style: normal;
   font-weight: normal;
-  src: url("https://theelitedesign.github.io/theelitedesign/wp-content/themes/elite-design-pro/assets/fonts/Satoshi-Regular.woff2") format("woff2");
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2");
 }
 /* ------------------------------------------------------------------
 > Vendor CSS Starts Here
