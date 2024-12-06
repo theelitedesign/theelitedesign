@@ -109,39 +109,11 @@ if (function_exists('get_fields') && function_exists('get_fields_escaped')) {
 						</ul>
 					</div>
 				</div>
-
 			</div>
 		</div>
 		<div class="s-96"></div>
 		<div class="flex-ctn">
 			<div class="footer-left">
-
-				<!-- <div class="site-socials">
-					<div class="big-body">Follow us</div>
-					<ul class="flexarea">
-						<li>
-							<a href="#" class="no-link-style">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/facebook-icon.svg" alt="" />
-							</a>
-						</li>
-						<li>
-							<a href="#" class="no-link-style">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/twitter-icon.svg" alt="" />
-							</a>
-						</li>
-						<li>
-							<a href="#" class="no-link-style">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/instagram-icon.svg" alt="" />
-							</a>
-						</li>
-						<li>
-							<a href="#" class="no-link-style">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/pinterest-icon.svg" alt="" />
-							</a>
-						</li>
-					</ul>
-				</div> -->
-
 				<div class="blog-detail__social-ctn">
 						<div class="p3 font-med"> Follow us</div>
 						<div class="s-24"></div>
