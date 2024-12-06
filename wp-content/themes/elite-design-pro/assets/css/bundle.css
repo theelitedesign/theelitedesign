@@ -2978,9 +2978,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: rgba(1, 2, 28, 0.4);
-  -webkit-backdrop-filter: blur(30px);
-  backdrop-filter: blur(30px);
+  background-color: #01021c;
 }
 
 .logo {
@@ -4601,15 +4599,7 @@ a.wp-block-button__link.has-text-color.has-background:hover {
 
 .design-tool-icon {
   width: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: none;
 }
 
 .design-tool-inner-title {

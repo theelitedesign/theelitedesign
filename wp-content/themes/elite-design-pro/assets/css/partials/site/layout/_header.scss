@@ -26,9 +26,7 @@ header {
 	width: 100%;
 	position: fixed;
 	top: 0;
-	background-color: rgba(1, 2, 28, 0.4);
-	-webkit-backdrop-filter: blur(30px);
-	backdrop-filter: blur(30px);
+	background-color: map-get($map: $colors, $key: black01);
 }
 
 .logo {
@@ -73,7 +71,6 @@ header {
 }
 
 body.logged-in.admin-bar {
-
 	header {
 		top: 32px;
 	}
