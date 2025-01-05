@@ -25,7 +25,7 @@ get_header();
 		<div class="s-96"></div>
 		<div class="wrapper">
 			<div class="hero__content">
-				<h1>Company</h1>
+				<h1>Why We Do <br> What We Do</h1>
 			</div>
 		</div>
 		<div class="s-96"></div>

@@ -450,12 +450,12 @@ function glide_theme_acf_init() {
 			)
 		);
 
-		// Register a block - Proccess
+		// Register a block - process
 		acf_register_block(
 			array(
-				'name'            => 'proccess',
-				'title'           => __( 'Proccess', 'elitedesign_td' ),
-				'description'     => __( 'A custom Proccess.', 'elitedesign_td' ),
+				'name'            => 'process',
+				'title'           => __( 'process', 'elitedesign_td' ),
+				'description'     => __( 'A custom process.', 'elitedesign_td' ),
 				'render_callback' => 'glide_acf_block_callback',
 				'category'        => 'glide-blocks',
 				'icon'            => '<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -485,7 +485,7 @@ function glide_theme_acf_init() {
 				<path d="M22 9.5C22 10.8807 20.8807 12 19.5 12C18.1193 12 17 10.8807 17 9.5C17 8.11929 18.1193 7 19.5 7C20.8807 7 22 8.11929 22 9.5Z" fill="#A50A09"/>
 				</svg>',
 				'mode'            => 'edit',
-				'keywords'        => array( 'process','Elite','proccesses' ),
+				'keywords'        => array( 'process','Elite','processes' ),
 				'align'           => 'wide',
 				'supports'        => array(
 					'align'           => false

@@ -1,8 +1,8 @@
 <?php
 /**
- * Block Name: Proccess
+ * Block Name: process
  *
- * The template for displaying the custom gutenberg block named Proccess.
+ * The template for displaying the custom gutenberg block named process.
  *
  * @link https://www.advancedcustomfields.com/resources/blocks/
  *
@@ -42,41 +42,41 @@ if($block['name']){
 
 // Block variables
 
-// Proccess Title
-$elitedesign_blk_proccess_title = html_entity_decode($block_fields['elitedesign_blk_proccess_title']);
+// process Title
+$elitedesign_blk_process_title = html_entity_decode($block_fields['elitedesign_blk_process_title']);
 
-// Proccess Items
-$elitedesign_blk_proccess = $block_fields['elitedesign_blk_proccess'];
+// process Items
+$elitedesign_blk_process = $block_fields['elitedesign_blk_process'];
 
 ?>
 <div id="<?php echo $id; ?>" class="<?php echo $align_class . ' ' . $class_name. ' ' . $name; ?> glide-block-<?php echo $block_glide_name; ?>">
 
 	<div class="wrapper">
-		<div class="design-proccess-ctn">
+		<div class="design-process-ctn">
 
-		<?php if( $elitedesign_blk_proccess_title ) { ?>
+		<?php if( $elitedesign_blk_process_title ) { ?>
 
 			<div class="section-head">
 
-				<h2><?php echo $elitedesign_blk_proccess_title; ?></h2>
+				<h2><?php echo $elitedesign_blk_process_title; ?></h2>
 
 			</div>
 			<div class="s-96"></div>
 
 		<?php } ?>
 
-			<?php if($elitedesign_blk_proccess) { ?>
+			<?php if($elitedesign_blk_process) { ?>
 
-				<div class="proccess-area flex">
+				<div class="process-area flex">
 
-				<?php  foreach ($elitedesign_blk_proccess as $proccess) {
+				<?php  foreach ($elitedesign_blk_process as $process) {
 
-						$title = $proccess['title'];
+						$title = $process['title'];
 
 
 						if($title) { ?>
 
-							<div class="single-proccess col-538"><?php echo $title; ?></div>
+							<div class="single-process col-538"><?php echo $title; ?></div>
 
 						<?php }
 				} ?>

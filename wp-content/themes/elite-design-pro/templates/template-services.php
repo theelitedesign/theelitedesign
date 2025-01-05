@@ -24,8 +24,17 @@ get_header();
 					<!-- <h1>Ways we help <br> <span>you scale impact</span></h1> -->
 					<h1>Services that <br> <span> scale your impact.</span></h1>
 				</div>
-			</div>
-			<div class="s-96"></div>
+					<div class="s-96"></div>
+
+				</div>
+				<div class="hero__bottom-row flex-between-start">
+					<div class="hero-bottom-content p1">
+					</div>
+					<div class="hero-bottom-image full-width">
+						<img src="<?php  echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/ideas-wp.webp" alt="Image">
+					</div>
+				</div>
+			<!-- <div class="s-96"></div> -->
 		</div>
 	</section>
 
@@ -34,24 +43,16 @@ get_header();
 			<div class="s-192"></div>
 			<div class="wrapper">
 				<div class="hat-ctn flexarea sb">
-					<div class="hat-title">
-
-						<h2 class="heading-3">Building wow </h2>
-					</div>
-					<div class="hat-text">
-						<div class="p1">
-
-
-						We specialize in designing and developing custom websites for easy content management. While our primary expertise in WordPress, we are also building sites for Webflow, Shopify, and headless architectures.
-						</div>
+					<div class="t1">
+						We are experts in WordPress theme and plugin development. We design and build custom websites that are easy to manage and look great.
 					</div>
 				</div>
-				<div class="s-96"></div>
+				<div class="s-192"></div>
 				<div class="services-lists">
 						<div class="service-list-item">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>web-design" class="no-link-style">
 								<div class="service-item-content">
-									<!-- <div class="service-count">01</div> -->
+									<div class="service-count">01</div>
 									<div class="service-title">Web design</div>
 								</div>
 
@@ -60,7 +61,7 @@ get_header();
 						<div class="service-list-item">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>web-development" class="no-link-style">
 								<div class="service-item-content">
-									<!-- <div class="service-count">02</div> -->
+									<div class="service-count">02</div>
 									<div class="service-title">Web development</div>
 								</div>
 

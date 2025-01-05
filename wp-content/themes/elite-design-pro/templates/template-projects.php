@@ -37,78 +37,18 @@ get_header();
 			<div class="wrapper">
 				<div class="work-ctn">
 					<div class="work-items flex-ctn">
-						<div class="work-item">
+						<!-- <div class="work-item">
 							<div class="work-item-image h-img-cover" cursor-class="read-more">
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="no-link-style">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/iat-img-01.webp" alt="">
+								<a href="<?php // echo esc_url( home_url( '/' ) ); ?>project-detail" class="no-link-style">
+									<img src="<?php // echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/iat-img-01.webp" alt="">
 								</a>
 							</div>
 							<div class="work-item-content">
-								<div class="work-kicker p2 font-med">Kicker</div>
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="work-title t2 font-med">Project Title</a>
-								<div class="work-exerpt p2 font-med">Work description</div>
+								<div class="work-kicker p2 font-med">Spring Design</div>
+								<a href="<?php // echo esc_url( home_url( '/' ) ); ?>project-detail" class="work-title t2 font-med">Spring AI Studio - Your Ai Partner in Design</a>
+								<div class="work-exerpt p2 font-med">AI image generator </div>
 							</div>
-						</div>
-						<div class="work-item">
-							<div class="work-item-image h-img-cover" cursor-class="read-more">
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="no-link-style">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/iat-img-01.webp" alt="">
-								</a>
-							</div>
-							<div class="work-item-content">
-								<div class="work-kicker  p2 font-med">Kicker</div>
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="work-title t2 font-med">Project Title</a>
-								<div class="work-exerpt p2 font-med">Work description</div>
-							</div>
-						</div>
-						<div class="work-item">
-							<div class="work-item-image h-img-cover" cursor-class="read-more">
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="no-link-style">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/iat-img-01.webp" alt="">
-								</a>
-							</div>
-							<div class="work-item-content">
-								<div class="work-kicker p2 font-med">Kicker</div>
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="work-title t2 font-med">Project Title</a>
-								<div class="work-exerpt p2 font-med">Work description</div>
-							</div>
-						</div>
-						<div class="work-item">
-							<div class="work-item-image h-img-cover" cursor-class="read-more">
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="no-link-style">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/iat-img-01.webp" alt="">
-								</a>
-							</div>
-							<div class="work-item-content">
-								<div class="work-kicker  p2 font-med">Kicker</div>
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="work-title t2 font-med">Project Title</a>
-								<div class="work-exerpt p2 font-med">Work description</div>
-							</div>
-						</div>
-						<div class="work-item">
-							<div class="work-item-image h-img-cover" cursor-class="read-more">
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="no-link-style">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/iat-img-01.webp" alt="">
-								</a>
-							</div>
-							<div class="work-item-content">
-								<div class="work-kicker p2 font-med">Kicker</div>
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="work-title t2 font-med">Project Title</a>
-								<div class="work-exerpt p2 font-med">Work description</div>
-							</div>
-						</div>
-						<div class="work-item">
-							<div class="work-item-image h-img-cover" cursor-class="read-more">
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="no-link-style">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/iat-img-01.webp" alt="">
-								</a>
-							</div>
-							<div class="work-item-content">
-								<div class="work-kicker  p2 font-med">Kicker</div>
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>project-detail" class="work-title t2 font-med">Project Title</a>
-								<div class="work-exerpt p2 font-med">Work description</div>
-							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>

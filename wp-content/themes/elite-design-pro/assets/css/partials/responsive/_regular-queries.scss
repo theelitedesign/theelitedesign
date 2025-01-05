@@ -3,7 +3,7 @@
 		font-size: 16px;
 	}
 
-	.single-proccess {
+	.single-process {
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 10px;
@@ -14,6 +14,12 @@
 	}
 }
 @media only screen and (min-width: 1004px) and (max-width: 1179px) {
+	.cta-ctn {
+		h4 {
+			margin-bottom: 36px;
+		}
+	}
+
 	.label-down label {
 		font-size: 16px;
 	}
@@ -35,7 +41,7 @@
 	}
 }
 @media only screen and (max-width: 1179px) {
-	.single-proccess {
+	.single-process {
 		padding: var(--ed_space_3);
 		font-size: 22px;
 		flex-direction: column;
@@ -49,6 +55,18 @@
 	}
 }
 @media only screen and (max-width: 1003px) {
+	.collage-image-detail {
+		width: 100%;
+		margin-top: 36px;
+
+		.s-48 {
+			height: 24px;
+		}
+		blockquote p::before {
+			margin-left: -10px;
+		}
+	}
+
 	.single-page-content-area {
 		width: 100%;
 	}
@@ -74,6 +92,17 @@
 }
 
 @media only screen and (min-width: 748px) and (max-width: 1003px) {
+	.text-column:nth-child(2) {
+		margin-top: 0;
+	}
+	.text-column:nth-child(n + 3) {
+		margin-top: 14px;
+	}
+
+	.hero-bottom-image {
+		width: 100%;
+	}
+
 	.gallrey-image {
 		height: 260px;
 	}
@@ -101,10 +130,6 @@
 	}
 	.text-column p {
 		width: 100%;
-	}
-
-	.text-column:nth-child(n + 2) {
-		margin-top: 36px;
 	}
 
 	.design-tool-title {
@@ -143,7 +168,39 @@
 }
 
 @media only screen and (max-width: 747px) {
-	.single-proccess {
+	.text-column.col-645 {
+		width: 100%;
+	}
+
+	.text-column:nth-child(n + 2),
+	.single-process:nth-child(n + 2) {
+		margin-top: 24px;
+	}
+
+	.scroll-down {
+		position: initial;
+	}
+	h1,
+	.heading-1,
+	h2,
+	.heading-2,
+	h3,
+	.heading-3,
+	h4,
+	.heading-4,
+	h5,
+	.heading-5,
+	h6,
+	.heading-6,
+	.t1,
+	.t2,
+	.t3 {
+		br {
+			display: none;
+		}
+	}
+
+	.single-process {
 		&:nth-child(1) {
 			margin-top: 0 !important;
 		}
@@ -207,14 +264,6 @@
 	}
 
 	.text-column {
-		&:nth-child(2) {
-			margin-top: var(--ed_space_5) !important;
-		}
-
-		&:nth-child(n + 3) {
-			margin-top: var(--ed_space_5) !important;
-		}
-
 		p {
 			width: 100%;
 		}
@@ -288,7 +337,7 @@
 		width: 300px !important;
 	}
 
-	.single-proccess span.number {
+	.single-process span.number {
 		position: initial;
 		font-size: 14px;
 		width: 30px;

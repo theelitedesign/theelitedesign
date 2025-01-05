@@ -95,10 +95,6 @@ a.project-image:visited {
 	a.no-link-style:visited {
 		height: 100%;
 
-		img {
-			transition: all 0.3s ease-in-out;
-		}
-
 		&:before {
 			content: "";
 			width: 100%;
@@ -114,11 +110,7 @@ a.project-image:visited {
 
 		&:hover {
 			&::before {
-				opacity: 0.5;
-			}
-
-			img {
-				transform: scale(1.15);
+				opacity: 0.2;
 			}
 		}
 	}
@@ -131,6 +123,7 @@ a.project-image:visited {
 a.work-title,
 a.work-title:visited {
 	padding-bottom: 0;
+	line-height: 1.3;
 
 	&:hover {
 		color: map-get($map: $colors, $key: red);

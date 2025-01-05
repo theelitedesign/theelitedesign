@@ -49,18 +49,18 @@ get_header();
 			<div class="s-192"></div>
 			<div class=" overflow-hidden">
 				<div class="wrapper">
-					<div class="design-proccess-ctn">
+					<div class="design-process-ctn">
 						<div class="section-head">
 							<h2>SEO process</h2>
 						</div>
 						<div class="s-96"></div>
-						<div class="proccess-area flex">
-							<div class="single-proccess col-538"><span class="number">01</span>Analytics setup</div>
-							<div class="single-proccess col-538"><span class="number">02</span>Boosting performance</div>
-							<div class="single-proccess col-538"><span class="number">03</span>Content planning</div>
-							<div class="single-proccess col-538"><span class="number">05</span>Technical SEO and backlinks</div>
-							<div class="single-proccess col-538"><span class="number">05</span>Improving user experience</div>
-							<div class="single-proccess col-538"><span class="number">05</span>Ongoing monitoring and improvement</div>
+						<div class="process-area flex">
+							<div class="single-process col-538"><span class="number">01</span>Analytics setup</div>
+							<div class="single-process col-538"><span class="number">02</span>Boosting performance</div>
+							<div class="single-process col-538"><span class="number">03</span>Content planning</div>
+							<div class="single-process col-538"><span class="number">05</span>Technical SEO and backlinks</div>
+							<div class="single-process col-538"><span class="number">05</span>Improving user experience</div>
+							<div class="single-process col-538"><span class="number">05</span>Ongoing monitoring and improvement</div>
 						</div>
 					</div>
 				</div>

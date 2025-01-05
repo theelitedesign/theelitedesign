@@ -22,15 +22,30 @@ get_header();
 		<div class="wrapper">
 			<div class="hero__content">
 				<h1>Make your story  <br> with <span> design	</span></h1>
-			</div>
-			<div class="s-96"></div>
-			<div class="hero__bottom-row flex-between-start">
-				<div class="hero-bottom-content p1">
+				<div class="scroll-down__button">
+					<a href="#page-section" aria-label="Down to First section">
+						<svg width="16" height="37" viewBox="0 0 16 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="dropdown-item1" id="arrow" d="M3.33398 16L8.00065 20.6667L12.6673 16" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 
+							<g class="dropdown-item2" opacity="0.15">
+								<path d="M3.33398 6L8.00065 10.6667L12.6673 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</g>
+
+							<g class="dropdown-item3" opacity="0.15">
+								<path d="M3.33398 27L8.00065 31.6667L12.6673 27" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</g>
+						</svg>
+						<div class="">Read more about Design</div>
+					</a>
 				</div>
-				<div class="hero-bottom-image">
-					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/hero-image-default.webp" alt="Image">
-				</div>
+			</div>
+		</div>
+		<div class="s-96"></div>
+		<div class="hero__bottom-row flex-between-start">
+			<div class="hero-bottom-content p1">
+			</div>
+			<div class="hero-bottom-image">
+				<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/web-design.webp" alt="Image">
 			</div>
 		</div>
 	</div>
@@ -40,30 +55,80 @@ get_header();
 		<section class="white-ctn">
 			<div class="s-192"></div>
 			<div class="wrapper">
-				<div class="lead-paragraph t1">
+				<div class="t1">
 					<p>
-						We try to connect with users emotionally at every step of our creative process. By guiding them through a journey that's tailored to their needs, we inspire them to take important actions.
+						We create custom websites that reflect your brand and connect with your audience. Our designs are clean, user-friendly, and focused on giving visitors a great experience. Whether you need a new site or a redesign, we’re here to help your business stand out online.
 					</p>
 				</div>
 			</div>
 			<div class="s-192"></div>
 			<div class=" overflow-hidden">
 				<div class="wrapper">
-					<div class="design-proccess-ctn">
+					<div class="design-process-ctn">
+						<div class="section-head">
+							<h2>Design approach</h2>
+						</div>
+						<div class="s-96"></div>
+						<div class="process-area flex">
+							<div class="single-process col-538">
+								<span class="number">01</span>
+								<div class="text">Understanding Your Vision</div>
+							</div>
+							<div class="single-process col-538">
+								<span class="number">02</span>
+								<div class="text">Creative and Custom Designs</div>
+							</div>
+							<div class="single-process col-538">
+								<span class="number">03</span>
+								<div class="text">User Experience First</div>
+							</div>
+							<div class="single-process col-538">
+								<span class="number">04</span>
+								<div class="text">Responsive and Mobile-Friendly</div>
+							</div>
+							<div class="single-process col-538">
+								<span class="number">04</span>
+								<div class="text">Collaborative Process</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="s-192"></div>
+				<div class="wrapper">
+					<div class="design-process-ctn">
 						<div class="section-head">
 							<h2>Design process</h2>
 						</div>
 						<div class="s-96"></div>
-						<div class="proccess-area flex">
-							<div class="single-proccess col-538"><span class="number">01</span> Kick of meeting</div>
-							<div class="single-proccess col-538"><span class="number">02</span>Discovery and research</div>
-							<div class="single-proccess col-538"><span class="number">03</span>Architecture and content</div>
-							<div class="single-proccess col-538"><span class="number">04</span>Website storyframes</div>
-							<div class="single-proccess col-538"><span class="number">05</span>Web design</div>
-							<div class="single-proccess col-538"><span class="number">06</span>Website prototype</div>
+						<div class="process-area flex">
+							<div class="single-process col-538">
+								<span class="number">01</span>
+								<div class="text">Kick of meeting</div>
+							</div>
+							<div class="single-process col-538">
+								<span class="number">02</span>
+								<div class="text">Discovery and research</div>
+							</div>
+							<div class="single-process col-538">
+								<span class="number">03</span>
+								<div class="text">Architecture and content</div>
+							</div>
+							<div class="single-process col-538">
+								<span class="number">04</span>
+								<div class="text">Website storyframes</div>
+							</div>
+							<div class="single-process col-538">
+								<span class="number">05</span>
+								<div class="text">Web design</div>
+							</div>
+							<div class="single-process col-538">
+								<span class="number">06</span>
+								<div class="text">Website prototype</div>
+							</div>
 						</div>
 					</div>
 				</div>
+				<!-- </div>
 				<div class="s-192"></div>
 				<div class="wrapper">
 					<div class="image-slider">
@@ -71,27 +136,27 @@ get_header();
 							<div class="image-swiper--slider swiper-wrapper owl-carousel owl-theme" cursor-class="read-more">
 									<div class="swiper-slide image__slide swiper-slide swiper-lazy">
 										<div class="image__slide--img img-cover">
-											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
+											<img src="<?php // echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
 										</div>
 									</div>
 									<div class="swiper-slide image__slide swiper-slide swiper-lazy">
 										<div class="image__slide--img img-cover">
-											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
+											<img src="<?php // echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
 										</div>
 									</div>
 									<div class="swiper-slide image__slide swiper-slide swiper-lazy">
 										<div class="image__slide--img img-cover">
-											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
+											<img src="<?php // echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
 										</div>
 									</div>
 									<div class="swiper-slide image__slide swiper-slide swiper-lazy">
 										<div class="image__slide--img img-cover">
-											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
+											<img src="<?php // echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
 										</div>
 									</div>
 									<div class="swiper-slide image__slide swiper-slide swiper-lazy">
 										<div class="image__slide--img img-cover">
-											<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
+											<img src="<?php // echo esc_url( get_template_directory_uri() ); ?>/assets/img/uploads/project-img-01.webp" alt="">
 										</div>
 									</div>
 
@@ -99,22 +164,8 @@ get_header();
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="s-192"></div>
-				<div class="wrapper">
-					<div class="design-proccess-ctn">
-						<div class="section-head">
-							<h2>Design approach</h2>
-						</div>
-						<div class="s-96"></div>
-						<div class="proccess-area flex">
-							<div class="single-proccess col-538"><span class="number">01</span>Mobile First</div>
-							<div class="single-proccess col-538"><span class="number">02</span>Responsive</div>
-							<div class="single-proccess col-538"><span class="number">03</span>Usable</div>
-							<div class="single-proccess col-538"><span class="number">04</span>Accessible</div>
-						</div>
-					</div>
-				</div>
+				</div> -->
+
 				<div class="s-192"></div>
 				<section class="ctn-gray ">
 					<div class="s-192"></div>
@@ -126,7 +177,7 @@ get_header();
 							<div class="s-48"></div>
 							<div class="design-tool-item flex-between-start">
 								<div class="design-tool-title t2 font-med">
-									<!-- <div class="design-tool-icon"><img src="<?php // echo esc_url( get_template_directory_uri() ); ?>/assets/img/tool-logo-01.svg" alt=""></div> -->
+									<div class="design-tool-icon"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/tool-logo-01.svg" alt=""></div>
 									<div class="design-tool-inner-title">Octopus.do</div>
 								</div>
 								<div class="design-tool-text">Our preferred tool for structuring information and strategizing content. An essential part of our planning process.</div>
@@ -138,16 +189,9 @@ get_header();
 								</div>
 								<div class="design-tool-text">Our teamwork platform streamlines our process. Design, present, and track feedback all in one place. It's online; no software installation needed for design.</div>
 							</div>
-							<!-- <div class="design-tool-item flex-between-start">
-								<div class="design-tool-title t2 font-med">
-									<div class="design-tool-icon"><img src="<?php // echo esc_url( get_template_directory_uri() ); ?>/assets/img/tool-logo-04.svg" alt=""></div>
-									<div class="design-tool-inner-title">Blender</div>
-								</div>
-								<div class="design-tool-text">For projects that warrant it, our go-to 3D graphic creation tool.</div>
-							</div> -->
 							<div class="design-tool-item flex-between-start">
 								<div class="design-tool-title t2 font-med">
-									<!-- <div class="design-tool-icon"><img src="<?php // echo esc_url( get_template_directory_uri() ); ?>/assets/img/tool-logo-05.svg" alt=""></div> -->
+									 <div class="design-tool-icon"><img src="<?php  echo esc_url( get_template_directory_uri() ); ?>/assets/img/tool-logo-05.svg" alt=""></div>
 									<div class="design-tool-inner-title">Index Page</div>
 								</div>
 								<div class="design-tool-text">To improve Figma for presentations, we made our own tool. The Index Page plugin organizes screens with thumbnails.
@@ -215,51 +259,44 @@ get_header();
 											<p>Yes, we're experts in web development and have created numerous top-notch websites.</p>
 										</div>
 									</div>
-
-
-
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="s-192"></div>
 				</section>
-				<section class="ctn-gray ">
+				<!-- <section class="ctn-gray ">
 					<div class="s-192"></div>
 					<div class="wrapper">
-						<div class="list-colums flex">
+						<div class="list-colums">
 							<div class="list-column lyellow-bg col-49">
-								<h2 class="heading-3">Product 1</h2>
-								<div class="med-body list-text"> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-									consectetur, adipisci velit. </div>
+								<h2 class="heading-3">Startup Solutions</h2>
 								<ul>
-									<li>We're on a quest to build a different kind of agency.</li>
-									<li> One where the crazy ideas make the cut and the old ways of doing things get the
-										side-eye </li>
-									<li>There are many variations of passages of Lorem Ipsum available</li>
-									<li>There are many variations of passages of Lorem Ipsum available</li>
+									<li>Designed for new businesses looking to establish an online presence</li>
+									<li>Emphasis on scalability and future growth</li>
+									<li>Budget-friendly without compromising quality</li>
+									<li>Quick delivery to get you up and running</li>
+									<li>Basic integrations for social media and contact forms</li>
 								</ul>
 							</div>
 							<div class="list-column pink-bg col-49">
-								<h2 class="heading-3">Product 2</h2>
-								<div class="med-body list-text"> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-									consectetur, adipisci velit. </div>
+								<h2 class="heading-3">Enterprise Solutions</h2>
 								<ul>
-									<li>We're on a quest to build a different kind of agency.</li>
-									<li> One where the crazy ideas make the cut and the old ways of doing things get the
-										side-eye </li>
-									<li>There are many variations of passages of Lorem Ipsum available</li>
-									<li>There are many variations of passages of Lorem Ipsum available</li>
+									<li>Tailored for established businesses and organizations</li>
+									<li>Advanced features like custom workflows and automation</li>
+									<li>Scalable designs to handle high traffic and complex needs</li>
+									<li>Focus on brand authority and market positioning</li>
+									<li>Seamless integration with existing systems</li>
 								</ul>
 							</div>
 						</div>
 					</div>
 					<div class="s-192"></div>
-				</section>
+				</section> -->
 				<section>
-					<div class="s-192"></div>
+					<!-- <div class="s-192"></div> -->
 					<div class="wrapper">
-						<div class="services-ctn sm-services">
+						<div class="services-ctn">
 							<div class="section-head">
 								<h2 class="heading-3">Need something else?</h2>
 							</div>
@@ -268,6 +305,7 @@ get_header();
 								<div class="service-list-item">
 									<a href="<?php echo esc_url( home_url( '/' ) ); ?>web-development" class="no-link-style">
 										<div class="service-item-content">
+											<div class="service-count">01</div>
 											<div class="service-title">Web development</div>
 										</div>
 

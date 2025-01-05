@@ -70,6 +70,7 @@ if (function_exists('get_fields') && function_exists('get_fields_escaped')) {
 
 
 ?> </main>
+
 <footer class="footer-section">
 	<div class="s-96"></div>
 	<div class="wrapper">
@@ -80,7 +81,7 @@ if (function_exists('get_fields') && function_exists('get_fields_escaped')) {
 			</div>
 		</div>
 		<div class="s-96"></div>
-		<div class="footer-ctn flex-ctn">
+		<div class="footer-ctn flex-ctn footer-new-row">
 			<div class="footer-left">
 				<div class="footer-logo">
 					<a href="#">
@@ -90,29 +91,27 @@ if (function_exists('get_fields') && function_exists('get_fields_escaped')) {
 			</div>
 			<div class="footer-right">
 				<div class="footer-menu-widgets flexarea">
-					<div class="footer-widget footer-nav animated-hover">
+					<div class="footer-widget footer-nav">
 						<ul>
 							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>web-design">Web design</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>web-development">Web development</a></li>
-							<!-- <li><a href="<?php // echo esc_url( home_url( '/' ) ); ?>search-engine-optimization">Search engine optimization</a></li>
-							<li><a href="<?php // echo esc_url( home_url( '/' ) ); ?>continuous-improvements">Continuous improvement</a></li>
-							<li><a href="<?php // echo esc_url( home_url( '/' ) ); ?>maintenance-support">Maintenance + support</a></li> -->
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about">Company</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>blog">Resources</a></li>
 						</ul>
 					</div>
-					<div class="footer-widget footer-nav animated-hover">
+					<div class="footer-widget footer-nav">
 						<ul>
-							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>services">Services</a></li>
-							<!-- <li><a href="<?php// echo esc_url( home_url( '/' ) ); ?>work">Work</a></li>
-							<li><a href="<?php// echo esc_url( home_url( '/' ) ); ?>team">Company</a></li>
-							<li><a href="<?php// echo esc_url( home_url( '/' ) ); ?>company">Careers</a></li> -->
-							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about">About</a></li>
+							<!-- <li><a href="<?php // echo esc_url( home_url( '/' ) ); ?>services">Services</a></li> -->
+							<!-- <li><a href="<?php // echo esc_url( home_url( '/' ) ); ?>work">Work</a></li> -->
+							<!-- <li><a href="<?php // echo esc_url( home_url( '/' ) ); ?>team">Company</a></li>
+							<li><a href="<?php // echo esc_url( home_url( '/' ) ); ?>company">Careers</a></li> -->
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="s-96"></div>
-		<div class="flex-ctn">
+		<div class="flex-ctn footer-copyright-row">
 			<div class="footer-left">
 				<div class="blog-detail__social-ctn">
 						<div class="p3 font-med"> Follow us</div>
@@ -123,7 +122,7 @@ if (function_exists('get_fields') && function_exists('get_fields_escaped')) {
 									<a href="#" target="_blank">Fb</a>
 								</li>
 								<li>
-									<a href="#" target="_blank">Li</a>
+									<a href="https://www.linkedin.com/company/theelitedesign/" target="_blank">Li</a>
 								</li>
 								<li>
 									<a href="#" target="_blank">Tw</a>
@@ -133,20 +132,20 @@ if (function_exists('get_fields') && function_exists('get_fields_escaped')) {
 					</div>
 			</div>
 			<div class="footer-right">
-				<div class="elitedesign-contact animated-hover">
-					<div class="big-body"><a href="tel:+923474849527">Call923474849527</a></div>
+				<div class="elitedesign-contact">
+					<div class="big-body"><a href="tel:+923474849527">Call 923474849527</a></div>
 					<div class="big-body"><a href="mailto:hello@theelitedesign.com">hello@theelitedesign.com</a></div>
 				</div>
 			</div>
 		</div>
-		<div class="s-192"></div>
+		<div class="s-96"></div>
 		<div class="footer-bottom flex p2">
-			<div class="copyright-area animated-hover">
-				<p>147 B Rana Town Lahore 54500 <br>
-				© 2024 <a href="https://www.theelitedesign.com">elitedesign</a> ®
-			</p>
+			<div class="copyright-area">
+				<p>147 B Rana Town Lahore 54500
+					© 2024 <a href="https://www.theelitedesign.com">elitedesign</a>
+				</p>
 			</div>
-			<div class="legal-nav animated-hover">
+			<div class="legal-nav">
 				<ul>
 					<li>
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>contact">Contact us</a>
@@ -163,9 +162,6 @@ if (function_exists('get_fields') && function_exists('get_fields_escaped')) {
 		<div class="s-96"></div>
 	</div>
 </footer>
-
-	</div>
-</div>
 
 <?php wp_footer(); ?>
 

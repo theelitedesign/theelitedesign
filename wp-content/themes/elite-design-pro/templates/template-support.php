@@ -49,18 +49,18 @@ get_header();
 			<div class="s-192"></div>
 			<div class=" overflow-hidden">
 				<div class="wrapper">
-					<div class="design-proccess-ctn">
+					<div class="design-process-ctn">
 						<div class="section-head">
 							<h2>Support steps</h2>
 						</div>
 						<div class="s-96"></div>
-						<div class="proccess-area flex">
-							<div class="single-proccess col-538"><span class="number">01</span>Regular Security Updates</div>
-							<div class="single-proccess col-538"><span class="number">02</span>Quick Quality Assurance</div>
-							<div class="single-proccess col-538"><span class="number">03</span>Optimized Performance</div>
-							<div class="single-proccess col-538"><span class="number">05</span>Data Backup and Recovery</div>
-							<div class="single-proccess col-538"><span class="number">05</span>Monitoring</div>
-							<div class="single-proccess col-538"><span class="number">05</span>Routine Maintenance</div>
+						<div class="process-area flex">
+							<div class="single-process col-538"><span class="number">01</span>Regular Security Updates</div>
+							<div class="single-process col-538"><span class="number">02</span>Quick Quality Assurance</div>
+							<div class="single-process col-538"><span class="number">03</span>Optimized Performance</div>
+							<div class="single-process col-538"><span class="number">05</span>Data Backup and Recovery</div>
+							<div class="single-process col-538"><span class="number">05</span>Monitoring</div>
+							<div class="single-process col-538"><span class="number">05</span>Routine Maintenance</div>
 						</div>
 					</div>
 				</div>

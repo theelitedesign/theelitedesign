@@ -1,10 +1,10 @@
 {
     "key": "group_62bb467f71983",
-    "title": "Block - Proccess",
+    "title": "Block - process",
     "fields": [
         {
             "key": "field_62bb46f41fb75",
-            "label": "<h2 style=\"text-align:center;\"> Proccess <\/h2>",
+            "label": "<h2 style=\"text-align:center;\"> process <\/h2>",
             "name": "",
             "type": "message",
             "instructions": "",
@@ -22,7 +22,7 @@
         {
             "key": "field_62bb47011fb76",
             "label": "Title",
-            "name": "elitedesign_blk_proccess_title",
+            "name": "elitedesign_blk_process_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -57,8 +57,8 @@
         },
         {
             "key": "field_62bb473c1fb78",
-            "label": "Proccess Items",
-            "name": "elitedesign_blk_proccess",
+            "label": "process Items",
+            "name": "elitedesign_blk_process",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -101,7 +101,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/proccess"
+                "value": "acf\/process"
             }
         ]
     ],

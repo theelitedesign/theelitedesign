@@ -119,11 +119,11 @@ $bscripts 			= (isset($option_fields['body_scripts'])) ? $option_fields['body_sc
 						<div class="nav-container">
 							<div class="header-nav animated-hover">
 								<ul>
-									<li>
-										<a href="<?php echo esc_url( home_url( '/' ) ); ?>work">Work</a>
-									</li>
+									<!-- <li>
+										<a href="<?php // echo esc_url( home_url( '/' ) ); ?>work">Work</a>
+									</li> -->
 									<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>services">Services</a></li>
-									<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about">About</a></li>
+									<!-- <li><a href="<?php // echo esc_url( home_url( '/' ) ); ?>about">About</a></li> -->
 									<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>team">Company</a></li>
 									<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>blog">Resources</a></li>
 								</ul>
@@ -139,21 +139,8 @@ $bscripts 			= (isset($option_fields['body_scripts'])) ? $option_fields['body_sc
 					</div>
 				</div>
 			</div>
-
-			<div id="cursor" class="">
-				<div class="cursor__circle"></div>
-			</div>
-			<div class="cursor no-click">
-				<div class="cursor-move">
-					<div class="cursor-dot">
-						<div class="text-wrapper">
-						</div>
-					</div>
-				</div>
-			</div>
-	</header>
+		</header>
 	<!-- Main Area Start -->
 
-		<div id="smooth-wrapper">
-  <div id="smooth-content">
+
 	<main id="main-section" class="main-section">

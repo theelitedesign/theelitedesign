@@ -12,7 +12,6 @@
 }
 
 .at-right-section {
-
 	.inner-wrapper,
 	.wrapper {
 		padding-left: 200px;
@@ -20,7 +19,6 @@
 }
 
 .at-left-section {
-
 	.inner-wrapper,
 	.wrapper {
 		padding-right: 200px;
@@ -28,14 +26,12 @@
 }
 
 .ctn-1000 {
-
 	.wrapper {
 		max-width: 1000px;
 	}
 }
 
 .ctn-760 {
-
 	.wrapper {
 		max-width: 760px;
 	}
@@ -46,7 +42,6 @@
 }
 
 .full-width-ctn {
-
 	.wrapper {
 		max-width: 100%;
 		width: 100%;
@@ -61,25 +56,21 @@
 	background-color: map-get($map: $colors, $key: white);
 	color: map-get($map: $colors, $key: black01);
 
-
 	a,
 	a:visited {
 		color: map-get($map: $colors, $key: black01);
 	}
 
 	&.purple-mode {
-
 		background-color: map-get($map: $colors, $key: red2);
 		color: map-get($map: $colors, $key: white);
 	}
 
 	ul li:before {
-
 		background-color: map-get($map: $colors, $key: red2);
 	}
 
 	ol li:before {
-
 		color: map-get($map: $colors, $key: red2);
 	}
 }
@@ -90,10 +81,8 @@
 
 @media (hover: hover) {
 	.white-ctn {
-
 		a,
 		a:visited {
-
 			&:hover,
 			&:active {
 				color: map-get($map: $colors, $key: red2);

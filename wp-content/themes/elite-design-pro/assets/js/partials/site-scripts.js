@@ -7,68 +7,6 @@ jQuery( document ).on( 'scroll', function() {
 } );
 jQuery.noConflict();
 
-jQuery( window ).on( 'load', function() {
-	// if ( jQuery( document ).scrollTop() > 0 ) {
-	// 	const $header_height = jQuery( 'header' ).outerHeight();
-	// 	jQuery( '.hero-section' ).css( 'padding-top', $header_height + 'px' );
-	// 	if ( jQuery( 'body' ).hasClass( 'logged-in admin-bar' ) ) {
-	// 		const $header_height = jQuery( 'header' ).outerHeight() + 32;
-	// 		jQuery( '.hero-section' ).css( 'padding-top', $header_height + 'px' );
-	// 	}
-	// } else {
-	// 	const $header_height = jQuery( 'header' ).outerHeight();
-	// 	jQuery( '.hero-section' ).css( 'padding-top', $header_height + 'px' );
-	// 	if ( jQuery( 'body' ).hasClass( 'logged-in admin-bar' ) ) {
-	// 		const $header_height = jQuery( 'header' ).outerHeight() + 32;
-	// 		jQuery( '.hero-section' ).css( 'padding-top', $header_height + 'px' );
-	// 	}
-	// }
-
-	// if ( jQuery( 'h1' ).length > 0 ) {
-	// 	jQuery( 'h1' ).css( {
-	// 		opacity: 1,
-	// 		visibility: 'visible',
-	// 	} );
-
-	// 	const heroTitle = document.querySelectorAll( 'h1' );
-	// 	gsap.registerPlugin( SplitText );
-
-	// 	let textAnim;
-
-	// 	const doText = () => {
-	// 		textAnim && textAnim.progress( 1 );
-	// 		const text = new SplitText( 'h1', { types: 'lines,char', linesClass: 'lineChild' } );
-	// 		const mask = new SplitText( 'h1', { types: 'lines,char', linesClass: 'lineParent' } );
-
-	// 		textAnim = gsap.fromTo( '.lineChild', { yPercent: 100 }, {
-	// 			yPercent: 0,
-	// 			duration: 0.8,
-	// 			stagger: 0.2,
-	// 		} );
-	// 	};
-	// 	doText();
-	// }
-
-	// if ( jQuery( '.textAnimation' ).length > 0 ) {
-	// 	jQuery( '.textAnimation .headingLine' ).css( 'opacity', '1' );
-
-	// 	const textAnimation = new SplitText( '.textAnimation', { type: 'words,chars' } );
-
-	// 	gsap.from( textAnimation.words, { y: '100%', stagger: 0.05 } );
-	// 	gsap.from( textAnimation.chars, { y: '100%', stagger: 0.05 } );
-	// }
-
-	gsap.registerPlugin( ScrollTrigger, ScrollSmoother );
-
-	const smoother = ScrollSmoother.create( {
-		smooth: 2,
-		effects: true,
-		normalizeScroll: true,
-		dataScroll: 'true',
-	} );
-} );
-jQuery.noConflict();
-
 jQuery( function() {
 	jQuery( '.menu-btn' ).click( function() {
 		jQuery( this ).toggleClass( 'active' );
@@ -255,79 +193,6 @@ jQuery( function() {
 	 *
 	 */
 
-	// if ( jQuery( '#cursor' ).length > 0 ) {
-	// 	function curSorDesign() {
-	// 		const cursor = document.querySelector( '#cursor' );
-	// 		const cursorCircle = cursor.querySelector( '.cursor__circle' );
-	// 		const mouse = {
-	// 			x: -100,
-	// 			y: -100,
-	// 		};
-	// 		const pos = {
-	// 			x: 0,
-	// 			y: 0,
-	// 		};
-	// 		const speed = 0.1;
-	// 		const updateCoordinates = ( e ) => {
-	// 			mouse.x = e.clientX;
-	// 			mouse.y = e.clientY;
-	// 		};
-	// 		window.addEventListener( 'mousemove', updateCoordinates );
-	// 		function getAngle( diffX, diffY ) {
-	// 			return ( Math.atan2( diffY, diffX ) * 180 ) / Math.PI;
-	// 		}
-	// 		function getSqueeze( diffX, diffY ) {
-	// 			const distance = Math.sqrt(
-	// 				Math.pow( diffX, 2 ) + Math.pow( diffY, 2 )
-	// 			);
-	// 			const maxSqueeze = 0.15;
-	// 			const accelerator = 1500;
-	// 			return Math.min( distance / accelerator, maxSqueeze );
-	// 		}
-	// 		const updateCursor = () => {
-	// 			const diffX = Math.round( mouse.x - pos.x );
-	// 			const diffY = Math.round( mouse.y - pos.y );
-	// 			pos.x += diffX * speed;
-	// 			pos.y += diffY * speed;
-	// 			const angle = getAngle( diffX, diffY );
-	// 			const squeeze = getSqueeze( diffX, diffY );
-	// 			const scale =
-	// 				'scale(' + ( 1 + squeeze ) + ', ' + ( 1 - squeeze ) + ')';
-	// 			const rotate = 'rotate(' + angle + 'deg)';
-	// 			const translate =
-	// 				'translate3d(' + pos.x + 'px ,' + pos.y + 'px, 0)';
-	// 			cursor.style.transform = translate;
-	// 		};
-	// 		function loop() {
-	// 			updateCursor();
-	// 			requestAnimationFrame( loop );
-	// 		}
-	// 		requestAnimationFrame( loop );
-	// 		const cursorModifiers = document.querySelectorAll( '[cursor-class]' );
-	// 		cursorModifiers.forEach( ( curosrModifier ) => {
-	// 			curosrModifier.addEventListener( 'mouseenter', function() {
-	// 				const className = this.getAttribute( 'cursor-class' );
-	// 				cursor.classList.add( className );
-	// 			} );
-	// 			curosrModifier.addEventListener( 'mouseleave', function() {
-	// 				const className = this.getAttribute( 'cursor-class' );
-	// 				cursor.classList.remove( className );
-	// 			} );
-	// 		} );
-	// 	}
-	// 	curSorDesign();
-	// }
-
-	// jQuery.noConflict();
-
-	/**
-	 *
-	 *
-	 *	Stat counter
-	 *
-	 *
-	 */
-
 	if ( jQuery( '.stats-ctn' ).length > 0 ) {
 		const a = [];
 		function isElementInViewport( el ) {
@@ -360,7 +225,6 @@ jQuery( function() {
 			} );
 		} );
 
-		// Trigger scroll event on initial page load to check if elements are in viewport.
 		jQuery( window ).trigger( 'scroll' );
 	}
 

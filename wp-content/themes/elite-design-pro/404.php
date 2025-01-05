@@ -39,23 +39,17 @@ get_header();
 			<div class="s-48"></div>
 				<ul>
 					<li>
-						<a href="#">Projects</a>
+						<a href="/">Projects</a>
 					</li>
 					<li>
-						<a href="#">Services</a>
+						<a href="/">Services</a>
 					</li>
 					<li>
-						<a href="#">Team</a>
-					</li>
-					<li>
-						<a href="#">Company</a>
+						<a href="/">Company</a>
 					</li>
 
 					<li>
-						<a href="#">Contact</a>
-					</li>
-					<li>
-						<a href="#">Contact</a>
+						<a href="/">Contact</a>
 					</li>
 				</ul>
 				<div class="s-48"></div>

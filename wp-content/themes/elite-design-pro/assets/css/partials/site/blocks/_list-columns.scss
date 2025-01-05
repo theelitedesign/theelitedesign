@@ -17,3 +17,9 @@
 		margin-top: 20px;
 	}
 }
+
+.list-colums {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}

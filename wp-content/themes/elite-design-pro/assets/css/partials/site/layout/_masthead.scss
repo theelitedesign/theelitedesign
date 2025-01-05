@@ -162,9 +162,29 @@
 	justify-content: center;
 	align-items: center;
 	margin: 0;
+	position: absolute;
+	bottom: var(--ed_space_6);
+	right: var(--ed_space_6);
+	line-height: 0;
+}
+
+.scroll-down__button {
+	margin-top: 48px;
 
 	a,
 	a:visited {
 		line-height: 0;
+		display: inline-flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 24px;
+		color: map-get($map: $colors, $key: white);
+		&:hover {
+			color: #b388dd;
+		}
 	}
+}
+
+.hero--home {
+	position: relative;
 }

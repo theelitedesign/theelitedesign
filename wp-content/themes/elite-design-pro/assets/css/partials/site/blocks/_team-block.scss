@@ -163,12 +163,11 @@
 }
 
 .team-detail {
-
 	width: 100%;
 	overflow-y: auto;
 	height: 100vh;
-    flex-wrap: wrap;
-    align-items: flex-start;
+	flex-wrap: wrap;
+	align-items: flex-start;
 	justify-content: flex-start;
 	display: none;
 	flex-direction: row-reverse;
@@ -202,13 +201,14 @@
 		// top: 0;
 		// right: 0;
 	}
+
 	.blog-detail__social-shares {
 		ul li {
 			a,
 			a:visited {
 				color: map-get($map: $colors, $key: black);
 
-				  @media (hover: hover) {
+				@media (hover: hover) {
 					&:hover {
 						color: map-get($map: $colors, $key: red2);
 						border-color: map-get($map: $colors, $key: red2);
@@ -226,7 +226,6 @@
 		right: 0;
 	}
 }
-
 
 .popup-close-btn {
 	line-height: 0;
