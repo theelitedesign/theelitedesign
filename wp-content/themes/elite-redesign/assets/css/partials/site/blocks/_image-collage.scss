@@ -1,0 +1,35 @@
+.collage-image-detail {
+	width: calc(100% - 448px);
+
+	.p1 {
+		line-height: 1.2;
+	}
+
+	.p2 {
+		opacity: 0.7;
+	}
+
+	blockquote p {
+		font-size: var(--ed_font_size_t3);
+		@include font(st, reg);
+	}
+}
+
+.team-block-collage {
+	gap: 21px;
+	.col {
+		width: calc(33.4% - 16px);
+	}
+}
+
+.collage-image-area {
+	width: 400px;
+	line-height: 0.65;
+	aspect-ratio: 1 / 1;
+	border-radius: 24px;
+	overflow: hidden;
+}
+
+.collage-image {
+	width: 100%;
+}

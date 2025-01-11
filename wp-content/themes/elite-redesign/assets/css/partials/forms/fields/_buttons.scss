@@ -1,0 +1,75 @@
+/* -------------------------------------------------
+>> Project Styles
+---------------------------------------------------
+>> Edit these styles as required
+------------------------------------------------- */
+
+input[type="image"] {
+	margin: 0 10px 0 0;
+}
+
+input[type="submit"],
+button,
+input[type="button"],
+input[type="reset"] {
+	box-sizing: border-box;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	padding: 16px 34px 18px;
+	text-decoration: none;
+	color: map-get($map: $colors, $key: white);
+	border: 2px solid map-get($map: $colors, $key: white30);
+	transition: all 0.3s ease-in-out;
+	line-height: 1;
+	margin-right: 15px;
+	line-height: 1;
+	height: 56px;
+
+	@include border-radius(100px);
+	@include font(st, bold);
+	font-size: 20px;
+
+	cursor: pointer;
+
+	background-color: transparent;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&:hover {
+		background-color: map-get($map: $colors, $key: white);
+		border-color: map-get($map: $colors, $key: white);
+		color: map-get($map: $colors, $key: black);
+	}
+}
+
+input[type="submit"]:hover,
+button:hover,
+input[type="button"]:hover {
+	color: map-get($map: $base_colors, $key: button_color_hover);
+	background-color: map-get($map: $base_colors, $key: button_bgcolor_hover);
+}
+
+input[type="reset"] {
+	background-color: map-get($map: $base_colors, $key: theme_btn_bgcolor);
+	color: map-get($map: $base_colors, $key: theme_btn_color);
+
+	&:hover {
+		color: map-get($map: $base_colors, $key: theme_btn_color);
+		background-color: map-get(
+			$map: $base_colors,
+			$key: theme_btn_bgcolor_hover
+		);
+	}
+}
+
+.white-ctn {
+	input[type="submit"],
+	button,
+	input[type="button"],
+	input[type="reset"] {
+		color: map-get($map: $colors, $key: black);
+	}
+}

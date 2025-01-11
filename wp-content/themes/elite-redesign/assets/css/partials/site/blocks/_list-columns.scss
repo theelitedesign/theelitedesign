@@ -1,0 +1,25 @@
+.list-column {
+	@include padding(55px);
+	@include border-radius(10px);
+	background-color: map-get($map: $colors, $key: white);
+
+	ul {
+		margin: 48px 0 0;
+		li {
+			font-size: 20px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&:nth-child(n + 3) {
+		margin-top: 20px;
+	}
+}
+
+.list-colums {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
