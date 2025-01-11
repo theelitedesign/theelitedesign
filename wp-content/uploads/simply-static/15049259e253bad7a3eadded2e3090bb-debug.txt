@@ -1,0 +1,941 @@
+[2025-01-11 12:55:03] [class-ss-archive-creation-job.php:97] Starting a job; no job is presently running
+[2025-01-11 12:55:03] [class-ss-archive-creation-job.php:98] Here's our task list: setup, fetch_urls, generate_404, create_zip_archive, wrapup
+[2025-01-11 12:55:03] [class-ss-archive-creation-job.php:116] Pushing first task to queue: setup
+[2025-01-11 12:55:03] [class-ss-archive-creation-job.php:172] Current task: setup
+[2025-01-11 12:55:03] [class-ss-archive-creation-job.php:182] Performing task: setup
+[2025-01-11 12:55:03] [class-ss-task.php:44] Status message: [setup] Setting up
+[2025-01-11 12:55:03] [class-ss-setup-task.php:33] Creating archive directory: /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/
+[2025-01-11 12:55:03] [class-ss-setup-task.php:72] Adding origin URL to queue: http://localhost:10008/
+[2025-01-11 12:55:03] [class-ss-setup-task.php:143] File /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/feed/index.html exists; adding to queue as: http://localhost:10008/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/feed/index.html
+[2025-01-11 12:55:03] [class-ss-archive-creation-job.php:204] We've found our next task: fetch_urls
+[2025-01-11 12:55:03] [class-ss-archive-creation-job.php:172] Current task: fetch_urls
+[2025-01-11 12:55:03] [class-ss-archive-creation-job.php:182] Performing task: fetch_urls
+[2025-01-11 12:55:03] [class-ss-fetch-urls-task.php:69] Total pages: 2; Pages remaining: 2
+[2025-01-11 12:55:03] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/
+[2025-01-11 12:55:03] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 2
+[2025-01-11 12:55:03] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:03] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a27686f9-zPzvGO.tmp
+[2025-01-11 12:55:03] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/?simply_static_page=585
+[2025-01-11 12:55:03] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/?simply_static_page=585
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 25114 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:233] New filename for static page: index.html
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a27686f9-zPzvGO.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/index.html
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:158] Adding 32 URLs to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:08] [class-ss-page.php:119] Checking Content Identical:a9fdaf07174bfc9d6107eaa21e6daa073dd9dfe2===. Value: FALSE
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/feed/index.html
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 2
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2c82ac1-lhw9xX.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/feed/index.html?simply_static_page=586
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/feed/index.html?simply_static_page=586
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 339 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/feed/index.html
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2c82ac1-lhw9xX.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/feed/index.html
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:158] Adding 1 URLs to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:08] [class-ss-page.php:119] Checking Content Identical:a13a21911c0485544871c18598ed317c0b5011b2===. Value: FALSE
+[2025-01-11 12:55:08] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 0 of 2 pages/files
+[2025-01-11 12:55:08] [class-ss-archive-creation-job.php:212] We're not done with the fetch_urls task yet
+[2025-01-11 12:55:08] [class-ss-archive-creation-job.php:172] Current task: fetch_urls
+[2025-01-11 12:55:08] [class-ss-archive-creation-job.php:182] Performing task: fetch_urls
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:69] Total pages: 34; Pages remaining: 32
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/services
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:32; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2c85c3d-BPevc1.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/services?simply_static_page=587
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/services?simply_static_page=587
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 0 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 301 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:203] redirect_url: http://localhost:10008/services/
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:212] This is a redirect to a trailing slashed version of the same page; adding new URL to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/team
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:31; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2c898ac-MoeiaX.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/team?simply_static_page=588
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/team?simply_static_page=588
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 0 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 301 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:203] redirect_url: http://localhost:10008/team/
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:212] This is a redirect to a trailing slashed version of the same page; adding new URL to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/blog
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:30; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2c8d8e8-ixuyFP.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/blog?simply_static_page=589
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/blog?simply_static_page=589
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 0 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 301 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:203] redirect_url: http://localhost:10008/blog/
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:212] This is a redirect to a trailing slashed version of the same page; adding new URL to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/contact
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:29; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2c9190b-kcvnIS.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/contact?simply_static_page=590
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/contact?simply_static_page=590
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 0 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 301 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:203] redirect_url: http://localhost:10008/contact/
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:212] This is a redirect to a trailing slashed version of the same page; adding new URL to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/web-design
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:28; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2c9562c-QV1nJG.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/web-design?simply_static_page=591
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/web-design?simply_static_page=591
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 0 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 301 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:203] redirect_url: http://localhost:10008/web-design/
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:212] This is a redirect to a trailing slashed version of the same page; adding new URL to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/web-development
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:27; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2c99cb6-QlY7Vm.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/web-development?simply_static_page=592
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/web-development?simply_static_page=592
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 0 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 301 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:203] redirect_url: http://localhost:10008/web-development/
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:212] This is a redirect to a trailing slashed version of the same page; adding new URL to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/elite-designs-10-rules-for-amazing-websites
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:26; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2c9f86b-iP1ZYW.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/elite-designs-10-rules-for-amazing-websites?simply_static_page=593
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/elite-designs-10-rules-for-amazing-websites?simply_static_page=593
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 0 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 301 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:203] redirect_url: http://localhost:10008/elite-designs-10-rules-for-amazing-websites/
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:212] This is a redirect to a trailing slashed version of the same page; adding new URL to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/exploring-the-benefits-and-boundaries-of-gutenberg-custom-blocks
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:25; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2ca4779-L2ZBGG.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/exploring-the-benefits-and-boundaries-of-gutenberg-custom-blocks?simply_static_page=594
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/exploring-the-benefits-and-boundaries-of-gutenberg-custom-blocks?simply_static_page=594
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 0 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 301 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:203] redirect_url: http://localhost:10008/exploring-the-benefits-and-boundaries-of-gutenberg-custom-blocks/
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:212] This is a redirect to a trailing slashed version of the same page; adding new URL to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/about
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:24; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2ca96dc-cwD6jh.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/about?simply_static_page=595
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/about?simply_static_page=595
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 19366 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2caf76c-o0aXVW.tmp
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/about
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 19366 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/terms-and-conditions
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:23; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2cb4b8d-PE6xmP.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/terms-and-conditions?simply_static_page=596
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/terms-and-conditions?simply_static_page=596
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 19366 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2cb9801-C81zgg.tmp
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/terms-and-conditions
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 19366 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/sitemap
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:22; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2cbe26f-OySEnn.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/sitemap?simply_static_page=597
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/sitemap?simply_static_page=597
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 19366 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2cc3351-8cDm4K.tmp
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/sitemap
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 19366 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/site-logo.svg
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:21; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2cc819b-VEUnSL.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/site-logo.svg?simply_static_page=598
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/site-logo.svg?simply_static_page=598
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 8481 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/site-logo.svg
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2cc819b-VEUnSL.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/site-logo.svg
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:08] [class-ss-page.php:119] Checking Content Identical:534b83e33b0320b2435ee4ff2a1a6fe6502be79d===. Value: FALSE
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-includes/js/jquery/jquery.min.js
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:20; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2cca0f7-85L5O9.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-includes/js/jquery/jquery.min.js?simply_static_page=599
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-includes/js/jquery/jquery.min.js?simply_static_page=599
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 87553 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-javascript
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:233] New filename for static page: wp-includes/js/jquery/jquery.min.js
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2cca0f7-85L5O9.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-includes/js/jquery/jquery.min.js
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:08] [class-ss-page.php:119] Checking Content Identical:79cd3587d565afe290076a8d36c31c305a573d18===. Value: FALSE
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-includes/js/jquery/jquery-migrate.min.js
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:19; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2ccbb4b-3F43ZF.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-includes/js/jquery/jquery-migrate.min.js?simply_static_page=600
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-includes/js/jquery/jquery-migrate.min.js?simply_static_page=600
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 13577 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-javascript
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:233] New filename for static page: wp-includes/js/jquery/jquery-migrate.min.js
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2ccbb4b-3F43ZF.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-includes/js/jquery/jquery-migrate.min.js
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:08] [class-ss-page.php:119] Checking Content Identical:3ad0c10e501ac2a9bfa18f9cd7e700219b378738===. Value: FALSE
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/templates/js/home.js
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:18; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2ccd56b-cvvaaT.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/templates/js/home.js?simply_static_page=601
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/templates/js/home.js?simply_static_page=601
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 1 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-javascript
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/templates/js/home.js
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2ccd56b-cvvaaT.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/templates/js/home.js
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:08] [class-ss-page.php:119] Checking Content Identical:b858cb282617fb0956d960215c8e84d1ccf909c6===. Value: FALSE
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/js/bundle.min.js
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:17; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2ccee95-mhfiyi.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/js/bundle.min.js?simply_static_page=602
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/js/bundle.min.js?simply_static_page=602
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 206824 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-javascript
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/js/bundle.min.js
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2ccee95-mhfiyi.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/js/bundle.min.js
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:08] [class-ss-page.php:119] Checking Content Identical:aa49f4136ac5b4103b86113da6df748c68e229c8===. Value: FALSE
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/pwa-icon-144.png
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:16; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2cd132d-vx6nEy.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/pwa-icon-144.png?simply_static_page=603
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/pwa-icon-144.png?simply_static_page=603
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 19366 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2cd6181-pd5wYU.tmp
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/pwa-icon-144.png
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 19366 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/apple-touch-icon.png
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:15; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2cdac52-8PEUjI.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/apple-touch-icon.png?simply_static_page=604
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/apple-touch-icon.png?simply_static_page=604
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 7995 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/png
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/pwa/apple-touch-icon.png
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2cdac52-8PEUjI.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/pwa/apple-touch-icon.png
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:08] [class-ss-page.php:119] Checking Content Identical:b8c9e584f4f86b63ae2cf80206d4d84d1aa62f05===. Value: FALSE
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/favicon-32x32.png
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:14; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2cdc47e-xE7xfo.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/favicon-32x32.png?simply_static_page=605
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/favicon-32x32.png?simply_static_page=605
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 804 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/png
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/pwa/favicon-32x32.png
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2cdc47e-xE7xfo.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/pwa/favicon-32x32.png
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:08] [class-ss-page.php:119] Checking Content Identical:0832a29c878583c868c97f65b33f8dcbe4d0f4f3===. Value: FALSE
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/favicon-16x16.png
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:13; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2cddbba-rEQCFB.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/favicon-16x16.png?simply_static_page=606
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/favicon-16x16.png?simply_static_page=606
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 385 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/png
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/pwa/favicon-16x16.png
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2cddbba-rEQCFB.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/pwa/favicon-16x16.png
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:08] [class-ss-page.php:119] Checking Content Identical:6c058548c24fc59dff534ba9cb08c2ff73f85882===. Value: FALSE
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/favicon.ico
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:12; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2cdf0d5-CO9mxW.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/favicon.ico?simply_static_page=607
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/favicon.ico?simply_static_page=607
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 15406 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/x-icon
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/pwa/favicon.ico
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2cdf0d5-CO9mxW.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/pwa/favicon.ico
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:08] [class-ss-page.php:119] Checking Content Identical:b883132549efe07cfab19f356a55d8bc87697a77===. Value: FALSE
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/icon.svg
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:11; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2ce0b3e-durSyZ.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/icon.svg?simply_static_page=608
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/icon.svg?simply_static_page=608
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 1164 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/pwa/icon.svg
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2ce0b3e-durSyZ.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/pwa/icon.svg
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:08] [class-ss-page.php:119] Checking Content Identical:72b0147642f622046cdd13a3fe3ee5a625f5a8c2===. Value: FALSE
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/site.webmanifest
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:10; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2ce2269-lxd9R4.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/site.webmanifest?simply_static_page=609
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/pwa/site.webmanifest?simply_static_page=609
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 1113 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/octet-stream
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/pwa/site.webmanifest
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2ce2269-lxd9R4.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/pwa/site.webmanifest
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:08] [class-ss-page.php:119] Checking Content Identical:7b21d8f193c1d38bd91aec3fc95dfac363284d84===. Value: FALSE
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/feed/
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:9; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2ce3680-vArLPS.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/feed/?simply_static_page=610
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/feed/?simply_static_page=610
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 870 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/rss+xml; charset=UTF-8
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:233] New filename for static page: feed/index.xml
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2ce3680-vArLPS.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/feed/index.xml
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:158] Adding 2 URLs to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:08] [class-ss-page.php:119] Checking Content Identical:eb40b3547a780b802be51c9b6e75aa627c4ed2cb===. Value: FALSE
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/comments/feed/
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:8; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2ce80c7-6x6OoO.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/comments/feed/?simply_static_page=611
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/comments/feed/?simply_static_page=611
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 764 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/rss+xml; charset=UTF-8
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:233] New filename for static page: comments/feed/index.xml
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2ce80c7-6x6OoO.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/comments/feed/index.xml
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:158] Adding 2 URLs to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:08] [class-ss-page.php:119] Checking Content Identical:d354689348edcba0b71410936f9c5e1a985e67ec===. Value: FALSE
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-includes/css/dist/block-library/style.min.css
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:7; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2cec636-A4Mol1.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-includes/css/dist/block-library/style.min.css?simply_static_page=612
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-includes/css/dist/block-library/style.min.css?simply_static_page=612
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 114706 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:233] New filename for static page: wp-includes/css/dist/block-library/style.min.css
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2cec636-A4Mol1.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-includes/css/dist/block-library/style.min.css
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:08] [class-ss-page.php:119] Checking Content Identical:dc3b1a37381e079fda8db59c1a9469852cd18b80===. Value: FALSE
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/css/bundle.min.css
+[2025-01-11 12:55:08] [class-ss-task.php:58] [PAGES STATUS] Remaining:6; Total: 34
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2cef022-YrYljV.tmp
+[2025-01-11 12:55:08] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/css/bundle.min.css?simply_static_page=613
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/css/bundle.min.css?simply_static_page=613
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:103] Filesize: 138510 bytes
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/css/bundle.min.css
+[2025-01-11 12:55:08] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2cef022-YrYljV.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/css/bundle.min.css
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:08] [class-ss-fetch-urls-task.php:158] Adding 12 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:3811578976fb65094a1eec354ddae0adf15c290a===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-json/
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:5; Total: 34
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost:10008/wp-json/
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-json/wp/v2/pages/8
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 34
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost:10008/wp-json/wp/v2/pages/8
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/xmlrpc.php
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 34
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost:10008/xmlrpc.php
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-json/oembed/1.0/embed
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 34
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost:10008/wp-json/oembed/1.0/embed
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/feed/index.xml
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 34
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d0593c-7b5Odt.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/feed/index.xml?simply_static_page=618
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/feed/index.xml?simply_static_page=618
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 804 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/xml
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/feed/index.xml
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d0593c-7b5Odt.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/feed/index.xml
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:eb40b3547a780b802be51c9b6e75aa627c4ed2cb===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 2 of 34 pages/files
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:212] We're not done with the fetch_urls task yet
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:172] Current task: fetch_urls
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:182] Performing task: fetch_urls
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:69] Total pages: 54; Pages remaining: 20
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/services/
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:20; Total: 54
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d07a47-kU5Zuo.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/services/?simply_static_page=619
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/services/?simply_static_page=619
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 22699 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: services/index.html
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d07a47-kU5Zuo.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/services/index.html
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 31 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:d5ee60992b05f54600c25cbe3e75cc3743f7ee3d===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/team/
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:19; Total: 54
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d1293c-P2ls0m.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/team/?simply_static_page=620
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/team/?simply_static_page=620
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 29495 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: team/index.html
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d1293c-P2ls0m.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/team/index.html
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 34 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:1868671d4b7869d0c27a3e12ddee3eab3af58827===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/blog/
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:18; Total: 54
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d1eb8f-o5gqU8.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/blog/?simply_static_page=621
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/blog/?simply_static_page=621
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 21545 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: blog/index.html
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d1eb8f-o5gqU8.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/blog/index.html
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 32 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:9893bb150ac5cd1e9f6e9987013e73d3e7289f39===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/contact/
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:17; Total: 54
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d2850e-Z2rnbn.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/contact/?simply_static_page=622
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/contact/?simply_static_page=622
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 23966 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: contact/index.html
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d2850e-Z2rnbn.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/contact/index.html
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 30 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:fae73d38b78ae2f7e1a5c94b6ae26e4a6b0abeba===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/web-design/
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:16; Total: 54
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d322c1-Yt752I.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/web-design/?simply_static_page=623
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/web-design/?simply_static_page=623
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 32270 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: web-design/index.html
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d322c1-Yt752I.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/web-design/index.html
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 34 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:21f6f10f781adaa094fec7d3757944702f483e36===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/web-development/
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:15; Total: 54
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d3edcf-QEZqta.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/web-development/?simply_static_page=624
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/web-development/?simply_static_page=624
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 36679 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: web-development/index.html
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d3edcf-QEZqta.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/web-development/index.html
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 31 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:9cb92653f742ab8b121afd36b916da9ced43ba80===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/elite-designs-10-rules-for-amazing-websites/
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:14; Total: 54
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d4b0db-9WeNQ0.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/elite-designs-10-rules-for-amazing-websites/?simply_static_page=625
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/elite-designs-10-rules-for-amazing-websites/?simply_static_page=625
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 24467 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: elite-designs-10-rules-for-amazing-websites/index.html
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d4b0db-9WeNQ0.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/elite-designs-10-rules-for-amazing-websites/index.html
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 31 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:692c41b1f123c748c5d50e7fc23f8379fbe92ac1===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/exploring-the-benefits-and-boundaries-of-gutenberg-custom-blocks/
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:13; Total: 54
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d56258-CzaEtn.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/exploring-the-benefits-and-boundaries-of-gutenberg-custom-blocks/?simply_static_page=626
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/exploring-the-benefits-and-boundaries-of-gutenberg-custom-blocks/?simply_static_page=626
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 25586 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: exploring-the-benefits-and-boundaries-of-gutenberg-custom-blocks/index.html
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d56258-CzaEtn.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/exploring-the-benefits-and-boundaries-of-gutenberg-custom-blocks/index.html
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 31 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:2195f02061cae97433b8b582c481170e17488046===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/select-icon.svg
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:12; Total: 54
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d60b05-DkAYYT.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/select-icon.svg?simply_static_page=627
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/select-icon.svg?simply_static_page=627
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 196 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/select-icon.svg
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d60b05-DkAYYT.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/select-icon.svg
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:042660f3517256ae62ebdb932c7e496880239a7f===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/sticky-icon.svg
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:11; Total: 54
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d6229f-4jESfx.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/sticky-icon.svg?simply_static_page=628
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/sticky-icon.svg?simply_static_page=628
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 1084 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/sticky-icon.svg
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d6229f-4jESfx.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/sticky-icon.svg
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:9e005a80a2950edaa19748d1a3ac4514513ab4c5===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/play-icon-white.svg
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:10; Total: 54
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d63bbf-z16B9C.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/play-icon-white.svg?simply_static_page=629
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/play-icon-white.svg?simply_static_page=629
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 324 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/play-icon-white.svg
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d63bbf-z16B9C.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/play-icon-white.svg
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:22458fb1921097a00bb9bde62e70012b6d8ab7e2===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/cross-icon.png
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:9; Total: 54
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d651e3-6aUZy8.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/cross-icon.png?simply_static_page=630
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/cross-icon.png?simply_static_page=630
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 903 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/png
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/cross-icon.png
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d651e3-6aUZy8.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/cross-icon.png
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:b05a3437fc97eeddf3704b42c591b032259cc135===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/white-long-arrow.svg
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:8; Total: 54
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d66605-v4ShMt.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/white-long-arrow.svg?simply_static_page=631
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/white-long-arrow.svg?simply_static_page=631
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 521 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/white-long-arrow.svg
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d66605-v4ShMt.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/white-long-arrow.svg
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:54e88a1115f8d06445a926b4ef41f3f7c0f6e3c6===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/default-image.webp
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:7; Total: 54
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d680e6-me288y.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/default-image.webp?simply_static_page=632
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/default-image.webp?simply_static_page=632
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 19366 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d6d29d-LBBHGa.tmp
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/default-image.webp
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 19366 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/fonts/Satoshi-Bold.woff2
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:6; Total: 54
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d71ee9-kRv2Z9.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/fonts/Satoshi-Bold.woff2?simply_static_page=633
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/fonts/Satoshi-Bold.woff2?simply_static_page=633
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 27844 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/font-woff2
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/fonts/Satoshi-Bold.woff2
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d71ee9-kRv2Z9.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/fonts/Satoshi-Bold.woff2
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:92d793da1ed73df01ff5f75670124a54c910ce9c===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/fonts/Satoshi-Medium.woff2
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:5; Total: 54
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d7346d-C0wCLV.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/fonts/Satoshi-Medium.woff2?simply_static_page=634
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/fonts/Satoshi-Medium.woff2?simply_static_page=634
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 28168 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/font-woff2
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/fonts/Satoshi-Medium.woff2
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d7346d-C0wCLV.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/fonts/Satoshi-Medium.woff2
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:03b0a5b115aea205c10d32da874759a31b4c2eac===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/fonts/Satoshi-Regular.woff2
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 54
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d74a5b-ioo72C.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/fonts/Satoshi-Regular.woff2?simply_static_page=635
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/fonts/Satoshi-Regular.woff2?simply_static_page=635
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 28040 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/font-woff2
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/fonts/Satoshi-Regular.woff2
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d74a5b-ioo72C.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/fonts/Satoshi-Regular.woff2
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:3b77ae99008a010166d17d1a8486b4c394823575===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/css/vendor/magnific-popup.css
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 54
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d75f96-4KwwHc.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/css/vendor/magnific-popup.css?simply_static_page=636
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/css/vendor/magnific-popup.css?simply_static_page=636
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 6529 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/css/vendor/magnific-popup.css
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d75f96-4KwwHc.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/css/vendor/magnific-popup.css
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:529ffb2a9dda5b8fac1482a585ebffa3226b2f8a===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/css/vendor/owl.carousel.css
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 54
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d77be7-8XtaQs.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/css/vendor/owl.carousel.css?simply_static_page=637
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/css/vendor/owl.carousel.css?simply_static_page=637
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 4845 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/css/vendor/owl.carousel.css
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d77be7-8XtaQs.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/css/vendor/owl.carousel.css
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:3a395cbe81894b9b6d32aae1ee0745abbba376ac===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/css/vendor/owl.theme.default.css
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 54
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d7989b-5joDbd.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/css/vendor/owl.theme.default.css?simply_static_page=638
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/css/vendor/owl.theme.default.css?simply_static_page=638
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 1380 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/css/vendor/owl.theme.default.css
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d7989b-5joDbd.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/css/vendor/owl.theme.default.css
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:5193b985aa3f992ce7bad494b6ab519707c48cc1===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 34 of 54 pages/files
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:212] We're not done with the fetch_urls task yet
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:172] Current task: fetch_urls
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:182] Performing task: fetch_urls
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:69] Total pages: 73; Pages remaining: 19
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/uploads/ideas-wp.webp
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:19; Total: 73
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d7bbe8-AfgWsd.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/uploads/ideas-wp.webp?simply_static_page=639
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/uploads/ideas-wp.webp?simply_static_page=639
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 546990 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/webp
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/uploads/ideas-wp.webp
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d7bbe8-AfgWsd.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/uploads/ideas-wp.webp
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:48464943625eb43f305be4bb5cc5a6759deca5d9===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-json/wp/v2/pages/14
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:18; Total: 73
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost:10008/wp-json/wp/v2/pages/14
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/uploads/company-hero.webp
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:17; Total: 73
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d7f9de-6CX0rv.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/uploads/company-hero.webp?simply_static_page=641
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/uploads/company-hero.webp?simply_static_page=641
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 59514 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/webp
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/uploads/company-hero.webp
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d7f9de-6CX0rv.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/uploads/company-hero.webp
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:57f344e49c765493ae88ecc6742e7902a1acff6f===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/uploads/profile-image.jpeg
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:16; Total: 73
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d8131a-2Bbu6W.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/uploads/profile-image.jpeg?simply_static_page=642
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/uploads/profile-image.jpeg?simply_static_page=642
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 143087 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/jpeg
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/uploads/profile-image.jpeg
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d8131a-2Bbu6W.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/uploads/profile-image.jpeg
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:030379088d5e27c39d2a3a811f91c6b0a5bb394d===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/js/vendor/jquery-magnificpopup.js
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:15; Total: 73
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d83220-LH6rxe.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/js/vendor/jquery-magnificpopup.js?simply_static_page=643
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/js/vendor/jquery-magnificpopup.js?simply_static_page=643
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 20211 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-javascript
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/js/vendor/jquery-magnificpopup.js
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d83220-LH6rxe.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/js/vendor/jquery-magnificpopup.js
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:6518236f1b53911d260009a0d39f44f8d4ffba3a===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/templates/js/team.js
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:14; Total: 73
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d84b65-7fBadk.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/templates/js/team.js?simply_static_page=644
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/templates/js/team.js?simply_static_page=644
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 193 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-javascript
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/templates/js/team.js
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d84b65-7fBadk.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/templates/js/team.js
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:06ecf90b4a7ec1dc7c07b0e52cba96102fc95a9f===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-json/wp/v2/pages/26
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:13; Total: 73
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost:10008/wp-json/wp/v2/pages/26
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-json/wp/v2/pages/476
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:12; Total: 73
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost:10008/wp-json/wp/v2/pages/476
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-json/wp/v2/pages/22
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:11; Total: 73
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost:10008/wp-json/wp/v2/pages/22
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/uploads/web-design.webp
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:10; Total: 73
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d87e3c-N1SCPp.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/uploads/web-design.webp?simply_static_page=648
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/uploads/web-design.webp?simply_static_page=648
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 334806 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/webp
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/uploads/web-design.webp
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d87e3c-N1SCPp.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/uploads/web-design.webp
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:c09f459cccb8af2c784bf989570d9501bf5d29b8===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/tool-logo-01.svg
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:9; Total: 73
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d8a183-3HonKS.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/tool-logo-01.svg?simply_static_page=649
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/tool-logo-01.svg?simply_static_page=649
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 3084 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/tool-logo-01.svg
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d8a183-3HonKS.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/tool-logo-01.svg
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:7169e34cf68d111a4d759d431d92a551e91103d1===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/tool-logo-02.svg
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:8; Total: 73
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d8b812-pYlLku.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/tool-logo-02.svg?simply_static_page=650
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/tool-logo-02.svg?simply_static_page=650
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 1586 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/tool-logo-02.svg
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d8b812-pYlLku.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/tool-logo-02.svg
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:8ed42acfba68d9b083a8573c34f15b591d3e92f3===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/tool-logo-05.svg
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:7; Total: 73
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d8cda7-K6e9rU.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/tool-logo-05.svg?simply_static_page=651
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/tool-logo-05.svg?simply_static_page=651
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 5910 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/tool-logo-05.svg
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d8cda7-K6e9rU.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/tool-logo-05.svg
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:b6b85fc5145aa433b948c9dc997a069eb8c77516===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-json/wp/v2/pages/10
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:6; Total: 73
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost:10008/wp-json/wp/v2/pages/10
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/uploads/wordpress-image.webp
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:5; Total: 73
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d8ef09-dB1vos.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/uploads/wordpress-image.webp?simply_static_page=653
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/uploads/wordpress-image.webp?simply_static_page=653
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 63586 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/webp
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/uploads/wordpress-image.webp
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d8ef09-dB1vos.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/uploads/wordpress-image.webp
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:6b453525ae0b1ad8c45aeeca467d5ca69fb5e640===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-json/wp/v2/pages/12
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 73
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost:10008/wp-json/wp/v2/pages/12
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/uploads/product-img-01.webp
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 73
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d91593-7a0FEN.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/wp-content/themes/elite-redesign/assets/img/uploads/product-img-01.webp?simply_static_page=655
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/wp-content/themes/elite-redesign/assets/img/uploads/product-img-01.webp?simply_static_page=655
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 15980 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/webp
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/elite-redesign/assets/img/uploads/product-img-01.webp
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d91593-7a0FEN.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/wp-content/themes/elite-redesign/assets/img/uploads/product-img-01.webp
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:098e6b7b5cb73ddbbd127b4a1d81158081e31f59===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-json/wp/v2/pages/483
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 73
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost:10008/wp-json/wp/v2/pages/483
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:72] URL: http://localhost:10008/wp-json/wp/v2/pages/485
+[2025-01-11 12:55:09] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 73
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost:10008/wp-json/wp/v2/pages/485
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2025-01-11 12:55:09] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 54 of 73 pages/files
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:212] We're not done with the fetch_urls task yet
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:172] Current task: fetch_urls
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:182] Performing task: fetch_urls
+[2025-01-11 12:55:09] [class-ss-fetch-urls-task.php:69] Total pages: 73; Pages remaining: 0
+[2025-01-11 12:55:09] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 73 of 73 pages/files
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:204] We've found our next task: generate_404
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:172] Current task: generate_404
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:182] Performing task: generate_404
+[2025-01-11 12:55:09] [class-ss-task.php:44] Status message: [generate_404] Generating 404 Page.
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/tmp/67826a2d94d15-xEfGMX.tmp
+[2025-01-11 12:55:09] [class-ss-page-handler.php:38] URL Prepared:http://localhost:10008/1736600110?simply_static_page=0
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:10008/1736600110?simply_static_page=0
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:103] Filesize: 19366 bytes
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:233] New filename for static page: 404/index.html
+[2025-01-11 12:55:09] [class-ss-url-fetcher.php:143] Renaming temp file from /var/tmp/67826a2d94d15-xEfGMX.tmp to /Users/baharhussain/Local Sites/theelitedesign/app/public/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103/404/index.html
+[2025-01-11 12:55:09] [class-ss-generate-404-task.php:119] Replacing URLs in the static file
+[2025-01-11 12:55:09] [class-ss-generate-404-task.php:125] We're saving this URL; keeping the static file
+[2025-01-11 12:55:09] [class-ss-page.php:119] Checking Content Identical:555e20d8a7dd733106f5f76cd8963650dcaf2f1f===. Value: FALSE
+[2025-01-11 12:55:09] [class-ss-task.php:44] Status message: [generate_404] 404 Page generated
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:204] We've found our next task: create_zip_archive
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:172] Current task: create_zip_archive
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:182] Performing task: create_zip_archive
+[2025-01-11 12:55:09] [class-ss-create-zip-archive.php:78] Fetching list of files to include in zip
+[2025-01-11 12:55:09] [class-ss-create-zip-archive.php:87] Creating zip archive
+[2025-01-11 12:55:09] [class-ss-task.php:44] Status message: [create_zip_archive] ZIP archive created:  <a href="http://localhost:10008/wp-content/uploads/simply-static/temp-files/simply-static-1-1736600103.zip">Click here to download</a>
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:204] We've found our next task: wrapup
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:172] Current task: wrapup
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:182] Performing task: wrapup
+[2025-01-11 12:55:09] [class-ss-wrapup-task.php:22] Deleting temporary files
+[2025-01-11 12:55:09] [class-ss-task.php:44] Status message: [wrapup] Wrapping up
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:199] This task is done and there are no more tasks, time to complete the job
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:244] Completing the job
+[2025-01-11 12:55:09] [class-ss-archive-creation-job.php:371] Status message: [done] Done! Finished in 00:00:06
