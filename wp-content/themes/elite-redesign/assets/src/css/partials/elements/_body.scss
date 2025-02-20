@@ -1,0 +1,31 @@
+/* -------------------------------------------------
+>> Base Styles
+---------------------------------------------------
+>> Edit these styles as required
+------------------------------------------------- */
+
+body {
+	@include font(st, reg, family weight);
+	transition: all 0.3s ease-in-out;
+	position: relative;
+	font-size: var(--el_font_size_24);
+	color: var(--el_body_color);
+	background-color: var(--el_body_bg);
+	line-height: 1.5;
+
+	&.have-topbar {
+		padding-top: var(--el_header-height);
+	}
+}
+
+p {
+	margin: 0 0 30px;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+// ::selection {
+// 	color: var(--el_highlight_color);
+// 	background-color: var(--el_highlight_bg);
+// }

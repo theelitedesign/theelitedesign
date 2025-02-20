@@ -1,0 +1,513 @@
+:root {
+	--space_base_unit: 0.125rem; // 2px
+
+	/* Mobile Spacer Value */
+
+	--el_space_1_min: var(--space_base_unit) * 3;
+	/* 6px */
+	--el_space_2_min: var(--space_base_unit) * 5;
+	/* 10px */
+	--el_space_3_min: var(--space_base_unit) * 10;
+	/* 20px */
+	--el_space_4_min: var(--space_base_unit) * 12;
+	/* 24px */
+	--el_space_5_min: var(--space_base_unit) * 18;
+	/* 36px */
+	--el_space_6_min: var(--space_base_unit) * 24;
+	/* 48px */
+	--el_space_7_min: var(--space_base_unit) * 48;
+	/* 96px */
+	--el_space_8_min: var(--space_base_unit) * 32;
+	/* 64px */
+	--el_space_9_min: var(--space_base_unit) * 36;
+	/* 72px */
+	--el_space_10_min: var(--space_base_unit) * 40;
+	/* 80px */
+
+	/* Desktop Spacer Value */
+
+	--el_space_1_max: var(--space_base_unit) * 3;
+	/* 6px */
+	--el_space_2_max: var(--space_base_unit) * 6;
+	/* 12px */
+	--el_space_3_max: var(--space_base_unit) * 12;
+	/* 24px */
+	--el_space_4_max: var(--space_base_unit) * 16;
+	/* 32px */
+	--el_space_5_max: var(--space_base_unit) * 24;
+	/* 48px */
+	--el_space_6_max: var(--space_base_unit) * 48;
+	/* 96px */
+	--el_space_7_max: var(--space_base_unit) * 96;
+	/* 192px */
+	--el_space_8_max: var(--space_base_unit) * 64;
+	/* 128px */
+	--el_space_9_max: var(--space_base_unit) * 72;
+	/* 144px */
+	--el_space_10_max: var(--space_base_unit) * 80;
+	/* 160px */
+
+	--el_font_size_d1_min: var(--space_base_unit) * 24;
+	/* 48px */
+
+	--el_font_size_d2_min: var(--space_base_unit) * 30;
+	/* 60px */
+
+	// Desktop Font Size
+
+	--el_font_size_d1_max: var(--space_base_unit) * 75;
+	/* 150px */
+
+	--el_font_size_d2_max: var(--space_base_unit) * 100;
+	/* 200px */
+
+	// Fluid Font Size
+
+	--el_font_size_d1: clamp(
+		var(--el_font_size_d1_min),
+		11.778vw + -0.048rem,
+		var(--el_font_size_d1_max)
+	);
+	--el_font_size_d2: clamp(
+		var(--el_font_size_d2_min),
+		16.166vw + -0.433rem,
+		var(--el_font_size_d2_max)
+	);
+
+	--el_font_size_t1_min: var(--font_base_unit) * 13;
+	/* 26px */
+	--el_font_size_t2_min: var(--font_base_unit) * 10;
+	/* 20px */
+	--el_font_size_t3_min: var(--font_base_unit) * 9;
+	/* 18px */
+
+	--el_font_size_t1_max: var(--font_base_unit) * 23;
+	/* 46px */
+	--el_font_size_t2_max: var(--font_base_unit) * 20;
+	/* 40px */
+	--el_font_size_t3_max: var(--font_base_unit) * 16;
+	/* 32px */
+
+	// Fluid Font Size
+
+	--el_font_size_t1: clamp(
+		var(--el_font_size_t1_min),
+		2.309vw + 1.027rem,
+		var(--el_font_size_t1_max)
+	);
+	--el_font_size_t2: clamp(
+		var(--el_font_size_t2_min),
+		2.309vw + 0.652rem,
+		var(--el_font_size_t2_max)
+	);
+	--el_font_size_t3: clamp(
+		var(--el_font_size_t3_min),
+		1.617vw + 0.707rem,
+		var(--el_font_size_t3_max)
+	);
+
+	// Fluid Spacers
+
+	--el_space_1: clamp(
+		var(--el_space_1_min),
+		0vw + 0.375rem,
+		var(--el_space_1_max)
+	);
+
+	--el_space_3: clamp(
+		var(--el_space_3_min),
+		0.462vw + 1.13rem,
+		var(--el_space_3_max)
+	);
+
+	--el_space_5: clamp(
+		var(--el_space_5_min),
+		1.386vw + 1.891rem,
+		var(--el_space_5_max)
+	);
+
+	--el_space_7: clamp(
+		var(--el_space_7_min),
+		11.085vw + 3.132rem,
+		var(--el_space_7_max)
+	);
+
+	--el_space_9: clamp(
+		var(--el_space_9_min),
+		7.956vw + 2.635rem,
+		var(--el_space_9_max)
+	);
+	--el_space_10: clamp(
+		var(--el_space_10_min),
+		8.84vw + 2.928rem,
+		var(--el_space_10_max)
+	);
+
+	/*-------------------------------------------------
+	>> Variables for Spaces
+	-------------------------------------------------*/
+	@include spacing(--el_space_2, 2, 2);
+	@include spacing(--el_space_4, 4, 4);
+	@include spacing(--el_space_6, 6, 6);
+	@include spacing(--el_space_8, 8, 8);
+	@include spacing(--el_space_12, 12, 10);
+	@include spacing(--el_space_16, 16, 12);
+	@include spacing(--el_space_20, 20, 16);
+	@include spacing(--el_space_24, 24, 20);
+	@include spacing(--el_space_30, 30, 24);
+	@include spacing(--el_space_36, 36, 30);
+	@include spacing(--el_space_48, 48, 36);
+	@include spacing(--el_space_72, 72, 44);
+	@include spacing(--el_space_96, 96, 52);
+	@include spacing(--el_space_128, 128, 64);
+	@include spacing(--el_space_156, 156, 72);
+	@include spacing(--el_space_200, 200, 84);
+	@include spacing(--el_space_236, 236, 98);
+
+	/* -------------------------------------------------
+	>> Variables for Font Sizes
+	------------------------------------------------- */
+
+	@include font_size(--el_font_size_12, 12, 11);
+	@include font_size(--el_font_size_14, 14, 13);
+	@include font_size(--el_font_size_16, 16, 15);
+	@include font_size(--el_font_size_18, 18, 17);
+	@include font_size(--el_font_size_20, 20, 18);
+	@include font_size(--el_font_size_22, 22, 20);
+	@include font_size(--el_font_size_24, 24, 20);
+	@include font_size(--el_font_size_26, 26, 22);
+	@include font_size(--el_font_size_32, 32, 24);
+	@include font_size(--el_font_size_40, 40, 26);
+	@include font_size(--el_font_size_48, 48, 30);
+	@include font_size(--el_font_size_60, 60, 45);
+	@include font_size(--el_font_size_68, 68, 55);
+	@include font_size(--el_font_size_h1, 110, 48);
+	@include font_size(--el_font_size_h2, 80, 40);
+	@include font_size(--el_font_size_h3, 48, 32);
+	@include font_size(--el_font_size_h4, 32, 24);
+	@include font_size(--el_font_size_h5, 24, 18);
+
+	@include font_size(--el_font_size_t1, 46, 26);
+	@include font_size(--el_font_size_t2, 40, 20);
+	@include font_size(--el_font_size_t3, 32, 18);
+
+	/* -------------------------------------------------
+	>> Color variables
+	------------------------------------------------- */
+
+	/*
+	>> Base Colors
+	*/
+
+	// Theme Primary
+	--el_color_primary: #52247f;
+	--el_color_on_primary: #ffffff;
+
+	// Theme Secondary
+	--el_color_secondary: #b388dd;
+
+	// Theme Dark
+	--el_black: #0e0e0e;
+	--el_black_1: #01021c;
+	--el_black_2: #606364;
+
+	// Theme Light
+	--el_white: #f9f9f9;
+	--el_white_1: #f1f1f1;
+	--el_white_2: #f1e9e9;
+	--el_white_10: rgba(255, 255, 255, 0.1);
+	--el_white_30: rgba(255, 255, 255, 0.3);
+	--el_white_50: rgba(255, 255, 255, 0.5);
+	--el_white_60: rgba(255, 255, 255, 0.6);
+
+	// Theme Colors
+	--el_gray: #e0e0e0;
+	--el_gray_1: #e6e6e6;
+	--el_gray_2: #eee;
+
+	--el_red: #ff0000;
+	--el_sea_green: #04c3b4;
+
+	--el_orange: #d16e60;
+	--el_yellow: #f9f871;
+
+	--el_transparent: transparent;
+
+	// Text Variations
+	--el_regular_text: #0e0e0e;
+	--el_dark_text: #0e0e0e;
+	--el_white_text: #f9f9f9;
+	--el_light_text: #606364;
+
+	// fixed variable Colors
+
+	--el_success: #198754;
+	--el_info: #0dcaf0;
+	--el_warning: #ffc107;
+	--el_danger: #dc3545;
+	--el_light: #f8f9fa;
+	--el_dark: #212529;
+
+	--el_signal: #d14b3c;
+	--el_signal_bg: #fbede9;
+
+	--el_color_background: #ffffff;
+	--el_color_on_background: #14191f;
+
+	// Borders
+	--el_border: #30353c;
+	--el_border_1: #545454;
+	--el_border_2: #adadad;
+	--el_border_3: #e0e0e0;
+	--el_border_4: #14191f;
+
+	--el_gray: #cdcdcd;
+	--el_ugray: #767684;
+	--el_gray_c: #e6e6e6;
+	--el_lgray: #f1f4f4;
+	--red: #b388dd;
+	--red2: #52247f;
+
+	/* -------------------------------------------------
+	>> Base Colors
+	>> Base colors are used for essential elements
+	such as the logo, tables, links, blockquote,
+	default buttons styling and this should't conflict
+	with theme colors
+	------------------------------------------------- */
+
+	// text Colors
+	--el_body_color: var(--el_color_on_background);
+	--el_body_bg: var(--el_color_background);
+	--el_text_strong: var(--el_black);
+
+	--el_dark_text: var(--el_black);
+	--el_white_text: var(--el_white);
+
+	--el_highlight_color: var(--el_color_on_primary);
+	--el_highlight_bg: var(--el_color_primary);
+
+	--el_caption: var(--el_black_2);
+
+	// Headings
+
+	--el_heading_color: inherit;
+	--el_heading_link_color: var(--el_dark_text);
+	--el_heading_link_color_hover: var(--el_dark_text);
+
+	// link colors
+	--el_link_color: var(--el_color_primary);
+	--el_link_color_hover: var(--el_color_primary);
+	--el_link_border_color: var(--el_color_primary);
+	--el_link_border_color_hover: transparent;
+
+	// lists Colors
+	--el_list_ul_marker_color: var(--el_color_primary);
+	--el_list_ol_marker_color: var(--el_color_primary);
+	--el_list_marker_bgcolor: var(--el_border_4);
+
+	// Blockquote Colors
+	--el_blockquote_color: var(--el_regular_text);
+	--el_blockquote_border_color: var(--el_regular_text);
+	--el_quote_color: var(--el_regular_text);
+	--el_blockqoute_cite_color: var(--el_light_text);
+
+	// Tables Colors
+	--el_table_border_color: var(--el_border);
+	--el_table_head_border_color: var(--el_dark_text);
+	--el_table_foot_border_color: var(--el_dark_text);
+
+	// Formating
+	--el_strong_color: var(--el_regular_text);
+	--el_underline_border_color: var(--el_regular_text);
+	--el_abbr_border_color: var(--el_regular_text);
+	--el_delete_color: var(--el_danger);
+	--el_insert_color: var(--el_success);
+	--el_insert_border_color: var(--el_success);
+
+	// Code
+	--el_code_color: var(--el_white_text);
+	--el_code_bgcolor: var(--el_dark_text);
+	--el_pre_color: var(--el_white_text);
+	--el_pre_bgcolor: var(--el_dark_text);
+	--el_mark_bgcolor: var(--el_dark_text);
+	--el_mark_color: var(--el_white_text);
+
+	// Graphical elements
+	--el_hr_color: var(--el_border_2);
+
+	// Form Fields
+
+	--el_input_color: var(--el_regular_text);
+	--el_input_bg: var(--el_light_field_bg);
+	--el_input_border_color: var(--el_border);
+
+	--el_input_focus_color: var(--el_black);
+	--el_input_focus_bgcolor: var(--el_white);
+	--el_input_focus_border_color: var(--el_border_2);
+
+	--el_disabled_input_bgcolor: var(--el_field_bg);
+	--el_disabled_input_border_color: var(--el_border_1);
+
+	--el_placeholder_color: var(--el_light_text);
+	--el_range_track_bgcolor: var(--el_field_bg);
+	--el_range_thumb_bgcolor: var(--el_color_primary);
+	--el_color_field_border_color: var(--el_border);
+	--el_color_field_bgcolor: var(--el_field_bg);
+	--el_radio_color: var(--el_regular_text);
+	--el_radio_border_color: var(--el_border);
+	--el_radio_bgcolor: var(--el_field_bg);
+	--el_radio_after_bgcolor: var(--el_color_primary);
+	--el_checkbox_color: var(--el_regular_text);
+	--el_checkbox_border_color: var(--el_border);
+	--el_checkbox_bgcolor: var(--el_field_bg);
+	--el_checkbox_after_bgcolor: var(--el_color_primary);
+	--el_progress_bgcolor: var(--el_field_bg);
+	--el_progress_value_bgcolor: var(--el_color_primary);
+	--el_meter_bgcolor: var(--el_field_bg);
+	--el_meter_value_bgcolor: var(--el_color_primary);
+
+	// Button
+	--el_button_color: var(--el_white_text);
+	--el_button_bgcolor: var(--el_color_primary);
+	--el_button_color_hover: var(--el_dark_text);
+	--el_button_bgcolor_hover: var(--el_transparent);
+	--el_button_border_color: var(--el_color_primary);
+	--el_button_border_color_hover: var(--el_border);
+
+	--el_reset_button_bgcolor: var(--el_button_bgcolor);
+	--el_reset_button_color: var(--el_white_text);
+
+	// Buttons layer
+	--el_theme_btn_color: var(--el_button_color);
+	--el_theme_btn_bgcolor: var(--el_button_bgcolor);
+	--el_theme_btn_color_hover: var(--el_button_color_hover);
+	--el_theme_btn_bgcolor_hover: var(--el_button_bgcolor_hover);
+	--el_theme_btn_border_color: var(--el_button_border_color);
+	--el_theme_btn_border_color_hover: var(--el_button_border_color_hover);
+
+	// --el_wp_btn_color: var(--el_white_text);
+	// --el_wp_btn_bgcolor: var(--el_button_bg);
+
+	// --el_wp_outline_btn_color: var(--el_white_text);
+	// --el_wp_outline_btn_border_color: var(--el_dark_text);
+	// --el_wp_outline_btn_bgcolor: var(--el_dark_text);
+
+	// Date Picker
+	--el_datepicker_bg_color: var(--el_gray);
+	--el_datepicker_select_bgcolor: var(--el_white);
+	--el_datepicker_link_color: var(--el_color_secondary);
+	--el_datepicker_link_active_color: var(--el_color_primary);
+	--el_datepicker_calendar: var(--el_white_text);
+	--el_datepicker_th_bgcolor: var(--el_border_1);
+	--el_datepicker_even_tr_td_bgcolor: var(--el_border_1);
+	--el_datepicker_border_color: var(--el_border_1);
+	--el_datepicker_date_color: var(--el_dark_text);
+
+	// Errors & Confirmation
+	--el_valiation_error_bg_color: var(--el_danger_bg);
+	--el_valiation_message_color: var(--el_danger);
+	--el_error_field_border_color: var(--el_danger);
+	--el_valiation_error_color: var(--el_danger);
+	--el_confirmation_message_bgcolor: var(--el_success_bg);
+	--el_confirmation_message_color: var(--el_dark_text);
+	--el_confirmation_message_border_color: var(--el_danger);
+	--el_required_text_color: var(--el_danger);
+	--el_invalid_error_border_color: var(--el_danger);
+	--el_hubspot_error_label_color: var(--el_danger);
+	--el_hubspot_required_color: var(--el_danger);
+	--el_fileupload_rule_color: var(--el_light_text);
+	--el_error_menu_color: var(--el_dark_text);
+
+	// Accessibility
+	--el_acc_btn_color: var(--el_white_text);
+	--el_acc_btn_bgcolor: var(--el_button_bg);
+	--el_acc_btn_shadow: var(--el_danger);
+	--el_acc_outline: var(--el_black);
+
+	// Comments Box
+	--el_comments_reply_btn_bgcolor: var(--el_button_bg);
+	--el_comments_reply_btn_color: var(--el_white_text);
+	--el_comments_reply_btn_bgcolor_hover: var(--el_button_bg_hover);
+	--el_comments_reply_btn_color_hover: var(--el_white_text);
+	--el_comment_meta_color: var(--el_dark_text);
+	--el_comment_metadata_color: var(--el_light_text);
+	--el_comments_list_border_color: var(--el_border);
+	--el_widget_comments_meta_color: var(--el_light_text);
+
+	// Pagination
+	--el_pagination_bgcolor: var(--el_blue_1);
+	--el_pagination_color: var(--el_white);
+	--el_pagination_color_hover: var(--el_white);
+	--el_pagination_bgcolor_hover: var(--el_border_1);
+	--el_pagination_bgcolor_current: var(--el_border_1);
+	--el_pagination_color_current: var(--el_white);
+	--el_pagination_first_bgcolor: var(--el_border_1);
+	--el_pagination_first_color: var(--el_dark_text);
+	--el_pagination_border: var(--el_transparent);
+
+	// Widgets
+	--el_widget_latest_post_meta_color: var(--el_danger);
+	--el_widget_rss_feed_meta_color: var(--el_danger);
+	--el_widget_search_button_color: var(--el_pure_black);
+	--el_wp_table_block_stripe_bg_color: var(--el_gray);
+
+	// Breadcrumbs
+	--el_breadcrumb_color: var(--el_pure_black);
+	--el_breadcrumb_link_color: var(--el_pure_black);
+	--el_breadcrumb_border_color: transparent;
+	--el_breadcrumb_border_color_hover: var(--el_pure_black);
+	--el_breadcrumb_span_color: var(--el_pure_black);
+
+	// Header
+	--el_header_bgcolor: var(--el_transparent);
+	--el_header_color: var(--el_black);
+	--el_header_color_hover: var(--el_black);
+	--el_header_bgcolor_sticky: var(--el_white);
+	--el_header_nav_border_color: var(--el_dark_text);
+
+	--el_header_submenu_bgcolor: var(--el_gray);
+	--el_header_submenu_color: var(--el_header_color);
+	--el_header_submenu_color_hover: var(--el_header_color_hover);
+
+	--el_header_mobile_color: var(--el_dark_text);
+	--el_header_mobile_submenu_color: var(--el_dark_text);
+
+	--el_nav_overlay_bgcolor: var(--el_white);
+	--el_mobile_nav_icon_bgcolor: var(--el_dark_text);
+	--el_abbr_border: var(--el_dark_text);
+
+	// Top Bar
+	--el_topbar_bgcolor: var(--el_color_primary);
+	--el_topbar_color: var(--el_white);
+	--el_topbar_link_color: var(--el_white);
+
+	// Footer
+	--el_footer_bgcolor: var(--el_dark_text);
+	--el_footer_color: var(--el_white_text);
+
+	--el_footer_color_hover: var(--el_white_text);
+
+	--el_f_nav_color: var(--el_footer_color);
+	--el_f_nav_color_hover: var(--el_footer_color_hover);
+	--el_f_nav_border_color: var(--el_footer_color);
+	--el_f_nav_border_color_hover: var(--el_footer_color_hover);
+
+	--el_copyright_color: var(--el_white_text);
+	--el_legal_nav_color: var(--el_white_text);
+	--el_legal_nav_border_color: var(--el_white_text);
+	--el_legal_nav_border_color_hover: var(--el_white_text);
+	--el_legal_text_color: var(--el_white_text);
+
+	// Containers
+	--el_ctn_red: var(--el_red);
+	--el_ctn_black: var(--el_black);
+	--el_ctn_sea_green: var(--el_sea_green);
+
+	// style variations
+
+	--el_style_bg: #821212;
+	--el_style_text: #000000;
+	--el_style_link: #000000;
+	--el_style_button: #00a4eb;
+}

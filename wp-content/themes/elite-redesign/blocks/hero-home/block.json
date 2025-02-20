@@ -1,0 +1,24 @@
+{
+	"name": "acf/hero-home",
+	"title": "Hero Home",
+	"description": "A custom hero home block.",
+	"category": "theme-blocks",
+	"icon": "hero-home",
+	"keywords": ["hero-home"],
+	"supports": {
+		"align": true
+	},
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block-hero-home.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview": "hero-home-preview.webp"
+			}
+		}
+	},
+	"align": "full"
+}

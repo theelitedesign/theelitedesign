@@ -1,0 +1,24 @@
+{
+	"name": "acf/lead-paragraph",
+	"title": "Lead Paragraph",
+	"description": "A custom lead paragraph block.",
+	"category": "theme-blocks",
+	"icon": "Lead Paragraph",
+	"keywords": ["lead paragraph"],
+	"supports": {
+		"align": true
+	},
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block-lead Paragraph.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview": "Lead-paragraph-preview.webp"
+			}
+		}
+	},
+	"align": "full"
+}

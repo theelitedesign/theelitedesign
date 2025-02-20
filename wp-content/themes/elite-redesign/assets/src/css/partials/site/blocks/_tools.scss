@@ -1,0 +1,41 @@
+.design-tool-item {
+	padding: var(--el_space_48) 0;
+	position: relative;
+	&::after {
+		content: "";
+		width: 200vw;
+		height: 1px;
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: -50vw;
+		background-color: var(--el_gray);
+	}
+
+	&:last-of-type::after {
+		display: none;
+	}
+}
+
+.design-tool-title {
+	width: 38.3%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--el_space_3);
+}
+
+.design-tool-text {
+	width: 57.7%;
+}
+
+.design-tool-icon {
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	// display: none;
+}
+
+.design-tool-inner-title {
+	width: calc(100% - 94px);
+}

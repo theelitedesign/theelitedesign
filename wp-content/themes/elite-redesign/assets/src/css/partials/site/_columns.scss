@@ -1,0 +1,43 @@
+.two-columns {
+	display: grid;
+	@include fluidColumns(2, 350px, 2%);
+	row-gap: var(--el_space_30);
+}
+
+.three-columns {
+	display: grid;
+	@include fluidColumns(3, 309px, 2%, 0);
+	row-gap: var(--el_space_30);
+}
+
+.four-columns {
+	display: grid;
+	@include fluidColumns(4, 250px, 2%);
+	row-gap: var(--el_space_30);
+}
+
+.five-columns {
+	display: grid;
+	@include fluidColumns(5, 200px, 2%);
+	row-gap: var(--el_space_30);
+}
+
+.col-645 {
+	width: 49.2%;
+}
+
+.col-595 {
+	width: 45.4%;
+}
+
+.col-538 {
+	width: 48.5%;
+}
+
+.col-50 {
+	width: 50%;
+}
+
+.col-49 {
+	width: 49.4%;
+}

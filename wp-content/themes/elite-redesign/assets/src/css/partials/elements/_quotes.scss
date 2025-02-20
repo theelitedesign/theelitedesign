@@ -1,0 +1,119 @@
+/* -------------------------------------------------
+>> Base Styles
+---------------------------------------------------
+>> Edit these styles as required
+------------------------------------------------- */
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote {
+	position: relative;
+	color: var(--el_blockquote_color);
+	border-left: 3px solid var(--el_color_primary);
+	padding: var(--el_space_30) var(--el_space_48);
+	margin: 0 0 30px;
+	background-color: var(--el_lgray);
+	font-size: var(--el_font_size_26);
+	@include font(st, med);
+
+	p {
+		&::before {
+			content: " “ ";
+			margin-left: -18px;
+			position: relative;
+			left: 5px;
+			top: 0;
+		}
+
+		&::after {
+			content: " “ ";
+			position: relative;
+			left: -8px;
+		}
+	}
+}
+
+.wp-block-quote {
+	&.has-text-align-right {
+		border-left: none;
+		border-right: 3px solid var(--el_blockquote_border_color);
+		padding: 5px 20px 5px 0;
+
+		&.is-style-plain {
+			border-right: none;
+		}
+	}
+
+	&.has-text-align-left.is-style-plain {
+		border-left: none;
+		padding: 0;
+	}
+
+	&.has-text-align-center {
+		border-left: none;
+		padding: 20px 5px;
+	}
+
+	&.is-style-plain {
+		border-left: none;
+	}
+
+	&.is-style-large {
+		border-left: 0;
+	}
+}
+
+figure {
+	&.wp-block-pullquote {
+		border-top: 3px solid var(--el_blockquote_border_color);
+		border-bottom: 3px solid var(--el_blockquote_border_color);
+		padding-left: 10px;
+		padding-right: 10px;
+
+		blockquote {
+			border-left: none;
+			margin-bottom: 0;
+			padding: 10px;
+		}
+
+		&.alignleft,
+		&.alignright {
+			padding: 35px 10px;
+		}
+	}
+}
+
+q {
+	quotes: "\201C" "\201D";
+	color: var(--el_quote_color);
+	position: relative;
+}
+
+cite {
+	display: block;
+	margin-top: var(--el_space_5);
+	color: var(--el_black_2);
+	@include font(st, reg);
+	font-size: clamp(1rem, 0.231vw + 0.94rem, 1.125rem);
+
+	strong {
+		display: block;
+		margin-right: var(--ed_space_1);
+		color: var(--el_black);
+		font-size: clamp(1.25rem, 0.462vw + 1.13rem, 1.5rem);
+	}
+}
+
+.quote-content.center-align {
+	blockquote {
+		padding: 0;
+		margin: 0;
+		border: 0;
+		font-size: var(--el_font_size_t2);
+		background-color: transparent;
+		color: var(--el_white);
+	}
+}

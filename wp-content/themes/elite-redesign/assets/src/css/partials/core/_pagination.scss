@@ -1,0 +1,50 @@
+/* -------------------------------------------------
+>> Base Styles
+---------------------------------------------------
+>> Edit these styles as required
+------------------------------------------------- */
+
+.page-section .pagination,
+.pagination {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0 0;
+	gap: 10px;
+	flex-wrap: wrap;
+	font-size: var(--el_font_size_20);
+
+	a,
+	span[role="button"],
+	a:visited,
+	span.current {
+		width: 48px;
+		height: 48px;
+		border: 1px solid var(--el_gray);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--el_pagination_bgcolor);
+		color: var(--el_black);
+		line-height: 1;
+		cursor: pointer;
+		@include font(st, reg);
+		border-radius: 8px;
+		@include transition(all, 0.3s, ease-in-out);
+
+		&:hover,
+		&:focus-visible {
+			border-color: var(--el_ugray);
+		}
+	}
+
+	span.current {
+		background-color: var(--el_color_primary);
+		color: var(--el_white);
+		border-color: var(--el_color_primary);
+		&:hover {
+			border-color: var(--el_color_primary);
+		}
+	}
+}

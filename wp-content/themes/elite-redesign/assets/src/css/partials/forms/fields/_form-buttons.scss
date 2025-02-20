@@ -1,0 +1,56 @@
+/* -------------------------------------------------
+>> Project Styles
+---------------------------------------------------
+>> Edit these styles as required
+------------------------------------------------- */
+
+input[type="image"] {
+	margin: 0 10px 0 0;
+}
+
+input[type="submit"],
+button,
+input[type="button"],
+input[type="reset"] {
+	padding: 16px 34px 18px;
+	display: inline-block;
+	line-height: 1;
+	box-sizing: border-box;
+	background-color: var(--el_button_bgcolor);
+	border: 2px solid var(--el_button_bgcolor);
+	transition: all 0.3s ease-in-out;
+	color: var(--el_button_color);
+	outline: none;
+	@include font(st, bold);
+	font-size: 20px;
+	height: 58px;
+	outline: none;
+	cursor: pointer;
+	border-radius: 100px;
+}
+
+input[type="submit"]:hover,
+button:hover,
+input[type="button"]:hover {
+	color: var(--el_button_color_hover);
+	border-color: var(--el_button_bgcolor_hover);
+	background-color: var(--el_color_secondary);
+}
+
+input[type="submit"]:focus-visible,
+button:focus-visible,
+input[type="button"]:focus-visible {
+	color: var(--el_button_color_hover);
+	background-color: var(--el_button_bgcolor_hover);
+}
+
+input[type="reset"] {
+	background-color: var(--el_theme_btn_bgcolor);
+	color: var(--el_theme_btn_color);
+
+	&:hover,
+	&:focus-visible {
+		color: var(--el_theme_btn_color);
+		background-color: var(--el_theme_btn_bgcolor_hover);
+	}
+}
