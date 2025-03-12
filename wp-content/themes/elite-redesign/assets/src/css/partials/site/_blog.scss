@@ -334,3 +334,23 @@
 		}
 	}
 }
+
+.post-categories-row {
+	.category {
+		margin-right: 14px;
+		&:nth-child(n + 2) {
+			display: inline-flex;
+			align-items: center;
+
+			&::before {
+				content: "";
+				display: inline-block;
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				background-color: var(--el_color_primary);
+				margin-right: 14px;
+			}
+		}
+	}
+}

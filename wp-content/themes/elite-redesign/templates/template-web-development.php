@@ -21,7 +21,7 @@ get_header();
 			<div class="hero hero-ctn hero--work">
 				<div class="s-96"></div>
 				<div class="wrapper">
-					<div class="hero__content">
+					<div class="hero-content">
 						<h1>Easy to customize  <br> <span>high performing sites</span></span></h1>
 						<div class="s-48"></div>
 						<div class="p1">
@@ -50,7 +50,7 @@ get_header();
 					<div class="hero-bottom-content p1">
 						</div>
 					<div class="hero-bottom-image">
-						<img src="http://localhost:10008/wp-content/uploads/2025/02/wordpress-image.webp" alt="Image">
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/wordpress-image.webp" alt="Image">
 					</div>
 				</div>
 			</div>
@@ -61,7 +61,7 @@ get_header();
 			<div class="wrapper">
 				<div class="hat-ctn hat-horizontal">
 					<div class="section-head">
-						<h2 class="heading-2">What is WordPress?</h2>
+						<h2 class="heading-5">What is WordPress?</h2>
 					</div>
 					<div class="s-48"></div>
 					<div class="t1">
@@ -297,7 +297,6 @@ get_header();
 							</div>
 						</div>
 					</div>
-					<div class="s-156"></div>
 				</section>
 			</div>
 		</section>

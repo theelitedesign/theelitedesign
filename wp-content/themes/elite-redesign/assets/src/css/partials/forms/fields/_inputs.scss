@@ -45,7 +45,7 @@ textarea,
 .gform-text-input-reset {
 	@include font(st, reg);
 	font-size: 18px;
-	height: 56px;
+	height: 40px;
 	width: 100%;
 	background-color: transparent;
 	border: 0;
@@ -56,11 +56,10 @@ textarea,
 	font-size: var(--el_font_size_20);
 	padding: 0;
 	@include transition(all, 0.4s, ease-in-out);
-
 	color: var(--el_black_1);
 
 	&:focus {
-		border-color: var(--el_black_1);
+		border-color: var(--el_color_primary);
 	}
 }
 
@@ -222,7 +221,7 @@ textarea {
 
 input:-webkit-autofill {
 	background-color: transparent !important;
-	-webkit-box-shadow: 0 0 0px 1000px var(--el_white) inset !important; /* Replace #111111 with your desired background color */
+	-webkit-box-shadow: 0 0 0px 1000px var(--el_body_bg) inset !important; /* Replace #111111 with your desired background color */
 	-webkit-text-fill-color: var(
 		--el_black_1
 	) !important; /* Adjust text color */
@@ -230,9 +229,9 @@ input:-webkit-autofill {
 }
 
 input:-webkit-autofill:focus {
-	-webkit-box-shadow: 0 0 0px 1000px var(--el_white) inset !important; /* Focus state color */
+	-webkit-box-shadow: 0 0 0px 1000px var(--el_body_bg) inset !important; /* Focus state color */
 }
 
 input:-webkit-autofill:hover {
-	-webkit-box-shadow: 0 0 0px 1000px var(--el_white) inset !important; /* Hover state color */
+	-webkit-box-shadow: 0 0 0px 1000px var(--el_body_bg) inset !important; /* Hover state color */
 }

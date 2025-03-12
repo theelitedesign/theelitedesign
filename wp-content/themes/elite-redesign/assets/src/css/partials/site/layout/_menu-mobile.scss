@@ -1,6 +1,13 @@
 @use "sass:math";
 
 @media (max-width: 1003px) {
+	.header-logo {
+		max-width: 205px;
+	}
+
+	html {
+		scroll-padding-top: 80px;
+	}
 	.top-bar {
 		padding-inline: 5%;
 	}
@@ -31,6 +38,10 @@
 				display: block;
 				opacity: 1;
 				line-height: 1;
+				width: 100%;
+				display: inline-flex;
+				align-items: center;
+				flex-wrap: wrap;
 
 				a,
 				a:visited {
@@ -45,14 +56,15 @@
 				&.current-menu-item > a,
 				&.current-menu-parent > a,
 				a:hover {
-					border-bottom: none;
+					border: 0;
+					color: var(--el_color_secondary);
 				}
 			}
 
 			ul {
 				transition: none;
 				display: none;
-				padding: 8px 0 20px 20px;
+				padding: 30px 0;
 				position: relative;
 				top: initial;
 				left: initial;
@@ -62,7 +74,7 @@
 				box-shadow: none;
 
 				li {
-					margin: 0 0 15px;
+					margin: 0 0 24px;
 
 					&:last-child {
 						margin-bottom: 0;
@@ -72,7 +84,7 @@
 					a:visited {
 						padding: initial;
 						text-transform: inherit;
-
+						font-size: 100%;
 						@include font(st, reg);
 					}
 
@@ -106,7 +118,8 @@
 		box-sizing: border-box;
 		z-index: 8;
 		@include transition(all, 0.3s, ease-in-out);
-		top: var(--el_header-wrapper-default);
+		// top: var(--el_header-wrapper-default);
+		top: 0;
 		display: none;
 	}
 
@@ -186,10 +199,13 @@
 		transition: all 0.5s ease-in-out;
 		width: 100%;
 
-		a.button,
-		a.button:visited {
-			width: 100%;
-			display: block;
+		a.button.white,
+		a.button:visited.white,
+		span.button.white,
+		.is-style-mycustomstyle .wp-element-button.white {
+			color: var(--el_black);
+			border-color: var(--red);
+			background-color: var(--red);
 		}
 	}
 
@@ -244,48 +260,26 @@
 
 	li.menu-item-has-children {
 		.submenu-icon {
-			position: absolute;
-			z-index: 9999;
-			right: 0;
-			top: 0;
-			display: block;
-			height: 22px;
 			width: 22px;
-			cursor: pointer;
-			background-position: top 8px center;
-			background-size: 9px;
-			background-repeat: no-repeat;
+			height: 22px;
+			display: inline-block;
 			background-image: url(../images/submenu-icon.svg);
+			background-position: left center;
+			background-size: 14px;
+			background-repeat: no-repeat;
+			cursor: pointer;
+			vertical-align: middle;
+			margin-left: 12px;
+			flex: 1 1 auto;
+			transform-origin: center;
+			transition: all 0.3s ease-in-out;
+			position: relative;
+			top: 2px;
 		}
 	}
 
-	li.menu-item-has-children.active > .submenu-icon::before {
-		height: 0;
-		top: 18px;
-	}
-
-	.no-overflow .logged-in.admin-bar {
-		&.have-topbar {
-			.nav-overlay {
-				top: calc(
-					var(--wp-admin--admin-bar--height) + var(--el_header-height) +
-						var(--el_header-wrapper-default)
-				);
-				height: calc(
-					100vh - var(--wp-admin--admin-bar--height) - var(
-							--el_header-height
-						)
-				);
-			}
-		}
-
-		.nav-overlay {
-			top: calc(
-				var(--wp-admin--admin-bar--height) +
-					var(--el_header-wrapper-default)
-			);
-			height: calc(100vh - var(--wp-admin--admin-bar--height));
-		}
+	li.active .submenu-icon {
+		transform: scaleY(-1);
 	}
 }
 

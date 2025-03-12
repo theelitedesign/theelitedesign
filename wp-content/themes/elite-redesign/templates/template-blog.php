@@ -36,46 +36,47 @@ $ed_var_post_catagories = get_categories( $ed_var_post_id );
 		</div>
 		<div class="el-s96"></div>
 	</section>
-	<div class="wrapper">
+	<div class="overflow-hidden">
+		<div class="wrapper">
 		<div class="post-archive resources-ctn">
 			<div class="s-156"></div>
-		<?php
-			// WP_Query .
-			$ed_args = array(
-				'post_type'      => array( 'post' ),
-				'posts_per_page' => get_option( 'posts_per_page' ), // how many posts you need.
-				'paged'          => ( get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1 ),
-			);
-			// The Query.
-			$ed_query = new WP_Query( $ed_args );
-			// The Loop.
-			if ( $ed_query->have_posts() ) {
-				while ( $ed_query->have_posts() ) {
-					$ed_query->the_post();
-					// Include specific template for the content.
-					get_template_part( 'partials/content', 'archive-post' );
+			<?php
+				// WP_Query .
+				$ed_args = array(
+					'post_type'      => array( 'post' ),
+					'posts_per_page' => get_option( 'posts_per_page' ), // how many posts you need.
+					'paged'          => ( get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1 ),
+				);
+				// The Query.
+				$ed_query = new WP_Query( $ed_args );
+				// The Loop.
+				if ( $ed_query->have_posts() ) {
+					while ( $ed_query->have_posts() ) {
+						$ed_query->the_post();
+						// Include specific template for the content.
+						get_template_part( 'partials/content', 'archive-post' );
+					}
+					?>
+					<?php
+				} else {
+					// If no content, include the "No posts found" template.
+					get_template_part( 'partials/content', 'none' );
 				}
 				?>
+				</div>
 				<?php
-			} else {
-				// If no content, include the "No posts found" template.
-				get_template_part( 'partials/content', 'none' );
-			}
-			?>
-			</div>
-			<?php
-			if ( have_posts() ) {
-				if ( class_exists( 'EliteDesigns' ) && $ed_query->max_num_pages > 1 ) {
-					?>
-					<div class="center-align">
-						<?php echo EliteDesigns::pagination( $ed_query->max_num_pages ); ?>
-					</div>
-					<?php
+				if ( have_posts() ) {
+					if ( class_exists( 'EliteDesigns' ) && $ed_query->max_num_pages > 1 ) {
+						?>
+						<div class="center-align">
+							<?php echo EliteDesigns::pagination( $ed_query->max_num_pages ); ?>
+						</div>
+						<?php
+					}
 				}
-			}
-			?>
-			<div class="s-156"></div>
-		<!-- Content End -->
+				?>
+			<!-- Content End -->
+		</div>
 	</div>
 </section>
 <?php

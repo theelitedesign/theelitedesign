@@ -11,24 +11,22 @@
 list( $ed_var_post_id, $ed_fields, $ed_option_fields ) = EliteDesigns::defaults();
 
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'post-box column' ); ?>>
-	<div class="service-list-item">
-		<a href="<?php echo esc_url( get_the_permalink() ); ?>" class="no-link-style">
-			<div class="service-item-content">
-				<div class="service-label">
-					<?php
-						$categories = get_the_category();
-						if ( ! empty( $categories ) ) {
-							foreach ( $categories as $category ) {
-								echo '<span class="category">' . esc_html( $category->name ) . '</span> ';
-							}
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'service-list-item' ); ?>>
+	<a href="<?php echo esc_url( get_the_permalink() ); ?>" class="no-link-style">
+		<div class="service-item-content">
+			<div class="service-label post-categories-row">
+				<?php
+					$categories = get_the_category();
+					if ( ! empty( $categories ) ) {
+						foreach ( $categories as $category ) {
+							echo '<span class="category">' . esc_html( $category->name ) . '</span> ';
 						}
-					?>
-				</div>
-				<div class="service-title"><?php echo esc_html( get_the_title() ); ?>
-				</div>
+					}
+				?>
 			</div>
-		</a>
-	</div>
-</article><!-- #post-<?php the_ID(); ?> -->
+			<div class="service-title"><?php echo esc_html( get_the_title() ); ?>
+			</div>
+		</div>
+	</a>
+</article>
 

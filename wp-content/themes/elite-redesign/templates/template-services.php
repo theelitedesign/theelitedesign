@@ -22,6 +22,22 @@ get_header();
 				<div class="wrapper">
 					<div class="hero-content">
 						<h1>Services that <br> <span> scale your impact.</span></h1>
+						<div class="scroll-down__button">
+							<a href="#intro-section" aria-label="Down to First section" tabindex="0">
+								<svg width="16" height="37" viewBox="0 0 16 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path class="dropdown-item1" id="arrow" d="M3.33398 16L8.00065 20.6667L12.6673 16" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+
+									<g class="dropdown-item2" opacity="0.15">
+										<path d="M3.33398 6L8.00065 10.6667L12.6673 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									</g>
+
+									<g class="dropdown-item3" opacity="0.15">
+										<path d="M3.33398 27L8.00065 31.6667L12.6673 27" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									</g>
+								</svg>
+								<div class="">Explore our services</div>
+							</a>
+						</div>
 					</div>
 					<div class="s-96"></div>
 				</div>
@@ -29,7 +45,7 @@ get_header();
 					<div class="hero-bottom-content p1">
 					</div>
 					<div class="hero-bottom-image full-width">
-						<img src="http://elite-redesign.local/wp-content/uploads/2025/02/ideas-wp.webp"
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/ideas-wp.webp"
 							alt="Image">
 					</div>
 				</div>
@@ -42,9 +58,7 @@ get_header();
 				<div class="wrapper">
 					<div class="hat-ctn flexarea sb">
 						<div class="t1">
-							We are experts in WordPress theme and plugin development. We design and build custom
-							websites that are
-							easy to manage and look great.
+							We help brands shape their identity, refine their strategy, and achieve growth. More than just a design agency, we create solutions that elevate brands and turn ambitious goals into reality.
 						</div>
 					</div>
 					<div class="s-128"></div>
@@ -114,7 +128,7 @@ get_header();
 						<div class="service-list-item">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>/continuous-improvements" class="no-link-style">
 								<div class="service-item-content">
-									<div class="service-count">05</div>
+									<div class="service-count">04</div>
 									<div class="service-title">Continuous improvement</div>
 								</div>
 							</a>
@@ -122,14 +136,13 @@ get_header();
 						<div class="service-list-item">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>/maintenance-support" class="no-link-style">
 								<div class="service-item-content">
-									<div class="service-count">06</div>
+									<div class="service-count">05</div>
 									<div class="service-title">Website maintenance & support</div>
 								</div>
 							</a>
 						</div>
 					</div>
 				</div>
-				<div class="s-128"></div>
 			</section>
 		</section>
 

@@ -65,6 +65,10 @@ $ed_var_tohdr_btn     = $ed_option_fields['bst_var_tohdr_btn'] ?? null;
 		content="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/pwa/pwa-icon-144.png">
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#0047FE">
+	<meta name="google-site-verification" content="IYXzOvDGqqgY3Fl2eywGqh7BYOAgYvAw4niPl7AFAOg" />
+    <meta name="msvalidate.01" content="738520458226193B09BDB8581DB4679F" />
+    <meta name="p:domain_verify" content="3151c7da4cff8c9676c68880caa798e0"/>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<?php
 		// Tracking Code.
 	if ( '' !== $ed_var_tracking ) {
@@ -156,7 +160,8 @@ $ed_var_tohdr_btn     = $ed_option_fields['bst_var_tohdr_btn'] ?? null;
 							</div>
 							<div class="header-btns">
 								<?php if ( $ed_var_tohdr_btn ) { ?>
-								<?php echo EliteDesigns::button( $ed_var_tohdr_btn, 'button white' ); ?>
+								<?php // echo EliteDesigns::button( $ed_var_tohdr_btn, 'button white call-popup' ); ?>
+								<a href="#calendly-popup" class="button white footer-hover-button call-popup" tabindex="0">Schedule a chat</a>
 							<?php } ?>
 							</div>
 						</div>

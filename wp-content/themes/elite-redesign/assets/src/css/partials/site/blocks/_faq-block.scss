@@ -2,7 +2,7 @@
 	> .faqs__item--title {
 		transition: all 0.3s ease-in-out;
 		border-top: 1px solid var(--el_gray);
-		padding: var(--el_space_48) var(--el_space_48);
+		padding: var(--el_space_48) calc(var(--el_space_48) + 10px);
 		padding-left: 0;
 		font-size: clamp(1.25rem, 0.462vw + 1.13rem, 1.5rem);
 		cursor: pointer;

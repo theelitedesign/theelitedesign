@@ -19,15 +19,16 @@ get_header();
 	<section id="hero-section" class="hero-section overflow-hidden ctn-dblue">
 		<div class=" hero-ctn">
 			<div class="wrapper">
+				<div class="s-48"></div>
 				<div class="hero-content">
-					<h1 style="display:none"></h1>
+					<h1 style="display:none">Beauty for results</h1>
 					<div class="mb-0  font-bold d2">
-						<div class="headingLine">Beauty </div>
-						<div class="headingLine"><span>for</span> Results</div>
+						<div class="headingLine">beauty </div>
+						<div class="headingLine"><span>for </span> results</div>
 					</div>
 					<div class="s-48"></div>
 					<div class="t3">
-						We build custom WordPress themes tailored <br> to your business needs.
+						 We design and build websites, improve search rankings, <br> keep them updated, and provide ongoing support.
 					</div>
 
 					<div class="scroll-down">
@@ -67,9 +68,7 @@ get_header();
 		<div class="wrapper">
 			<div class="t1">
 				<p>
-					We specialize in custom WordPress theme development. With over 5 years of experience, we
-					create
-					solutions that make your website functional and beautiful.
+					We specialize in custom WordPress theme development, Full Site Editing (FSE), web design, SEO, and ongoing website support. With 5+ years of experience, we create functional, visually stunning, and high-performing websites tailored to your business needs.
 				</p>
 			</div>
 		</div>
@@ -77,7 +76,7 @@ get_header();
 		<div class="wrapper">
 			<div class="services-ctn">
 				<div class="section-head">
-					<h2>Services</h2>
+					<h2>Elite Services</h2>
 				</div>
 				<div class="s-96"></div>
 				<div class="services-lists">
@@ -122,20 +121,100 @@ get_header();
 						</a>
 					</div>
 				</div>
+				<div class="center-align blog-posts-button">
+					<div class="s-96"></div>
+					<a href="<?php ?><?php echo esc_url( home_url( '/' ) ); ?>company" class="see-all-button button black">Read more about us</a>
+				</div>
 			</div>
 		</div>
 		<div class="s-128"></div>
 	</section>
-	<section class="ctn-1000 ctn-dblue overflow-hidden">
+	<section>
+		<div class="wrapper">
+			<div class="work-ctn">
+				<div class="section-head">
+					<h2>elite Work</h2>
+				</div>
+				<div class="s-96"></div>
+				<div class="work-lists two-columns">
+					<div class="work-list-item">
+						<div class="work-image">
+							<a href="#" class="no-link-style">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/ideas-wp.webp" alt="Project 1 Image">
+							</a>
+						</div>
+						<div class="work-content">
+							<div class="s-24"></div>
+							<h3><a href="#">Work 1</a></h3>
+							<div class="p1">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod nisi vitae
+									molestie
+								</p>
+							</div>
+							<div class="s-24"></div>
+							<div class="work-btn">
+								<a href="#">See details</a>
+							</div>
+						</div>
+
+					</div>
+					<div class="work-list-item">
+						<div class="work-image">
+							<a href="#" class="no-link-style">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/ideas-wp.webp" alt="Project 1 Image">
+							</a>
+						</div>
+						<div class="work-content">
+							<div class="s-24"></div>
+							<h3><a href="#">Work 1</a></h3>
+							<div class="p1">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod nisi vitae
+									molestie
+								</p>
+							</div>
+							<div class="s-24"></div>
+							<div class="work-btn">
+								<a href="#">See details</a>
+							</div>
+						</div>
+					</div>
+					<div class="work-list-item">
+						<div class="work-image">
+							<a href="#" class="no-link-style">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/ideas-wp.webp" alt="Project 1 Image">
+							</a>
+						</div>
+						<div class="work-content">
+							<div class="s-24"></div>
+							<h3><a href="#">Work 1</a></h3>
+							<div class="p1">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod nisi vitae
+									molestie
+								</p>
+							</div>
+							<div class="s-24"></div>
+							<div class="work-btn">
+								<a href="#">See details</a>
+							</div>
+						</div>
+
+					</div>
+			</div>
+		</div>
+	</section>
+	<div class="s-156"></div>
+	<section class="ctn-dblue overflow-hidden">
 		<div class="s-128"></div>
 		<div class="wrapper">
 			<div class="quotes-ctn">
 				<div class="quote-content center-align">
+					<h2 class="heading-5 small-title" tabindex="0">Message</h2>
 					<blockquote>
 						<p>
-							elite is your best choice for web development. We create exceptional designs and
-							top-notch
-							websites. Our service always WOWs. Let us exceed your expectations today.
+							At Elite, we are driven by a passion for crafting high-quality, custom WordPress solutions. I, Bahar, along with my expertise, focus on creating visually stunning, high-performing, and user-friendly websites that help brands grow and succeed online. We believe that a well-designed and optimized website is the foundation of a strong digital presence. With innovation, functionality, and long-term support at our core, Elite is your trusted partner in building websites that truly make an impact.
 						</p>
 						<cite class="font-med"><strong>Bahar Hussain</strong> Founder - elite design</cite>
 					</blockquote>
@@ -153,31 +232,39 @@ get_header();
 						Insightful resources
 					</h2>
 				</div>
-				<div class="s-48"></div>
+				<div class="s-96"></div>
 				<div class="services-ctn resources-ctn">
 					<div class="services-lists">
-						<div class="service-list-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>elite-designs-10-rules-for-amazing-websites" class="no-link-style">
-								<div class="service-item-content">
-									<div class="service-label">Industry</div>
-									<div class="service-title">Elite design's 10 rules for amazing websites
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="service-list-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>exploring-the-benefits-and-boundaries-of-gutenberg-custom-blocks"
-								class="no-link-style">
-								<div class="service-item-content">
-									<div class="service-label">Gutenberg
-										Web Design &amp; Development</div>
-									<div class="service-title">Exploring the benefits and
-										boundaries of gutenberg custom blocks
-									</div>
-								</div>
-							</a>
-						</div>
+						<?php
+							// WP_Query.
+							$ed_args = array(
+								'post_type'      => 'post',
+								'posts_per_page' => 3, // Show only 3 posts.
+								'orderby'        => 'date', // Order by date.
+								'order'          => 'DESC', // Show most recent first.
+								'paged'          => ( get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1 ),
+							);
+
+							// The Query.
+							$ed_query = new WP_Query( $ed_args );
+
+							// The Loop.
+							if ( $ed_query->have_posts() ) {
+								while ( $ed_query->have_posts() ) {
+									$ed_query->the_post();
+									// Include specific template for the content.
+									get_template_part( 'partials/content', 'archive-post' );
+								}
+							} else {
+								// If no content, include the "No posts found" template.
+								get_template_part( 'partials/content', 'none' );
+							}
+
+							// Reset post data.
+							wp_reset_postdata();
+						?>
 					</div>
+
 					<div class="center-align blog-posts-button">
 						<div class="s-96"></div>
 						<a href="<?php ?><?php echo esc_url( home_url( '/' ) ); ?>blog" class="see-all-button button black">See All</a>

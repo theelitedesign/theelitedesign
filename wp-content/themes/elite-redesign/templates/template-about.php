@@ -50,7 +50,7 @@ get_header();
 			<div class="hero-bottom-content p1">
 			</div>
 			<div class="hero-bottom-image">
-				<img src="http://localhost:10008/wp-content/themes/elite-design-pro/assets/img/uploads/company-hero.webp"
+				<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/company-hero.webp"
 					alt="Image">
 			</div>
 		</div>
@@ -60,13 +60,21 @@ get_header();
 		<div class="wrapper">
 			<div class="s-128"></div>
 			<div class="hat-ctn hat-horizontal">
-				<h2 class="heading-5">What we believe in</h2>
+				<h2 class="heading-5">Who we are</h2>
 				<div class="t1">
-					At elite, we create WordPress themes that help businesses and nonprofits succeed online. We
-					focus on
-					making websites that look great, are easy to use, and work well. Our goal is to build an
-					online presence
-					that supports your needs.
+
+					<p>
+						Founded by Bahar, Elite was established to help businesses and organizations build powerful digital experiences through expert web design, development, SEO, and website support.
+					</p>
+
+					<p>
+						Over the years, we’ve grown into a dedicated software house with a strong presence in the industry. While our core team drives innovation and quality, we also collaborate with talented professionals, allowing us to scale, adapt, and deliver exceptional results.
+					</p>
+
+					<p>
+						At Elite, we believe great work comes from passion and creativity. We embrace new challenges, stay ahead of industry trends, and continuously refine our craft. We celebrate our successes, value collaboration, and enjoy the journey of building meaningful digital solutions.
+					</p>
+
 				</div>
 			</div>
 			<div class="s-128"></div>
@@ -119,12 +127,12 @@ get_header();
 				</div>
 			</div>
 			<div class="s-128"></div>
-			<div class="image-collage-ctn team-block-collage ">
+			<div class="image-collage-ctn team-block-collage">
 				<div class="collage-image">
-					<div class="collage-image-link flex">
+					<div class="collage-image-link">
 						<div class="collage-image-area">
-							<img src="http://localhost:10008/wp-content/themes/elite-design-pro/assets/img/uploads/profile-image.jpeg"
-								alt="">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/bahar-image.jpeg"
+								alt="Bahar Image">
 						</div>
 						<div class="collage-image-detail">
 							<div class="t1 font-med">Bahar Hussain</div>
@@ -133,122 +141,71 @@ get_header();
 							<div class="s-48"></div>
 							<blockquote>
 								<p>
-									elite is your best choice for web development. We create exceptional designs
-									and
-									top-notch websites. Our service always WOWs. Let us exceed your expectations
-									today.
+									At Elite, we are driven by a passion for crafting high-quality, custom WordPress solutions. I, Bahar, along with my expertise, focus on creating visually stunning, high-performing, and user-friendly websites that help brands grow and succeed online. We believe that a well-designed and optimized website is the foundation of a strong digital presence. With innovation, functionality, and long-term support at our core, Elite is your trusted partner in building websites that truly make an impact.
 								</p>
 							</blockquote>
 						</div>
 					</div>
-					<!-- <div id="bahar" class="team-detail white-ctn p2">
-							<div class="team-detail-content">
-								<div class="team-detail-head">
-									<h2 class="heading-3 team-title">Bahar Hussain</h2>
-									<div class="p2 team-designation">CEO & Founder</div>
-								</div>
-								<div class="s-48"></div>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet natus voluptas illo tempore, asperiores quis dolorem maiores nobis obcaecati deserunt?</p>
-								<p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro vel, veniam natus nesciunt esse. Deserunt nisi fuga recusandae!</p>
-								<div class="s-48"></div>
-								<div class="blog-detail__social-ctn mobile-hide">
-									<div class="p3 font-med"> Social Media</div>
-									<div class="s-24"></div>
-									<div class="blog-detail__social-shares">
-										<ul>
-											<li>
-												<a href="#" target="_blank">Fb</a>
-											</li>
-											<li>
-												<a href="#" target="_blank">Li</a>
-											</li>
-											<li>
-												<a href="#" target="_blank">Tw</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="s-48"></div>
-								<div class="popup-close-btn ">
-									<span class="button black small team-close-btn">Close</span>
-								</div>
-							</div>
-							<div class="team-detail-image img-cover">
-								<img src="/assets/img/uploads/profile-image.jpeg" alt="Image">
-							</div>
-						</div> -->
 				</div>
 			</div>
 		</div>
 		<div class="s-128"></div>
-		<!-- <div class="image-collage-ctn team-block-collage flexarea">
-				<div class="collage-image img-cover col">
-					<a href="#bahar" class="collage-image-link no-link-style">
-						<img src="/assets/img/uploads/profile-image.jpeg" alt="">
-						<div class="collage-image-detail">
-							<div class="p1 font-med">Bahar Hussain</div>
-							<div class="s-12"></div>
-							<div class="p2 font-reg">Founder & CEO</div>
-						</div>
-					</a>
-					<div id="bahar" class="team-detail white-ctn p2">
-						<div class="team-detail-content">
-							<div class="team-detail-head">
-								<h2 class="heading-3 team-title">Bahar Hussain</h2>
-								<div class="p2 team-designation">CEO & Founder</div>
-							</div>
-							<div class="s-48"></div>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet natus voluptas illo tempore, asperiores quis dolorem maiores nobis obcaecati deserunt?</p>
-							<p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro vel, veniam natus nesciunt esse. Deserunt nisi fuga recusandae!</p>
-							<div class="s-48"></div>
-							<div class="blog-detail__social-ctn mobile-hide">
-								<div class="p3 font-med"> Social Media</div>
-								<div class="s-24"></div>
-								<div class="blog-detail__social-shares">
-									<ul>
-										<li>
-											<a href="#" target="_blank">Fb</a>
-										</li>
-										<li>
-											<a href="#" target="_blank">Li</a>
-										</li>
-										<li>
-											<a href="#" target="_blank">Tw</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="s-48"></div>
-							<div class="popup-close-btn ">
-								<span class="button black small team-close-btn">Close</span>
+		<div class="wrapper">
+			<div class="section-head">
+				<h2>Our Values</h2>
+			</div>
+			<div class="s-96"></div>
+			<div class="values-ctn">
+				<div class="values-lists three-columns">
+					<div class="value-list-item">
+						<div class="value-item-content">
+							<div class="value-count">01</div>
+							<div class="value-detail-content">
+								<h3 class="value-title heading-5">Innovation</h3>
+								<div class="value-description">We embrace new ideas and technologies to create cutting-edge solutions.</div>
 							</div>
 						</div>
-						<div class="team-detail-image img-cover">
-							<img src="/assets/img/uploads/profile-image.jpeg" alt="Image">
+					</div>
+					<div class="value-list-item">
+						<div class="value-item-content">
+							<div class="value-count">02</div>
+							<div class="value-detail-content">
+								<h3 class="value-title heading-5">Excellence in Execution</h3>
+								<div class="value-description">We strive for perfection, delivering high-quality and impactful results.</div>
+							</div>
+						</div>
+					</div>
+					<div class="value-list-item">
+						<div class="value-item-content">
+							<div class="value-count">03</div>
+							<div class="value-detail-content">
+								<h3 class="value-title heading-5">Collaboration & Teamwork</h3>
+								<div class="value-description">We believe in teamwork, valuing diverse ideas to achieve great results.</div>
+							</div>
+						</div>
+					</div>
+					<div class="value-list-item">
+						<div class="value-item-content">
+							<div class="value-count">04</div>
+							<div class="value-detail-content">
+								<h3 class="value-title heading-5">Integrity & Transparency</h3>
+								<div class="value-description">We operate with honesty, trust, and open communication in everything we do.</div>
+							</div>
+						</div>
+					</div>
+					<div class="value-list-item">
+						<div class="value-item-content">
+							<div class="value-count">05</div>
+							<div class="value-detail-content">
+								<h3 class="value-title heading-5">Sustainability & Social Impact</h3>
+								<div class="value-description">We prioritize ethical practices and create solutions that benefit society.</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="collage-image img-cover col">
-					<a href="#" class="collage-image-link no-link-style">
-						<img src="/assets/img/uploads/profile-image.jpeg" alt="">
-						<div class="collage-image-detail">
-							<div class="p1 font-med">Team Member Name</div>
-							<div class="s-12"></div>
-							<div class="p2 font-reg">Team Member Designation</div>
-						</div>
-					</a>
-				</div>
-				<div class="collage-image img-cover col">
-					<a href="#" class="collage-image-link no-link-style">
-						<img src="/assets/img/uploads/profile-image.jpeg" alt="">
-						<div class="collage-image-detail">
-							<div class="p1 font-med">Team Member Name</div>
-							<div class="s-12"></div>
-							<div class="p2 font-reg">Team Member Designation</div>
-						</div>
-					</a>
-				</div>
-			</div> -->
+			</div>
+		</div>
+		<div class="s-128"></div>
 		<div class="ctn-gray">
 			<div class="wrapper">
 				<div class="s-128"></div>
@@ -285,39 +242,9 @@ get_header();
 						</div>
 					</div>
 				</div>
-				<!-- <div class="s-128"></div> -->
-				<!-- <div class="four-images-ctn">
-						<h2 class="heading-3"> ELITE Family</h2>
-						<div class="gallrey-images">
-							<div class="gallrey-image">
-								<img src="http://theelitedesign.local/wp-content/themes/elite-design-pro/assets/img/uploads/project-img-01.webp" alt="">
-							</div>
-							<div class="gallrey-image">
-								<img src="http://theelitedesign.local/wp-content/themes/elite-design-pro/assets/img/uploads/project-img-01.webp" alt="">
-							</div>
-							<div class="gallrey-image">
-								<img src="http://theelitedesign.local/wp-content/themes/elite-design-pro/assets/img/uploads/project-img-01.webp" alt="">
-							</div>
-							<div class="gallrey-image">
-								<img src="http://theelitedesign.local/wp-content/themes/elite-design-pro/assets/img/uploads/project-img-01.webp" alt="">
-							</div>
-						</div>
-					</div> -->
 			</div>
 			<div class="s-128"></div>
 		</div>
-		<div class="s-128"></div>
-		<div class="wrapper">
-			<div class="job-cta center-align">
-				<h2 class="color-yellow">Ready to start your project?</h2>
-				<p>We’d love to hear from you! Whether you’re a business looking to grow or a nonprofit working
-					to make an
-					impact, we’re here to help. Contact us today, and let’s build something great together!</p>
-				<div class="s-48"></div>
-				<a href="http://theelitedesign.local/contact" class="button black">Let's Talk</a>
-			</div>
-		</div>
-		<div class="s-128"></div>
 	</section>
 </section>
 

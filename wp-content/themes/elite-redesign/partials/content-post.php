@@ -27,13 +27,14 @@ $ed_var_posttitle = $ed_fields['bst_var_posttitle'] ?? get_the_title();
 			<div class="wrapper">
 				<div class="hero-content">
 					<div class="post-tags p3">
-											<?php
+						<?php
+							$categories = get_the_category();
 
-						if ( ! empty( $ed_var_post_categories ) ) {
-							foreach ( $ed_var_post_categories as $category ) {
-								echo '<span class="post-tag">' . esc_html( $category->name ) . '</span> ';
+							if ( ! empty( $categories ) ) {
+								foreach ( $categories as $category ) {
+									echo '<span class="post-tag">' . esc_html( $category->name ) . '</span> ';
+								}
 							}
-						}
 						?>
 					</div>
 					<div class="s-32"></div>
@@ -88,10 +89,8 @@ $ed_var_posttitle = $ed_fields['bst_var_posttitle'] ?? get_the_title();
 		</div>
 	</section>
 
-
 	<div class="wrapper">
 		<div class="el-s60"></div>
-
 		<article id="post-<?php the_ID(); ?>" <?php post_class( 'post-ctn' ); ?>>
 			<div class="s-96"></div>
 			<div class="single-page-content flex-between-start">
@@ -110,71 +109,8 @@ $ed_var_posttitle = $ed_fields['bst_var_posttitle'] ?? get_the_title();
 					<?php get_template_part( 'partials/content' ); ?>
 				</div>
 			</div>
-			<div class="post-details">
-				<div class="post-pagination"> <?php the_posts_pagination(); ?> </div>
-				<div class="post-comments">
-				<?php
-						// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) {
-					comments_template();
-				}
-				?>
-				</div>
-			</div>
-			</div>
-
-			<?php
-			wp_reset_postdata();
-
-			$ed_var_rp_selection_criteria = isset( $ed_fields['bst_var_rp_selection_criteria'] ) ? $ed_fields['bst_var_rp_selection_criteria'] : null;
-			if ( 'random' === $ed_var_rp_selection_criteria ) {
-
-				$ed_args = array(
-					'posts_per_page' => 3,
-					'post__not_in'   => array( $post->ID ),
-					'orderby'        => 'rand',
-				);
-
-				$ed_query = new WP_Query( $ed_args );
-
-				// The Loop.
-				if ( $ed_query->have_posts() ) {
-					while ( $ed_query->have_posts() ) {
-						$ed_query->the_post();
-						// Include specific template for the content.
-						get_template_part( 'partials/content', 'archive-post' );
-					}
-					?>
-					<?php
-				}
-			} else {
-				global $post;
-				$ed_var_selected_posts = array();
-				$ed_var_selected_posts = isset( $ed_fields['bst_var_rp_selected_posts'] ) ? $ed_fields['bst_var_rp_selected_posts'] : null;
-				if ( $ed_var_selected_posts ) {
-
-					?>
-				<div class="related-posts ">
-				<h3><?php esc_html__( 'Related Posts', 'elitedesigns_td' ); ?></h3>
-					<?php
-					foreach ( $ed_var_selected_posts as $ed_var_post ) {
-						setup_postdata( $post );
-
-						$ed_post_fields = get_fields( get_the_ID() );
-						$ed_var_src     = wp_get_attachment_image_url( get_post_thumbnail_id( $ed_var_post_id ), 'thumb_600', false );
-						if ( ! $ed_var_src ) {
-							$ed_var_src = get_template_directory_uri() . '/assets/build/images/admin/defaults/default-image.webp';
-						}
-							get_template_part( 'partials/content', 'archive-post' );
-					}
-					?>
-				</div>
-					<?php
-				}
-				wp_reset_postdata();
-			}
-			?>
 		</article>
 	</div>
+
 
 </section>

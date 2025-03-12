@@ -5,6 +5,7 @@
 import magnificPopup from '../vendors/jquery-magnificpopup';
 import organicTabs from '../vendors/organic-tab';
 import slick from '../vendors/slick.min';
+
 jQuery( document ).on( 'scroll', function() {
 	if ( jQuery( document ).scrollTop() > 0 ) {
 		jQuery( 'header, body' ).addClass( 'shrink' );
@@ -52,8 +53,6 @@ jQuery( function() {
 			lastScrollTop = st;
 		} );
 	}	/**
-			 
-			 
 			 * Toggle menu for mobile
 			 */
 	const navOverlay = jQuery( '.nav-overlay' );
@@ -109,6 +108,7 @@ jQuery( function() {
 			tabindex: 0,
 		} );
 	} );
+
 	jQuery( '.header-nav li, .blog-nav li, .footer-nav li, .legal-nav li' ).each( function() {
 		const link = jQuery( this ).find( 'a' );
 		if ( link.length > 0 ) {
@@ -153,33 +153,24 @@ jQuery( function() {
 		}
 	}
 
-	jQuery(
-		'input[type="text"],input[type="email"],input[type="tel"]'
-	).each( function() {
-		jQuery( this ).parent().parent( '.gfield' ).addClass( 'label-down' );
-		jQuery( this ).parent( '.gform-grid-col' ).addClass( 'label-down' );
-	} );
+	document.querySelectorAll( 'input,textarea' ).forEach( ( input ) => {
+		input.addEventListener( 'input,textarea', function() {
+			const label = this.closest( 'p' ).querySelector( 'label' );
+			label.style.color = this.value.trim() ? 'var(--el_color_primary)' : '';
+		} );
 
-	jQuery( 'input[type="text"],input[type="email"],input[type="tel"]' ).each(
-		function() {
-			jQuery( this ).on( 'focus', function() {
-				jQuery( this ).parent().parent( '.gfield' ).addClass( 'active' );
-			} );
+		input.addEventListener( 'focus', function() {
+			const label = this.closest( 'p' ).querySelector( 'label' );
+			label.style.color = 'var(--el_color_primary)';
+		} );
 
-			jQuery( this ).on( 'blur', function() {
-				if ( jQuery( this ).val().length == 0 ) {
-					jQuery( this )
-						.parent()
-						.parent( '.gfield' )
-						.removeClass( 'active' );
-				}
-			} );
-
-			if ( jQuery( this ).val() != '' ) {
-				jQuery( this ).parent( '.css' ).addClass( 'active' );
+		input.addEventListener( 'blur', function() {
+			const label = this.closest( 'p' ).querySelector( 'label' );
+			if ( ! this.value.trim() ) {
+				label.style.color = '';
 			}
-		}
-	);
+		} );
+	} );
 
 	if ( jQuery( '.faqs__area' ).length > 0 ) {
 		jQuery( '.faqs__item--title' ).on( 'click keypress', function( e ) {
@@ -268,6 +259,26 @@ jQuery( function() {
 			}
 		} );
 	}
+
+	jQuery.noConflict();
+
+	jQuery( '.call-popup' ).magnificPopup( {
+		type: 'inline',
+		fixedContentPos: false,
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-slide-bottom',
+		callbacks: {
+			open() {
+				jQuery( 'body' ).css( 'overflow', 'hidden' );
+			},
+			close() {
+				jQuery( 'body' ).css( 'overflow', '' );
+			},
+		},
+	} );
 
 	jQuery.noConflict();
 } );

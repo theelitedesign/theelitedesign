@@ -120,7 +120,7 @@ header {
 }
 
 .hide-topbar {
-	header {
-		top: var(--el_header-top);
+	.header-section {
+		margin-top: -45px;
 	}
 }

@@ -20,13 +20,13 @@ h6,
 	margin: 0 0 20px;
 	color: var(--el_heading_color);
 	line-height: 1.15;
-	text-transform: initial;
+	text-transform: lowercase;
 }
 
 h1,
 .heading-1 {
 	font-size: var(--el_font_size_h1);
-	line-height: 1;
+	line-height: 1.15;
 }
 
 h2,
@@ -105,4 +105,9 @@ h6,
 	.heading-2 {
 		margin-bottom: 0;
 	}
+}
+
+.heading-5.small-title {
+	color: var(--el_white_60);
+	@include font(st, reg);
 }

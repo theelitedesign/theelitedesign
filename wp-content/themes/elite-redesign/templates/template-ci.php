@@ -164,7 +164,7 @@ get_header();
 								<div class="service-list-item">
 									<a href="<?php echo esc_url( home_url( '/' ) ); ?>web-design" class="no-link-style">
 										<div class="service-item-content">
-											<div class="service-count">02</div>
+											<div class="service-count">01</div>
 											<div class="service-title">Web design</div>
 										</div>
 
@@ -174,10 +174,9 @@ get_header();
 								<div class="service-list-item">
 									<a href="<?php echo esc_url( home_url( '/' ) ); ?>web-development" class="no-link-style">
 										<div class="service-item-content">
-											<div class="service-count">01</div>
+											<div class="service-count">02</div>
 											<div class="service-title">Web development</div>
 										</div>
-
 									</a>
 								</div>
 
@@ -202,7 +201,6 @@ get_header();
 							</div>
 						</div>
 					</div>
-					<div class="s-192"></div>
 				</section>
 			</div>
 		</section>

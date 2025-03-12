@@ -51,7 +51,7 @@ get_header();
 						<div class="hero-bottom-content p1">
 						</div>
 						<div class="hero-bottom-image">
-							<img src="http://elite-redesign.local/wp-content/uploads/2025/02/web-design-scaled.webp"
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/web-design.webp"
 								alt="Image">
 						</div>
 					</div>
@@ -138,44 +138,6 @@ get_header();
 							</div>
 						</div>
 					</div>
-					<!-- </div>
-							<div class="s-128"></div>
-							<div class="wrapper">
-								<div class="image-slider">
-									<div class="image-swiper swiper-container">
-										<div class="image-swiper--slider swiper-wrapper owl-carousel owl-theme" cursor-class="read-more">
-												<div class="swiper-slide image__slide swiper-slide swiper-lazy">
-													<div class="image__slide--img img-cover">
-														<img src="/assets/img/uploads/project-img-01.webp" alt="">
-													</div>
-												</div>
-												<div class="swiper-slide image__slide swiper-slide swiper-lazy">
-													<div class="image__slide--img img-cover">
-														<img src="/assets/img/uploads/project-img-01.webp" alt="">
-													</div>
-												</div>
-												<div class="swiper-slide image__slide swiper-slide swiper-lazy">
-													<div class="image__slide--img img-cover">
-														<img src="/assets/img/uploads/project-img-01.webp" alt="">
-													</div>
-												</div>
-												<div class="swiper-slide image__slide swiper-slide swiper-lazy">
-													<div class="image__slide--img img-cover">
-														<img src="/assets/img/uploads/project-img-01.webp" alt="">
-													</div>
-												</div>
-												<div class="swiper-slide image__slide swiper-slide swiper-lazy">
-													<div class="image__slide--img img-cover">
-														<img src="/assets/img/uploads/project-img-01.webp" alt="">
-													</div>
-												</div>
-
-
-										</div>
-									</div>
-								</div>
-							</div> -->
-
 					<div class="s-128"></div>
 					<section class="ctn-gray overflow-hidden">
 						<div class="s-128"></div>
@@ -329,34 +291,6 @@ get_header();
 						</div>
 						<div class="s-128"></div>
 					</section>
-					<!-- <section class="ctn-gray ">
-						<div class="s-128"></div>
-						<div class="wrapper">
-							<div class="list-colums">
-								<div class="list-column lyellow-bg col-49">
-									<h2 class="heading-3">Startup Solutions</h2>
-									<ul>
-										<li>Designed for new businesses looking to establish an online presence</li>
-										<li>Emphasis on scalability and future growth</li>
-										<li>Budget-friendly without compromising quality</li>
-										<li>Quick delivery to get you up and running</li>
-										<li>Basic integrations for social media and contact forms</li>
-									</ul>
-								</div>
-								<div class="list-column pink-bg col-49">
-									<h2 class="heading-3">Enterprise Solutions</h2>
-									<ul>
-										<li>Tailored for established businesses and organizations</li>
-										<li>Advanced features like custom workflows and automation</li>
-										<li>Scalable designs to handle high traffic and complex needs</li>
-										<li>Focus on brand authority and market positioning</li>
-										<li>Seamless integration with existing systems</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="s-128"></div>
-					</section> -->
 					<section class="overflow-hidden">
 						<!-- <div class="s-128"></div> -->
 						<div class="wrapper">
@@ -407,7 +341,6 @@ get_header();
 								</div>
 							</div>
 						</div>
-						<div class="s-128"></div>
 					</section>
 				</div>
 			</section>

@@ -12,6 +12,8 @@ body {
 	color: var(--el_body_color);
 	background-color: var(--el_body_bg);
 	line-height: 1.5;
+	overflow-x: hidden;
+	text-transform: lowercase;
 
 	&.have-topbar {
 		padding-top: var(--el_header-height);

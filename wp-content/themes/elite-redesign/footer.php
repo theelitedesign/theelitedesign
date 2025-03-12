@@ -49,8 +49,9 @@ $ed_var_social_profiles = $ed_option_fields['bst_var_social_profiles'] ?? null;
 	<div class="wrapper">
 		<div class="cta-ctn">
 			<div class="flex">
-				<h4>Ready for a journey with elite?</h4>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>contact" class="button white footer-hover-button">Let’s Talk</a>
+				<h4>Call Us to Discuss Your Project</h4>
+				<!-- <a href="<?php //echo esc_url( home_url( '/' ) ); ?>contact" class="button white footer-hover-button">Schedule a chat</a> -->
+				<a href="#calendly-popup" class="button white footer-hover-button call-popup">Schedule a chat</a>
 			</div>
 		</div>
 		<div class="s-96"></div>
@@ -118,12 +119,11 @@ $ed_var_social_profiles = $ed_option_fields['bst_var_social_profiles'] ?? null;
 		</div>
 		<div class="s-96"></div>
 		<div class="footer-bottom flex p2">
-		<div class="copyright-area">
-			<p> Johar Town Lahore, Pakistan
-				© <?php echo date('Y'); ?> <a href="<?php echo esc_url(home_url('/')); ?>">elite designs</a>
-			</p>
-		</div>
-
+			<div class="copyright-area">
+				<p> Johar Town Lahore, Pakistan
+					© <?php echo date('Y'); ?> <a href="<?php echo esc_url(home_url('/')); ?>">elite designs</a>
+				</p>
+			</div>
 			<div class="legal-nav">
 				<?php
 					wp_nav_menu(
@@ -171,6 +171,7 @@ $ed_var_social_profiles = $ed_option_fields['bst_var_social_profiles'] ?? null;
 	}
 	</script> <?php } ?>
 </footer>
+
 <?php wp_footer(); ?>
 <?php
 if ( '' !== $ed_var_footer_scripts ) {

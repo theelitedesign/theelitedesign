@@ -1,5 +1,5 @@
 .collage-image-detail {
-	width: calc(100% - 448px);
+	width: calc(100% - 450px);
 
 	.p1 {
 		line-height: 1.2;
@@ -26,7 +26,7 @@
 }
 
 .collage-image-area {
-	width: 400px;
+	width: 412px;
 	line-height: 0.65;
 	aspect-ratio: 1 / 1;
 	border-radius: 24px;
@@ -35,4 +35,11 @@
 
 .collage-image {
 	width: 100%;
+}
+
+.collage-image-link {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
 }

@@ -41,3 +41,22 @@
 .col-49 {
 	width: 49.4%;
 }
+
+.value-count {
+	@include font(st, med);
+	font-size: clamp(0.875rem, 0.231vw + 0.815rem, 1rem);
+	color: var(--el_ugray);
+}
+
+.value-detail-content {
+	margin-top: var(--el_space_48);
+}
+
+.values-lists.three-columns {
+	row-gap: var(--el_space_72);
+}
+
+.value-description {
+	padding-right: 10%;
+	box-sizing: border-box;
+}

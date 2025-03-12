@@ -14,29 +14,33 @@ get_header();
 list( $ed_var_post_id, $ed_fields, $ed_option_fields ) = EliteDesigns::defaults();
 
 ?>
-<section id="hero-section" class="hero-section hero-section-default">
-	<!-- Hero Start -->
-	<div class="hero-single search-hero">
-		<div class="wrapper">
-			<h1><?php echo esc_html_e( 'Search Results', 'elitedesigns_td' ); ?></h1>
-			<p>
-			<?php
-				printf(
-					/* translators: %s: search term. */
-					esc_html__( 'Results for "%s"', 'elitedesigns_td' ),
-					'<span class="search-term">' . esc_html( get_search_query() ) . '</span>'
-				);
-				?>
-			</p>
-		</div>
-	</div>
-	<div class="ts-40"></div>
-
-	<!-- Hero End -->
-</section>
-<div class="ts-100"></div>
 
 <section id="page-section" class="page-section">
+
+	<section id="hero-section" class="hero-section ctn-dblue">
+		<div class="hero hero-ctn hero--team">
+			<div class="s-96"></div>
+			<div class="wrapper">
+				<div class="hero-content">
+					<h1>Search <span>Results</span></h1>
+					<div class="s-48"></div>
+					<div class="t3">
+						<p>
+							<?php
+								printf(
+									/* translators: %s: search term. */
+									esc_html__( 'Results for "%s"', 'elitedesigns_td' ),
+									'<span class="search-term">' . esc_html( get_search_query() ) . '</span>'
+								);
+							?>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="s-96"></div>
+		</div>
+	</section>
+
 	<div class="wrapper">
 		<div class="post-archive <?php EliteDesigns::have_post_class( '' ); ?>">
 			<!-- Content Start -->

@@ -143,12 +143,12 @@ class WP_Theme_Settings {
 		echo '
 			<style type="text/css">
 				.login h1 a {
-					background-image: url(' . esc_url( get_stylesheet_directory_uri() ) . '/assets/build/images/site-logo.svg) !important;
+					background-image: url(' . esc_url( get_stylesheet_directory_uri() ) . '/assets/build/images/login-logo.svg) !important;
 					background-position: center center;
 					color:rgba(0, 0, 0, 0);
 					background-size: contain;
-					height: 80px;
-					width: 80%;
+					height: 114px;
+					width: 100%;
 					outline: 0;
 				}
 			</style>

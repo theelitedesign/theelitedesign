@@ -5,20 +5,74 @@
 .wpcf7-section {
 	label {
 		display: block;
+
+		.wpcf7-form-control-wrap + br {
+			display: none;
+		}
 	}
 }
 
 .wpcf7-form-control-wrap {
 	display: block;
-	margin-top: 10px;
+	margin-top: 0;
 }
 
 .wpcf7-not-valid-tip {
 	color: var(--el_valiation_error_color) !important;
 	position: relative;
-	top: -15px;
+	top: 6px;
+	font-size: 16px;
 }
 
 .wpcf7-response-output {
 	margin: 0 !important;
+}
+
+.wpcf7-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 48px 0;
+	margin-bottom: 0;
+
+	> div {
+		width: calc(50% - 16px);
+		> p {
+			position: relative;
+
+			&:has(textarea) {
+				display: block;
+				width: 100%;
+			}
+			&:has(.wpcf7-spinner) {
+				display: inline-block;
+			}
+		}
+
+		&.wpcf7-response-output {
+			width: 100%;
+		}
+	}
+
+	label {
+		display: block;
+		margin: 0;
+
+		.wpcf7-form-control-wrap + br {
+			display: none;
+		}
+	}
+
+	span.wpcf7-spinner {
+		position: absolute;
+		right: 24px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+	}
+}
+
+.wpcf7-form > div.contact-textarea {
+	width: 100%;
 }
