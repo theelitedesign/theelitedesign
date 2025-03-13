@@ -2990,10 +2990,10 @@ Mixin for transition
 .acf-block-preview body #daextlwcnf-cookie-notice-container {
   padding: 12px 24px 12px 12px !important;
   width: 387px !important;
-  bottom: 58px !important;
+  bottom: 20px !important;
   border-width: 0px !important;
-  left: 54px;
-  right: auto;
+  left: auto;
+  right: 20px;
   border-radius: 300px !important;
   box-sizing: border-box !important;
 }
