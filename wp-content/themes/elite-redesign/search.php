@@ -42,33 +42,21 @@ list( $ed_var_post_id, $ed_fields, $ed_option_fields ) = EliteDesigns::defaults(
 	</section>
 
 	<div class="wrapper">
-		<div class="post-archive <?php EliteDesigns::have_post_class( '' ); ?>">
+<div class="s-96"></div>
+		<div class="post-archive resources-ctn">
 			<!-- Content Start -->
 			<?php
 			if ( have_posts() ) {
 				while ( have_posts() ) {
 					the_post();
 					// Include specific template for the content.
-					get_template_part( 'partials/content-archive', get_post_type() );
+					get_template_part( 'partials/content-archive-post' );
 				}
 			} else {
 				// If no content, include the "No posts found" template.
 				get_template_part( 'partials/content', 'none' );
 			}
 			?>
-			<div class="ts-40"></div>
-			<?php
-			if ( have_posts() ) {
-				if ( class_exists( 'EliteDesigns' ) && $wp_query->max_num_pages > 1 ) {
-					?>
-						<div class="center-align">
-							<?php EliteDesigns::pagination( $wp_query->max_num_pages ); ?>
-						</div>
-					<?php
-				}
-			}
-			?>
-			<div class="ts-80"></div>
 			<!-- Content End -->
 		</div>
 	</div>

@@ -26,17 +26,22 @@ get_header();
 						<h1>Unlock quality traffic  <br> for your <span> business </span></h1>
 					</div>
 					<div class="s-96"></div>
-					<div class="hero__bottom-row flex-between-start">
-						<div class="hero-bottom-content p1">
-
-						</div>
-						<div class="hero-bottom-image">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/hero-image-default.webp" alt="Image">
-						</div>
-					</div>
 				</div>
 			</div>
 		</section>
+		<div class="fixed-menu-nav">
+			<div class="fixed-menu ctn-black">
+				<a href="#seo-process" class="button small">
+					Development process
+				</a>
+				<a href="#seo-tools" class="button small">
+					Tools
+				</a>
+				<a href="#our-faqs" class="button small">
+					FAQs
+				</a>
+			</div>
+		</div>
 		<section class="white-ctn">
 			<div class="s-192"></div>
 			<div class="wrapper">
@@ -49,6 +54,7 @@ get_header();
 			<div class="s-192"></div>
 			<div class=" overflow-hidden">
 				<div class="wrapper">
+					<div id="seo-process" class="jumps-link__item jumplink-section"></div>
 					<div class="design-process-ctn">
 						<div class="section-head">
 							<h2>SEO process</h2>
@@ -58,9 +64,9 @@ get_header();
 							<div class="single-process col-538"><span class="number">01</span><div class="text">Analytics setup</div></div>
 							<div class="single-process col-538"><span class="number">02</span><div class="text">Boosting performance</div></div>
 							<div class="single-process col-538"><span class="number">03</span><div class="text">Content planning</div></div>
-							<div class="single-process col-538"><span class="number">05</span><div class="text">Technical SEO and backlinks</div></div>
+							<div class="single-process col-538"><span class="number">04</span><div class="text">Technical SEO and backlinks</div></div>
 							<div class="single-process col-538"><span class="number">05</span><div class="text">Improving user experience</div></div>
-							<div class="single-process col-538"><span class="number">05</span><div class="text">Ongoing monitoring and improvement</div></div>
+							<div class="single-process col-538"><span class="number">06</span><div class="text">Ongoing monitoring and improvement</div></div>
 						</div>
 					</div>
 				</div>
@@ -68,6 +74,7 @@ get_header();
 				<section class="ctn-gray ">
 					<div class="s-192"></div>
 					<div class="wrapper">
+						<div id="seo-tools" class="jumps-link__item jumplink-section"></div>
 						<div class="design-tool">
 							<div class="section-head">
 								<h2 class="heading-2">Tools and tech <br> we use </h2>
@@ -78,28 +85,28 @@ get_header();
 
 									<div class="design-tool-inner-title">Keyword Planner</div>
 								</div>
-								<div class="design-tool-text">A free tool by Google, ideal for researching keywords and estimating their search volume and competitiveness.</div>
+								<div class="design-tool-text">A free  <a href="https://ads.google.com/intl/en_pk/home/tools/keyword-planner/" target="_blank" title='Keyword Planner' aria-label="Open in new tab Keyword Planner">tool by Google</a>, ideal for researching keywords and estimating their search volume and competitiveness.</div>
 							</div>
 							<div class="design-tool-item flex-between-start">
 								<div class="design-tool-title t2 font-med">
 
 									<div class="design-tool-inner-title">SEMrush</div>
 								</div>
-								<div class="design-tool-text">A comprehensive SEO suite offering keyword research, competitor analysis, backlink auditing, and more, aiding in optimizing your online presence.</div>
+								<div class="design-tool-text">A <a href="https://www.semrush.com/" target="_blank" title='Semrush' aria-label="Open in new tab Semrush">comprehensive SEO suite</a> offering keyword research, competitor analysis, backlink auditing, and more, aiding in optimizing your online presence.</div>
 							</div>
 							<div class="design-tool-item flex-between-start">
 								<div class="design-tool-title t2 font-med">
 
 									<div class="design-tool-inner-title">Ahrefs</div>
 								</div>
-								<div class="design-tool-text">Known for its powerful backlink analysis and keyword research features, Ahrefs helps you understand your site's SEO performance and improve rankings.</div>
+								<div class="design-tool-text">Known for its powerful backlink analysis and keyword research features, <a href="https://ahrefs.com/" target="_blank" title='ahrefs' aria-label="Open in new tab ahrefs">Ahrefs</a> helps you understand your site's SEO performance and improve rankings.</div>
 							</div>
 							<div class="design-tool-item flex-between-start">
 								<div class="design-tool-title t2 font-med">
 
 									<div class="design-tool-inner-title">Screaming Frog</div>
 								</div>
-								<div class="design-tool-text">A website crawler that assists in auditing your website for SEO issues, such as broken links, duplicate content, and missing metadata.</div>
+								<div class="design-tool-text">A <a href="https://www.screamingfrog.co.uk/seo-spider/" target="_blank" title='website crawler' aria-label="Open in new tab website crawler">website crawler</a> that assists in auditing your website for SEO issues, such as broken links, duplicate content, and missing metadata.</div>
 							</div>
 							<div class="design-tool-item flex-between-start">
 								<div class="design-tool-title t2 font-med">
@@ -107,7 +114,7 @@ get_header();
 									<div class="design-tool-inner-title">Moz</div>
 								</div>
 								<div class="design-tool-text">
-									Offers a range of SEO tools including keyword research, rank tracking, and site audits, helping businesses improve their search engine visibility.
+								<a href="https://moz.com/" target="_blank" title='Moz' aria-label="Open in new tab Moz">Moz</a>, Offers a range of SEO tools including keyword research, rank tracking, and site audits, helping businesses improve their search engine visibility.
 								</div>
 							</div>
 							<div class="design-tool-item flex-between-start">
@@ -115,7 +122,7 @@ get_header();
 
 									<div class="design-tool-inner-title">Majestic</div>
 								</div>
-								<div class="design-tool-text">Specializing in backlink analysis, Majestic provides insights into your site's link profile and helps identify opportunities for link building and improvement.</div>
+								<div class="design-tool-text">Specializing in backlink analysis, <a href="https://majestic.com/" target="_blank" title='Majestic' aria-label="Open in new tab Majestic">Majestic</a> provides insights into your site's link profile and helps identify opportunities for link building and improvement.</div>
 							</div>
 						</div>
 					</div>
@@ -124,6 +131,7 @@ get_header();
 				<section class="white-ctn">
 					<div class="s-192"></div>
 					<div class="wrapper">
+						<div id="our-faqs" class="jumps-link__item jumplink-section"></div>
 						<div class="hat-ctn flexarea sb">
 							<div class="hat-title">
 								<h2 class="heading-3">Your questions?</h2>
@@ -131,33 +139,33 @@ get_header();
 							<div class="hat-text">
 								<div class="faqs__area">
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">How do search engines rank websites?
+										<div class="faqs__item--title body-text-36" role="button">How do search engines rank websites?
 										<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
 											<p>Search engines use algorithms that consider factors like relevance, authority, and user experience to rank websites.</p>
 										</div>
 									</div>
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">What influences search engine rankings?<div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36" role="button">What influences search engine rankings?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
 											<p>Content quality, backlinks, website structure, and user experience are key factors.</p>
 										</div>
 									</div>
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">On-page vs. off-page SEO? <div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36" role="button">On-page vs. off-page SEO? <div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
 											<p>On-page focuses on optimizing content and HTML, while off-page involves building backlinks and online reputation.</p>
 										</div>
 									</div>
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">How to improve website loading speed?
- 											<div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36" role="button">How to improve website loading speed?
+											<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
 											<p>Optimize images, minimize HTTP requests, and leverage browser caching.</p>
 										</div>
 									</div>
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">Why is mobile optimization important?
+										<div class="faqs__item--title body-text-36" role="button">Why is mobile optimization important?
 											<div class="faq-icon"></div>
 										</div>
 										<div class="faqs__item--desc">
@@ -165,27 +173,27 @@ get_header();
 										</div>
 									</div>
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">How to choose keywords?<div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36" role="button">How to choose keywords?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
-											<p>Research relevant terms using tools like Google Keyword Planner and consider search volume and competition.</p>
+											<p>Research relevant terms using tools like Google <a href="https://ads.google.com/intl/en_pk/home/tools/keyword-planner/" target="_blank" title='Keyword Planner' aria-label="Open in new tab Keyword Planner">Keyword Planner</a> and consider search volume and competition.</p>
 										</div>
 									</div>
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">What are backlinks?<div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36" role="button">What are backlinks?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
 											<p>Backlinks are links from other websites to yours, impacting authority and search rankings.</p>
 										</div>
 									</div>
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">Role of meta tags and descriptions?<div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36" role="button">Role of meta tags and descriptions?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
 											<p>Meta tags provide search engines with information about a webpage, affecting its visibility in search results.</p>
 										</div>
 									</div>
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">How to monitor SEO performance?<div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36" role="button">How to monitor SEO performance?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
-											<p>Use tools like Google Analytics and Google Search Console to track metrics like traffic, rankings, and conversions.</p>
+											<p>Use tools like <a href="https://developers.google.com/analytics">Google Analytics</a> and Google Search Console to track metrics like traffic, rankings, and conversions.</p>
 										</div>
 									</div>
 								</div>

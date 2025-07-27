@@ -49,9 +49,8 @@ $ed_var_social_profiles = $ed_option_fields['bst_var_social_profiles'] ?? null;
 	<div class="wrapper">
 		<div class="cta-ctn">
 			<div class="flex">
-				<h4>Call Us to Discuss Your Project</h4>
-				<!-- <a href="<?php //echo esc_url( home_url( '/' ) ); ?>contact" class="button white footer-hover-button">Schedule a chat</a> -->
-				<a href="#calendly-popup" class="button white footer-hover-button call-popup">Schedule a chat</a>
+				<h2 class="heading-4">Call Us to Discuss Your Project</h2>
+				<a href="https://calendly.com/elitedesignsstudio/60" target="_blank" title="Schedule a call" aria-label="Schedule a call" class="button white footer-hover-button">Schedule a call</a>
 			</div>
 		</div>
 		<div class="s-96"></div>
@@ -86,34 +85,42 @@ $ed_var_social_profiles = $ed_option_fields['bst_var_social_profiles'] ?? null;
 						</ul>
 					</div>
 				</div>
+				<div class="s-96"></div>
+				<div class="flex footer-logos">
+					<a href="https://clutch.co/profile/elite-designs" target="_blank" title="Clutch" aria-label="Clutch" class="clutch-logo">
+						<div class="sr-only">Screen Reader Text</div>
+						<img width="136px" height="36px" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/clutch-logo.svg" alt="Clutch Logo">
+					</a>
+					<a href="https://www.goodfirms.co/company/elite-designs-studio" target="_blank" title="Good Firms" aria-label="Good Firms" class="goodfirms-logo">
+						<div class="sr-only">Screen Reader Text</div>
+						<img width="200px" height="36px" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/goodfirms-logo-vector.png" alt="Good Firms Logo">
+					</a>
+					<a href="https://www.designrush.com/agency/profile/elite-designs" target="_blank" title="Design Rush" aria-label="Design Rush" class="designrush-logo">
+						<div class="sr-only">Screen Reader Text</div>
+						<img width="200px" height="46px" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/designrush-white-logo.png" alt="Design Rush Logo">
+					</a>
+				</div>
 			</div>
 		</div>
 		<div class="s-96"></div>
-		<div class="flex-ctn footer-copyright-row">
+		<div class="flex-ctn footer-copyright-row align-items-end">
 			<div class="footer-left">
-				<div class="blog-detail__social-ctn">
-					<div class="p3 font-med"> Follow us</div>
-					<div class="s-24"></div>
-					<div class="blog-detail__social-shares">
-						<ul>
-							<li>
-								<a href="#" target="_blank">Fb</a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/company/theelitedesign/" target="_blank">Li</a>
-							</li>
-							<li>
-								<a href="#" target="_blank">Tw</a>
-							</li>
-						</ul>
+				<div class="blog-detail__social-ctn elitedesign-contact">
+					<div class="big-body">
+						<a href="https://www.linkedin.com/company/theelitedesign/" title="Linkedin" aria-label="Linkedin" target="_blank"> Follow us on Linkedin</a>
+					</div>
+					<div class="big-body">
+						<a href="https://www.designrush.com/agency/wordpress-web-design" title="Designrush Website design" aria-label="Designrush Website design" target="_blank"> designrush Website design</a>
+					</div>
+					<div class="big-body">
+						<a href="https://www.designrush.com/agency/web-development-companies/wordpress" title="Designrush Wordpress development" aria-label="Designrush Wordpress development" target="_blank">designrush WordPress development</a>
 					</div>
 				</div>
 			</div>
 			<div class="footer-right">
 				<div class="elitedesign-contact">
 					<div class="big-body"><a href="tel:+923474849527">Call 923474849527</a></div>
-					<div class="big-body"><a href="mailto:hello@elitedesigns.studio">hello@elitedesigns.studio</a>
-					</div>
+					<div class="big-body"><a href="mailto:hello@elitedesigns.studio">hello@elitedesigns.studio</a></div>
 				</div>
 			</div>
 		</div>

@@ -7,7 +7,7 @@ import organicTabs from '../vendors/organic-tab';
 import slick from '../vendors/slick.min';
 
 jQuery( document ).on( 'scroll', function() {
-	if ( jQuery( document ).scrollTop() > 0 ) {
+	if ( jQuery( document ).scrollTop() > 200 ) {
 		jQuery( 'header, body' ).addClass( 'shrink' );
 	} else {
 		jQuery( 'header, body' ).removeClass( 'shrink' );
@@ -47,8 +47,10 @@ jQuery( function() {
 			}
 			if ( st > lastScrollTop && lastScrollTop > 0 ) {
 				jQuery( '.header-section' ).css( 'top', '-' + totalHeaderHeight + 'px' );
+				jQuery( 'body' ).addClass( 'nav-up' );
 			} else {
 				jQuery( '.header-section' ).css( 'top', adjustment + 'px' );
+				jQuery( 'body' ).removeClass( 'nav-up' );
 			}
 			lastScrollTop = st;
 		} );
@@ -95,19 +97,23 @@ jQuery( function() {
 	jQuery( '.menu-item-has-children > a' ).on( 'focus blur', function( event ) {
 		jQuery( this ).siblings( '.sub-menu, .mega-menu' ).toggleClass( 'focused', event.type === 'focus' );
 	} );
+	jQuery.noConflict();
 
 	jQuery( '.sub-menu a, .mega-menu a' ).on( 'focus blur', function( event ) {
 		jQuery( this ).closest( '.sub-menu, .mega-menu' ).toggleClass( 'focused', event.type === 'focus' );
 	} );
 
+	jQuery.noConflict();
+
 	/**
 	 * Script for Accessibility of html Tags
 	 */
-	jQuery( 'h1, h2, h3, h4, h5, h6,p,li,blockquote,cite,strong,dt,dd,th,td,b,i,u,s,em,small,sup,del,ins,abbr,mark,details,pre,kbd,samp,var,address,code,q,figure,figcaption,caption,.top-bar-text,.top-bar-cross,.copy-right,.post-author-img,.post-author-name,.post-meta-date,.post-date' ).each( function() {
+	jQuery( 'h1, h2, h3, h4, h5, h6,p,li,blockquote,cite,strong,dt,dd,th,td,b,i,u,s,em,small,sup,del,ins,abbr,mark,details,pre,kbd,samp,var,address,code,q,figure,figcaption,caption,.top-bar-text,.top-bar-cross,.copy-right,.post-author-img,.post-author-name,.post-meta-date,.post-date,#daextlwcnf-cookie-notice-button-2,.faqs__item--title' ).each( function() {
 		jQuery( this ).attr( {
 			tabindex: 0,
 		} );
 	} );
+	jQuery.noConflict();
 
 	jQuery( '.header-nav li, .blog-nav li, .footer-nav li, .legal-nav li' ).each( function() {
 		const link = jQuery( this ).find( 'a' );
@@ -117,9 +123,14 @@ jQuery( function() {
 			jQuery( this ).attr( 'tabindex', '0' );
 		}
 	} );
+
+	jQuery.noConflict();
+
 	jQuery( 'form p' ).each( function() {
 		jQuery( this ).removeAttr( 'tabindex' );
 	} );
+
+	jQuery.noConflict();
 
 	jQuery( 'a,button:not([href])' ).each( function() {
 		jQuery( this ).attr( {
@@ -127,12 +138,16 @@ jQuery( function() {
 		} );
 	} );
 
+	jQuery.noConflict();
+
 	setTimeout( () => {
 		jQuery( '#daextlwcnf-cookie-notice-button-1' ).attr( 'role', 'button' );
 		jQuery( '#daextlwcnf-cookie-notice-button-2' ).attr( 'role', 'button' );
 		jQuery( '#daextlwcnf-cookie-settings-button-1' ).attr( 'role', 'button' );
 		jQuery( '#daextlwcnf-cookie-settings-button-2' ).attr( 'role', 'button' );
-	}, 500 );
+	}, 1000 );
+
+	jQuery.noConflict();
 
 	autosize();
 	function autosize() {
@@ -152,6 +167,7 @@ jQuery( function() {
 			$text.css( 'min-height', $text[ 0 ].scrollHeight + 'px' );
 		}
 	}
+	jQuery.noConflict();
 
 	document.querySelectorAll( 'input,textarea' ).forEach( ( input ) => {
 		input.addEventListener( 'input,textarea', function() {
@@ -171,6 +187,7 @@ jQuery( function() {
 			}
 		} );
 	} );
+	jQuery.noConflict();
 
 	if ( jQuery( '.faqs__area' ).length > 0 ) {
 		jQuery( '.faqs__item--title' ).on( 'click keypress', function( e ) {
@@ -259,7 +276,6 @@ jQuery( function() {
 			}
 		} );
 	}
-
 	jQuery.noConflict();
 
 	jQuery( '.call-popup' ).magnificPopup( {
@@ -281,5 +297,56 @@ jQuery( function() {
 	} );
 
 	jQuery.noConflict();
+
+	jQuery( '.t1' ).each( function() {
+		jQuery( this ).attr( 'role', 'heading' ).attr( 'aria-level', '3' );
+	} );
+	jQuery.noConflict();
+
+	jQuery( "[ tabindex = '0' ]" ).each( function() {
+		const link = jQuery( this ).find( "[tabindex = '0']" );
+		if ( link.length > 0 ) {
+			jQuery( link ).removeAttr( 'tabindex' );
+		} else {
+			jQuery( link ).attr( 'tabindex', '0' );
+		}
+	} );
+	jQuery.noConflict();
+
+	jQuery( window ).on( 'scroll', function() {
+		const windowHeight = jQuery( window ).height();
+		const scrollPos = jQuery( document ).scrollTop() + ( windowHeight * 0.3 );
+
+		let activeSectionId = '';
+
+		jQuery( '.jumplink-section' ).each( function() {
+			const id = jQuery( this ).attr( 'id' );
+			const offsetTop = jQuery( this ).offset().top;
+
+			if ( offsetTop <= scrollPos ) {
+				activeSectionId = id;
+			}
+		} );
+
+		jQuery( '.fixed-menu a[href="#' + activeSectionId + '"]' ).addClass( 'current-jump-location' );
+
+		jQuery( '.fixed-menu a' ).not( '[href="#' + activeSectionId + '"]' ).removeClass( 'current-jump-location' );
+	} );
+
+	if ( jQuery( '.fixed-menu-nav,.floating-button' ).length > 0 ) {
+		const fixedMenu = jQuery( '.fixed-menu-nav,.floating-button' );
+		const triggerElements = jQuery( '.footer-section, .cta-section' );
+
+		jQuery( window ).on( 'scroll', function() {
+			const windowBottom = jQuery( window ).scrollTop() + jQuery( window ).height();
+			const triggerTop = triggerElements.offset().top;
+
+			if ( windowBottom >= triggerTop ) {
+				fixedMenu.hide();
+			} else {
+				fixedMenu.show();
+			}
+		} );
+	}
 } );
 

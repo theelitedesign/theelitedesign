@@ -1,0 +1,24 @@
+{
+	"name": "acf/heading-alongside-text",
+	"title": "Heading Alongside Text",
+	"description": "A custom Heading Alongside Text block.",
+	"category": "theme-blocks",
+	"icon": "Heading-alongside-text",
+	"keywords": ["heading-alongside-text"],
+	"supports": {
+		"align": true
+	},
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block-heading-alongside-text.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview": "Lead-paragraph-preview.webp"
+			}
+		}
+	},
+	"align": "full"
+}

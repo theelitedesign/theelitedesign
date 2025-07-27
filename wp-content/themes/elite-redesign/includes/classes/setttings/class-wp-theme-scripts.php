@@ -58,6 +58,32 @@ class WP_Theme_Scripts {
 
 		wp_enqueue_script( 'jquery' );
 		// Register project scripts.
+
+		EliteDesigns::enqueue_script(
+			'assets/build/vendors/swiper-bundle.min.js',
+			array( 'jquery' ),
+			args:array(
+				'in_footer' => true,
+				'strategy'  => 'defer',
+			)
+		);
+		EliteDesigns::enqueue_script(
+			'assets/build/vendors/swiper-bundle.min.js',
+			array( 'jquery' ),
+			args:array(
+				'in_footer' => true,
+				'strategy'  => 'defer',
+			)
+		);
+		EliteDesigns::enqueue_script(
+			'assets/build/vendors/swiper-slider-script.js',
+			array( 'jquery' ),
+			args:array(
+				'in_footer' => true,
+				'strategy'  => 'defer',
+			)
+		);
+
 		EliteDesigns::enqueue_script(
 			'assets/build/scripts.min.js',
 			array( 'jquery' ),
@@ -71,14 +97,14 @@ class WP_Theme_Scripts {
 				'strategy'  => 'defer',
 			)
 		);
-		EliteDesigns::enqueue_script(
-			'assets/build/header.min.js',
-			array( 'jquery' ),
-			args:array(
-				'in_footer' => false,
-				'strategy'  => 'defer',
-			)
-		);
+		// EliteDesigns::enqueue_script(
+		// 	'assets/build/header.min.js',
+		// 	array( 'jquery' ),
+		// 	args:array(
+		// 		'in_footer' => false,
+		// 		'strategy'  => 'defer',
+		// 	)
+		// );
 	}
 	/**
 	 * Enqueue Backend Assets

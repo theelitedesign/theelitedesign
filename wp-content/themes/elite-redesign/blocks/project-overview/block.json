@@ -1,0 +1,24 @@
+{
+	"name": "acf/project-overview",
+	"title": "Project Overview",
+	"description": "A custom Project Overview block.",
+	"category": "theme-blocks",
+	"icon": "Project-overview",
+	"keywords": ["project-overview"],
+	"supports": {
+		"align": true
+	},
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "block-project-overview.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview": "Lead-paragraph-preview.webp"
+			}
+		}
+	},
+	"align": "full"
+}

@@ -33,30 +33,22 @@ get_header();
 		<div class="resources-ctn">
 			<div class="el-s128"></div>
 
-		<?php
-			global $wp_query;
-			$clo_post_count = $wp_query->post_count;
-			if ( have_posts() ) {
-				while ( have_posts() ) {
-					the_post();
-					// Include specific template for the content.
-					// $clo_post_id_var = get_the_ID();
-					get_template_part( 'partials/content-archive', 'post' );
+			<?php
+				global $wp_query;
+				$clo_post_count = $wp_query->post_count;
+				if ( have_posts() ) {
+					while ( have_posts() ) {
+						the_post();
+						// Include specific template for the content.
+						// $clo_post_id_var = get_the_ID();
+						get_template_part( 'partials/content-archive', 'post' );
+					}
+
+				} else {
+					// If no content, include the "No posts found" template.
+					get_template_part( 'partials/content', 'none' );
 				}
-				if ( 1 === $clo_post_count ) {
-					echo "<div class='column'></div>
-					<div class='column'></div>";
-				} elseif ( 2 === $clo_post_count ) {
-					echo "<div class='column'></div>";
-				}
-			} else {
-				// If no content, include the "No posts found" template.
-				get_template_part( 'partials/content', 'none' );
-			}
 			?>
-
-			<div class="s-156"></div>
-
 		</div>
 
 	</div>

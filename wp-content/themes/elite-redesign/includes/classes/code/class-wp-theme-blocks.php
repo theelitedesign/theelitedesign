@@ -42,6 +42,10 @@ class WP_Theme_Blocks {
 		self::register_acf_block( 'lead-paragraph' );
 		// Register a block - Media Alongside Text.
 		self::register_acf_block( 'media-alongside-text' );
+		self::register_acf_block( 'heading-alongside-text' );
+		self::register_acf_block( 'project-overview' );
+		self::register_acf_block( 'image-gallery');
+
 		// Register a block - Jump Location.
 		self::register_acf_block( 'jump-location' );
 		// Register a block - AcfBlock.

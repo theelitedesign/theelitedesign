@@ -15,7 +15,9 @@ a.no-link-style:visited {
 }
 
 .work-content {
-	h3 {
+	h3.work-title {
+		@include font(st, reg);
+
 		a,
 		a:visited {
 			background: none;
@@ -30,6 +32,10 @@ a.no-link-style:visited {
 .work-image {
 	border-radius: 16px;
 	overflow: hidden;
+	aspect-ratio: 1/1;
+	border: 1px solid var(--el_gray);
+	box-sizing: border-box;
+
 	a.no-link-style,
 	a.no-link-style:visited {
 		display: block;
@@ -38,8 +44,33 @@ a.no-link-style:visited {
 		padding: 0;
 		margin: 0;
 	}
+
+	img {
+		transition: all 0.3s ease-in-out;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		will-change: transform;
+	}
+
+	&:hover {
+		img {
+			transform: scale(1.05);
+		}
+	}
+}
+
+.work-image:has(:hover) + .work-content h3 {
+	color: var(--el_color_primary);
 }
 
 .work-lists.two-columns {
+	@include fluidColumns(2, 350px, 6%);
+
 	row-gap: var(--el_space_96);
+}
+
+.work-list-item:nth-child(2n + 2) {
+	margin-top: var(--el_space_96);
 }

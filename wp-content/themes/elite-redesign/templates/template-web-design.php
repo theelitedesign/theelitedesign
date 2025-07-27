@@ -57,6 +57,22 @@ get_header();
 					</div>
 				</div>
 			</section>
+			<div class="fixed-menu-nav">
+				<div class="fixed-menu ctn-black">
+					<a href="#our-approach" class="button small">
+						Approach
+					</a>
+					<a href="#our-process" class="button small">
+						Process
+					</a>
+					<a href="#our-tools" class="button small">
+						Tools
+					</a>
+					<a href="#our-faqs" class="button small">
+						FAQs
+					</a>
+				</div>
+			</div>
 			<div id="intro-section"></div>
 			<section class="white-ctn overflow-hidden">
 				<div class="s-128"></div>
@@ -74,6 +90,7 @@ get_header();
 				<div class="s-128"></div>
 				<div class=" overflow-hidden">
 					<div class="wrapper">
+						<div id="our-approach" class="jumps-link__item jumplink-section"></div>
 						<div class="design-process-ctn">
 							<div class="section-head">
 								<h2>Design approach</h2>
@@ -97,13 +114,14 @@ get_header();
 									<div class="text">Responsive and Mobile-Friendly</div>
 								</div>
 								<div class="single-process col-538">
-									<span class="number">04</span>
+									<span class="number">05</span>
 									<div class="text">Collaborative Process</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="s-128"></div>
+					<div id="our-process" class="jumps-link__item jumplink-section"></div>
 					<div class="wrapper">
 						<div class="design-process-ctn">
 							<div class="section-head">
@@ -141,6 +159,7 @@ get_header();
 					<div class="s-128"></div>
 					<section class="ctn-gray overflow-hidden">
 						<div class="s-128"></div>
+						<div id="our-tools" class="jumps-link__item jumplink-section"></div>
 						<div class="wrapper">
 							<div class="design-tool">
 								<div class="section-head">
@@ -154,7 +173,7 @@ get_header();
 												alt=""></div>
 										<div class="design-tool-inner-title">Octopus.do</div>
 									</div>
-									<div class="design-tool-text">Our preferred tool for structuring information and
+									<div class="design-tool-text">Our <a href="https://octopus.do/" target="_blank" title='preferred tool' aria-label="Open in new tab preferred tool">preferred tool</a> for structuring information and
 										strategizing
 										content. An essential part of our planning process.</div>
 								</div>
@@ -165,7 +184,7 @@ get_header();
 												alt=""></div>
 										<div class="design-tool-inner-title">Figma</div>
 									</div>
-									<div class="design-tool-text">Our teamwork platform streamlines our process. Design,
+									<div class="design-tool-text">Our <a href="https://www.figma.com/" target="_blank" title='Figma' aria-label="Open in new tab Figma">teamwork platform</a> streamlines our process. Design,
 										present,
 										and track feedback all in one place. It's online; no software installation
 										needed for
@@ -193,14 +212,19 @@ get_header();
 					<section class="white-ctn overflow-hidden">
 						<div class="s-128"></div>
 						<div class="wrapper">
+							<div id="our-faqs" class="jumps-link__item jumplink-section"></div>
 							<div class="hat-ctn flexarea sb">
 								<div class="hat-title">
 									<h2 class="heading-3">Your questions?</h2>
+									<div class="s-24"></div>
+									<div class="faq-mobile-hide">
+										<a href="/faqs" class="button">View All FAQs</a>
+									</div>
 								</div>
 								<div class="hat-text">
 									<div class="faqs__area">
 										<div class="faqs__item">
-											<div class="faqs__item--title body-text-36" tabindex="0"
+											<div class="faqs__item--title body-text-36" role="button"
 												aria-expanded="false">What happens during the Kick Off
 												Meeting?
 												<div class="faq-icon"></div>
@@ -212,7 +236,7 @@ get_header();
 											</div>
 										</div>
 										<div class="faqs__item">
-											<div class="faqs__item--title body-text-36" tabindex="0"
+											<div class="faqs__item--title body-text-36" role="button"
 												aria-expanded="false">What's involved in Discovery
 												&amp; Research?
 												<div class="faq-icon"></div>
@@ -225,7 +249,7 @@ get_header();
 										</div>
 
 										<div class="faqs__item">
-											<div class="faqs__item--title body-text-36" tabindex="0"
+											<div class="faqs__item--title body-text-36" role="button"
 												aria-expanded="false">What happens during Architecture
 												&amp;
 												Content? <div class="faq-icon"></div>
@@ -238,7 +262,7 @@ get_header();
 										</div>
 
 										<div class="faqs__item">
-											<div class="faqs__item--title body-text-36" tabindex="0"
+											<div class="faqs__item--title body-text-36" role="button"
 												aria-expanded="false">You don’t do wireframes? <div class="faq-icon">
 												</div>
 											</div>
@@ -252,7 +276,7 @@ get_header();
 										</div>
 
 										<div class="faqs__item">
-											<div class="faqs__item--title body-text-36" tabindex="0"
+											<div class="faqs__item--title body-text-36" role="button"
 												aria-expanded="false">How are Website Prototypes
 												created? <div class="faq-icon"></div>
 											</div>
@@ -264,7 +288,7 @@ get_header();
 										</div>
 
 										<div class="faqs__item">
-											<div class="faqs__item--title body-text-36" tabindex="0"
+											<div class="faqs__item--title body-text-36" role="button"
 												aria-expanded="false">When is design done?<div class="faq-icon">
 												</div>
 											</div>
@@ -275,16 +299,20 @@ get_header();
 										</div>
 
 										<div class="faqs__item">
-											<div class="faqs__item--title body-text-36" tabindex="0"
+											<div class="faqs__item--title body-text-36" role="button"
 												aria-expanded="false">Do you offer web development
 												services? <div class="faq-icon"></div>
 											</div>
 											<div class="faqs__item--desc" role="region" aria-hidden="true">
-												<p>Yes, we're experts in web development and have created numerous
+												<p>Yes, we're experts in <a href="/web-development">web development</a> and have created numerous
 													top-notch
 													websites.</p>
 											</div>
 										</div>
+									</div>
+									<div class="faq-desktop-hide">
+										<div class="s-48"></div>
+										<a href="/faqs" class="button">View All FAQs</a>
 									</div>
 								</div>
 							</div>

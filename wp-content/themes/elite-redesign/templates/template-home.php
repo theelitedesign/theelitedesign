@@ -22,10 +22,10 @@ get_header();
 				<div class="s-48"></div>
 				<div class="hero-content">
 					<h1 style="display:none">Beauty for results</h1>
-					<div class="mb-0  font-bold d2">
+					<h2 class="mb-0  font-bold d2">
 						<div class="headingLine">beauty </div>
 						<div class="headingLine"><span>for </span> results</div>
-					</div>
+					</h2>
 					<div class="s-48"></div>
 					<div class="t3">
 						 We design and build websites, improve search rankings, <br> keep them updated, and provide ongoing support.
@@ -34,7 +34,7 @@ get_header();
 					<div class="scroll-down">
 						<div class="scroll-down__button">
 							<a href="#intro-section" aria-label="Down to First section">
-								<svg width="16" height="37" viewBox="0 0 16 37" fill="none"
+								<svg width="16" height="37" viewBox="0 0 16 37" fill="none" role="presentation"
 									xmlns="http://www.w3.org/2000/svg">
 									<path class="dropdown-item1" id="arrow"
 										d="M3.33398 16L8.00065 20.6667L12.6673 16" stroke="#ffffff"
@@ -66,17 +66,17 @@ get_header();
 		<div id="intro-section"></div>
 		<div class="s-128"></div>
 		<div class="wrapper">
-			<div class="t1">
+			<h2 class="t1 font-reg">
 				<p>
 					We specialize in custom WordPress theme development, Full Site Editing (FSE), web design, SEO, and ongoing website support. With 5+ years of experience, we create functional, visually stunning, and high-performing websites tailored to your business needs.
 				</p>
-			</div>
+			</h2>
 		</div>
 		<div class="s-128"></div>
 		<div class="wrapper">
 			<div class="services-ctn">
 				<div class="section-head">
-					<h2>Elite Services</h2>
+					<h2>Services</h2>
 				</div>
 				<div class="s-96"></div>
 				<div class="services-lists">
@@ -127,102 +127,91 @@ get_header();
 				</div>
 			</div>
 		</div>
-		<div class="s-128"></div>
 	</section>
 	<section>
+		<div class="s-128"></div>
 		<div class="wrapper">
 			<div class="work-ctn">
 				<div class="section-head">
-					<h2>elite Work</h2>
+					<h2>elite <span>Work</span></h2>
 				</div>
 				<div class="s-96"></div>
 				<div class="work-lists two-columns">
-					<div class="work-list-item">
-						<div class="work-image">
-							<a href="#" class="no-link-style">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/ideas-wp.webp" alt="Project 1 Image">
-							</a>
-						</div>
-						<div class="work-content">
-							<div class="s-24"></div>
-							<h3><a href="#">Work 1</a></h3>
-							<div class="p1">
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod nisi vitae
-									molestie
-								</p>
-							</div>
-							<div class="s-24"></div>
-							<div class="work-btn">
-								<a href="#">See details</a>
-							</div>
-						</div>
+					<?php
+						// WP_Query.
+						$ed_args = array(
+							'post_type'      => 'Portfolio',
+							'posts_per_page' => 8,
+							'orderby'        => 'date', // Order by date.
+							'order'          => 'DESC', // Show most recent first.
+							'paged'          => ( get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1 ),
+						);
 
-					</div>
-					<div class="work-list-item">
-						<div class="work-image">
-							<a href="#" class="no-link-style">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/ideas-wp.webp" alt="Project 1 Image">
-							</a>
-						</div>
-						<div class="work-content">
-							<div class="s-24"></div>
-							<h3><a href="#">Work 1</a></h3>
-							<div class="p1">
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod nisi vitae
-									molestie
-								</p>
-							</div>
-							<div class="s-24"></div>
-							<div class="work-btn">
-								<a href="#">See details</a>
-							</div>
-						</div>
-					</div>
-					<div class="work-list-item">
-						<div class="work-image">
-							<a href="#" class="no-link-style">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/ideas-wp.webp" alt="Project 1 Image">
-							</a>
-						</div>
-						<div class="work-content">
-							<div class="s-24"></div>
-							<h3><a href="#">Work 1</a></h3>
-							<div class="p1">
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod nisi vitae
-									molestie
-								</p>
-							</div>
-							<div class="s-24"></div>
-							<div class="work-btn">
-								<a href="#">See details</a>
-							</div>
-						</div>
+						// The Query.
+						$ed_query = new WP_Query( $ed_args );
 
-					</div>
+						// The Loop.
+						if ( $ed_query->have_posts() ) {
+							while ( $ed_query->have_posts() ) {
+								$ed_query->the_post();
+								// Include specific template for the content.
+								get_template_part( 'partials/content', 'archive-portfolio' );
+							}
+						}
+
+						// Reset post data.
+						wp_reset_postdata();
+					?>
+				</div>
 			</div>
 		</div>
 	</section>
 	<div class="s-156"></div>
-	<section class="ctn-dblue overflow-hidden">
-		<div class="s-128"></div>
+	<section class="overflow-hidden">
 		<div class="wrapper">
-			<div class="quotes-ctn">
-				<div class="quote-content center-align">
-					<h2 class="heading-5 small-title" tabindex="0">Message</h2>
-					<blockquote>
-						<p>
-							At Elite, we are driven by a passion for crafting high-quality, custom WordPress solutions. I, Bahar, along with my expertise, focus on creating visually stunning, high-performing, and user-friendly websites that help brands grow and succeed online. We believe that a well-designed and optimized website is the foundation of a strong digital presence. With innovation, functionality, and long-term support at our core, Elite is your trusted partner in building websites that truly make an impact.
-						</p>
-						<cite class="font-med"><strong>Bahar Hussain</strong> Founder - elite design</cite>
-					</blockquote>
+			<div class="d1-title">
+				<h2 class="heading-2">
+					Our clients
+				</h2>
+			</div>
+			<div class="s-48"></div>
+			<div class="logos-area">
+				<div class="logo-row four-columns">
+					<div class="logo-column flex-center">
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/spring-white-logo.png" alt="Spring Design">
+					</div>
+
+					<div class="logo-column flex-center">
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/branson-logo.svg" alt="Branson">
+					</div>
+					<div class="logo-column flex-center">
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/manymoons-wordmark.svg" alt="Manymoons">
+					</div>
+					<div class="logo-column flex-center">
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/sim-call-logo.png" alt="SIM Call">
+					</div>
+				</div>
+				<div class="logo-row four-columns">
+					<div class="logo-column flex-center">
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/alfa-logo.svg" alt="Alfa">
+					</div>
+
+					<div class="logo-column flex-center">
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/yoke-logo.png" alt="Yoke">
+					</div>
+					<div class="logo-column flex-center">
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/swiss-activities-logo.svg" alt="Swiss Activities">
+					</div>
+
+					<div class="logo-column flex-center">
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/my-tribe-talk-logo.svg" alt="My Tribe Talk">
+					</div>
 				</div>
 			</div>
+			</div>
 		</div>
-		<div class="s-128"></div>
 	</section>
+	<div class="s-156"></div>
 	<section class="overflow-hidden">
 		<div class="ctn-gray">
 			<div class="s-128"></div>
@@ -272,6 +261,88 @@ get_header();
 				</div>
 			</div>
 			<div class="s-128"></div>
+		</div>
+	</section>
+	<section class="overflow-hidden">
+		<div class="s-128"></div>
+		<div class="wrapper">
+			<div class="hat-ctn flexarea sb">
+				<div class="hat-title">
+					<h2 class="heading-3">Frequently Asked Questions</h2>
+					<div class="s-24"></div>
+					<div class="faq-mobile-hide">
+						<a href="/faqs" class="button">View All FAQs</a>
+					</div>
+				</div>
+				<div class="hat-text">
+					<div class="faqs__area">
+						<div class="faqs__item">
+							<div class="faqs__item--title body-text-36" role="button"
+								aria-expanded="false">Can you build a custom website for my business?
+								<div class="faq-icon"></div>
+							</div>
+							<div class="faqs__item--desc" role="region" aria-hidden="true">
+								<p>Yes, we create <strong>custom websites</strong> tailored to your brand, audience, and goals.</p>
+							</div>
+						</div>
+						<div class="faqs__item">
+							<div class="faqs__item--title body-text-36" role="button"
+								aria-expanded="false">Will my website be optimized for mobile and SEO?
+								<div class="faq-icon"></div>
+							</div>
+							<div class="faqs__item--desc" role="region" aria-hidden="true">
+								<p>Absolutely. Every website we build is <strong>mobile-friendly</strong> and SEO-ready.</p>
+							</div>
+						</div>
+
+						<div class="faqs__item">
+							<div class="faqs__item--title body-text-36" role="button"
+								aria-expanded="false">Which content management system (CMS) do you use?<div class="faq-icon"></div>
+							</div>
+							<div class="faqs__item--desc" role="region" aria-hidden="true">
+								<p>We only use <strong>WordPress </strong> because we’re experts at building fast, easy-to-manage sites.</p>
+							</div>
+						</div>
+						<div class="faqs__item">
+							<div class="faqs__item--title body-text-36" role="button"
+								aria-expanded="false">How long does it take to complete a website project? <div class="faq-icon">
+								</div>
+							</div>
+							<div class="faqs__item--desc" role="region" aria-hidden="true">
+								<p>Most websites are completed within <strong>4 to 6 weeks </strong>, depending on the project scope.</p>
+							</div>
+						</div>
+						<div class="faqs__item">
+							<div class="faqs__item--title body-text-36" role="button"
+								aria-expanded="false">Can you improve and maintain a website built by someone else? <div class="faq-icon"></div>
+							</div>
+							<div class="faqs__item--desc" role="region" aria-hidden="true">
+								<p>We offer keyword research, on-page optimization, technical SEO, and performance tracking.</p>
+							</div>
+						</div>
+						<div class="faqs__item">
+							<div class="faqs__item--title body-text-36" role="button"
+								aria-expanded="false"> Do you offer website support after launch? <div class="faq-icon"></div>
+							</div>
+							<div class="faqs__item--desc" role="region" aria-hidden="true">
+								<p>Yes, we provide ongoing support, including updates, backups, and security monitoring.</p>
+							</div>
+						</div>
+						<div class="faqs__item">
+							<div class="faqs__item--title body-text-36" role="button"
+								aria-expanded="false"> Can you improve and maintain a website built by someone else? <div class="faq-icon"></div>
+							</div>
+							<div class="faqs__item--desc" role="region" aria-hidden="true">
+								<p>Yes, after a quick site review, we can take over maintenance and upgrades.</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-desktop-hide">
+						<div class="s-48"></div>
+						<a href="/faqs" class="button">View All FAQs</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 </section>

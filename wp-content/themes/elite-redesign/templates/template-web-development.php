@@ -55,6 +55,22 @@ get_header();
 				</div>
 			</div>
 		</section>
+		<div class="fixed-menu-nav">
+			<div class="fixed-menu ctn-black">
+				<a href="#benefits" class="button small">
+					Benefits
+				</a>
+				<a href="#why-us" class="button small">
+					Why Us
+				</a>
+				<a href="#development-process" class="button small">
+					Development process
+				</a>
+				<a href="#our-faqs" class="button small">
+					FAQs
+				</a>
+			</div>
+		</div>
 		<div id="intro-section"></div>
 		<section class="white-ctn">
 			<div class="s-156"></div>
@@ -74,6 +90,7 @@ get_header();
 		<section class="ctn-gray white-ctn">
 			<div class="wrapper">
 				<div class="s-156"></div>
+				<div id="benefits" class="jumps-link__item jumplink-section"></div>
 				<div class="text-columns-ctn">
 					<div class="section-head">
 						<h2 class="heading-2">Benefits of using WordPress</h2>
@@ -107,6 +124,7 @@ get_header();
 					</div>
 				</div>
 				<div class="s-156"></div>
+				<div id="why-us" class="jumps-link__item jumplink-section"></div>
 				<div class="text-columns-ctn">
 					<div class="section-head">
 						<h2 class="heading-2">Why Choose Us?</h2>
@@ -155,10 +173,10 @@ get_header();
 			</div>
 		</section>
 		<section class="white-ctn">
-
 			<div class=" overflow-hidden">
 				<div class="wrapper">
 					<div class="s-156"></div>
+					<div id="development-process" class="jumps-link__item jumplink-section"></div>
 					<div class="design-process-ctn">
 						<div class="section-head">
 							<h2>Development process</h2>
@@ -168,16 +186,17 @@ get_header();
 							<div class="single-process col-538"><span class="number">01</span><div class="text">Planning & Kickoff</div></div>
 							<div class="single-process col-538"><span class="number">02</span><div class="text">Development</div></div>
 							<div class="single-process col-538"><span class="number">03</span><div class="text">QA / Review</div></div>
-							<div class="single-process col-538"><span class="number">05</span><div class="text">Content Integration</div></div>
+							<div class="single-process col-538"><span class="number">04</span><div class="text">Content Integration</div></div>
 							<div class="single-process col-538"><span class="number">05</span><div class="text">Feedbacks</div></div>
-							<div class="single-process col-538"><span class="number">04</span><div class="text">Launch / SEO</div></div>
-							<div class="single-process col-538"><span class="number">06</span><div class="text">Continuous improvements</div></div>
-							<div class="single-process col-538"><span class="number">06</span><div class="text">Support</div></div>
+							<div class="single-process col-538"><span class="number">06</span><div class="text">Launch / SEO</div></div>
+							<div class="single-process col-538"><span class="number">07</span><div class="text">Support</div></div>
+							<div class="single-process col-538"><span class="number">08</span><div class="text">Continuous improvements</div></div>
 						</div>
 					</div>
 				</div>
 				<div class="s-156"></div>
 				<div class="wrapper">
+					<div id="our-faqs" class="jumps-link__item jumplink-section"></div>
 					<div class="hat-ctn flexarea sb">
 						<div class="hat-title">
 							<h2 class="heading-3">Your questions?</h2>
@@ -185,61 +204,61 @@ get_header();
 						<div class="hat-text">
 							<div class="faqs__area">
 								<div class="faqs__item">
-									<div class="faqs__item--title body-text-36">What web development services do you offer?<div class="faq-icon"></div></div>
+									<div class="faqs__item--title body-text-36" role="button">What web development services do you offer?<div class="faq-icon"></div></div>
 									<div class="faqs__item--desc">
-										<p>We offer full-stack web development, including design, coding, and testing.</p>
+										<p>We offer <strong>full-stack web development</strong>, including design, coding, and testing.</p>
 									</div>
 								</div>
 								<div class="faqs__item">
-									<div class="faqs__item--title body-text-36">How long does it take to build a website? <div class="faq-icon"></div></div>
+									<div class="faqs__item--title body-text-36" role="button">How long does it take to build a website? <div class="faq-icon"></div></div>
 									<div class="faqs__item--desc">
-										<p>Typically, website development takes 4-12 weeks, varying with complexity.</p>
+										<p>Typically, website development takes <strong>4-6 weeks</strong>, varying with complexity.</p>
 									</div>
 								</div>
 								<div class="faqs__item">
-									<div class="faqs__item--title body-text-36">What is your pricing structure for web development? <div class="faq-icon"></div></div>
+									<div class="faqs__item--title body-text-36" role="button">What is your pricing structure for web development? <div class="faq-icon"></div></div>
 									<div class="faqs__item--desc">
 										<p>Costs depend on features, design intricacy, and additional functionalities.</p>
 									</div>
 								</div>
 								<div class="faqs__item">
-									<div class="faqs__item--title body-text-36">Do you offer website maintenance and support after launch? <div class="faq-icon"></div></div>
+									<div class="faqs__item--title body-text-36" role="button">Do you offer website maintenance and support after launch? <div class="faq-icon"></div></div>
 									<div class="faqs__item--desc">
 										<p>Yes, we provide ongoing maintenance and support post-launch.</p>
 									</div>
 								</div>
 								<div class="faqs__item">
-									<div class="faqs__item--title body-text-36">How do you ensure the security of websites you develop?<div class="faq-icon"></div></div>
+									<div class="faqs__item--title body-text-36" role="button">How do you ensure the security of websites you develop?<div class="faq-icon"></div></div>
 									<div class="faqs__item--desc">
 										<p>We implement robust security protocols to protect against cyber threats.</p>
 									</div>
 								</div>
 								<div class="faqs__item">
-									<div class="faqs__item--title body-text-36">Can you customize websites based on our specific needs and branding?<div class="faq-icon"></div></div>
+									<div class="faqs__item--title body-text-36" role="button">Can you customize websites based on our specific needs and branding?<div class="faq-icon"></div></div>
 									<div class="faqs__item--desc">
 										<p>Yes, we tailor websites to match your specific needs and branding requirements.</p>
 									</div>
 								</div>
 								<div class="faqs__item">
-									<div class="faqs__item--title body-text-36">Do you provide responsive design to ensure compatibility across devices?<div class="faq-icon"></div></div>
+									<div class="faqs__item--title body-text-36" role="button">Do you provide responsive design to ensure compatibility across devices?<div class="faq-icon"></div></div>
 									<div class="faqs__item--desc">
 										<p>Absolutely, we ensure responsive design for compatibility across all devices.</p>
 									</div>
 								</div>
 								<div class="faqs__item">
-									<div class="faqs__item--title body-text-36">Will the website be optimized for search engines (SEO)?<div class="faq-icon"></div></div>
+									<div class="faqs__item--title body-text-36" role="button">Will the website be optimized for search engines (SEO)?<div class="faq-icon"></div></div>
 									<div class="faqs__item--desc">
 										<p>Yes, we optimize websites for search engines to improve visibility and attract more traffic.</p>
 									</div>
 								</div>
 								<div class="faqs__item">
-									<div class="faqs__item--title body-text-36">Can you integrate third-party services or APIs into the website?<div class="faq-icon"></div></div>
+									<div class="faqs__item--title body-text-36" role="button">Can you integrate third-party services or APIs into the website?<div class="faq-icon"></div></div>
 									<div class="faqs__item--desc">
 										<p>We can seamlessly integrate third-party services and APIs as needed.</p>
 									</div>
 								</div>
 								<div class="faqs__item">
-									<div class="faqs__item--title body-text-36">How do you handle website security and protect against cyber threats?<div class="faq-icon"></div></div>
+									<div class="faqs__item--title body-text-36" role="button">How do you handle website security and protect against cyber threats?<div class="faq-icon"></div></div>
 									<div class="faqs__item--desc">
 										<p>We secure our website with encryption, firewalls, updates, strong passwords, employee training, and third-party assessments for protection against cyber threats.</p>
 									</div>

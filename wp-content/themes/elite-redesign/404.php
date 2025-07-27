@@ -43,32 +43,37 @@ $ed_var_error_search           = $ed_option_fields['bst_var_error_search'] ?? fa
 				<div class="s-96"></div>
 				<div class="page-content">
 					<?php
-					if ( $ed_var_error_text ) {
-						echo html_entity_decode( $ed_var_error_text );
-					}
-					if ( $ed_var_error_menu ) {
-						?>
-						<div class="s-48"></div>
-					<div class="error">
-						<?php echo html_entity_decode( $ed_var_error_menu ); ?> </div>
-						<?php
-					}
+						if ( $ed_var_error_text ) {
+							echo html_entity_decode( $ed_var_error_text );
+						}
+						if ( $ed_var_error_menu ) { ?>
+							<div class="s-48"></div>
+							<div class="error">
+								<?php echo html_entity_decode( $ed_var_error_menu ); ?>
+							</div>
+							<?php
+						}
 					?>
-						<div class="s-24"></div>
+					<div class="s-24"></div>
 					<div class="form-404">
-
 						<?php
-						if ( $ed_var_error_menu_bottom_text ) {
-							echo html_entity_decode( $ed_var_error_menu_bottom_text );
-						}
-						if ( ! $ed_var_error_search ) {
-							get_search_form();
-						}
+							if ( $ed_var_error_menu_bottom_text ) {
+								echo html_entity_decode( $ed_var_error_menu_bottom_text );
+							}
+							if ( ! $ed_var_error_search ) { ?>
+							<form role="search" method="get" class="search-form" action="/">
+
+									<!-- <label for="header-search"><?php // esc_html_e( 'Type Here', 'calero_td' ); ?></label> -->
+								<input  type="search" name="s" aria-label="Search" placeholder="Type here" id="header-search">
+
+								<input type="submit" class="search-submit" value="Search">
+							</form>
+							<?php
+							}
 						?>
 					</div>
-					<!--404-form-->
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
+				</div>
+			</section>
 		</div>
 	</div>
 </section>

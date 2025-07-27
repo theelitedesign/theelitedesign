@@ -25,18 +25,20 @@ get_header();
 						<h1>Improve your <br> website's <span>impact</span></h1>
 					</div>
 					<div class="s-96"></div>
-					<div class="hero__bottom-row flex-between-start">
-						<div class="hero-bottom-content p1">
 
-						</div>
-						<div class="hero-bottom-image">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/hero-image-default.webp" alt="Image">
-						</div>
-					</div>
 				</div>
 			</div>
 		</section>
-
+		<div class="fixed-menu-nav">
+			<div class="fixed-menu ctn-black">
+				<a href="#our-process" class="button small">
+					Process
+				</a>
+				<a href="#our-faqs" class="button small">
+					FAQs
+				</a>
+			</div>
+		</div>
 		<section class="white-ctn">
 			<div class="s-192"></div>
 			<div class="wrapper">
@@ -48,17 +50,20 @@ get_header();
 			</div>
 			<div class="s-192"></div>
 			<div class=" overflow-hidden">
+				<div id="our-process" class="jumps-link__item jumplink-section"></div>
 				<div class="wrapper">
+					<h2>Process</h2>
+					<div class="s-48"></div>
 					<div class="design-tool">
 						<div class="design-tool-item flex-between-start">
-							<div class="design-tool-title t2 font-med">
+							<div class="design-tool-title t3 font-med">
 
 								<div class="design-tool-inner-title">Analysis & Goal Setting</div>
 							</div>
 							<div class="design-tool-text">Analyze current performance and set clear improvement goals aligned with business objectives.</div>
 						</div>
 						<div class="design-tool-item flex-between-start">
-							<div class="design-tool-title t2 font-med">
+							<div class="design-tool-title t3 font-med">
 
 								<div class="design-tool-inner-title">Idea Generation & Prioritization</div>
 							</div>
@@ -66,14 +71,14 @@ get_header();
 
 						</div>
 						<div class="design-tool-item flex-between-start">
-							<div class="design-tool-title t2 font-med">
+							<div class="design-tool-title t3 font-med">
 
 								<div class="design-tool-inner-title">Implementation & Monitoring</div>
 							</div>
 							<div class="design-tool-text">Develop and execute improvement plans, monitor progress, and measure key performance indicators.</div>
 						</div>
 						<div class="design-tool-item flex-between-start">
-							<div class="design-tool-title t2 font-med">
+							<div class="design-tool-title t3 font-med">
 
 								<div class="design-tool-inner-title">Feedback Collection & Iteration</div>
 							</div>
@@ -84,6 +89,7 @@ get_header();
 				</div>
 				<div class="s-192"></div>
 				<section class="white-ctn">
+					<div id="our-faqs" class="jumps-link__item jumplink-section"></div>
 					<div class="wrapper">
 						<div class="hat-ctn flexarea sb">
 							<div class="hat-title">
@@ -92,55 +98,55 @@ get_header();
 							<div class="hat-text">
 								<div class="faqs__area">
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">Why is website maintenance important?<div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36" role="button">Why is website maintenance important?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
 											<p>Regular maintenance ensures your website stays secure, performs well, and remains up-to-date with the latest technologies. It helps prevent downtime and ensures a positive user experience.</p>
 										</div>
 									</div>
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">How many times should I update my website?<div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36" role="button">How many times should I update my website?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
 											<p>You should update your website regularly whenever there are new software releases, security patches, or content changes. How often you update depends on how complex your website is and how quickly technology is changing.</p>
 										</div>
 									</div>
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">What security measures are included in website <br> maintenance?<div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36" role="button">What security measures are included in website <br> maintenance?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
 											<p>Security measures may include regular security scans, malware detection and removal, SSL certificate installation, firewall setup, and implementing best practices to safeguard against cyber threats.</p>
 										</div>
 									</div>
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">Do you provide backup services for websites?<div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36" role="button">Do you provide backup services for websites?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
 											<p>Yes, we offer regular backups to protect your website data. This ensures that in case of any data loss or website issues, we can restore your site to a previous, stable state.</p>
 										</div>
 									</div>
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">Can you help with website performance optimization?<div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36" role="button">Can you help with website performance optimization?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
 											<p>Absolutely. We optimize your website's speed and performance by implementing techniques such as caching, image optimization, code minification, and server optimization.</p>
 										</div>
 									</div>
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">Do you offer support for e-commerce websites?<div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36" role="button">Do you offer support for e-commerce websites?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
 											<p>Yes, we provide comprehensive support for e-commerce websites, including product updates, inventory management, payment gateway integration, and security enhancements.</p>
 										</div>
 									</div>
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">How do you handle website downtime or technical issues?<div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36" role="button">How do you handle website downtime or technical issues?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
 											<p>We have a dedicated support team available to address any technical issues promptly. Our goal is to minimize downtime and restore your website's functionality as quickly as possible.</p>
 										</div>
 									</div>
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">Can you assist with content updates and website redesigns?<div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36" role="button">Can you assist with content updates and website redesigns?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
 											<p>Yes, we offer content management services to keep your website's content fresh and relevant. Additionally, we can help with website redesigns to improve aesthetics, usability, and functionality.</p>
 										</div>
 									</div>
 									<div class="faqs__item">
-										<div class="faqs__item--title body-text-36">What are the costs associated with website support and maintenance?<div class="faq-icon"></div></div>
+										<div class="faqs__item--title body-text-36" role="button">What are the costs associated with website support and maintenance?<div class="faq-icon"></div></div>
 										<div class="faqs__item--desc">
 											<p>The cost varies depending on factors such as the size and complexity of your website, the level of support required, and any additional services requested. We offer customized plans tailored to meet your specific needs and budget.</p>
 										</div>

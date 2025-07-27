@@ -31,7 +31,7 @@ $ed_var_ftrcta_headline         = $ed_fields['bst_var_page_cta_headline'] ?? $ed
 		</div>
 		<!-- dialog itself, mfp-hide class is required to make dialog hidden -->
 		<div id="calendly-popup" class="zoom-anim-dialog mfp-hide">
-			<iframe src="https://calendly.com/hussainbahar219/30min" frameborder="0"></iframe>
+			<iframe src="https://calendly.com/elitedesignsstudio/60" frameborder="0"></iframe>
 		</div>
 	</div>
 	<div class="s-96"></div>

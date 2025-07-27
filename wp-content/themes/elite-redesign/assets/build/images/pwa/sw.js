@@ -1,15 +1,1 @@
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
-
-if (workbox) {
-    console.log(`Yay! Workbox is loaded 🎉`);
-} else {
-    console.log(`Boo! Workbox didn’t load 😬`);
-}
-
-workbox.routing.registerRoute(
-    new RegExp('/*'),
-    new workbox.strategies.NetworkFirst({
-        // Use a custom cache name.
-        cacheName: 'home',
-    })
-);
+const CACHE_NAME="offline",OFFLINE_URL="/offline/";self.addEventListener("install",(function(e){console.log("[ServiceWorker] Install"),e.waitUntil((async()=>{const e=await caches.open("offline");await e.add(new Request("/offline/",{cache:"reload"}))})()),self.skipWaiting()})),self.addEventListener("activate",(e=>{console.log("[ServiceWorker] Activate"),e.waitUntil((async()=>{"navigationPreload"in self.registration&&await self.registration.navigationPreload.enable()})()),self.clients.claim()})),self.addEventListener("fetch",(function(e){"navigate"===e.request.mode&&e.respondWith((async()=>{try{const n=await e.preloadResponse;return n||await fetch(e.request)}catch(e){console.log("[Service Worker] Fetch failed; returning offline page instead.",e);const n=await caches.open("offline");return await n.match("/offline/")}})())}));

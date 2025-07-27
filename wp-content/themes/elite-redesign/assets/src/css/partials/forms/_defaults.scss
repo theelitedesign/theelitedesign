@@ -83,6 +83,7 @@ button:-moz-focusring,
 		border: 1px solid var(--el_gray_1);
 		border-radius: 100px;
 		padding-left: 24px;
+		height: 58px;
 		&:focus {
 			border-color: var(--el_ugray);
 		}
@@ -99,6 +100,7 @@ button:-moz-focusring,
 	input[type="button"],
 	input[type="reset"] {
 		margin: 0;
+		padding-inline: 36px;
 	}
 }
 

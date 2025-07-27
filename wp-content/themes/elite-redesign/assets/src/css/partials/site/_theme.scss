@@ -474,7 +474,9 @@ picture {
 //Cookie style
 body {
 	#daextlwcnf-revisit-cookie-consent-container {
-		background-color: var(--el_color_primary) !important;
+		background-color: var(--el_color_secondary) !important;
+		right: 20px !important;
+		left: auto !important;
 	}
 
 	#daextlwcnf-cookie-notice-button-1,
@@ -506,6 +508,10 @@ body {
 			border-color: var(--el_black_1) !important;
 		}
 	}
+}
+
+.font-reg {
+	@include font(st, reg);
 }
 
 .font-med {
@@ -574,10 +580,10 @@ body {
 		width: 387px !important;
 		bottom: 20px !important;
 		border-width: 0px !important;
-		right: auto;
-		left: 20px;
 		border-radius: 300px !important;
 		box-sizing: border-box !important;
+		left: auto;
+		right: 20px;
 	}
 
 	#daextlwcnf-cookie-notice-button-2 {
@@ -635,5 +641,12 @@ body {
 		font-style: normal;
 		font-size: clamp(1rem, 0.231vw + 0.94rem, 1.125rem) !important;
 		letter-spacing: -0.25px;
+	}
+}
+
+.page-template-template-contact {
+	.floating-button,
+	.footer-cta {
+		display: none !important;
 	}
 }

@@ -54,17 +54,17 @@ $ed_var_tohdr_btn     = $ed_option_fields['bst_var_tohdr_btn'] ?? null;
 		href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/pwa/icon.svg">
 	<link rel="manifest"
 		href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/pwa/site.webmanifest">
-	<meta name="theme-color" content="#0047FE">
+	<meta name="theme-color" content="#52247f">
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="application-name" content="elite designs">
 	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton_color" content="#0047FE">
-	<meta name="msapplication-TileColor" content="#0047FE">
+	<meta name="msapplication-navbutton_color" content="#52247f">
+	<meta name="msapplication-TileColor" content="#52247f">
 	<meta name="msapplication-tap-highlight" content="no">
 	<meta name="msapplication-TileImage"
 		content="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/pwa/pwa-icon-144.png">
 	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#0047FE">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#52247f">
 	<meta name="google-site-verification" content="IYXzOvDGqqgY3Fl2eywGqh7BYOAgYvAw4niPl7AFAOg" />
     <meta name="msvalidate.01" content="738520458226193B09BDB8581DB4679F" />
     <meta name="p:domain_verify" content="3151c7da4cff8c9676c68880caa798e0"/>
@@ -84,7 +84,7 @@ $ed_var_tohdr_btn     = $ed_option_fields['bst_var_tohdr_btn'] ?? null;
 	?>
 	<?php wp_head(); ?> <script>
 	"serviceWorker" in navigator && window.addEventListener("load", function() {
-		navigator.serviceWorker.register("/sw.js").then(function(e) {
+		navigator.serviceWorker.register("/wp-content/elite-redesign-29aprill/assets/src/images/pwa/sw.js").then(function(e) {
 			console.log("ServiceWorker registration successful with scope: ", e.scope)
 		}, function(e) {
 			console.log("ServiceWorker registration failed: ", e)
@@ -111,9 +111,7 @@ $ed_var_tohdr_btn     = $ed_option_fields['bst_var_tohdr_btn'] ?? null;
 	}
 	?>
 
-	<a class="skip-link screen-reader-text"
-		href="#page-section"><?php esc_html_e( 'Skip to content', 'elitedesigns_td' ); ?></a>
-
+	<a class="skip-link screen-reader-text" href="#intro-section"><?php esc_html_e( 'Skip to content', 'elitedesigns_td' ); ?></a>
 		<header class="header-section">
 			<?php
 				if ( $ed_var_tbar_vsblty ) {
@@ -160,8 +158,7 @@ $ed_var_tohdr_btn     = $ed_option_fields['bst_var_tohdr_btn'] ?? null;
 							</div>
 							<div class="header-btns">
 								<?php if ( $ed_var_tohdr_btn ) { ?>
-								<?php // echo EliteDesigns::button( $ed_var_tohdr_btn, 'button white call-popup' ); ?>
-								<a href="#calendly-popup" class="button white footer-hover-button call-popup" tabindex="0">Schedule a chat</a>
+								<a href="https://calendly.com/elitedesignsstudio/60" target="_blank" title="Schedule a call" aria-label="Schedule a call" class="button white footer-hover-button">Schedule a call</a>
 							<?php } ?>
 							</div>
 						</div>
@@ -173,5 +170,10 @@ $ed_var_tohdr_btn     = $ed_option_fields['bst_var_tohdr_btn'] ?? null;
 				</div>
 			</div>
 		</header>
+		<div class="floating-button">
+			<a href="/contact" title="Start your project" class="button">
+				Start your project
+			</a>
+		</div>
 	<!-- Main Area Start -->
 	<main id="main-section" class="main-section">

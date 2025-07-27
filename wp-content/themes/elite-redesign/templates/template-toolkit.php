@@ -119,7 +119,7 @@ get_header();
 			<section>
 				<div class="wrapper">
 					<div class="iat-section two-columns justify-content-between align-items-center image-at-right">
-						<div class="iat-image column" tabindex="0" role="img" aria-label="Image illustrating the content of this block">
+						<div class="iat-image column" role="img" aria-label="Image illustrating the content of this block">
 							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/default-image.webp" alt="">
 						</div>
 						<div class="iat-text column">
@@ -138,7 +138,7 @@ get_header();
 			<section>
 				<div class="wrapper">
 					<div class="iat-section two-columns justify-content-between align-items-center image-at-left">
-						<div class="iat-image column" tabindex="0" role="img" aria-label="Image illustrating the content of this block">
+						<div class="iat-image column" role="img" aria-label="Image illustrating the content of this block">
 							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/admin/defaults/default-image.webp" alt="">
 						</div>
 						<div class="iat-text column">

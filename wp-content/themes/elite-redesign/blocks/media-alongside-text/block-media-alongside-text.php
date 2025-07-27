@@ -23,7 +23,7 @@ EliteDesigns::block(
 		?>
 
 			<div class="iat-section two-columns justify-content-between align-items-center <?php echo $ed_var_blk_mat_img_location; ?>">
-				<div class="iat-image column" tabindex="0" role="img" aria-label="Image illustrating the content of this block">
+				<div class="iat-image column"  role="img" aria-label="Image illustrating the content of this block">
 					<?php if ( $ed_var_blk_mat_image ) { ?>
 						<?php EliteDesigns::the_attachment_image( $ed_var_blk_mat_image, 1000 ); ?>
 					<?php } ?>

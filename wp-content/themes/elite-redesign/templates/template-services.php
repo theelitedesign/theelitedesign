@@ -23,7 +23,7 @@ get_header();
 					<div class="hero-content">
 						<h1>Services that <br> <span> scale your impact.</span></h1>
 						<div class="scroll-down__button">
-							<a href="#intro-section" aria-label="Down to First section" tabindex="0">
+							<a href="#intro-section" aria-label="Down to First section">
 								<svg width="16" height="37" viewBox="0 0 16 37" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path class="dropdown-item1" id="arrow" d="M3.33398 16L8.00065 20.6667L12.6673 16" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 
