@@ -6,7 +6,7 @@
  *
  * @link https://www.advancedcustomfields.com/resources/blocks/
  *
- * @package elite designs
+ * @package DevDives
  * @since 1.0.0
  */
 

@@ -4,7 +4,7 @@
  *
  * @link https://www.advancedcustomfields.com/resources/
  *
- * @package elite designs
+ * @package DevDives
  * @since 1.0.0
  */
 
@@ -16,7 +16,7 @@ namespace EliteDesigns\Acf;
  * Template Class
  *
  * @category Setting_Class
- * @package  elite designs
+ * @package  DevDives
  */
 class WP_Theme_Acf {
 	/**

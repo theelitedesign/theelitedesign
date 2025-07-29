@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package elite designs
+ * @package DevDives
  * @since 1.0.0
  */
 
@@ -17,7 +17,7 @@ use \Walker_Nav_Menu_Checklist;
  * Template Class
  *
  * @category Walker_Class
- * @package  elite designs
+ * @package  DevDives
  */
 class WP_Theme_Walker_Settings {
 	/**

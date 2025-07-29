@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
  *
- * @package elite designs
+ * @package DevDives
  * @since 1.0.0
  */
 
@@ -21,7 +21,7 @@ get_header();
 		<div class="s-96"></div>
 		<div class="wrapper">
 			<div class="hero-content">
-				<h1>About <span>elite designs</span></h1>
+				<h1>About <span>DevDives</span></h1>
 				<div class="scroll-down__button">
 					<a href="#intro-section" aria-label="Down to First section">
 						<svg width="16" height="37" viewBox="0 0 16 37" fill="none"
@@ -142,7 +142,7 @@ get_header();
 	<div class="s-128"></div>
 	<div id="leadership" class="jumps-link__item jumplink-section"></div>
 	<section>
-		<div class="wrapper">
+		<!-- <div class="wrapper">
 			<div class="image-collage-ctn team-block-collage">
 				<div class="section-head">
 					<h2 class="heading-2">Leadership</h2>
@@ -161,7 +161,7 @@ get_header();
 							<div class="s-48"></div>
 							<blockquote>
 								<p>
-									Bahar is the Founder of elite designs, a leading web design and development company specializing in custom WordPress solutions. With over five years of experience, Bahar has built a reputation for delivering high-performance, scalable, and user-focused digital experiences that help businesses thrive online. Under Bahar’s leadership, elite designs has successfully collaborated with startups, businesses, and brands seeking tailored WordPress solutions, optimized user experiences, and strategic digital growth. His approach emphasizes efficiency, innovation, and problem-solving, ensuring that every project aligns with business objectives while maintaining exceptional design and functionality.
+									Bahar is the Founder of DevDives, a leading web design and development company specializing in custom WordPress solutions. With over five years of experience, Bahar has built a reputation for delivering high-performance, scalable, and user-focused digital experiences that help businesses thrive online. Under Bahar’s leadership, DevDives has successfully collaborated with startups, businesses, and brands seeking tailored WordPress solutions, optimized user experiences, and strategic digital growth. His approach emphasizes efficiency, innovation, and problem-solving, ensuring that every project aligns with business objectives while maintaining exceptional design and functionality.
 								</p>
 								<p>
 									<strong>Connect: </strong><a href="mailto:bahar@elitedesigns.studio">bahar@elitedesigns.studio</a> or <a href="https://www.linkedin.com/in/bahar-hussain" target="_blank">Linkedin</a>
@@ -193,7 +193,7 @@ get_header();
 				</div>
 			</div>
 		</div>
-		<div class="s-128"></div>
+		<div class="s-128"></div> -->
 		<div id="our-values" class="jumps-link__item jumplink-section"></div>
 		<div class="wrapper">
 			<div class="section-head">

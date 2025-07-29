@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package elite designs
+ * @package DevDives
  * @since 1.0.0
  */
 
@@ -21,7 +21,7 @@ use \ACF_Location;
  * Template Class
  *
  * @category Walker_Class
- * @package  elite designs
+ * @package  DevDives
  */
 class WP_Theme_Walker_Acf_Settings extends \ACF_Location {
 	/**

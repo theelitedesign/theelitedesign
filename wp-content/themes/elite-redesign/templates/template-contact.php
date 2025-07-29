@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
  *
- * @package elite designs
+ * @package DevDives
  * @since 1.0.0
  */
 
@@ -41,9 +41,9 @@ get_header();
 						<div class="p3 label font-med"> Contact Information</div>
 						<div class="s-12"></div>
 						<div class="p1">
-							<a href="mailto:hello@theelitedesign.com">hello@elitedesigns.studio</a> <br>
+							<a href="mailto:hello@theelitedesign.com">hello@devdives.com</a> <br>
 							<div class="s-12"></div>
-							<a href="tel:923474849527">Call923474849527</a>
+							<a href="tel:+971 57 787 8300">Call+971 57 787 8300</a>
 						</div>
 					</div>
 					<div class="s-48"></div>

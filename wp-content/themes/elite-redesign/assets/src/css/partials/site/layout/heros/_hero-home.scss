@@ -2,6 +2,7 @@
 	h1 {
 		margin-bottom: 0;
 	}
+
 	a,
 	a:visited,
 	span {
@@ -10,7 +11,13 @@
 	}
 }
 
+.hero-description {
+	max-width: 810px;
+	width: 90%;
+}
+
 .hero-ctn {
+
 	.post-tags .post-tag,
 	.post-tags a.post-tag,
 	.post-tags a.post-tag:visited {
@@ -174,6 +181,7 @@
 		gap: 24px;
 		color: var(--el_white);
 		background-image: none;
+
 		&:hover {
 			color: #b388dd;
 		}

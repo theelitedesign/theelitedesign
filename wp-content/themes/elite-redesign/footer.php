@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package elite designs
+ * @package DevDives
  * @since 1.0.0
  */
 
@@ -58,7 +58,7 @@ $ed_var_social_profiles = $ed_option_fields['bst_var_social_profiles'] ?? null;
 			<div class="footer-left">
 				<div class="footer-logo">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/site-logo.svg" alt="Site Logo">
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/devdives-logo.svg" alt="Site Logo">
 					</a>
 				</div>
 			</div>
@@ -85,7 +85,6 @@ $ed_var_social_profiles = $ed_option_fields['bst_var_social_profiles'] ?? null;
 						</ul>
 					</div>
 				</div>
-				<div class="s-96"></div>
 				<div class="flex footer-logos">
 					<a href="https://clutch.co/profile/elite-designs" target="_blank" title="Clutch" aria-label="Clutch" class="clutch-logo">
 						<div class="sr-only">Screen Reader Text</div>
@@ -107,7 +106,7 @@ $ed_var_social_profiles = $ed_option_fields['bst_var_social_profiles'] ?? null;
 			<div class="footer-left">
 				<div class="blog-detail__social-ctn elitedesign-contact">
 					<div class="big-body">
-						<a href="https://www.linkedin.com/company/theelitedesign/" title="Linkedin" aria-label="Linkedin" target="_blank"> Follow us on Linkedin</a>
+						<a href="https://www.linkedin.com/company/devdives/" title="Linkedin" aria-label="Linkedin" target="_blank"> Follow us on Linkedin</a>
 					</div>
 					<div class="big-body">
 						<a href="https://www.designrush.com/agency/wordpress-web-design" title="Designrush Website design" aria-label="Designrush Website design" target="_blank"> designrush Website design</a>
@@ -119,16 +118,16 @@ $ed_var_social_profiles = $ed_option_fields['bst_var_social_profiles'] ?? null;
 			</div>
 			<div class="footer-right">
 				<div class="elitedesign-contact">
-					<div class="big-body"><a href="tel:+923474849527">Call 923474849527</a></div>
-					<div class="big-body"><a href="mailto:hello@elitedesigns.studio">hello@elitedesigns.studio</a></div>
+					<div class="big-body"><a href="tel:++971 57 787 8300">Call +971 57 787 8300</a></div>
+					<div class="big-body"><a href="mailto:hello@devdives.com">hello@devdives.com</a></div>
 				</div>
 			</div>
 		</div>
 		<div class="s-96"></div>
 		<div class="footer-bottom flex p2">
 			<div class="copyright-area">
-				<p> Johar Town Lahore, Pakistan
-					© <?php echo date('Y'); ?> <a href="<?php echo esc_url(home_url('/')); ?>">elite designs</a>
+				<p> Y-22, England cluster, international city, Dubai, UAE
+					© <?php echo date('Y'); ?> <a href="<?php echo esc_url(home_url('/')); ?>">DevDives</a>
 				</p>
 			</div>
 			<div class="legal-nav">

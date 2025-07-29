@@ -4,7 +4,7 @@
  *
  * @link
  *
- * @package elite designs
+ * @package DevDives
  * @since 1.0.0
  */
 
@@ -17,7 +17,7 @@ use EliteDesigns;
  * Template Class
  *
  * @category Setting_Class
- * @package  elite designs
+ * @package  DevDives
  */
 class WP_Theme_Boilerplate {
 

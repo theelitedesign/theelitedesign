@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package elite designs
+ * @package DevDives
  * @since 1.0.0
  */
 
@@ -16,7 +16,7 @@ namespace EliteDesigns\Settings;
  * Template Class
  *
  * @category Setting_Class
- * @package  elite designs
+ * @package  DevDives
  */
 class WP_Theme_Settings {
 	/**

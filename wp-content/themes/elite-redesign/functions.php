@@ -6,7 +6,7 @@
  *
  * Please note that missing files will produce a fatal error.
  *
- * @package elite designs
+ * @package DevDives
  * @since 1.0.0
  */
 

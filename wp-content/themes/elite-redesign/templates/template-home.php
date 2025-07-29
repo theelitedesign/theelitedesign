@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
  *
- * @package elite designs
+ * @package DevDives
  * @since 1.0.0
  */
 
@@ -27,8 +27,8 @@ get_header();
 						<div class="headingLine"><span>for </span> results</div>
 					</h2>
 					<div class="s-48"></div>
-					<div class="t3">
-						 We design and build websites, improve search rankings, <br> keep them updated, and provide ongoing support.
+					<div class="t3 hero-description">
+						 DevDives empowers marketing leaders to build high-impact digital growth systems through exceptional design, results-focused marketing, and data-driven optimization.
 					</div>
 
 					<div class="scroll-down">
@@ -68,7 +68,7 @@ get_header();
 		<div class="wrapper">
 			<h2 class="t1 font-reg">
 				<p>
-					We specialize in custom WordPress theme development, Full Site Editing (FSE), web design, SEO, and ongoing website support. With 5+ years of experience, we create functional, visually stunning, and high-performing websites tailored to your business needs.
+					With over two decades of experience in strategy, design, and marketing, our expert team at DevDives has been building high-performing websites and digital growth systems that drive real, measurable ROI. Backed by a proven process, a commitment to quality, and a track record of success<br> —we don't just aim for results, we deliver them
 				</p>
 			</h2>
 		</div>
@@ -133,7 +133,7 @@ get_header();
 		<div class="wrapper">
 			<div class="work-ctn">
 				<div class="section-head">
-					<h2>elite <span>Work</span></h2>
+					<h2>our <span>Work</span></h2>
 				</div>
 				<div class="s-96"></div>
 				<div class="work-lists two-columns">
@@ -211,7 +211,7 @@ get_header();
 			</div>
 		</div>
 	</section>
-	<div class="s-156"></div>
+
 	<section class="overflow-hidden">
 		<div class="ctn-gray">
 			<div class="s-128"></div>
@@ -276,67 +276,108 @@ get_header();
 				</div>
 				<div class="hat-text">
 					<div class="faqs__area">
-						<div class="faqs__item">
-							<div class="faqs__item--title body-text-36" role="button"
-								aria-expanded="false">Can you build a custom website for my business?
-								<div class="faq-icon"></div>
-							</div>
-							<div class="faqs__item--desc" role="region" aria-hidden="true">
-								<p>Yes, we create <strong>custom websites</strong> tailored to your brand, audience, and goals.</p>
-							</div>
-						</div>
-						<div class="faqs__item">
-							<div class="faqs__item--title body-text-36" role="button"
-								aria-expanded="false">Will my website be optimized for mobile and SEO?
-								<div class="faq-icon"></div>
-							</div>
-							<div class="faqs__item--desc" role="region" aria-hidden="true">
-								<p>Absolutely. Every website we build is <strong>mobile-friendly</strong> and SEO-ready.</p>
-							</div>
-						</div>
 
-						<div class="faqs__item">
-							<div class="faqs__item--title body-text-36" role="button"
-								aria-expanded="false">Which content management system (CMS) do you use?<div class="faq-icon"></div>
-							</div>
-							<div class="faqs__item--desc" role="region" aria-hidden="true">
-								<p>We only use <strong>WordPress </strong> because we’re experts at building fast, easy-to-manage sites.</p>
-							</div>
-						</div>
-						<div class="faqs__item">
-							<div class="faqs__item--title body-text-36" role="button"
-								aria-expanded="false">How long does it take to complete a website project? <div class="faq-icon">
-								</div>
-							</div>
-							<div class="faqs__item--desc" role="region" aria-hidden="true">
-								<p>Most websites are completed within <strong>4 to 6 weeks </strong>, depending on the project scope.</p>
-							</div>
-						</div>
-						<div class="faqs__item">
-							<div class="faqs__item--title body-text-36" role="button"
-								aria-expanded="false">Can you improve and maintain a website built by someone else? <div class="faq-icon"></div>
-							</div>
-							<div class="faqs__item--desc" role="region" aria-hidden="true">
-								<p>We offer keyword research, on-page optimization, technical SEO, and performance tracking.</p>
-							</div>
-						</div>
-						<div class="faqs__item">
-							<div class="faqs__item--title body-text-36" role="button"
-								aria-expanded="false"> Do you offer website support after launch? <div class="faq-icon"></div>
-							</div>
-							<div class="faqs__item--desc" role="region" aria-hidden="true">
-								<p>Yes, we provide ongoing support, including updates, backups, and security monitoring.</p>
-							</div>
-						</div>
-						<div class="faqs__item">
-							<div class="faqs__item--title body-text-36" role="button"
-								aria-expanded="false"> Can you improve and maintain a website built by someone else? <div class="faq-icon"></div>
-							</div>
-							<div class="faqs__item--desc" role="region" aria-hidden="true">
-								<p>Yes, after a quick site review, we can take over maintenance and upgrades.</p>
-							</div>
-						</div>
-					</div>
+  <!-- 1 -->
+  <div class="faqs__item">
+    <div class="faqs__item--title body-text-36" role="button" aria-expanded="false">
+      Do you build custom websites tailored to my business?
+      <div class="faq-icon"></div>
+    </div>
+    <div class="faqs__item--desc" role="region" aria-hidden="true">
+      <p>Yes! We specialize in creating fully custom websites designed specifically for your brand, goals, and audience. From design to development, everything is tailored to meet your business objectives—not just a template.</p>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="faqs__item">
+    <div class="faqs__item--title body-text-36" role="button" aria-expanded="false">
+      Will my website work well on mobile devices and be SEO-optimized?
+      <div class="faq-icon"></div>
+    </div>
+    <div class="faqs__item--desc" role="region" aria-hidden="true">
+      <p>Absolutely. Every site we build is fully responsive—meaning it looks and works great on smartphones, tablets, and desktops. We also implement technical and on-page SEO best practices to help your site rank better in search engines from day one.</p>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="faqs__item">
+    <div class="faqs__item--title body-text-36" role="button" aria-expanded="false">
+      What platform or CMS do you use?
+      <div class="faq-icon"></div>
+    </div>
+    <div class="faqs__item--desc" role="region" aria-hidden="true">
+      <p>We work with a variety of content management systems (CMS) and platforms including WordPress, Shopify, Squarespace, Webflow, and others. The right platform depends on your specific goals, technical needs, and long-term scalability. Whether you're launching an eCommerce store, a marketing site, or a portfolio, we'll help you choose and customize the best platform for your business.</p>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="faqs__item">
+    <div class="faqs__item--title body-text-36" role="button" aria-expanded="false">
+      How long does a typical website project take?
+      <div class="faq-icon"></div>
+    </div>
+    <div class="faqs__item--desc" role="region" aria-hidden="true">
+      <p>Most custom websites take about <strong>4 to 6 weeks</strong> to complete. The timeline depends on the complexity of the site, the number of pages, and how quickly we receive content and feedback from your side. We’ll provide a clear timeline before starting.</p>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="faqs__item">
+    <div class="faqs__item--title body-text-36" role="button" aria-expanded="false">
+      Can you redesign or improve my existing website?
+      <div class="faq-icon"></div>
+    </div>
+    <div class="faqs__item--desc" role="region" aria-hidden="true">
+      <p>Yes! Whether your site is outdated, slow, or hard to manage, we can help. After a quick audit, we can recommend improvements or even a full redesign to align with modern web standards, improve usability, and boost performance.</p>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="faqs__item">
+    <div class="faqs__item--title body-text-36" role="button" aria-expanded="false">
+      Do you offer website maintenance and support?
+      <div class="faq-icon"></div>
+    </div>
+    <div class="faqs__item--desc" role="region" aria-hidden="true">
+      <p>Yes, we offer ongoing maintenance plans that include updates, backups, performance monitoring, and security checks. Whether we built your site or not, we can keep it running smoothly and securely.</p>
+    </div>
+  </div>
+
+  <!-- 7 -->
+  <div class="faqs__item">
+    <div class="faqs__item--title body-text-36" role="button" aria-expanded="false">
+      What if I don’t have any content or images yet?
+      <div class="faq-icon"></div>
+    </div>
+    <div class="faqs__item--desc" role="region" aria-hidden="true">
+      <p>No worries! We can help with content strategy, copywriting, and even stock image sourcing if needed. Our goal is to make the process as smooth as possible, even if you're starting from scratch.</p>
+    </div>
+  </div>
+
+  <!-- 8 -->
+  <div class="faqs__item">
+    <div class="faqs__item--title body-text-36" role="button" aria-expanded="false">
+      Will I be able to update the website myself?
+      <div class="faq-icon"></div>
+    </div>
+    <div class="faqs__item--desc" role="region" aria-hidden="true">
+      <p>Yes! We build with user-friendliness in mind. After launch, we provide documentation or quick training so you can make edits, upload content, and manage your site with confidence—no coding required.</p>
+    </div>
+  </div>
+
+  <!-- 9 -->
+  <div class="faqs__item">
+    <div class="faqs__item--title body-text-36" role="button" aria-expanded="false">
+      What does a typical website cost?
+      <div class="faq-icon"></div>
+    </div>
+    <div class="faqs__item--desc" role="region" aria-hidden="true">
+      <p>Costs vary based on your project needs. A basic site typically starts at $X, while more complex sites with custom features are priced accordingly. We’ll give you a detailed quote after a discovery call to understand your goals.</p>
+    </div>
+  </div>
+
+</div>
+
 					<div class="faq-desktop-hide">
 						<div class="s-48"></div>
 						<a href="/faqs" class="button">View All FAQs</a>

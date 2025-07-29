@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
  *
- * @package elite designs
+ * @package DevDives
  * @since 1.0.0
  */
 

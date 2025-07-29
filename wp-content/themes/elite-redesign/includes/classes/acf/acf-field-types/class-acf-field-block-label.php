@@ -4,7 +4,7 @@
  *
  * @link https://www.advancedcustomfields.com/resources/
  *
- * @package elite designs
+ * @package DevDives
  * @since 1.0.0
  */
 
@@ -16,7 +16,7 @@ namespace EliteDesigns\Acf\Acf_Fields;
  * Template Class
  *
  * @category Acf_Field
- * @package  elite designs
+ * @package  DevDives
  */
 class Acf_Field_Block_Label extends \acf_field {
 	/**

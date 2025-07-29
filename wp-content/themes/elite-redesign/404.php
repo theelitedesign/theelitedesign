@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package elite designs
+ * @package DevDives
  * @since   1.0.0
  */
 

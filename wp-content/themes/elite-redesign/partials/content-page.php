@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package elite designs
+ * @package DevDives
  * @since 1.0.0
  */
 

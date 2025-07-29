@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
  *
- * @package elite designs
+ * @package DevDives
  * @since 1.0.0
  */
 
@@ -42,7 +42,7 @@ get_header();
 		</div>
 		<div class="header-wrapper header-inner d-flex align-items-center justify-content-between">
 			<div class="header-logo logo">
-				<a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/site-logo.svg" alt="Site Logo" /></a>
+				<a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/devdives-logo.svg" alt="Site Logo" /></a>
 			</div>
 			<div class="right-header header-navigation">
 				<div class="nav-overlay">

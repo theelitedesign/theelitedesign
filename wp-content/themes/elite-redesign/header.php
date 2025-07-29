@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package elite designs
+ * @package DevDives
  * @since 1.0.0
  */
 
@@ -56,7 +56,7 @@ $ed_var_tohdr_btn     = $ed_option_fields['bst_var_tohdr_btn'] ?? null;
 		href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/pwa/site.webmanifest">
 	<meta name="theme-color" content="#52247f">
 	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="application-name" content="elite designs">
+	<meta name="application-name" content="DevDives">
 	<!-- Windows Phone -->
 	<meta name="msapplication-navbutton_color" content="#52247f">
 	<meta name="msapplication-TileColor" content="#52247f">
@@ -138,7 +138,7 @@ $ed_var_tohdr_btn     = $ed_option_fields['bst_var_tohdr_btn'] ?? null;
 			<div class="header-wrapper header-inner">
 				<div class="header-logo">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/site-logo.svg" alt="Site Logo">
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/devdives-logo.svg" alt="Site Logo">
 					</a>
 				</div>
 				<div class="right-header header-navigation">
